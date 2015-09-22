@@ -21,7 +21,7 @@ public class RefCodeInfo implements ResourceInterface{
 	}
 	
 	private RefCodeInfo(){
-	}
+	}
 	
 	private Set<String> shouldNotConvert2IdIndexNames = new HashSet<String>();
 

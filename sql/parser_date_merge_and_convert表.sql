@@ -2,7 +2,7 @@
 SQLyog Ultimate v11.24 (32 bit)
 MySQL - 5.0.75-log : Database - configFile
 *********************************************************************
-*/
+*/
 
 /*!40101 SET NAMES utf8 */;
 

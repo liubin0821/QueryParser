@@ -2,7 +2,7 @@
 SQLyog Ultimate v11.24 (32 bit)
 MySQL - 5.7.3-m13 : Database - ontologydb2
 *********************************************************************
-*/
+*/
 
 /*!40101 SET NAMES utf8 */;
 
