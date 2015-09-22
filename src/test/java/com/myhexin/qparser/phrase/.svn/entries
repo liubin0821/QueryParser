@@ -1,0 +1,77 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/test/java/com/myhexin/qparser/phrase
+svn://172.20.23.253
+
+
+
+2015-09-19T03:23:07.348069Z
+446216
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+PhraseBaseTest.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+434da01230eff7bfa70f6b17af72e29d
+2015-09-19T03:23:07.348069Z
+446216
+liuxiaofeng
+has-props
+
+TestPatternMatch.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+a5c30084c83305ee5cd13d276c101250
+2015-08-12T06:58:43.135687Z
+438081
+chenhao
+
+TestPhraseParser.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+7d6855eb1c099059f8cd39344aa77551
+2015-07-03T07:32:04.544282Z
+429985
+liuxiaofeng
+
+Tokenize
+dir
+
+parsePlugins
+dir
+
+parsePluginsTest
+dir
+
+util
+dir
+

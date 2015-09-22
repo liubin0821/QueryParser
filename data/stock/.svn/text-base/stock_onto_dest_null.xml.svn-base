@@ -1,0 +1,3620 @@
+<?xml version="1.0" encoding="UTF-8"?><node>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<class data_src="IFIND" label="每股分红送转" report_type="HALF_YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<class data_src="IFIND" index_type="TO_SEARCH" label="经营范围">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_经营范围" type="STR" unit="unit"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<class data_src="ONTO" ifind_clt_used="true" index_type="TO_SEARCH" label="主营产品名称">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_主营产品名称" type="STR" unit="unit" uri="base:has_production"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<class data_src="IFIND" label="法人代表">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_法人代表" type="STR" unit="unit"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--重复数据，暂时注释
+<class data_src="IFIND" index_type="PAYMENT" label="董事长薪酬" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+</class>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--重复数据，暂时注释
+<class data_src="IFIND" index_type="PAYMENT" label="总经理薪酬" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+</class>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<class data_src="IFIND" label="近期创历史新低" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_是否" type="STR" unit="unit"/>
+    <prop label="复权方式" type="STR" unit="unit"/>
+    <prop label="交易日期" type="DATE" unit="unit"/>
+    <prop label="近n天内" type="DATE" unit="天"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--重复指标，暂时注释掉
+<class data_src="IFIND" index_type="PAYMENT" label="董事会秘书薪酬" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+</class>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--重复数据，暂时注释
+<class data_src="IFIND" index_type="PAYMENT" label="财务总监薪酬" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+</class>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<class data_src="IFIND" index_type="DIAG_HOLDER" label="大股东名称" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_大股东名称" type="STR" unit="unit"/>
+    <prop label="大股东排名" type="STR" unit="unit"/>
+    <prop label="截止日期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<class data_src="IFIND" label="区间平均收盘价" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    <prop label="收益率计算方法" type="STR" unit="unit"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="保荐机构">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_保荐机构" type="STR" unit="unit"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<class data_src="IFIND" label="增发承销保荐费用" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 以下是从行情查询的指标 -->
+
+
+
+
+
+<!--
+<class label="主动买入特大单笔数" data_src="REDIS" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+</class>
+<class label="主动卖出特大单笔数" data_src="REDIS" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+</class>
+<class label="主动买入大单笔数" data_src="REDIS" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+</class>
+<class label="主动卖出大单笔数" data_src="REDIS" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+</class>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--2013-10-25 筹码集中-->
+
+<class data_src="REDIS" label="平均成本" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+<field label="stock"/></class>
+<class data_src="REDIS" label="集中度90" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+<field label="stock"/></class>
+<class data_src="REDIS" label="集中度70" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+<field label="stock"/></class>
+<!-- <class data_src="REDIS" report_type="NOW" index_type="BACK_TEST" label="最新dde大单净量">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="股"/>
+</class> -->
+
+
+
+
+
+
+
+
+<class data_src="REDIS" indextype="RELIEVE_BAN" label="最新内盘成交量" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="股"/>
+<field label="stock"/></class>
+<class data_src="REDIS" label="最新成交额" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+<class data_src="REDIS" index_type="BACK_TEST" label="最大跌幅" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+<field label="stock"/></class>
+
+
+<!-- 以下是从本体查询的指标 -->
+
+
+
+
+
+<class data_src="ONTO" index_type="TO_SEARCH" label="所属概念">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_所属概念" type="STR" unit="unit" uri="base:has_stockconcept"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<class data_src="ONTO" label="高管学历" index_type="ONTO_FLATTENED">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_高管学历" type="STR" unit="unit" uri="sec:manager_grade"/>
+</class>
+<class data_src="ONTO" label="高管国籍" index_type="ONTO_FLATTENED">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_高管国籍" type="STR" unit="unit" uri="sec:nationality"/>
+</class>
+<class data_src="ONTO" label="高管婚姻状况" index_type="ONTO_FLATTENED">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_高管婚姻状况" type="STR" unit="unit" uri="sec:manager_hasDivorceOf"/>
+</class>-->
+
+<!-- 技术指标 -->
+
+<!-- 废弃指标，暂时注释  -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<class data_src="HBASE" label="连续涨停天数" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    <prop label="截止日期" type="DATE" unit="unit"/>
+</class>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--2013-9-23-->
+
+
+
+
+
+
+
+
+
+<!--
+以下盘中指标先不废弃，但是需停用，对用户屏蔽。以后可能做热门的时候会用的
+<class data_src="REDIS" label="最新热门股" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_最新热门股" type="STR" unit="unit"/>
+</class>   
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<class data_src="ONTO" label="高管工作过的企业">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_高管工作过的企业" type="STR" unit="unit" uri="sec:manager_workExperience"/>
+</class>
+<class data_src="ONTO" label="高管毕业学校">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_高管毕业学校" type="STR" unit="unit" uri="sec:manager_graduate"/>
+</class>
+<class data_src="ONTO" label="高管是否为官员">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_高管是否为官员" type="STR" unit="unit" uri="sec:manager_isPreOfficer"/>   
+</class>-->
+
+
+
+
+
+
+
+
+<class data_src="SOLR" index_type="NOW" label="新闻类型" report_type="NATURAL_DAILY">
+    <prop label="_新闻类型" type="STR" unit="unit"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+
+<class data_src="SOLR" index_type="SPLIT_SOLR|NOW" label="相关新闻" report_type="NATURAL_DAILY">
+    <prop label="_相关新闻" type="STR" unit="unit"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+<!-- ifind 新增指标 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 诊股后处理数据 -->
+
+
+<!-- 新增资金流向指标 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--大股东增减持单日明细-->
+
+
+
+
+
+
+
+<!--大股东增合计指标-->
+
+
+
+<!--高管增减持单日明细-->
+
+<class data_src="MONGO" label="高管变动均价明细" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+        <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" label="高管占流通股比明细" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+     <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" label="高管变动市值明细" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+     <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" label="高管变动类型明细" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_高管变动类型明细" type="STR" unit="unit"/>
+     <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" label="增减持高管名称" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_增减持高管名称" type="STR" unit="unit"/>
+     <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+
+<!--高管增合计指标-->
+
+<class data_src="MONGO" index_type="RANGE_MANAGER_HOLDER" label="高管当日持股变动市值合计" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+        <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="RANGE_MANAGER_HOLDER" label="高管当日持股占流通股比例合计" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+        <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<!-- 机构持股相关指标 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 牛叉诊股相关指标 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 为诊股加的伪指标 -->
+
+
+<!--解禁专题新增指标-->
+
+
+<class data_src="MONGO" index_type="RELIEVE_BAN" label="解禁日期" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_日期" type="DATE" unit="unit"/>
+	<prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="MONGO" index_type="RELIEVE_BAN" label="解禁比例" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+	<prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<!--选股分红新增指标-->
+<class data_src="HBASE" index_type="DIVIDEND" label="分红明细" report_type="HALF_YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_分红明细" type="STR" unit="unit"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="HBASE" index_type="DIVIDEND" label="年度是否分红" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_是否" type="STR" unit="unit"/>
+    <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="HBASE" index_type="DIVIDEND" label="年度分红明细" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_年度分红明细" type="STR" unit="unit"/>
+    <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--行业排名指标-->
+
+
+
+
+
+
+
+
+<!--2013-8-29日：净利润复合季增长率-->
+
+
+<!--2013-9-28:新增机构持股-->
+<class data_src="MONGO" index_type="INST_NEW_INCREASE" label="新增机构持股报告期" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_日期" type="DATE" unit="unit"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="INST_NEW_INCREASE" label="新增机构持股家数" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_整型数值" type="LONG" unit="家"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="INST_NEW_INCREASE" label="新增机构本期持股市值" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="MONGO" index_type="INST_NEW_INCREASE" label="新增机构本期持股数量" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="股"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="QFII_NEW_INCREASE" label="新增qfii持股家数" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_整型数值" type="LONG" unit="家"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="QFII_NEW_INCREASE" label="新增qfii本期持股市值" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="QFII_NEW_INCREASE" label="新增qfii本期持股占流通股比例" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="QFII_NEW_INCREASE" label="新增qfii本期持股数量" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="股"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="MONGO" index_type="INSURE_NEW_INCREASE" label="新增保险公司持股家数" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_整型数值" type="LONG" unit="家"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="INSURE_NEW_INCREASE" label="新增保险公司本期持股市值" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="INSURE_NEW_INCREASE" label="新增保险公司本期持股占流通股比例" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="INSURE_NEW_INCREASE" label="新增保险公司本期持股数量" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="股"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="MONGO" index_type="BROKER_NEW_INCREASE" label="新增券商持股家数" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_整型数值" type="LONG" unit="家"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="BROKER_NEW_INCREASE" label="新增券商本期持股市值" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="BROKER_NEW_INCREASE" label="新增券商本期持股占流通股比例" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="BROKER_NEW_INCREASE" label="新增券商本期持股数量" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="股"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="MONGO" index_type="SOCIAL_NEW_INCREASE" label="新增社保基金持股家数" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_整型数值" type="LONG" unit="家"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="SOCIAL_NEW_INCREASE" label="新增社保基金本期持股市值" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="SOCIAL_NEW_INCREASE" label="新增社保基金本期持股占流通股比例" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="SOCIAL_NEW_INCREASE" label="新增社保基金本期持股数量" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="股"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="MONGO" index_type="TRUST_NEW_INCREASE" label="新增信托公司持股家数" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_整型数值" type="LONG" unit="家"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="TRUST_NEW_INCREASE" label="新增信托公司本期持股市值" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="TRUST_NEW_INCREASE" label="新增信托公司本期持股占流通股比例" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="TRUST_NEW_INCREASE" label="新增信托公司本期持股数量" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="股"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="MONGO" index_type="FUND_NEW_INCREASE" label="新增基金持股家数" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_整型数值" type="LONG" unit="家"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="FUND_NEW_INCREASE" label="新增基金本期持股市值" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="FUND_NEW_INCREASE" label="新增基金本期持股占流通股比例" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="FUND_NEW_INCREASE" label="新增基金本期持股数量" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="股"/>
+        <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<!--2013-10-17-->
+<class data_src="IFIND" label="区间日均振幅" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="区间日均市盈率(pe)" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="倍"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="区间日均市净率(pb)" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="倍"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="IFIND" label="归属母公司股东的净利润(同比增长率)季度均值" report_type="QUARTER">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="归属母公司股东的净利润(同比增长率)年度均值" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="销售毛利率季度均值" report_type="QUARTER">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="销售毛利率年度均值" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="IFIND" label="融资买入量" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_整型数值" type="LONG" unit="股"/>
+    <prop label="交易日期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="融资偿还量" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_整型数值" type="LONG" unit="股"/>
+    <prop label="交易日期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="融资余量" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_整型数值" type="LONG" unit="股"/>
+    <prop label="交易日期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="融券卖出额" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    <prop label="交易日期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="融券偿还额" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    <prop label="交易日期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="IFIND" label="区间融资买入量" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_整型数值" type="LONG" unit="股"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="区间融资偿还量" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_整型数值" type="LONG" unit="股"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="区间融券卖出额" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="区间融券偿还额" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+
+<!--2013-11-01-->
+<class data_src="IFIND" label="增发保荐人" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_增发保荐人" type="STR" unit="unit"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="增发保荐代表人" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_增发保荐代表人" type="STR" unit="unit"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="其它公众投资者有效申购户数" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+	<prop label="_整型数值" type="LONG" unit="户"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="其它公众投资者有效申购股数" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+	<prop label="_整型数值" type="LONG" unit="股"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="IFIND" label="增发预案公告日" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+	<prop label="_日期" type="DATE" unit="null"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="增发股东大会公告日" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+	<prop label="_日期" type="DATE" unit="null"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="配股预案公告日" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+	<prop label="_日期" type="DATE" unit="null"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="配股股东大会公告日" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+	<prop label="_日期" type="DATE" unit="null"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="配股股权登记日" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+	<prop label="_日期" type="DATE" unit="null"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="配股b股股权登记日" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+	<prop label="_日期" type="DATE" unit="null"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="配股保荐人" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_配股保荐人" type="STR" unit="unit"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="配股保荐代表人" report_type="YEAR">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_配股保荐代表人" type="STR" unit="unit"/>
+    <prop label="年度" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<!--高管信息-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--2013-11-6 龙虎榜-->
+
+<class data_src="HBASE" label="机构是否上榜" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+<!-- 	<prop label="交易日期" type="DATE" unit="unit"/>-->
+   <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="HBASE" label="机构是否买入" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+   <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="HBASE" label="机构是否卖出" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/> 
+   <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="HBASE" label="机构卖出金额" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+   <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+
+<class data_src="HBASE" label="区间机构是否上榜" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="HBASE" label="区间机构是否买入" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="HBASE" label="区间机构是否卖出" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="HBASE" label="区间机构买入金额" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="HBASE" label="区间机构卖出金额" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="HBASE" label="区间机构净额" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<!---2013-11-18 主力问题-->
+
+
+
+
+
+<class data_src="IFIND" label="区间主力控盘" report_type="TRADE_DAILY">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	<prop label="+区间" type="DATE" unit="unit"/>
+	<prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+<field label="stock"/></class>
+
+<!--2013-12-17 复杂计算数据-->
+<class data_src="IFIND" label="稀释每股收益复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="稀释每股收益复合季增长率" report_type="QUARTER">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="基本每股收益复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="基本每股收益复合季增长率" report_type="QUARTER">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="摊薄每股收益复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="扣除非经常性损益后的净利润复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="扣除非经常性损益后的净利润复合季增长率" report_type="QUARTER">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="每股净资产bps复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="净资产复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="固定资产复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="营业总收入复合季增长率" report_type="QUARTER">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="营业利润复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="主营业务利润复合季增长率" report_type="QUARTER">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="毛利润复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="所得税复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	<prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="所得税复合季增长率" report_type="QUARTER">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	 <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="预收账款复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	<prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="净资产收益率复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	<prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="净资产收益率复合季增长率" report_type="QUARTER">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	<prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="销售毛利率复合年增长率" report_type="YEAR">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	<prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="销售毛利率复合季增长率" report_type="QUARTER">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	<prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<!--展示有点问题，问的人也非常少，剔除掉2013-12-26
+<class data_src="IFIND" label="净利润率年复合增长率"   report_type="YEAR" >
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	<prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="#截止年度前推n年" type="DATE" unit="unit"/>
+</class>-->
+<class data_src="IFIND" label="净利润率季复合增长率" report_type="QUARTER">
+	<subclass>null</subclass>
+	<superclass>null</superclass>
+	<prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+    <prop label="~区间报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<!--2013-12-18 诊股舆情-->
+<class data_src="REDIS" label="竞争对手" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_竞争对手" type="STR" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="REDIS" label="股东公司" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_股东公司" type="STR" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="REDIS" label="关联公司" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_关联公司" type="STR" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="REDIS" label="债权人" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_债权人" type="STR" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="REDIS" label="子公司" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_子公司" type="STR" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="REDIS" label="大客户" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_大客户" type="STR" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="REDIS" label="债务人" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_债务人" type="STR" unit="unit"/>
+<field label="stock"/></class>
+<!--2013-12-24 涨停指标-->
+<!--<class data_src="REDIS" label="涨停时间" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_涨停时间" type="STR" unit="unit"/>
+</class>-->
+
+<!--2013-12-26 诊股-->
+<class data_src="REDIS" label="供应商" report_type="TRADE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_供应商" type="STR" unit="unit"/>
+<field label="stock"/></class>
+
+<!--2014-1-2 盘中异动-->
+<class data_src="REDIS" label="异动原因" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_异动原因" type="STR" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="REDIS" label="暴涨原因" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_异动原因" type="STR" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="REDIS" label="暴跌原因" report_type="NOW">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_异动原因" type="STR" unit="unit"/>
+<field label="stock"/></class>
+
+<!--2014-1-8高管指标的数据需求-->
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管职务" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_高管职务" type="STR" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管姓名" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_高管姓名" type="STR" unit="unit"/>
+<field label="stock"/></class>
+
+
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管生肖" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_高管生肖" type="STR" unit="unit"/> 
+<field label="stock"/></class>
+
+
+
+
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管所获政府奖励" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_高管所获政府奖励" type="STR" unit="unit"/> 
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管年龄" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_整型数值" type="LONG" unit="unit"/> 
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管出生年份" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_整型数值" type="LONG" unit="unit"/> 
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管任职日期" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_日期" type="DATE" unit="unit"/> 
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管离任日期" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_日期" type="DATE" unit="unit"/> 
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管持股数量" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="股"/> 
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管持股市值" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/> 
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管持股比例" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="%"/> 
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管薪酬" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/> 
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="MULTI_VAL" label="高管性别" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_高管性别" type="STR" unit="unit"/> 
+<field label="stock"/></class>
+
+
+<!--2014-1-24 新股指标-->
+
+
+
+
+
+
+
+<class data_src="MONGO" index_type="NEW_STOCK" label="网上发行冻结资金" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+<field label="stock"/></class>
+<!--<class data_src="MONGO" label="网上中签结果公告日" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_日期" type="DATE" unit="unit"/>
+</class>-->
+<class data_src="MONGO" index_type="NEW_STOCK" label="网上有效申购户数" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_整型数值" type="LONG" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="业绩快报.每股净资产" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+	    <prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="业绩快报.净利润同比增长率" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+		<prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="IFIND" label="业绩快报.营业收入同比增长率" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="%"/>
+		<prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="MONGO" label="预告净利润" report_type="QUARTER">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+		<prop label="报告期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="NEW_STOCK" label="新股上市日期(排序)" report_type="FUTURE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_日期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" index_type="NEW_STOCK" label="新股申购日期(排序)" report_type="FUTURE_DAILY">
+    <subclass>null</subclass>
+    <superclass>null</superclass>
+    <prop label="_日期" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<!--机构调研专题-->
+<class data_src="MONGO" label="机构调研次数" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="次"/>
+        <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" label="基金调研次数" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="次"/>
+        <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+<class data_src="MONGO" label="私募调研次数" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="次"/>
+        <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" label="保险调研次数" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="次"/>
+        <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+<class data_src="MONGO" label="qfii调研次数" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="_浮点型数值" type="DOUBLE" unit="次"/>
+        <prop label="+区间" type="DATE" unit="unit"/>
+<field label="stock"/></class>
+
+
+
+
+
+
+
+
+
+
+
+
+</node>

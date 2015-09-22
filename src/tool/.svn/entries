@@ -1,0 +1,115 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/tool
+svn://172.20.23.253
+
+
+
+2015-07-15T01:18:16.804051Z
+432090
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+XMLTools.php
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+ae8ab9c4cda2062bf0c9dafa7cd5aca5
+2013-06-27T10:30:07.880073Z
+72884
+xiawei
+
+bench
+dir
+
+conf
+dir
+
+dict
+dir
+
+dicts_sum.php
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+8911e93776195a8b4088e1cadfe76d95
+2013-07-04T07:06:02.374655Z
+74361
+zhangdong
+
+fake_num_info.txt
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+89d1db0f293f256147818fcc3ca5c048
+2012-09-08T07:43:12.658662Z
+29534
+wangping
+
+fundconf
+dir
+
+index_trans.php
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+faba198b161e2706fc2b9572f34641f0
+2013-07-04T07:06:02.374655Z
+74361
+zhangdong
+
+originalconf
+dir
+
+phrase_load.php
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+7e4b04d6f631cabbd61c5176d5f93361
+2014-05-13T06:32:35.802533Z
+303692
+linpeikun
+
+resouremanager
+dir
+
+service
+dir
+
+tool
+dir
+
+xml
+dir
+

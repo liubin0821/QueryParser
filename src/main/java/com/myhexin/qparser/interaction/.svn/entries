@@ -1,0 +1,52 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/qparser/interaction
+svn://172.20.23.253
+
+
+
+2015-07-10T06:07:43.384044Z
+431221
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+CmpValInteract.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+d8dfed0f8a79b56cf0eca819f1c066dd
+2012-08-01T11:17:07.373493Z
+24576
+wangping
+
+InteractionUnknownTip.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+f332e232ff888ec86d6590fa67e432c8
+2015-03-16T09:34:20.970332Z
+408440
+liuxiaofeng
+

@@ -1,0 +1,37 @@
+
+#mysql configFile database
+mysql.driverClass=com.mysql.jdbc.Driver
+mysql.jdbcUrl=jdbc:mysql://192.168.201.147:3306/configFile?zeroDateTimeBehavior=convertToNull
+mysql.user=qnateam
+mysql.password=qnateam
+
+#id_search mysql query_class database
+mysql.query_class.driverClass=com.mysql.jdbc.Driver
+mysql.query_class.jdbcUrl=jdbc:mysql://192.168.207.8:3306/query_class?zeroDateTimeBehavior=convertToNull
+mysql.query_class.user=wc
+mysql.query_class.password=123456
+
+#diagnosis_search_config database
+mysql.diagnosis.driverClass=com.mysql.jdbc.Driver
+mysql.diagnosis.jdbcUrl=jdbc:mysql://192.168.201.142:3306/diagnosis_stock?zeroDateTimeBehavior=convertToNull
+mysql.diagnosis.user=wc
+mysql.diagnosis.password=letmein
+
+#We don't need connection pool in lightparser
+#mysql.breakAfterAcquireFailure=false
+#mysql.testConnectionOnCheckin=false
+#mysql.testConnectionOnCheckout=false
+#mysql.idleConnectionTestPeriod=60
+#mysql.acquireRetryAttempts=10
+#mysql.acquireRetryDelay=1000
+
+
+#we will no often access the database after initialization
+#only access database when app startup
+#so change pool size=0
+#mysql.maxPoolSize=1
+#mysql.minPoolSize=1
+#mysql.initialPoolSize=1
+
+#release the connection after 60 seconds idle 
+#mysql.maxIdleTime=60

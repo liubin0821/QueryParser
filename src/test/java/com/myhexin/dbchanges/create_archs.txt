@@ -1,0 +1,540 @@
+  CREATE TABLE  `ontologydb`.`z_aliases_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11),
+  `index_id` int(11) default NULL,
+  `label` varchar(150) default NULL,
+  `is_default` tinyint(1) default '0',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+
+  CREATE TABLE `ontologydb`.`automatic_synchronization_ctrl`(
+  `id` int(11) NOT NULL auto_increment primary key,
+  `dict_type` varchar(50) NOT NULL,
+  `db_type` varchar(50) NOT NULL default 'mongo',
+  `sql_str` text NOT NULL,
+  `host_str` varchar(100) NOT NULL default '172.20.23.51',
+  `port_str` varchar(10) NOT NULL default '27018',
+  `userName` varchar(50) NOT NULL default 'admin',
+  `password_str` varchar(50) NOT NULL default 'admin',
+  `database_str` varchar(50) NOT NULL default 'OntologyData',
+  `table_str` varchar(50) default NULL,
+  `is_using` tinyint(1) NOT NULL default '1',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+  ) ENGINE=InnoDB  DEFAULT CHARSET=utf8; 
+
+INSERT INTO ontologydb.automatic_synchronization_ctrl
+SELECT * from ontologydb.automatic_synchronization_crl;
+
+
+   CREATE TABLE  `ontologydb`.`z_automatic_synchronization_ctrl_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11) NOT NULL ,
+  `dict_type` varchar(50) NOT NULL,
+  `db_type` varchar(50) NOT NULL default 'mongo',
+  `sql_str` text NOT NULL,
+  `host_str` varchar(100) NOT NULL default '172.20.23.51',
+  `port_str` varchar(10) NOT NULL default '27018',
+  `userName` varchar(50) NOT NULL default 'admin',
+  `password_str` varchar(50) NOT NULL default 'admin',
+  `database_str` varchar(50) NOT NULL default 'OntologyData',
+  `table_str` varchar(50) default NULL,
+  `is_using` tinyint(1) NOT NULL default '1',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+ ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_data_lines_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11) NOT NULL ,
+  `type_id` int(11) default NULL,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value` varchar(200) default NULL,
+  `infos` varchar(200) NOT NULL,
+  `priority` int(1) default '0',
+  `from_where` varchar(100) default NULL COMMENT '词典文件名称',
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP COMMENT '代码中忽略这个字段',
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+  CREATE TABLE  `ontologydb`.`z_data_relation_arch` (
+ 
+ `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+ `prop_id` int(11) NOT NULL,
+ `type_id` int(11) NOT NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+ )
+ ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+
+CREATE TABLE  `ontologydb`.`z_data_type_arch` (
+ 
+ `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+`id` int(11) NOT NULL,
+ 
+`label` varchar(200) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_dict_no_value_arch` (
+ 
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+ `id` int(10) unsigned NOT NULL ,
+  
+ `text` varchar(200) NOT NULL,
+ 
+ `cate` varchar(50) default 'pretreat',
+
+  `seg` varchar(200) default NULL,
+ 
+ `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+ 
+ `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB AUTO_INCREMENT=13396 DEFAULT CHARSET=utf8;
+
+
+
+  CREATE TABLE  `ontologydb`.`z_dict_onto_change_arch` (
+
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+ 
+ `text` varchar(200) NOT NULL,
+ 
+ `cate` varchar(50) default 'pretreat',
+ 
+  `seg` varchar(200) default NULL,
+  
+  `value` varchar(200) default NULL,
+  
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+
+   `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_class_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+ 
+ `id` int(10) unsigned NOT NULL,
+ 
+ `text` varchar(200) NOT NULL,
+
+  `cate` varchar(50) default 'pretreat',
+
+  `seg` varchar(200) default NULL,
+
+  `value` varchar(200) default NULL,
+
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB AUTO_INCREMENT=54974 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_date_arch` (
+ 
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+ 
+ `id` int(10) unsigned NOT NULL,
+
+ `text` varchar(200) NOT NULL,
+ 
+ `cate` varchar(50) default 'pretreat',
+
+  `seg` varchar(200) default NULL,
+ 
+ `value` varchar(200) default NULL,
+ 
+ `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  
+ `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+ `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_keyword_arch` (
+ 
+ `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+ `id` int(10) unsigned NOT NULL ,
+ 
+ `text` varchar(200) NOT NULL,
+ 
+ `cate` varchar(50) default 'pretreat',
+  
+ `seg` varchar(200) default NULL,
+
+  `value` varchar(200) default NULL,
+
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+ 
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_logic_arch` (
+ `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  
+ `text` varchar(200) NOT NULL,
+
+  `cate` varchar(50) default 'pretreat',
+ 
+  `seg` varchar(200) default NULL,
+
+  `logic_type` varchar(20) default NULL,
+ 
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+ 
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_qword_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `type` varchar(20) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+ CREATE TABLE  `ontologydb`.`z_dict_onto_sort_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value_type` varchar(20) default NULL,
+  `descending` varchar(10) NOT NULL,
+  `k` int(11) default NULL,
+  `is_top_k` varchar(10) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_special_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `msg` varchar(200) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_techOp_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value` varchar(200) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB AUTO_INCREMENT=204 DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_techPeriod_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value` varchar(200) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_trigger_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value` varchar(200) default NULL,
+  `direction` varchar(10) default NULL,
+  `isindex` varchar(10) default NULL,
+  `skiplist` varchar(50) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_vagueNum_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `vague_type` varchar(20) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_trans_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value` varchar(200) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_dict_update_recode_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `text` varchar(200) NOT NULL,
+  `tableName` varchar(20) NOT NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+ CREATE TABLE  `ontologydb`.`z_field_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11) NOT NULL,
+  `label` varchar(200) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;
+
+
+  CREATE TABLE  `ontologydb`.`z_field_to_index_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `index_id` int(11) default NULL,
+  `field_id` int(11) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_index_prop_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11) NOT NULL ,
+  `label` varchar(150) default NULL,
+  `type`  varchar(20) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_indexs_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11) NOT NULL ,
+  `label` varchar(100) default NULL,
+  `report_type` varchar(20) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE  `ontologydb`.`z_normal_relation_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `prop_id` int(11) default NULL,
+  `type` varchar(50) default NULL,
+  `unit` varchar(50) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+
+
+CREATE TABLE  `ontologydb`.`z_object_relation_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `prop_id` int(11) NOT NULL,
+  `ref_id` int(11) NOT NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+
+ CREATE TABLE  `ontologydb`.`z_prop_to_index_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `prop_id` int(11) default NULL,
+  `index_id` int(11) default NULL,
+  `seq` int(11) default '1',
+  `is_value_prop` tinyint(1) default '0',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+
+
+CREATE TABLE  `ontologydb`.`z_resolve_aliases_conflicts_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `aliase_id` int(11) default NULL,
+  `word` varchar(150) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_super_index_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `super_id` int(11) NOT NULL,
+  `index_id` int(11) NOT NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+ CREATE TABLE  `ontologydb`.`z_super_type_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `super_id` int(11) NOT NULL,
+  `type_id` int(11) NOT NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;

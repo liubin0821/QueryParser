@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/util
+	http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+
+	<!-- ParserPlugins实例parserPluginsMi -->
+	<bean id="parserPluginsMi" class="com.myhexin.server.ParserPlugins">
+		<!-- pre plugins -->
+		<constructor-arg type="java.util.ArrayList" index="0">
+			<util:list list-class="java.util.ArrayList">
+				<ref bean="TextNormalize" />
+				<ref bean="CheckIsMessyCodeText" />
+				<ref bean="CheckIsNoParser" />
+				<ref bean="WordSegment" />
+				<!-- <ref bean="WordSegmentDynamic" />  -->
+				<ref bean="WordSegmentPostTreat" />
+			</util:list>
+		</constructor-arg>
+		<!-- plugins -->
+		<constructor-arg type="java.util.ArrayList" index="1">
+			<util:list list-class="java.util.ArrayList">
+                <ref bean="TriggerParser" />
+                <ref bean="StringParser" />
+			    <ref bean="matchIndexAndKeywords" />
+				<ref bean="NumParser" />
+				<ref bean="TimeParser" />
+				<ref bean="DateParser" />
+				
+				
+				<ref bean="DateSequence" />
+				<ref bean="remainSomeDomain" />
+				<ref bean="removeSomeConditionNode" />
+                <ref bean="simpleBindStrToIndex" />
+				<ref bean="matchSyntacticPatternsBySemicolonChunk" />
+				<ref bean="buildFixedArgumentsAndSemanticProps" />
+				<ref bean="addIndexOfStrInstance" />
+				<ref bean="checkIsSameElements" />
+				<ref bean="combineOnePhraseDate" />
+				<ref bean="dateNumModify" />
+				<ref bean="dealWithAmbiguity" />
+				<ref bean="dealWithIncrease" />
+				<!-- <ref bean="dealWithDateValueForIndex" /> -->
+				<!-- <ref bean="techperiodDetermine" /> -->
+				<ref bean="bindPropToIndex" />
+				<ref bean="bindNumOrDateToIndex" />
+				<ref bean="bindIndexToIndex" />
+				<ref bean="completionIndex" />
+				<ref bean="fillIndexPropDefaultValue" />
+				<ref bean="relationshipOfAndOrNotOld" />
+				<ref bean="calculateScore" />
+				<ref bean="indexFilter" /> 
+			</util:list>
+		</constructor-arg>
+		<!-- post plugins -->
+		<constructor-arg type="java.util.ArrayList" index="2">
+			<util:list list-class="java.util.ArrayList">
+				<ref bean="changeNewIndexToOldIndex" />
+				<ref bean="changeNewIndexToIfindIndex" />
+				<ref bean="createJsonResultOfMacroIndustry" />
+			</util:list>
+		</constructor-arg>
+	</bean>
+
+</beans>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+  <ignoreWords>
+    <word>享受</word>
+    <word>是|是否|的|得|属相?|为|曾经| |有|包?含|于|所?获?|_</word>
+    <word>既是|又是</word>
+    <word>仓股明细</word>
+  </ignoreWords>
+  <condition name="国籍" keyword="_国家"/>
+  <condition name="国籍2" keyword="国籍"/>
+  <condition name="学历" keyword="_学历"/>
+  <condition name="生肖" keyword="_生肖"/>
+  <condition name="生肖2" keyword="生肖"/>
+  <condition name="毕业学校" keyword="_学校"/>
+  <condition name="毕业学校2" keyword="毕业学校"/>
+  <condition name="政府奖励" keyword="_政府奖励"/>
+  <condition name="政府奖励2" keyword="政府奖励"/>
+  <condition name="姓名" keyword="_姓名"/>
+  <condition name="姓名2" keyword="姓名"/>
+  <condition name="婚姻" keyword="_婚姻状况"/>
+  <condition name="婚姻2" keyword="婚姻"/>
+  <condition name="性别" keyword="_性别"/>
+  <condition name="性别2" keyword="性别"/>
+  <condition name="为官" keyword="_为官员状况"/>
+  <condition name="为官2" keyword="为官"/>
+  <condition name="学历2" keyword="学历"/>
+  <condition name="增长率" keyword="增长率"/>
+  <condition name="年龄2" keyword="年龄"/>
+</node>

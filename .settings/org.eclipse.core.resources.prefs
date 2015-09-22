@@ -1,0 +1,14 @@
+#Fri Feb 06 14:35:08 CST 2015
+eclipse.preferences.version=1
+encoding//scripts/dictDbToLtpBin/MakeLtpBin.py=utf-8
+encoding//scripts/dictSynchronization/UpdateDicts.py=utf-8
+encoding//scripts/dictSynchronization/read_from_ifind.py=utf-8
+encoding//scripts/dictSynchronization/read_from_mysql.py=utf-8
+encoding//src/main=UTF-8
+encoding//src/main/config=UTF-8
+encoding//src/main/java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/test/java=UTF-8
+encoding//src/test/resources=UTF-8
+encoding/<project>=UTF-8
+encoding/fabfile.py=utf8

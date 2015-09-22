@@ -1,0 +1,122 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/tool/conf
+svn://172.20.23.253
+
+
+
+2015-07-15T01:18:16.804051Z
+432090
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+FundIndex.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+54a937a9aa75f45306f5d7822062b254
+2012-09-08T07:43:12.658662Z
+29534
+wangping
+
+FundParam.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+a64563de72de3f60ea33947248a317ec
+2012-09-08T07:43:12.658662Z
+29534
+wangping
+
+IFindIndexConf.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+4cdb42ff258d05fbcf6d8adb26cd5c6b
+2012-06-12T12:17:29.557809Z
+19675
+wangping
+
+IndexInteraction.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+aa043c2ed2b8d2443969207ce4710573
+2014-05-15T07:24:08.684502Z
+305095
+wuyonghang
+
+IndexMgr.py
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+46e4094e67e2b2c47510d16f37027b99
+2012-11-05T11:21:33.740283Z
+36453
+luwenxing
+
+fund
+dir
+
+index_interaction.xml
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+e54ba1699c7e67db9597fdc1a0a5c1e1
+2014-05-15T07:24:08.684502Z
+305095
+wuyonghang
+
+stock
+dir
+
+tool
+dir
+
+指标别名.txt
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+f0685bf54c057ae53679f1b9794a741d
+2014-05-15T07:24:08.684502Z
+305095
+wuyonghang
+has-props
+

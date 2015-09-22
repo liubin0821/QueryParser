@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<indexs>
+	<index id="179" name="均线" pubname="线" data_src="QUOTE" index_type="TECH_A_LINE" report_type="TRADE_DAILY">
+		<descriptions></descriptions>
+		<aliases>
+			<alias>
+			</alias>
+		</aliases>
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+            <param title="n日" ifind_type="quote_param" name="VAL" list_name="n日" default_val="5日" />
+        </params>
+	</index>
+	
+	<index id="00042" title="收盘价" pubnamet="收盘价" data_src="IFIND" index_type="QUOTE" report_type="TRADE_DAILY">
+	    <aliases>
+	        <alias title="股价" isDefault="true">
+	            <resolvingConflicts>
+	                <word title="收盘" />
+	            </resolvingConflicts>
+	        </alias>
+	    </aliases>
+	    <params>
+	        <prop label="浮点型数值" type="DOUBLE" unit="元"/>
+	        <param title="复权方式" ifind_type="dt_integer" name="FT" list_name="P00072" default_val="0" />
+	        <param title="交易日期" ifind_type="dt_tradedate" name="FD0" list_name="P00003" default_val="1" />
+	    </params>
+	</index>
+
+	<index id="" title="跳空大涨" pubname="跳空大涨" data_src="" index_type="FAKE" report_type="DAILY">
+	   <negative defvalue="true"/>
+	    <aliases>
+	        <alias title="股价" isDefault="true">
+	        </alias>
+	    </aliases>
+	    <params>
+            <param title="浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+	    </params>
+	</index>
+	
+    <index id="632" title="横盘" pubname="横盘" data_src="QUOTE" index_type="TECH_SPECIAL" report_type="TRADE_DAILY">
+	   <negative defvalue="true"/>
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    
+    <index id="180" title="macd" pubname="macd" data_src="QUOTE" index_type="TECH_LINES" report_type="TRADE_DAILY">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="DIFF值" ifind_type="quote_formula" name="DIFF值" list_name="" default_val="" />
+            <param title="DEA值" ifind_type="quote_formula" name="DEA值" list_name="" default_val="" />
+            <param title="macd值" ifind_type="quote_formula" name="macd值" list_name="" default_val="" />
+            <param title="浮点型数值" ifind_type="quote_formula" name="macd" list_name="" default_val="" />
+        </params>
+    </index>
+</indexs>

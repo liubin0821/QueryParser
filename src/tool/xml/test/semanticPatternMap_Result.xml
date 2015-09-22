@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans>
+  <bean class="com.myhexin.qparser.phrase.Argument" id="Argument123_1">
+    <property class="java.lang.Integer" name="id_">1</property>
+    <property class="java.lang.String" name="type_">index</property>
+    <property class="java.lang.String" name="specificIndex_"></property>
+    <property class="java.lang.Integer" name="specificIndexGroup_"></property>
+    <property class="java.lang.String" name="superClass_"></property>
+    <property class="java.lang.Integer" name="listElementMinCount_"></property>
+    <property class="java.lang.String" name="valueType_">number</property>
+    <property class="java.lang.String" name="defaultIndex_">涨跌幅</property>
+    <property class="java.lang.String" name="defaultValue_"></property>
+  </bean>
+  <bean class="com.myhexin.qparser.phrase.Argument" id="Argument123_2">
+    <property class="java.lang.Integer" name="id_">2</property>
+    <property class="java.lang.String" name="type_">constant</property>
+    <property class="java.lang.String" name="specificIndex_"></property>
+    <property class="java.lang.Integer" name="specificIndexGroup_"></property>
+    <property class="java.lang.String" name="superClass_"></property>
+    <property class="java.lang.Integer" name="listElementMinCount_"></property>
+    <property class="java.lang.String" name="valueType_">number</property>
+    <property class="java.lang.String" name="defaultIndex_"></property>
+    <property class="java.lang.String" name="defaultValue_">30</property>
+  </bean>
+  <container class="java.util.ArrayList" id="list123">
+    <value keyRefType="bean" keyRef="Argument123_1" />
+    <value keyRefType="bean" keyRef="Argument123_2" />
+  </container>
+  <bean class="com.myhexin.qparser.phrase.Arguments" id="Arguments123">
+    <property name="arguments_" refType="container" ref="list123" />
+  </bean>
+  <bean class="com.myhexin.qparser.phrase.ArgumentDependency" id="ArgumentDependency123" />
+  <bean class="com.myhexin.qparser.phrase.SemanticPattern" id="SemanticPattern123">
+    <property class="java.lang.String" name="id_">123</property>
+    <property class="java.lang.String" name="uiRepresentation_">$1从大到小排名前$2</property>
+    <property class="java.lang.String" name="chineseRepresentation_">$1从大到小排名前$2</property>
+    <property class="java.lang.String" name="description_">$1为指标，缺省值涨跌幅；$2是数字，缺省值30。$1从大到小排名前$2</property>
+    <property name="semanticArguments_" refType="bean" ref="Arguments123" />
+    <property name="semanticArgumentsDependency_" refType="bean" ref="ArgumentDependency123" />
+  </bean>
+  <container class="java.util.HashMap" id="map123">
+    <value keyClass="java.lang.String" valueRefType="bean" keyValue="123" valueRef="SemanticPattern123" />
+  </container>
+  <bean class="com.myhexin.qparser.phrase.KeywordGroupMap" id="semanticPatternMap_123">
+    <property name="semanticPatternMap_" refType="container" ref="map123" />
+  </bean>
+</beans>

@@ -1,0 +1,9 @@
+<definfo>
+<class label="流通b股">
+	<unit label="股">_数值</unit>
+	<date label="日">截止日期</date>
+</class>
+<class label="上市后n日涨跌幅">
+	<unit label="天">天数</unit>
+</class>
+</definfo>	

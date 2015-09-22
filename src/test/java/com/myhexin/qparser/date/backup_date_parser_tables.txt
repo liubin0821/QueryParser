@@ -1,0 +1,109 @@
+DROP TABLE IF EXISTS configFile.dateparser_temp;
+
+CREATE TABLE configFile.dateparser_temp
+	(
+	ID    INT NOT NULL auto_increment,
+	nm    VARCHAR (100) NOT NULL,
+	value VARCHAR (200),
+	PRIMARY KEY (ID)
+	);
+
+DROP TABLE IF EXISTS configFile.dateparser_pattern;
+
+CREATE TABLE configFile.dateparser_pattern
+	(
+	ID     INT NOT NULL auto_increment,
+	nm     VARCHAR (100) NOT NULL,
+	regex  VARCHAR (200),
+	typ    VARCHAR (31),
+	parser VARCHAR (31),
+	PRIMARY KEY (ID)
+	);
+
+DROP TABLE IF EXISTS configFile.dateparser_keywords;
+
+CREATE TABLE configFile.dateparser_keywords
+	(
+	ID    INT NOT NULL auto_increment,
+	word  VARCHAR (100) NOT NULL,
+	value INT,
+	len   INT,
+	PRIMARY KEY (ID)
+	);
+
+
+
+
+ID	word	value	len
+40	上上	-2	2
+41	上	-1	1
+42	下下	2	2
+43	下	1	1
+44	本	0	1
+45	今	0	1
+46	明	1	1
+47	前	-2	1
+48	后	2	1
+49	今	0	1
+50	大前	-3	2
+51	大后	3	2
+52	昨	-1	1
+
+
+ID	nm	regex	typ	parser
+100	NodeParserInfo	^([0-9]{1,5})(年|年份|年度)$	Y	YearParser
+101	NodeParserInfo	^([0-9]{1,5})(个)?(月|月份|月度)$	M	MonthParser
+102	NodeParserInfo	^([0-9]{1,5})(个)?(号|日)$	D	DayParser
+103	NodeParserInfo	^(明|前|后|今|大前|大后|昨)(天|日)$	D	DayParser
+104	NodeParserInfo	^([0-9]{1,5})(个)?(周|礼拜)$	W	WeekParser
+105	NodeParserInfo	^(周|礼拜)[1-7]$	D	WeekParser
+106	NodeParserInfo	^(上|上上|本|今|下|下下)(周|礼拜)[一二三四五六七]$	D	WeekParser
+107	NodeParserInfo	^(上|上上|本|今|下|下下)?(周|礼拜)$	W	WeekParser
+108	NodeParserInfo	^([0-9]{1,5})(个)?(交易日)$	T	TradeDayParser
+109	NodeParserInfo	^([0-9]{1,5})(天)$	X	DayNumParser
+110	NodeParserInfo	^([0-9]{1,5}|[一二三四])(个)?(季|季度)$	S	SeasonParser
+111	NodeParserInfo	^(上|中|下)(旬)$	X	XunParser
+112	NodeParserInfo	^(到)$	~	SepWordParser
+113	NodeParserInfo	^(以后)$	>	OtherWordParser
+114	NodeParserInfo	^(以前|前)$	<	OtherWordParser
+115	NodeParserInfo	^(从|自从|连续|内|以来)$	#	OtherWordParser
+116	NodeParserInfo	^(未来|将来)$	@	OtherWordParser
+117	Syntax	^([A-Z]*)(D)$		SingleNodeSingledayParser
+118	Syntax	^(#?)([A-Z]*)([ABCEFGHIJKLMNOPQRSTUVWXYZ])(#?)$		SingleNodeMultidayParser
+119	Syntax	^(@?)([A-Z]*)([ABCEFGHIJKLMNOPQRSTUVWXYZ])(@?)$		SingleNodeMultidayFurtherParser
+120	Syntax	^([A-Z]*)(<)$		SingleNodeBeforeParser
+121	Syntax	^(<)([A-Z]*)$		SingleNodeBeforeParser
+122	Syntax	^([A-Z]*)(>)$		SingleNodeAfterParser
+123	Syntax	^(>)([A-Z]*)$		SingleNodeAfterParser
+124	Syntax	^(#?)([A-Z]+)([<>#@]?)(~)([A-Z]+)([<>#@]?)(#?)$		MultiNodeRangeParser
+125	NodeParserInfo	^(现在)$	D	DayParser
+
+
+
+
+
+DROP TABLE IF EXISTS configFile.parser_backtest_cond;
+
+CREATE TABLE configFile.parser_backtest_cond
+	(
+	ID             INT NOT NULL auto_increment,
+	syntactic_id   INT NOT NULL,
+	cond_type      VARCHAR (15) NOT NULL,
+	oper_type      VARCHAR (7),
+	field_size     INT NOT NULL,
+	fields         VARCHAR (200),
+	syntactic_desc VARCHAR (100),
+	PRIMARY KEY (ID)
+	);
+
+ID	syntactic_id	cond_type	oper_type	field_size	fields	syntactic_desc
+1	1	data-index		4	index,index,key,percentage	index 增长 >= percentage
+2	2	data-index		4	index,index,key,percentage	index 增长 &gt; percentage
+3	3	data-index		4	index,index,key,percentage	index 上涨小于等于 number
+4	4	data-index		4	index,index,key,percentage	index 下跌小于等于 precentage
+5	6	data-index		4	index,index,key,percentage	index 预增 &gt;= percentage
+6	7	data-index		4	index,index,key,number	[index] 预亏 &gt;= number
+7	8	data-index		3	index,key,number	index != constant
+8	1268	data-index		3	index,key,percentage	index != percentage
+9	9	data-index		3	index,key,number	[index] &gt; number
+10	12	data-tech		4	index,const=>,index,index	index 在 index 之上

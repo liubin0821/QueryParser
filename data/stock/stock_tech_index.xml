@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indexes>
+    <index id="617" title="中阴线" pub-title="中阴线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="618" title="大阴线" pub-title="大阴线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="619" title="光脚阴线" pub-title="光脚阴线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="620" title="光头阴线" pub-title="光头阴线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="621" title="光头光脚阴线" pub-title="光头光脚阴线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="622" title="假阳线" pub-title="假阳线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="611" title="光脚阳线" pub-title="光脚阳线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="612" title="光头阳线" pub-title="光头阳线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="613" title="光头光脚阳线" pub-title="光头光脚阳线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="614" title="阴线" pub-title="阴线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="615" title="小阴星" pub-title="小阴星" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="616" title="小阴线" pub-title="小阴线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="644" title="lwr" pub-title="lw&amp;r" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="rsv" ifind_type="quote_formula" name="rsv" list_name="" default_val="" />
+            <param title="LWR1值" ifind_type="quote_formula" name="LWR1值" list_name="" default_val="" />
+            <param title="LWR2值" ifind_type="quote_formula" name="LWR2值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="lwr" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="624" title="长上影线" pub-title="长上影线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="625" title="上影线" pub-title="上影线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="626" title="长下影线" pub-title="长下影线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="627" title="下影线" pub-title="下影线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="628" title="向上跳空缺口" pub-title="向上跳空缺口" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="629" title="向下跳空缺口" pub-title="向下跳空缺口" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="642" title="一阳五线" pub-title="一阳五线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="368" title="刺穿线" pub-title="刺穿线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="369" title="十字星" pub-title="十字星" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="370" title="阳包阴" pub-title="阳包阴" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="372" title="双飞乌鸦" pub-title="双飞乌鸦" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="635" title="pbx" pub-title="pbx" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="PBX1值" ifind_type="quote_formula" name="PBX1值" list_name="" default_val="" />
+            <param title="PBX2值" ifind_type="quote_formula" name="PBX2值" list_name="" default_val="" />
+            <param title="PBX3值" ifind_type="quote_formula" name="PBX3值" list_name="" default_val="" />
+            <param title="PBX4值" ifind_type="quote_formula" name="PBX4值" list_name="" default_val="" />
+            <param title="PBX5值" ifind_type="quote_formula" name="PBX5值" list_name="" default_val="" />
+            <param title="PBX6值" ifind_type="quote_formula" name="PBX6值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="pbx" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="374" title="旭日初升" pub-title="旭日初升" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="376" title="红三兵" pub-title="红三兵" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="379" title="鹤立鸡群" pub-title="鹤立鸡群" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="380" title="仙鹤神针" pub-title="仙鹤神针" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="381" title="士兵突击" pub-title="士兵突击" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="461" title="trix" pub-title="trix" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="tr值" ifind_type="quote_formula" name="tr值" list_name="" default_val="" />
+            <param title="trix值" ifind_type="quote_formula" name="trix值" list_name="" default_val="" />
+            <param title="trma值" ifind_type="quote_formula" name="trma值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="trix" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="179" title="均线" pub-title="线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+            <param title="n日" ifind_type="quote_param" name="VAL" list_name="n日" default_val="5日" />
+        </params>
+    </index>
+    <index id="180" title="macd" pub-title="macd" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="DIFF值" ifind_type="quote_formula" name="DIFF值" list_name="" default_val="" />
+            <param title="DEA值" ifind_type="quote_formula" name="DEA值" list_name="" default_val="" />
+            <param title="macd值" ifind_type="quote_formula" name="macd值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="macd" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="375" title="中流砥柱" pub-title="中流砥柱" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="194" title="阳盖阴" pub-title="阳盖阴" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="200" title="kdj" pub-title="kdj" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="RSV值" ifind_type="quote_formula" name="RSV值" list_name="" default_val="" />
+            <param title="k值" ifind_type="quote_formula" name="k值" list_name="" default_val="" />
+            <param title="d值" ifind_type="quote_formula" name="d值" list_name="" default_val="" />
+            <param title="j值" ifind_type="quote_formula" name="j值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="kdj" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="201" title="mtm" pub-title="mtm" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="mtm值" ifind_type="quote_formula" name="mtm值" list_name="" default_val="" />
+            <param title="mamtm值" ifind_type="quote_formula" name="mamtm值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="mtm" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="204" title="bias" pub-title="bias" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="bias1值" ifind_type="quote_formula" name="bias1值" list_name="" default_val="" />
+            <param title="bias2值" ifind_type="quote_formula" name="bias2值" list_name="" default_val="" />
+            <param title="bias3值" ifind_type="quote_formula" name="bias3值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="bias" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="206" title="zlmm" pub-title="zlmm" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="LC值" ifind_type="quote_formula" name="LC值" list_name="" default_val="" />
+            <param title="RSI2值" ifind_type="quote_formula" name="RSI2值" list_name="" default_val="" />
+            <param title="RSI3值" ifind_type="quote_formula" name="RSI3值" list_name="" default_val="" />
+            <param title="MMS值" ifind_type="quote_formula" name="MMS值" list_name="" default_val="" />
+            <param title="MMM值" ifind_type="quote_formula" name="MMM值" list_name="" default_val="" />
+            <param title="MML值" ifind_type="quote_formula" name="MML值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="zlmm" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="207" title="cci" pub-title="cci" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="TYP值" ifind_type="quote_formula" name="TYP值" list_name="" default_val="" />
+            <param title="CCI值" ifind_type="quote_formula" name="CCI值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="cci" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="209" title="skdj" pub-title="skdj" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="RSV值" ifind_type="quote_formula" name="RSV值" list_name="" default_val="" />
+            <param title="K值" ifind_type="quote_formula" name="K值" list_name="" default_val="" />
+            <param title="D值" ifind_type="quote_formula" name="D值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="skdj" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="210" title="dma" pub-title="dma" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="DDD值" ifind_type="quote_formula" name="DDD值" list_name="" default_val="" />
+            <param title="AMA值" ifind_type="quote_formula" name="AMA值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="dma" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="211" title="rsi" pub-title="rsi" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="RSI1值" ifind_type="quote_formula" name="RSI1值" list_name="" default_val="" />
+            <param title="RSI2值" ifind_type="quote_formula" name="RSI2值" list_name="" default_val="" />
+            <param title="RSI3值" ifind_type="quote_formula" name="RSI3值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="rsi" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="214" title="wr" pub-title="w&amp;r" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="wr1值" ifind_type="quote_formula" name="wr1值" list_name="" default_val="" />
+            <param title="wr2值" ifind_type="quote_formula" name="wr2值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="wr" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="225" title="boll" pub-title="boll" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="upper值" ifind_type="quote_formula" name="upper值" list_name="" default_val="" />
+            <param title="mid值" ifind_type="quote_formula" name="mid值" list_name="" default_val="" />
+            <param title="lower值" ifind_type="quote_formula" name="lower值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="boll" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="239" title="dmi" pub-title="dmi" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="tr值" ifind_type="quote_formula" name="tr值" list_name="" default_val="" />
+            <param title="hd值" ifind_type="quote_formula" name="hd值" list_name="" default_val="" />
+            <param title="ld值" ifind_type="quote_formula" name="ld值" list_name="" default_val="" />
+            <param title="dmp值" ifind_type="quote_formula" name="dmp值" list_name="" default_val="" />
+            <param title="dmm值" ifind_type="quote_formula" name="dmm值" list_name="" default_val="" />
+            <param title="di1值" ifind_type="quote_formula" name="di1值" list_name="" default_val="" />
+            <param title="di2值" ifind_type="quote_formula" name="di2值" list_name="" default_val="" />
+            <param title="adx值" ifind_type="quote_formula" name="adx值" list_name="" default_val="" />
+            <param title="adxr值" ifind_type="quote_formula" name="adxr值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="dmi" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="240" title="cr" pub-title="cr" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="mid值" ifind_type="quote_formula" name="mid值" list_name="" default_val="" />
+            <param title="cr值" ifind_type="quote_formula" name="cr值" list_name="" default_val="" />
+            <param title="ma1值" ifind_type="quote_formula" name="ma1值" list_name="" default_val="" />
+            <param title="ma2值" ifind_type="quote_formula" name="ma2值" list_name="" default_val="" />
+            <param title="ma3值" ifind_type="quote_formula" name="ma3值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="cr" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="243" title="金针探底" pub-title="金针探底" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="244" title="双针探底" pub-title="双针探底" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="445" title="底部缩量" pub-title="底部缩量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="446" title="底部孕线" pub-title="底部孕线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="247" title="短线超跌" pub-title="短线超跌" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="248" title="中线超跌" pub-title="中线超跌" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="idxval" list_name="" default_val="&gt;0.1" />
+        </params>
+    </index>
+    <index id="249" title="长线超跌" pub-title="长线超跌" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="250" title="阴包阳" pub-title="阴包阳" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="251" title="穿头破脚" pub-title="穿头破脚" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="252" title="锤子线" pub-title="锤子线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="253" title="倒锤线" pub-title="倒锤线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="254" title="吊颈线" pub-title="吊颈线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="255" title="射击之星" pub-title="射击之星" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="492" title="突出重围" pub-title="突出重围" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="466" title="vr" pub-title="vr" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="lc值" ifind_type="quote_formula" name="lc值" list_name="" default_val="" />
+            <param title="vr值" ifind_type="quote_formula" name="vr值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="vr" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="377" title="回踩通道线" pub-title="回踩通道线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="378" title="反弹先锋" pub-title="反弹先锋" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="363" title="早晨之星" pub-title="早晨之星" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="364" title="上升通道" pub-title="上升通道" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="361" title="海底捞月" pub-title="海底捞月" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="362" title="四阳夹一阴" pub-title="四阳夹一阴" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="340" title="曙光初现" pub-title="曙光初现" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="329" title="趋势拐点" pub-title="趋势拐点" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="330" title="短线回调" pub-title="短线回调" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="331" title="聚宝盆" pub-title="聚宝盆" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="333" title="w底" pub-title="w底" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="335" title="杯柄形态" pub-title="杯柄形态" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="337" title="早晨十字星" pub-title="早晨十字星" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="339" title="两红夹一黑" pub-title="两红夹一黑" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="344" title="底部放量" pub-title="底部放量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="345" title="一阳三线" pub-title="一阳三线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="347" title="主力追踪" pub-title="主力追踪" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="348" title="旗形" pub-title="旗形" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="350" title="黄昏之星" pub-title="黄昏之星" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="358" title="短线超卖" pub-title="短线超卖" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="352" title="sar抛物转向交易系统" pub-title="sar抛物转向交易系统" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="356" title="太阳线" pub-title="太阳线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="357" title="阶段抄底" pub-title="阶段抄底" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="359" title="放量突破" pub-title="放量突破" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="360" title="回调缩量" pub-title="回调缩量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="365" title="小三阳" pub-title="小三阳" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="382" title="双岛反转" pub-title="双岛反转" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="383" title="仙人指路" pub-title="仙人指路" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="384" title="涨停回马枪" pub-title="涨停回马枪" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="623" title="假阴线" pub-title="假阴线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="386" title="平步青云" pub-title="平步青云" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="388" title="尖三兵" pub-title="尖三兵" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="389" title="量顶天立地" pub-title="量顶天立地" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="390" title="三线开花" pub-title="三线开花" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="632" title="横盘" pub-title="横盘" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="391" title="多方炮" pub-title="多方炮" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="392" title="出水芙蓉" pub-title="出水芙蓉" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="394" title="强中选强" pub-title="强中选强" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="395" title="池底巨龙" pub-title="池底巨龙" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="396" title="突破压力位" pub-title="突破压力位" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="397" title="明月战神" pub-title="明月战神" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="398" title="超级短线波段" pub-title="超级短线波段" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="399" title="大s均线" pub-title="大s均线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="400" title="串阴k线" pub-title="串阴k线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="401" title="箱体突破" pub-title="箱体突破" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="403" title="底部红三兵" pub-title="底部红三兵" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="414" title="红二兵" pub-title="红二兵" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="416" title="下降通道" pub-title="下降通道" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="419" title="火箭升空" pub-title="火箭升空" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="420" title="行情收盘价" pub-title="行情收盘价" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="421" title="季价托" pub-title="季价托" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="422" title="行情开盘价" pub-title="行情开盘价" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="423" title="行情最新价" pub-title="行情最新价" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="424" title="数值线" pub-title="数值线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="425" title="金蜘蛛" pub-title="金蜘蛛" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="426" title="行情成交量" pub-title="行情成交量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="427" title="vol" pub-title="成交量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+            <param title="n日" ifind_type="quote_param" name="VAL" list_name="n日" default_val="20日" />
+        </params>
+    </index>
+    <index id="428" title="expma" pub-title="expma" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+            <param title="n日" ifind_type="quote_param" name="VAL" list_name="n日" default_val="20日" />
+        </params>
+    </index>
+    <index id="429" title="老鸭头" pub-title="老鸭头" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="430" title="连续拉升" pub-title="连续拉升" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="431" title="青龙取水" pub-title="青龙取水" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="432" title="蜻蜓点水" pub-title="蜻蜓点水" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="433" title="秋影金波" pub-title="秋影金波" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="435" title="上升三法" pub-title="上升三法" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="436" title="身怀六甲" pub-title="身怀六甲" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="437" title="一字线" pub-title="一字线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="438" title="放量" pub-title="放量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="idxval" list_name="" default_val="&gt;1" />
+        </params>
+    </index>
+    <index id="439" title="缩量" pub-title="缩量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="idxval" list_name="" default_val="&gt;0.5" />
+        </params>
+    </index>
+    <index id="440" title="温和放量" pub-title="温和放量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="441" title="放巨量" pub-title="放巨量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="442" title="长期横盘" pub-title="长期横盘" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="443" title="低位大阳" pub-title="低位大阳" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="444" title="低位横盘" pub-title="低位横盘" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="447" title="顶部放量" pub-title="顶部放量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="448" title="巨量长阳" pub-title="巨量长阳" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="449" title="高位横盘" pub-title="高位横盘" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="450" title="价升量涨" pub-title="价升量涨" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="451" title="短线多头" pub-title="短线多头" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="452" title="中期均线买入" pub-title="中期均线买入" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="453" title="最新股价创历史新高" pub-title="最新股价创历史新高" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="454" title="最新股价创历史新低" pub-title="最新股价创历史新低" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="455" title="最新股价创阶段新高" pub-title="最新股价创阶段新高" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="n日" ifind_type="quote_param" name="param" list_name="" default_val="60日" />
+        </params>
+    </index>
+    <index id="456" title="最新股价创阶段新低" pub-title="最新股价创阶段新低" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="n日" ifind_type="quote_param" name="param" list_name="" default_val="60日" />
+        </params>
+    </index>
+    <index id="457" title="阶段放量" pub-title="放量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="n日" ifind_type="quote_param" name="param" list_name="" default_val="10日" />
+        </params>
+    </index>
+    <index id="458" title="阶段缩量" pub-title="缩量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="n日" ifind_type="quote_param" name="param" list_name="" default_val="10日" />
+        </params>
+    </index>
+    <index id="459" title="平台整理" pub-title="平台整理" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="460" title="突破平台" pub-title="突破平台" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="462" title="obv" pub-title="obv" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="obv值" ifind_type="quote_formula" name="obv值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="obv" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="463" title="cys" pub-title="cys" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="cyc13值" ifind_type="quote_formula" name="cyc13值" list_name="" default_val="" />
+            <param title="cys值" ifind_type="quote_formula" name="cys值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="cys" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="464" title="psy" pub-title="psy" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="psy值" ifind_type="quote_formula" name="psy值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="psy" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="465" title="mfi" pub-title="mfi" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="typ值" ifind_type="quote_formula" name="typ值" list_name="" default_val="" />
+            <param title="v1值" ifind_type="quote_formula" name="v1值" list_name="" default_val="" />
+            <param title="mfi值" ifind_type="quote_formula" name="mfi值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="mfi" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="577" title="amo" pub-title="amo" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+            <param title="n日" ifind_type="quote_param" name="VAL" list_name="n日" default_val="6日" />
+        </params>
+    </index>
+    <index id="496" title="一阳二线" pub-title="一阳二线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="573" title="asi" pub-title="asi" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="LC" ifind_type="quote_formula" name="LC" list_name="" default_val="" />
+            <param title="AA" ifind_type="quote_formula" name="AA" list_name="" default_val="" />
+            <param title="BB" ifind_type="quote_formula" name="BB" list_name="" default_val="" />
+            <param title="CC" ifind_type="quote_formula" name="CC" list_name="" default_val="" />
+            <param title="DD" ifind_type="quote_formula" name="DD" list_name="" default_val="" />
+            <param title="rr" ifind_type="quote_formula" name="rr" list_name="" default_val="" />
+            <param title="xx" ifind_type="quote_formula" name="xx" list_name="" default_val="" />
+            <param title="SI" ifind_type="quote_formula" name="SI" list_name="" default_val="" />
+            <param title="ASI值" ifind_type="quote_formula" name="ASI值" list_name="" default_val="" />
+            <param title="ASIT值" ifind_type="quote_formula" name="ASIT值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="asi" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="574" title="amv" pub-title="amv" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+            <param title="n日" ifind_type="quote_param" name="VAL" list_name="n日" default_val="5日" />
+        </params>
+    </index>
+    <index id="576" title="adtm" pub-title="adtm" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="DTM" ifind_type="quote_formula" name="DTM" list_name="" default_val="" />
+            <param title="DBM" ifind_type="quote_formula" name="DBM" list_name="" default_val="" />
+            <param title="STM" ifind_type="quote_formula" name="STM" list_name="" default_val="" />
+            <param title="SBM" ifind_type="quote_formula" name="SBM" list_name="" default_val="" />
+            <param title="ADTM值" ifind_type="quote_formula" name="ADTM值" list_name="" default_val="" />
+            <param title="MAADTM值" ifind_type="quote_formula" name="MAADTM值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="adtm" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="578" title="roc" pub-title="roc" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="ROC值" ifind_type="quote_formula" name="ROC值" list_name="" default_val="" />
+            <param title="ROCMA值" ifind_type="quote_formula" name="ROCMA值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="roc" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="579" title="bbi" pub-title="bbi" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="BBI值" ifind_type="quote_formula" name="BBI值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="bbi" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="580" title="arbr" pub-title="arbr" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="AR值" ifind_type="quote_formula" name="AR值" list_name="" default_val="" />
+            <param title="BR值" ifind_type="quote_formula" name="BR值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="arbr" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="581" title="zbcd" pub-title="zbcd" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="VAR1" ifind_type="quote_formula" name="VAR1" list_name="" default_val="" />
+            <param title="VAR2" ifind_type="quote_formula" name="VAR2" list_name="" default_val="" />
+            <param title="VAR3" ifind_type="quote_formula" name="VAR3" list_name="" default_val="" />
+            <param title="VAR4" ifind_type="quote_formula" name="VAR4" list_name="" default_val="" />
+            <param title="CD值" ifind_type="quote_formula" name="CD值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="zbcd" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="582" title="qlcx" pub-title="qlcx" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="Var1" ifind_type="quote_formula" name="Var1" list_name="" default_val="" />
+            <param title="Var2" ifind_type="quote_formula" name="Var2" list_name="" default_val="" />
+            <param title="Var3" ifind_type="quote_formula" name="Var3" list_name="" default_val="" />
+            <param title="Var4" ifind_type="quote_formula" name="Var4" list_name="" default_val="" />
+            <param title="Var5" ifind_type="quote_formula" name="Var5" list_name="" default_val="" />
+            <param title="Var6" ifind_type="quote_formula" name="Var6" list_name="" default_val="" />
+            <param title="LON值" ifind_type="quote_formula" name="LON值" list_name="" default_val="" />
+            <param title="LONMA值" ifind_type="quote_formula" name="LONMA值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="qlcx" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="583" title="emv" pub-title="emv" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="VOLUME" ifind_type="quote_formula" name="VOLUME" list_name="" default_val="" />
+            <param title="MID" ifind_type="quote_formula" name="MID" list_name="" default_val="" />
+            <param title="EMV值" ifind_type="quote_formula" name="EMV值" list_name="" default_val="" />
+            <param title="MAEMV值" ifind_type="quote_formula" name="MAEMV值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="emv" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="584" title="dpo" pub-title="dpo" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="DPO值" ifind_type="quote_formula" name="DPO值" list_name="" default_val="" />
+            <param title="MADPO值" ifind_type="quote_formula" name="MADPO值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="dpo" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="589" title="月价托" pub-title="月价托" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="606" title="阳线" pub-title="阳线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="607" title="小阳星" pub-title="小阳星" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="608" title="小阳线" pub-title="小阳线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="609" title="中阳线" pub-title="中阳线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="610" title="大阳线" pub-title="大阳线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="655" title="t字线" pub-title="T字线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="656" title="倒t字线" pub-title="倒T字线" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="673" title="阶段平台整理" pub-title="平台整理" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="n日" ifind_type="quote_param" name="param" list_name="" default_val="15日" />
+        </params>
+    </index>
+    <index id="674" title="阶段突破平台" pub-title="突破平台" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="n日" ifind_type="quote_param" name="param" list_name="" default_val="15日" />
+        </params>
+    </index>
+    <index id="675" title="天量" pub-title="天量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="676" title="地量" pub-title="地量" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+        </params>
+    </index>
+    <index id="679" title="行情最低价" pub-title="最低价" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="680" title="行情最高价" pub-title="最高价" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="VAL" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="685" title="新手炒股" pub-title="新手炒股" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="v1值" ifind_type="quote_formula" name="v1值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="新手炒股" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="686" title="均线出牛股" pub-title="均线出牛股" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="cng1值" ifind_type="quote_formula" name="cng1值" list_name="" default_val="" />
+            <param title="cng2值" ifind_type="quote_formula" name="cng2值" list_name="" default_val="" />
+            <param title="_浮点型数值" ifind_type="quote_formula" name="均线出牛股" list_name="" default_val="" />
+        </params>
+    </index>
+    <index id="687" title="未创新低" pub-title="未创新低" pub-unit="">
+        <params>
+            <param title="分析周期" ifind_type="quote_period" name="period" list_name="" default_val="DAY" />
+            <param title="交易日期" ifind_type="quote_datetime" name="datetime" list_name="" default_val="16384" />
+            <param title="n日" ifind_type="quote_param" name="param" list_name="" default_val="10日" />
+        </params>
+    </index>
+</indexes>

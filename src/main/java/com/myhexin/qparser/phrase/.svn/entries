@@ -1,0 +1,187 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/qparser/phrase
+svn://172.20.23.253
+
+
+
+2015-09-22T01:31:02.168785Z
+446640
+liuxiaofeng
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+IndexMultPossibility.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+6436895d8ef9c952e0d6d35d562eb9b3
+2015-02-11T01:27:04.250366Z
+403086
+liuxiaofeng
+
+IndexTechopMapping.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+4710284fc578e9b0aee571e46cc393e7
+2013-05-29T13:06:22.745250Z
+67130
+zhangdong
+
+KeyWordItem.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+5c6f24ce9c180abc5bfcded1544c4228
+2013-05-29T08:00:35.731635Z
+67037
+yangaofei
+
+OutputResult.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+78cc2e5e86a83b4656e2bd58c2385b76
+2015-08-21T05:07:34.205580Z
+440093
+liuxiaofeng
+
+ParserAnnotation.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+d2de323e9c109e4398eab19955ef4d11
+2015-07-03T07:28:11.268328Z
+429965
+liuxiaofeng
+
+PhraseInfo.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+ed467adb141ad3036eeb390e7f309811
+2014-04-17T09:34:10.567804Z
+286446
+linpeikun
+
+PhraseParser.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+78171de62ece706ec3806b7594c888c3
+2015-07-03T07:28:11.268328Z
+429965
+liuxiaofeng
+
+PhraseParserFactory.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+1a9a037c9cc62dd4c78dcad445d17351
+2015-05-21T11:16:07.610864Z
+422347
+liuxiaofeng
+
+PhraseParserUtil.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+1d883255a7de9f3519c3185b5d0d052a
+2015-08-24T02:01:45.351733Z
+440343
+liuxiaofeng
+
+PhraseUtil.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+896ae4ee5598cdcfa8f4cfd0703c5a24
+2015-09-19T03:13:57.906740Z
+446196
+liuxiaofeng
+
+StopWords.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+435d899e611fea0135ddad3cf52a986e
+2015-02-13T02:45:23.782241Z
+403954
+liuxiaofeng
+
+SyntacticSemantic
+dir
+
+Timing.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+093485162827f800c8277c1ec92235ee
+2015-04-25T01:49:02.196029Z
+417038
+liuxiaofeng
+
+parsePlugins
+dir
+
+parsePostPlugins
+dir
+
+parsePrePlugins
+dir
+
+util
+dir
+

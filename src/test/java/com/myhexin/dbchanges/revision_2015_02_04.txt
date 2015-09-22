@@ -1,0 +1,31 @@
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '区间成交量', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '营业部-明细', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '区间涨跌幅', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '营业外卖出金额', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '卖出占总成交额比例', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '区间收盘价', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '区间换手率', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '区间成交额', 'hhmmss', NULL);
+
+
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('区间成交量','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('区间成交量','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部-明细','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部-明细','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('区间涨跌幅','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('区间涨跌幅','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业外卖出金额','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业外卖出金额','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('卖出占总成交额比例','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('卖出占总成交额比例','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('区间收盘价','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('区间收盘价','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('区间换手率','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('区间换手率','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('区间成交额','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('区间成交额','hhmmss','180001','235959','yyMMdd',0,'+');
+
+
+
+
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1004, '25', 'lightparserCalcScore句式个数', NULL);

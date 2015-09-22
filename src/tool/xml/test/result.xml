@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><beans>
+<bean class="com.myhexin.qparser.phrase.Argument" id="Argument9002_1">
+<property name="id_" class="java.lang.Integer">1</property>
+<property name="type_" class="com.myhexin.qparser.phrase.Argument$Type">CONSTANT</property>
+<property name="specificIndex_" class="java.lang.String"/>
+<property name="specificIndexGroup_" class="java.lang.Integer"/>
+<property name="superClass_" class="java.lang.String"/>
+<property name="listElementMinCount_" class="java.lang.Integer"/>
+<property name="valueType_" class="com.myhexin.qparser.phrase.Argument$ValueType"/>
+<property name="defaultIndex_" class="java.lang.String"/>
+<property name="defaultValue_" class="java.lang.String"/>
+</bean>
+<bean class="com.myhexin.qparser.phrase.Argument" id="Argument9002_2">
+<property name="id_" class="java.lang.Integer">2</property>
+<property name="type_" class="com.myhexin.qparser.phrase.Argument$Type">INDEX</property>
+<property name="specificIndex_" class="java.lang.String"/>
+<property name="specificIndexGroup_" class="java.lang.Integer"/>
+<property name="superClass_" class="java.lang.String"/>
+<property name="listElementMinCount_" class="java.lang.Integer"/>
+<property name="valueType_" class="com.myhexin.qparser.phrase.Argument$ValueType"/>
+<property name="defaultIndex_" class="java.lang.String"/>
+<property name="defaultValue_" class="java.lang.String"/>
+</bean>
+<bean class="com.myhexin.qparser.phrase.Argument" id="Argument9002_3">
+<property name="id_" class="java.lang.Integer">3</property>
+<property name="type_" class="com.myhexin.qparser.phrase.Argument$Type">INDEX</property>
+<property name="specificIndex_" class="java.lang.String"/>
+<property name="specificIndexGroup_" class="java.lang.Integer"/>
+<property name="superClass_" class="java.lang.String"/>
+<property name="listElementMinCount_" class="java.lang.Integer"/>
+<property name="valueType_" class="com.myhexin.qparser.phrase.Argument$ValueType"/>
+<property name="defaultIndex_" class="java.lang.String"/>
+<property name="defaultValue_" class="java.lang.String"/>
+</bean>
+<bean class="com.myhexin.qparser.phrase.Argument" id="Argument9002_4">
+<property name="id_" class="java.lang.Integer">4</property>
+<property name="type_" class="com.myhexin.qparser.phrase.Argument$Type">CONSTANT</property>
+<property name="specificIndex_" class="java.lang.String"/>
+<property name="specificIndexGroup_" class="java.lang.Integer"/>
+<property name="superClass_" class="java.lang.String"/>
+<property name="listElementMinCount_" class="java.lang.Integer"/>
+<property name="valueType_" class="com.myhexin.qparser.phrase.Argument$ValueType"/>
+<property name="defaultIndex_" class="java.lang.String"/>
+<property name="defaultValue_" class="java.lang.String"/>
+</bean>
+<bean class="com.myhexin.qparser.phrase.Argument" id="Argument9002_3">
+<property name="id_" class="java.lang.Integer">3</property>
+<property name="type_" class="com.myhexin.qparser.phrase.Argument$Type">CONSTANT</property>
+<property name="specificIndex_" class="java.lang.String"/>
+<property name="specificIndexGroup_" class="java.lang.Integer"/>
+<property name="superClass_" class="java.lang.String"/>
+<property name="listElementMinCount_" class="java.lang.Integer"/>
+<property name="valueType_" class="com.myhexin.qparser.phrase.Argument$ValueType">NUMBER</property>
+<property name="defaultIndex_" class="java.lang.String"/>
+<property name="defaultValue_" class="java.lang.String"/>
+</bean>
+<container class="java.util.ArrayList" id="list9002">
+<value keyRefType="bean" keyRef="Argument9002_1"/>
+<value keyRefType="bean" keyRef="Argument9002_2"/>
+<value keyRefType="bean" keyRef="Argument9002_3"/>
+<value keyRefType="bean" keyRef="Argument9002_4"/>
+<value keyRefType="bean" keyRef="Argument9002_3"/>
+</container>
+<bean class="com.myhexin.qparser.phrase.Arguments" id="Arguments9002">
+<property refType="container" name="arguments_" ref="list9002"/>
+</bean>
+<bean class="com.myhexin.qparser.phrase.ArgumentDependency" id="ArgumentDependency9002"/>
+<bean class="com.myhexin.qparser.phrase.SemanticPattern" id="SemanticPattern9002">
+<property name="id_" class="java.lang.String">9002</property>
+<property name="uiRepresentation_" class="java.lang.String">$1$2-$3$4&gt;=$5</property>
+<property name="chineseRepresentation_" class="java.lang.String">$1$2-$3$4&gt;=$5</property>
+<property name="description_" class="java.lang.String">$1$2-$3$4&gt;=$5</property>
+<property refType="bean" ref="Arguments9002" name="semanticArguments_"/>
+<property refType="bean" ref="ArgumentDependency9002" name="semanticArgumentsDependency_"/>
+</bean>
+<container class="java.util.HashMap" id="map9002">
+<value valueRefType="bean" keyClass="java.lang.String" keyValue="9002" valueRef="SemanticPattern9002"/>
+</container>
+<bean class="com.myhexin.qparser.phrase.KeywordGroupMap" id="semanticPatternMap_9002">
+<property refType="container" name="keywordGroupMap_" ref="map9002"/>
+</bean>
+</beans>

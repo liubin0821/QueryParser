@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<log>
+<logentry
+   revision="446640">
+<author>liuxiaofeng</author>
+<date>2015-09-22T01:31:02.168785Z</date>
+<msg>日期调整 dateNode null判断</msg>
+</logentry>
+</log>

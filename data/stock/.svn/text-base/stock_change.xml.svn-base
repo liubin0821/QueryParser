@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change_info>
+	<change label="上涨" is_crease="TRUE" crease_type="INCREASE" unit="" def_val="大于0">
+		<of_index/>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="涨跌幅" />
+		</def_index_info>
+	</change>
+	<change label="下跌" is_crease="TRUE" crease_type="DECREASE" unit=""
+		def_val="小于0">
+		<of_index/>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="涨跌幅" />
+		</def_index_info>
+	</change>
+	<change label="减少" is_crease="TRUE" crease_type="DECREASE" unit=""
+		def_val="小于0">
+		<of_index/>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+	<change label="减" is_crease="TRUE" crease_type="DECREASE" unit=""
+        def_val="小于0">
+        <of_index/>
+        <def_index_info>
+            <def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+        </def_index_info>
+    </change>
+	<change label="同比下跌" is_crease="TRUE" crease_type="DECREASE"
+		unit="" def_val="小于0">
+		<of_index/>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+	<change label="同比下降" is_crease="TRUE" crease_type="DECREASE"
+		unit="" def_val="小于0">
+		<of_index/>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+	<change label="同比减少" is_crease="TRUE" crease_type="DECREASE"
+		unit="" def_val="小于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+	<change label="同比增加" is_crease="TRUE" crease_type="INCREASE"
+		unit="" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+	<change label="同比增长" is_crease="TRUE" crease_type="INCREASE"
+		unit="" def_val="大于0">
+
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+	<change label="增" is_crease="TRUE" crease_type="INCREASE" unit=""
+		def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+	<change label="增长" is_crease="TRUE" crease_type="INCREASE" unit=""
+		def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+	<change label="涨" is_crease="TRUE" crease_type="INCREASE" unit=""
+		def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="涨跌幅" />
+		</def_index_info>
+	</change>
+	<change label="涨幅" is_crease="TRUE" crease_type="INCREASE" unit=""
+		def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="涨跌幅" />
+		</def_index_info>
+	</change>
+	<change label="跌" is_crease="TRUE" crease_type="DECREASE" unit=""
+		def_val="小于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="涨跌幅" />
+		</def_index_info>
+	</change>
+	<change label="跌幅" is_crease="TRUE" crease_type="DECREASE" unit=""
+		def_val="小于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="涨跌幅" />
+		</def_index_info>
+	</change>
+	<change label="环比上涨" is_crease="TRUE" crease_type="INCREASE"
+		unit="" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="单季度.净利润环比增长率" />
+		</def_index_info>
+	</change>
+	<change label="环比下跌" is_crease="TRUE" crease_type="DECREASE"
+		unit="" def_val="小于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="单季度.净利润环比增长率" />
+		</def_index_info>
+	</change>
+	<change label="环比增加" is_crease="TRUE" crease_type="INCREASE"
+		unit="" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="单季度.净利润环比增长率" />
+		</def_index_info>
+	</change>
+	   <change label="环比增长" is_crease="TRUE" crease_type="INCREASE"
+        unit="" def_val="大于0">
+        <of_index></of_index>
+        <def_index_info>
+            <def_index unit="UNKNOW" index_name="单季度.净利润环比增长率" />
+        </def_index_info>
+    </change>
+	<change label="环比下降" is_crease="TRUE" crease_type="DECREASE"
+		unit="" def_val="小于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="单季度.净利润环比增长率" />
+		</def_index_info>
+	</change>
+	<change label="环比减少" is_crease="TRUE" crease_type="DECREASE"
+		unit="" def_val="小于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="单季度.净利润环比增长率" />
+		</def_index_info>
+	</change>
+	<change label="累计上涨" is_crease="TRUE" crease_type="INCREASE"
+		unit="" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(n年,增长率)" />
+		</def_index_info>
+	</change>
+	<change label="累计下跌" is_crease="TRUE" crease_type="DECREASE"
+		unit="" def_val="小于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(n年,增长率)" />
+		</def_index_info>
+	</change>
+	<change label="累计下降" is_crease="TRUE" crease_type="DECREASE"
+		unit="" def_val="小于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(n年,增长率)" />
+		</def_index_info>
+	</change>
+	<change label="累计减少" is_crease="TRUE" crease_type="DECREASE"
+		unit="" def_val="小于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(n年,增长率)" />
+		</def_index_info>
+	</change>
+	<change label="累计增加" is_crease="TRUE" crease_type="INCREASE"
+		unit="" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(n年,增长率)" />
+		</def_index_info>
+	</change>
+	<change label="累计增长" is_crease="TRUE" crease_type="INCREASE"
+		unit="" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(n年,增长率)" />
+		</def_index_info>
+	</change>
+	<change label="翻倍" is_crease="TRUE" crease_type="INCREASE" unit=""
+		def_val="大于200%">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+	<change label="预测下跌" is_crease="TRUE" crease_type="DECREASE"
+		unit="" def_val="小于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="预测净利润增长率" />
+		</def_index_info>
+	</change>
+	<change label="预测上涨" is_crease="TRUE" crease_type="INCREASE"
+		unit="" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="预测净利润增长率" />
+		</def_index_info>
+	</change>
+	<change label="预测下降" is_crease="TRUE" crease_type="DECREASE"
+		unit="" def_val="小于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="预测净利润增长率" />
+		</def_index_info>
+	</change>
+	<change label="预测增长" is_crease="TRUE" crease_type="INCREASE"
+		unit="" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="预测净利润增长率" />
+		</def_index_info>
+	</change>
+	<change label="涨跌" is_crease="TRUE" crease_type="NOCREASE" unit=""
+		def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="涨跌幅" />
+		</def_index_info>
+	</change>
+	<change label="变动幅度" is_crease="TRUE" crease_type="NOCREASE"
+		unit="" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+	<change label="变动幅" is_crease="TRUE" crease_type="NOCREASE"
+		unit="" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+	<change label="增长率" is_crease="TRUE" crease_type="NOCREASE"
+        unit="" def_val="大于0">
+        <of_index></of_index>
+        <def_index_info>
+            <def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+        </def_index_info>
+    </change>
+	<change label="预测盈利" is_crease="TRUE" crease_type="INCREASE"
+		unit="%" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="预测净利润增长率" />
+		</def_index_info>
+	</change>
+	<change label="预测盈利增长" is_crease="TRUE" crease_type="INCREASE"
+		unit="%" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="预测净利润增长率" />
+		</def_index_info>
+	</change>
+	<change label="盈利" is_crease="FALSE" crease_type="INCREASE"
+		unit="元|%" def_val="大于0">
+		<of_index>净利润</of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润" />
+		</def_index_info>
+	</change>
+	<change label="亏损" is_crease="FALSE" crease_type="DECREASE"
+		unit="元|%" def_val="小于0">
+		<of_index>净利润</of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润" />
+		</def_index_info>
+	</change>
+	<change label="盈利增长" is_crease="TRUE" crease_type="INCREASE"
+		unit="%" def_val="大于0">
+		<of_index></of_index>
+		<def_index_info>
+			<def_index unit="UNKNOW" index_name="净利润(同比增长率)" />
+		</def_index_info>
+	</change>
+</change_info>

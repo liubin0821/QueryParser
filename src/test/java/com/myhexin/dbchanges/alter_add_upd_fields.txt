@@ -1,0 +1,40 @@
+UPDATE parser_ref_code, ontologydb.data_type
+SET code_short_desc = data_type.label
+WHERE CAST(code_value AS UNSIGNED)= data_type.id
+AND attr_id=1002
+
+同花顺行业指数,行业指数
+
+
+alter table aliases add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table automatic_synchronization_crl add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table data_lines add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table data_relation add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table data_type add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_no_value add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_change add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_class add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_date add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_keyword add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_logic add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_qword add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_sort add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_special add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_techOp add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_techPeriod add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_trigger  add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_vagueNum add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_trans add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_update_recode  add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table field add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table field_to_index add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table index_prop add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table indexs add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table normal_relation add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table object_relation add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table prop_to_index add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table resolve_aliases_conflicts add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table super_index add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table super_type add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+
+

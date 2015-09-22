@@ -1,0 +1,52 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/qparser/trietree
+svn://172.20.23.253
+
+
+
+2015-04-29T05:11:55.786212Z
+417896
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+TrieNode.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+0d5939ad0ecfe25470cd1b9296262002
+2013-12-18T02:34:05.828710Z
+187320
+linpeikun
+
+TrieTree.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+c914d0758b679fd5322451065199f813
+2015-04-29T05:11:55.786212Z
+417896
+liuxiaofeng
+

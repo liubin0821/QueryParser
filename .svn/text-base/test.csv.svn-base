@@ -1,0 +1,7 @@
+caseId,description,fname,type,nodes,checks,isMatch
+case1,一个匹配，且匹配值为第一个,keyword,2,不是;大于;10元;股价,非,Y
+case2,一个匹配，且匹配值不是头尾,keyword,2,股价;大于;5元;而且;小于;10元,与,Y
+case3,一个匹配，且匹配值为最后一个,keyword,2,股价;大于;5元;而且,与,Y
+case4,多个匹配，匹配关系词不重复,keyword,2,不是;最优;而且;最低;股价,非;与,Y
+case5,多个匹配，匹配关系词重复,keyword,2,不;是;最高价;或者;不是;最低价,非;非;或,Y
+case6,没有匹配,keyword,2,股价;小于;5元,,N

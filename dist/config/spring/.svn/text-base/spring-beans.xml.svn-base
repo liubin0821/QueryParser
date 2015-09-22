@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd"
+        default-autowire="byName">
+        
+    <!-- 从web容器中取到applicationContext -->
+    <bean id="applicationContextHelper" class="com.myhexin.qparser.ApplicationContext.ApplicationContextHelper" lazy-init="false">
+       <property name="defalutApplicationContext" value="applicationContext.xml"></property>
+    </bean>
+    
+   
+    <!-- resource 资源文件的加载，初始化解析环境-->
+    <!-- Resource依赖于上面的param, 所以p aram.xml先加载 -->
+    <bean id="Resource" class="com.myhexin.qparser.resource.Resource" init-method="reloadData" lazy-init="false" scope="singleton"/>
+    
+    
+    <!-- 时间解析器 liuxiaofeng@myhexin.com-->
+    <!-- 
+    <bean id="DayNumParser" class="com.myhexin.qparser.date.single.DayNumParser" />
+    <bean id="DayParser" class="com.myhexin.qparser.date.single.DayParser" />
+    <bean id="MonthParser" class="com.myhexin.qparser.date.single.MonthParser" />
+    <bean id="OtherWordParser" class="com.myhexin.qparser.date.single.OtherWordParser" />
+    <bean id="SeasonParser" class="com.myhexin.qparser.date.single.SeasonParser" />
+    <bean id="SepWordParser" class="com.myhexin.qparser.date.single.SepWordParser" />
+    <bean id="TradeDayParser" class="com.myhexin.qparser.date.single.TradeDayParser" />
+    <bean id="WeekParser" class="com.myhexin.qparser.date.single.WeekParser" />
+    <bean id="XunParser" class="com.myhexin.qparser.date.single.XunParser" />
+    <bean id="YearParser" class="com.myhexin.qparser.date.single.YearParser" />
+	
+    <bean id="MultiNodeRangeParser" class="com.myhexin.qparser.date.syntax.MultiNodeRangeParser" />
+	<bean id="SingleNodeAfterParser" class="com.myhexin.qparser.date.syntax.SingleNodeAfterParser" />
+	<bean id="SingleNodeBeforeParser" class="com.myhexin.qparser.date.syntax.SingleNodeBeforeParser" />
+	<bean id="SingleNodeMultidayFurtherParser" class="com.myhexin.qparser.date.syntax.SingleNodeMultidayFurtherParser" />
+	<bean id="SingleNodeMultidayParser" class="com.myhexin.qparser.date.syntax.SingleNodeMultidayParser" />
+	<bean id="SingleNodeSingledayParser" class="com.myhexin.qparser.date.syntax.SingleNodeSingledayParser" />
+	-->
+</beans>

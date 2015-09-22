@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins>
+
+
+    
+	<plugin name="PhraseParserPrePluginTextNormalize">
+	<![CDATA[
+	#plugin#<BR>
+	1.繁体转简体,繁体简体的映射关系存在表configFile.traditional_simplified_map中<BR>
+	2.全角转半角,通过ascii码的值做加减得到半角字符;大写字符转小写<BR>
+	3.class:parsePrePlugins.PhraseParserPrePluginTextNormalize<BR>
+	例：收盤價＞二十五元
+	]]>	
+	</plugin>
+	
+	<plugin name="PhraseParserPrePluginCheckIsMessyCodeText">
+    <![CDATA[
+    #plugin#<BR>
+    1.判断问句是不是乱码,通过常用汉字占的比例(0.5)来判断是否是乱码<BR>
+    2.class:com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginCheckIsMessyCodeText<BR>
+        例：＾＆＊？？？25元
+    ]]> 
+    </plugin>
+    
+    <plugin name="PhraseParserPrePluginCheckIsNoParser">
+    <![CDATA[
+    #plugin#<BR>
+    1.系统解析不完善的不进行解析,直接返回   <BR>
+    2.解析不完善的词放在数据库configFile表no_parser_well_dict中<BR>
+    3.TrieTree字典树结构,不知道什么是TrieTree, 自己百度TrieTree就知道<BR>
+    4.初始化的时候构建了2个TrieTree, noParserTrieTree和noParserWellTrieTree, well和不带well有什么区别?<BR>
+    5.此插件使用noParserTrieTree,匹配上的话就停止处理,退出解析<BR>
+    3.class:com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginCheckIsNoParser<BR>
+        例：5日均线  (线上和预发布才有用)
+    ]]> 
+    </plugin>    
+
+    <plugin name="PhraseParserPrePluginWordSegment">
+    <![CDATA[
+    #plugin#<BR>
+    1.分词,调用分词服务http://192.168.23.52:12548/ltp?app=2&amp;s=   ,获取分词结果<BR>
+    2.class:com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginWordSegment<BR>
+        例：
+    ]]> 
+    </plugin>  	
+    
+    <plugin name="PhraseParserPrePluginWordSegmentDynamic">
+    <![CDATA[
+    #plugin#<BR>
+    1.动态分词,调用动态分词服务http://192.168.23.33:19850/cm?type=dynamicdict   ,获取动态分词结果<BR>
+    2.分词和动态分词有什么区别?<BR>
+    3.class:com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginWordSegmentDynamic<BR>
+        例：
+    ]]> 
+    </plugin>      
+
+    <plugin name="PhraseParserPrePluginWordSegmentPostTreat">
+    <![CDATA[
+    #plugin#<BR>
+    1.对分词之后需要特殊处理的地方进行处理<BR>
+    2.获取分词第一行，不包括之后的转换行≌<BR>
+    3.处理数字+英文字母的问题：2010pe, hardcode了代码把数字和字母分开<BR>
+    4.处理数字+时间单位+指标的问题：10年涨跌幅<BR>
+    5.处理w&r且wr为指标但分词时被切开的情况<BR>
+    6.class:com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginWordSegmentPostTreat<BR>
+        例：w&r
+    ]]> 
+    </plugin>  
+
+
+    <plugin name="Tokenizer">
+    <![CDATA[
+    #plugin#<BR>
+    1.把分词之后的String转化成为nodeList<BR>
+    2.class:java.util.ArrayList.Tokenizer<BR>
+        例：
+    ]]> 
+    </plugin>  
+
+    <plugin name="PhraseParserPluginTriggerParser">
+    <![CDATA[
+    #plugin#<BR>
+    1.对词典中的触发器进行处理, 现在只对两个词使用触发器 "姓名"和"姓"<BR>
+            比如 董事长姓李  分词之后变为 董事长/onto_class:    姓/onto_trigger:prop=_姓名;  李/  <BR>
+            李是unknown类型通过TriggerParser转化为StrNode并在subType中添加"_姓名"这个类型   <BR>   
+    2.目的:消除unknow Node        
+    3.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginTriggerParser<BR>
+        例：董事长姓李
+    ]]> 
+    </plugin>   
+    
+    <plugin name="PhraseParserPluginStringParser">
+    <![CDATA[
+    #plugin#<BR>
+    1.将当前StrNod右边连续出现的、有重叠subType的StrNode合成一个StrNode<BR>
+    2.能不能举个例子?<BR>
+    3.如果StrNode1, StrNode2有相同的ofWhat,就合并
+    4.目的:消除重复的StrNode?
+    5.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginStringParser<BR>
+        例：同花顺 大智慧 中同花顺最好
+    ]]> 
+    </plugin>      
+
+    <plugin name="PhraseParserPluginMatchIndexAndKeywords">
+    <![CDATA[
+    #plugin#<BR>
+    1.识别指标和关键字<BR>
+      a.通过ParsePluginsUtil.getFocusNode以string为输入获取Index和keyword<BR>
+      b.Index通过函数getIndexFocusNodeByString(String text)从本体MemOnto中以函数getOntoC(text, ClassNode.class, Query.Type.ALL)获取<BR>
+      c.keyword通过函数PhraseInfo.getWordsInfo(text),从wordsInfoMap_中获取<BR>
+      d.获取到的Index和可以word最后存入focusNode中<BR>
+    2.本体MemOnto的数据来自语义网数据库和stock_onto.xml配置文件  
+    3.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginMatchIndexAndKeywords<BR>
+        例：
+    ]]> 
+    </plugin> 
+
+
+    <plugin name="PhraseParserPluginNumParser">
+    <![CDATA[
+    #plugin#<BR>
+    1.数值节点的合并<BR>
+    2.数值节点的解析<BR>
+    3.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginNumParser<BR>
+        例：23元
+    ]]> 
+    </plugin> 
+    
+    <plugin name="PhraseParserPluginTimeParser">
+    <![CDATA[
+    #plugin#<BR>
+    1.时间节点的合并<BR>
+    2.时间节点的解析<BR>
+    3.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginTimeParser<BR>
+        例：2:30收盘
+    ]]> 
+    </plugin> 
+    
+    <plugin name="PhraseParserPluginDateParser">
+    <![CDATA[
+    #plugin#<BR>
+    1.日期节点的合并<BR>
+    2.日期节点的解析<BR>
+    3.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDateParser<BR>
+        例：2012.8.27-2014.7.12收盘价
+    ]]> 
+    </plugin>     
+    
+    <plugin name="PhraseParserPluginDateParserSequence">
+    <![CDATA[
+    #plugin#<BR>
+    1.时间序列的处理,  比如连续三天<BR>
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDateParserSequence<BR>
+        例：连续三天涨幅>0
+    ]]> 
+    </plugin>   
+    
+    
+    <plugin name="PhraseParserPluginDateAxisParser">
+    <![CDATA[
+    #plugin#<BR>
+    1.时间轴处理<BR>
+    2.根据后，以后等词，判断是时间轴类型的问句<BR>
+    3.根据后，以后等词，把问句分开<BR>
+    4.找出分开后的2个chunk(ChunkA, ChunkB)的各自的时间<BR>
+    5.找时间的方法是，先找到问句中的时间点，然后根据时间点出现的位置来推算时间，出现在ChunkA，就往后面推时间，出现在ChunkB就往前面推时间
+    6.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDateAxisParser<BR>
+        例：
+    ]]> 
+    </plugin>       
+    
+    
+    <plugin name="PhraseParserPluginRemainSomeDomain">
+    <![CDATA[
+    #plugin#<BR>
+    1.移除指标领域中,一些无用的领域信息, 比如人物领域<BR>
+            只保留parser界面中领域下拉条中出现的领域(stock,fund,search,hkstock,report...)<BR>
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginRemainSomeDomain<BR>
+        例：董事长姓名马云      (姓名中的person领域)
+    ]]> 
+    </plugin>     
+    
+    <plugin name="PhraseParserPluginRemoveSomeConditionNode">
+    <![CDATA[
+    #plugin#<BR>
+    1.移除一些重复节点信息 , 比如:行业包含交通运输行业     (行业节点重复了)<BR>
+    2.configFile.remove_node_info里配置了删除节点的preLabel, postLabel(label=行业,preProp=所属申万行业,preLabel=行业,postProp=null)<BR>
+    3.根据preLabel, postLabel找出strNode, FocusNode做删除<BR>
+    4.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginRemoveSomeConditionNode<BR>
+        例：行业包含交通运输行业
+    ]]> 
+    </plugin>     
+    
+    
+    <plugin name="PhraseParserPluginSimpleBindStrToIndex">
+    <![CDATA[
+    #plugin#<BR>
+    1.句式匹配前简单绑定字符串到指标<BR>
+            简单绑定消除str对句式匹配的影响, 绑定相邻的str和Index<BR>
+    2.找到StrNode,从StrNode开始往LEFT找到FocusNode, 然后把StrNode绑定到FocusNode.index(ClassNode)的propNode上<BR>
+    3.第2步再做一遍, 但是是从StrNode开始往Right找到FocusNode<BR>4
+    4.绑定的目的是什么?
+    4.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginSimpleBindStrToIndex<BR>
+        例：收盘价前复权5元
+    ]]> 
+    </plugin>        
+
+    <plugin name="PhraseParserPluginMatchSyntacticPatternsByChunk">
+    <![CDATA[
+    #plugin#<BR>
+    1.句式匹配<BR>
+	        句式匹配的基本思路是：<BR>
+	        在广度优先的基础上，当多个列表已经匹配上的部分移动到同一个节点位置时，进行评价剪枝，降低发散的程度。<BR>
+	    * 每次从最小前移列表开始匹配<BR>
+	    * 一个最小前移的匹配后，当前总匹配结果超过SYNTACTIC_LIST_MAX_SIZE个时，进行评价剪枝<BR>
+	    * 评价剪枝针对超过SYNTACTIC_LIST_MAX_SIZE_SAME_POS个的，前移到相同位置的匹配进行<BR>
+	    如：<BR>
+	    pe>10% -> 匹配上 index>percentage 这个句式，并得到语义index(市盈率(pe,ttm))>percentage(10%)<BR>
+	2.解释一下最小前移列表?
+    3.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginMatchSyntacticPatternsByChunk<BR>
+        例：
+    ]]> 
+    </plugin>   
+
+    	
+	<plugin name="PhraseParserPluginInferenceDomain">
+	<![CDATA[
+	#plugin#<BR>
+	1.找出语义节点中所有的FocusNode<BR>
+	2.根据语义树的定义,从FocusNode.superClass找出所有父节点,作为领域<BR>
+	3.构建Map#domain,percentage#, domain是领域名字,percentage是该领域名字出现的百分比,abs_股票领域放最前面<BR>
+	4.如果指定的了领域,那么删除Map#domain, percentage#中的其他领域<BR>
+	5.其他模块使用的领域的时候,就使用Map中第一个表示默认领域<BR>
+	6.如果要输出多个领域,就都输出<BR>
+	7.class:parsePlugins.PhraseParserPluginInferenceDomain<BR>
+        例：收盘价>最新价
+	]]>	
+	</plugin>
+	
+	
+	<plugin name="PhraseParserPluginMultResultAccordingDomain">
+    <![CDATA[
+    #plugin#<BR>
+    1.根据PhraseParserPluginInferenceDomain推导出的领域信息判断, 如果所有有领域的地方都包含该领域,使用该领域作为一个可能的结果，比如所有指标都属于股票领域，那么就出一个股票领域的结果<BR>
+    2.否则不做任何处理<BR>
+    3.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginMultResultAccordingDomain<BR>
+        例：收盘价>最新价
+    ]]> 
+    </plugin>   
+
+    <plugin name="PhraseParserPluginBuildFixedArgumentsAndSemanticProps">
+    <![CDATA[
+    #plugin#<BR>
+        构建固定值类型的参数和语义属性<BR>
+    1.构建固定值类型的参数<BR>
+	    在某些情况下，语义需要的参数不能直接从句式的某个节点上取<BR>
+	    比如：index较高 -> 匹配上 index从大到小排名前num(30，一个固定值)<BR>
+	    再如：权重股 -> 匹配上 index(总股本，一个固定值)从大到小排名前percentage(20%，一个固定值)<BR>
+    2.构建语义属性<BR>
+	    在某些情况下，时间等属性可能是事件的属性<BR>
+	    比如：昨天收盘价大于开盘价的股票 -> 昨天应该是“收盘价-开盘价>0”这一事件的属性<BR>
+    3.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginBuildFixedArgumentsAndSemanticProps<BR>
+        例：index较高
+    ]]> 
+    </plugin> 
+    
+    <plugin name="PhraseParserPluginAddIndexOfStrInstance">
+    <![CDATA[
+    #plugin#<BR>
+    1.为STR_INSTANCE中的str字符串(即value)添加index缺省指标(即key)<BR>
+	    一来，在消除歧义的时候可使用<BR>
+	    二来，时间等属性绑定时也可有指标，如：2013年年报预增->业绩预告类型(报告期:2013年年报)包含预增<BR>  
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginAddIndexOfStrInstance<BR>
+        例：300033
+    ]]> 
+    </plugin>       
+
+    <plugin name="PhraseParserPluginCheckIsSameElements">
+    <![CDATA[
+    #plugin#<BR>
+        句式匹配过程中多个句式可能对应一个语义，这个时候多个匹配结果表达同一个意思，可删除重复的情况判断是否有句式和语义的elements完全相同的情况<BR>
+    1.首先将每个ArrayList<SemanticNode> nodes中的元素提出来，构造字符串<BR>
+        KEY_VALUE, STR_INSTANCE, FREE_VAR句式，涉及显式指标、默认指标、固定值等<BR>
+    2.判断其在HashMap<String, ArrayList<SemanticNode>> qlistmap是否已存在，存在则删除，否则put<BR>
+    3.什么目的?<BR>
+    3.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginCheckIsSameElements<BR>
+        例：
+    ]]> 
+    </plugin> 
+
+
+    <plugin name="PhraseParserPluginCombineOnePhraseDate">
+    <![CDATA[
+    #plugin#<BR>
+    1.同一个句式内的时间节点进行合并<BR>
+	  12月4日至今<BR>
+	  2013年一季度前连续三个季度<BR>
+	    时间加报告期，如：2013年业绩预告类型中报预增    2013年+中报合起来表示一个时间节点
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginCombineOnePhraseDate<BR>
+        例：
+    ]]> 
+    </plugin>      
+
+    <plugin name="PhraseParserPluginDateNumModify">
+    <![CDATA[
+    #plugin#<BR>
+    1.根据配置文件,设置伪时间的时间范围<BR>
+    2.从configFile.fake_date_info读取配置,比如“text=每日,report_type=交易日期,value=连续3天”
+    3.如果节点匹配上text, 那么就把DateNode.dateInfo转换成value???
+    4.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDateNumModify<BR>
+        例：最近收盘价
+    ]]> 
+    </plugin>       
+
+    <plugin name="PhraseParserPluginDealWithAmbiguity">
+    <![CDATA[
+    #plugin#<BR>
+    1.根据unit,props,words,indexs,numrange,defaultval等评分,选取可能性最高的指标<BR>
+	    通过多种评判标准进行消歧，每个评判的标准具有一定的权值，然后根据评分高低判断哪个指标时正确的。<BR>
+	    评价标准包括：<BR>
+	    * (1)、别名默认指标设置<BR>
+	    * (2)、别名是否即为指标名称<BR>
+	    * (3)、数值单位<BR>
+	    * (4)、数值范围<BR>
+	    * (5)、指标属性<BR>
+	    * (6)、时间周期及范围<BR>
+	    * (7)、消除歧义冲突词<BR>
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDealWithAmbiguity<BR>
+        例：
+    ]]> 
+    </plugin>    
+
+    <plugin name="PhraseParserPluginBindStrToIndex">
+    <![CDATA[
+    #plugin#<BR>
+    1.绑定字符串到指标<BR>
+	    根据配置，将相关属性绑定到指标上，比如将时间节点绑定到需要时间属性的指标上。<BR>
+	    指标属性绑定将充分利用中文表述的修饰词语序，以“就近左绑定”的原则进行绑定；<BR>
+	    同时，绑定过程将考虑问句的层次关系，从一个句式内不断外延：<BR>
+	    (1) 不跨指标index；<BR>
+	    (2) 句式内部boundary；<BR>
+	    (3) 不跨分隔符separator；<BR>
+	    (4) 整条问句none。<BR>
+	    绑定时，按照如下顺序将属性绑定到指标上：<BR>
+	    (1) 显式指标绑定属性；<BR>
+	    (2) 缺省指标绑定属性；<BR>
+	    (3) 语义固定值参数绑定属性；<BR>
+	    (4) 语义属性绑定对应属性。<BR>
+	    对于NUM、DATE、STR_VAL、FOCUS(STR_VAL或INDEX)，有着不同的绑定逻辑：<BR>	    
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginBindStrToIndex<BR>
+        例：收盘价>5 前复权
+    ]]> 
+    </plugin>  
+
+    <plugin name="PhraseParserPluginBindNumOrDateToIndex">
+    <![CDATA[
+    #plugin#<BR>
+    1.绑定数值和时间到指标<BR>
+	        根据配置，将相关属性绑定到指标上，比如将时间节点绑定到需要时间属性的指标上。<BR>
+	        指标属性绑定将充分利用中文表述的修饰词语序，以“就近左绑定”的原则进行绑定；<BR>
+	        同时，绑定过程将考虑问句的层次关系，从一个句式内不断外延：<BR>
+	        (1) 不跨指标index；<BR>
+	        (2) 句式内部boundary；<BR>
+	        (3) 不跨分隔符separator；<BR>
+	        (4) 整条问句none。<BR>
+	        绑定时，按照如下顺序将属性绑定到指标上：<BR>
+	        (1) 显式指标绑定属性；<BR>
+	        (2) 缺省指标绑定属性；<BR>
+	        (3) 语义固定值参数绑定属性；<BR>
+	        (4) 语义属性绑定对应属性。<BR>
+	        对于NUM、DATE、STR_VAL、FOCUS(STR_VAL或INDEX)，有着不同的绑定逻辑：<BR>      
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginBindNumOrDateToIndex<BR>
+        例：收盘价>5 2011年
+    ]]> 
+    </plugin>  
+
+    <plugin name="PhraseParserPluginBindIndexToIndex">
+    <![CDATA[
+    #plugin#<BR>
+    1.绑定指标到指标<BR>
+            绑定指标到指标,按照指标之间的距离进行绑定<BR>
+            首先相邻指标绑定<BR>
+            之后,跨越一个指标进行绑定<BR>
+            然后,跨越两个指标进行绑定<BR>
+      ...<BR>
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginBindIndexToIndex<BR>
+        例：指数收盘价>最新价
+    ]]> 
+    </plugin>  
+    
+    <plugin name="PhraseParserPluginCompletionIndex">
+    <![CDATA[
+    #plugin#<BR>
+    1.指标的属性补全<BR>
+            根据预先制定的规则，进行缺省时间及指标的补全。<BR>
+            以“成交量是昨日的1.5倍”为例，经过补全后的语义为“今日（缺省时间）成交量是昨日成交量（缺省指标）的1.5倍。<BR>
+            在这个模块的实现过程中，首先需要对一定量的问句进行句法结构的分析，得到补全的规则，然后再根据规则设计补全实现的方式<BR>
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginCompletionIndex<BR>
+        例：2013年收盘价>20, 最新价>5
+    ]]> 
+    </plugin>  
+    
+    
+    <plugin name="PhraseParserPluginFillIndexPropDefaultValue">
+    <![CDATA[
+    #plugin#<BR>
+    1.设置某些"指标作为属性值"  的属性默认值<BR>
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginFillIndexPropDefaultValue<BR>
+        例：指数收盘价>最新价
+    ]]> 
+    </plugin>     
+    
+    <plugin name="PhraseParserPluginCompleteIndexOfIndexProp">
+    <![CDATA[
+    #plugin#<BR>
+    1."指标作为属性值" 的特殊指标  进行指标补全<BR>
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginCompleteIndexOfIndexProp<BR>
+        例：k值>0
+    ]]> 
+    </plugin>     
+
+    <plugin name="PhraseParserPluginCalculateScore">
+    <![CDATA[
+    #plugin#<BR>
+    1.计算问句的分数<BR>
+            通过一定的方式评价解析结果，如问句中文字的利用情况，指标属性的绑定情况等，以自我评价是否理解了用户真实的检索意图。<BR>
+		(1). 被句式等利用的节点数=(句式内部的节点数+句式外被绑定的节点数)/节点总数<BR>
+		比例越高，分数越高 占比0.2<BR>
+		    score1 = 100.0 * (nodesInnerBoundary + nodesTotalBound) / nodesTotal<BR>
+		(2). 被实际利用的节点数=(匹配上的参数的数量+绑定上的节点的数量+匹配上的关键字的数量)/节点总数<BR>
+		比例越高，分数越高 占比0.3<BR>
+		    score2 = 100.0 * (presentNodesArg + nodesBound + presentNodesKeyword) / nodesSum<BR>
+		(3). 非关键字参数使用比例=(匹配上的参数的数量+绑定上的节点的数量)/参数节点总数<BR>
+		比例越高，分数越高 占比0.3<BR>
+		    score3 = 100.0 * (presentNodesArg + nodesBound) / nodesArg<BR>
+		(4). 关键字参数使用比例=匹配上的关键字的数量/关键字节点总数<BR>
+		比例越高，分数越高 占比0.2<BR>
+		    score4 = 100.0 * presentNodesKeyword / nodesKeyword<BR>
+		(5). 句式内包含分隔符的比例=句式内分隔符的数量/句式总数<BR>
+		比例越高，被扣分数越高 占比-0.1<BR>
+		    score5 = 100.0 * sepInnerBoundary / syntNum      <BR>      
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginCalculateScore<BR>
+        例：
+    ]]> 
+    </plugin>  
+    
+    <plugin name="PhraseParserPluginRelationshipOfAndOrNot">
+    <![CDATA[
+    #plugin#<BR>
+    1.处理句式之间的and 和 or 关系<BR>
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginRelationshipOfAndOrNot
+    com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginRelationshipOfAndOrNotOld<BR>
+        例：
+    ]]> 
+    </plugin>          
+
+    <plugin name="PhraseParserPluginFilter">
+    <![CDATA[
+    #plugin#<BR>
+    1."指数类问句"评分全部降低为原来分数的90%<BR>
+    2.class:com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginFilter<BR>
+        例：
+    ]]> 
+    </plugin>      
+
+
+    <plugin name="PhraseParserPluginGetUesedSubtypeOfStrInstance">
+    <![CDATA[
+    #plugin#<BR>
+    1.设置strNode中被使用的subtype<BR>
+    2.class:com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginGetUesedSubtypeOfStrInstance<BR>
+        例：同花顺概念
+    ]]> 
+    </plugin>   
+    
+    <plugin name="PhraseParserPluginChangeNewIndexToOldIndex">
+    <![CDATA[
+    #plugin#<BR>
+    1.新系统的某些指标转化为老系统的指标,   比如:董事长   <BR>
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginChangeNewIndexToOldIndex<BR>
+        例：董事长姓名马云
+    ]]> 
+    </plugin>      
+
+    <plugin name="PhraseParserPluginChangeNewIndexToIfindIndex">
+    <![CDATA[
+    #plugin#<BR>
+    1.新系统的某些指标转化为ifind的指标<BR>
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginChangeNewIndexToIfindIndex<BR>
+        例：
+    ]]> 
+    </plugin>     
+
+    <plugin name="PhraseParserPluginCreateJsonResult">
+    <![CDATA[
+    #plugin#<BR>
+    1.使用模板创建JsonResult,lpk第一次尝试接入老系统<BR>
+            现在变为输出 丁晨 solar的索引
+    2.class:com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginCreateJsonResult<BR>
+        例：2010年收盘价5   --> 收盘价_5 交易日期_2010年
+    ]]> 
+    </plugin>        
+
+    <plugin name="PhraseParserPluginCreateJsonResultOfMacroIndustry">
+    <![CDATA[
+    #plugin#<BR>
+    1.创建语义树模板<BR>
+    2.class:com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginCreateJsonResultOfMacroIndustry<BR>
+        例：
+    ]]> 
+    </plugin>  
+    
+    
+    <plugin name="PhraseParserPluginThematicClassify">
+    <![CDATA[
+    #plugin#<BR>
+    1.创建lightparser专题结果<BR>
+    2.class:com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginThematicClassify<BR>
+        例：同花顺概念  --> ENTITY
+    ]]> 
+    </plugin>    
+    
+
+    <plugin name="PhraseParserPluginChangeToStandardOutput">
+    <![CDATA[
+    #plugin#<BR>
+    1.解析输出线上使用<BR>
+    2.class:com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginChangeToStandardOutput<BR>
+        例：收盘价>0  -->　收盘价>0
+    ]]> 
+    </plugin>  
+
+    <plugin name="PhraseParserPluginChangeToStandardOutputMultResult">
+    <![CDATA[
+    #plugin#<BR>
+    1.解析多种可能性输出<BR>
+    2.class:com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginChangeToStandardOutputMultResult<BR>
+        例：涨跌幅>0　--> [涨跌幅>0, 周涨跌幅>0, 月涨跌幅>0, 年涨跌幅>0]
+    ]]> 
+    </plugin> 
+
+    <plugin name="PhraseParserPluginCreateLuaResult">
+    <![CDATA[
+    #plugin#<BR>
+    1.解析lua表达式输出<BR>
+    2.class:com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginCreateLuaResult<BR>
+        例：
+    ]]> 
+    </plugin> 
+
+</plugins>

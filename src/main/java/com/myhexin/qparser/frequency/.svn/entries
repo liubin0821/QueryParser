@@ -1,0 +1,52 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/qparser/frequency
+svn://172.20.23.253
+
+
+
+2015-06-30T13:00:53.925266Z
+429336
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+FrequencyParser.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+6183faa56631776bd5306e432c0f2387
+2015-06-30T13:00:53.925266Z
+429336
+liuxiaofeng
+
+FrequencyPatterns.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+d4d5789c339b61169d4fce27ab411006
+2013-10-16T02:55:10.523887Z
+134892
+wuyonghang
+

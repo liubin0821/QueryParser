@@ -1,0 +1,80 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/test/java/com/myhexin/qparser/tool/encode
+svn://172.20.23.253
+
+
+
+2015-02-11T01:30:22.754915Z
+403101
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+EncodeTest.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+bfa026d3303ffd0805cbb3a25edae830
+2015-02-04T01:41:14.686523Z
+401697
+wuyonghang
+
+messy_code.txt
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+4515a9ae01bd370217b230d56dacbce7
+2013-12-17T07:54:39.711291Z
+187033
+linpeikun
+
+no_messy_code.txt
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+1514566c6f9ae06a3c2432821aa451d4
+2013-12-17T07:54:39.711291Z
+187033
+linpeikun
+
+xml
+dir
+
+y.txt
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+89afe9285e8f8fe618579bb75160e7e9
+2013-12-17T07:54:39.711291Z
+187033
+linpeikun
+has-props
+

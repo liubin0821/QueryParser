@@ -1,0 +1,54 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/test/resources/plugin
+svn://172.20.23.253
+
+
+
+2015-09-19T03:23:07.348069Z
+446216
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+plugins.xml
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+f90aaa8e9cd55acc7771366381c74a6e
+2015-09-19T03:23:07.348069Z
+446216
+liuxiaofeng
+has-props
+
+unitTest-plugin.xml
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+c20a4660a2fdccd9630e372e4a4bd095
+2015-09-19T03:23:07.348069Z
+446216
+liuxiaofeng
+has-props
+

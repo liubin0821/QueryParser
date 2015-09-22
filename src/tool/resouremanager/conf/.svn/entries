@@ -1,0 +1,52 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/tool/resouremanager/conf
+svn://172.20.23.253
+
+
+
+2012-10-30T08:31:47.363750Z
+35748
+luwenxing
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+ConfGetter.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+e1e2d2c3391b9ba4fd6f9263c39aefff
+2012-10-30T08:31:47.363750Z
+35748
+luwenxing
+
+ConfHandler.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+40128b9cae7560d11cc727500f8c1401
+2012-10-30T08:31:47.363750Z
+35748
+luwenxing
+

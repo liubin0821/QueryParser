@@ -1,0 +1,1838 @@
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('平行','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('超卖','["kdj","bias","cci","skdj","rsi","wr","roc","psy"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('二次顶背离','["rsi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('短线超买','["kdj"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('极限宽','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('粘合','["pbx","均线","macd","kdj","wr","vol","arbr","dpo"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('即将上穿','["均线","vol","expma"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('红柱放大','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('中轨拐头向上','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('下轨附近 ','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('二次底背离','["macd","kdj","cci","rsi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('即将拐头向上','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('中轨支撑','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('两次上穿','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('翻红','["sar"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('多头金叉','["dmi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('下破所有均线','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('低位二次金叉','["macd","kdj","mtm","rsi","obv","bbi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('向上粘合','["macd","bias","vol"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('上轨以上','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('回踩下轨','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('上轨以下','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('开口缩小','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('二次跌破下轨','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('出现第二个红柱','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('三次金叉','["均线","macd","kdj","mtm","rsi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('二次突破中轨','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('中线买入','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('拐头向上','["trix","均线","macd","kdj","bias","cci","rsi","boll","vol","expma","obv","amv","roc","arbr","dpo","wvad","osc","psy","fsl","lwr2值","lwr1值","pbx2值","pbx3值","pbx4值","pbx1值","pbx6值","pbx5值","trix值","trma值","dea值","diff值","d值","j值","k值","mamtm值","mtm值","bias3值","mml值","mms值","mmm值","cci值","k值","d值","ddd值","ama值","rsi3值","rsi1值","rsi2值","wr2值","wr1值","lower值","upper值","mid值","di1值","di2值","adx值","adxr值","cr值","ma1值","ma2值","ma3值","vr值","lc值","obv值","cys值","mfi值","asit值","asi值","adtm值","maadtm值","roc值","rocma值","bbi值","ar值","br值","cd值","lon值","lonma值","emv值","maemv值","dpo值","madpo值","maosc值","osc值","psyma值","psy值"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('二次上穿-100','["cci"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('突破下轨','["boll","ene","薛斯通道"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('下移','["trix","均线","macd","kdj","mtm","bias","cci","skdj","dma","rsi","wr","boll","vr","vol","expma","asi","amv","bbi","arbr","dpo","wvad","osc","均笔成交","vpt","psy","sar","fsl","lwr2值","lwr1值","pbx2值","pbx3值","pbx4值","pbx1值","pbx6值","pbx5值","trix值","trma值","dea值","diff值","d值","j值","k值","mamtm值","mtm值","mml值","mms值","mmm值","cci值","k值","d值","ddd值","ama值","rsi3值","rsi1值","rsi2值","wr2值","wr1值","lower值","upper值","mid值","di1值","di2值","adx值","adxr值","cr值","ma1值","ma2值","ma3值","vr值","lc值","obv值","cys值","mfi值","asit值","asi值","adtm值","maadtm值","roc值","rocma值","bbi值","ar值","br值","cd值","lon值","lonma值","emv值","maemv值","dpo值","madpo值","psyma值","psy值"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('拐头向下','["lwr","均线","macd","kdj","bias","cci","rsi","boll","vol","expma","obv","amv","arbr","wvad","osc","psy","fsl","lwr2值","lwr1值","pbx2值","pbx3值","pbx4值","pbx1值","pbx6值","pbx5值","trix值","trma值","dea值","diff值","d值","j值","k值","mamtm值","mtm值","mml值","mms值","mmm值","cci值","k值","d值","ddd值","ama值","rsi3值","rsi1值","rsi2值","wr2值","wr1值","lower值","upper值","mid值","di1值","di2值","adx值","adxr值","cr值","ma1值","ma2值","ma3值","vr值","lc值","obv值","cys值","mfi值","asit值","asi值","adtm值","maadtm值","roc值","rocma值","bbi值","ar值","br值","cd值","lon值","lonma值","emv值","maemv值","dpo值","madpo值","maosc值","osc值","psyma值","psy值"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('高位金叉','["lwr","kdj","roc","osc"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('红柱缩短','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('上下震荡','["均线","dma"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('阻力','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('低位金叉','["trix","均线","macd","kdj","mtm","bias","skdj","dma","rsi","dmi","cr","vol","expma","obv","asi","amv","roc","bbi","qlcx","emv","dpo","osc"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('红圈','["sar"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('回踩中轨','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('上穿0值','["kdj"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('高位','["trix","均线","macd","kdj","bias","cci","skdj","dma","rsi","wr","cr","行情收盘价","vol","expma","obv","asi","amv","bbi","arbr","dpo","wvad","osc","渔家得利","psy","fsl","lwr2值","lwr1值","dea值","diff值","d值","j值","k值","cci值","k值","d值","rsi3值","rsi1值","rsi2值","wr2值","wr1值","cr值","ma1值","ma2值","ma3值","mfi值","adtm值","maadtm值","ar值","br值","psyma值","psy值"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('四线粘合','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('三线向上','["kdj"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('下穿0轴','["macd","diff值","dea值"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('空头排列','["均线","macd","kdj","rsi","fsl"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('跌破下轨','["boll","ene"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('中位','["行情收盘价"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('中线超跌','["j值"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('中位金叉','["kdj","rsi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('上移','["trix","均线","macd","kdj","mtm","bias","cci","skdj","dma","rsi","wr","boll","dmi","vr","行情收盘价","vol","expma","obv","mfi","asi","amv","roc","bbi","arbr","dpo","crsi","wvad","osc","均笔成交","vpt","psy","sar","fsl","lwr2值","lwr1值","pbx2值","pbx3值","pbx4值","pbx1值","pbx6值","pbx5值","trix值","trma值","dea值","diff值","d值","j值","k值","mamtm值","mtm值","mml值","mms值","mmm值","cci值","k值","d值","ddd值","ama值","rsi3值","rsi1值","rsi2值","wr2值","wr1值","lower值","upper值","mid值","di1值","di2值","adx值","adxr值","cr值","ma1值","ma2值","ma3值","vr值","lc值","obv值","cys值","mfi值","asit值","asi值","adtm值","maadtm值","roc值","rocma值","bbi值","ar值","br值","cd值","lon值","lonma值","emv值","maemv值","dpo值","madpo值","psyma值","psy值"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('绿柱首次缩短','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('开口张开','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('有效金叉','["均线","kdj","vol","expma","amv"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('四均线强势上攻','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('突破上轨','["boll","ene","薛斯通道"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('卷土重来','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('反抽','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('短期均线多头排列','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('所有均线走平','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('将死不死','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('四线金叉','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('回踩','["均线","行情最新价"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('死叉','["trix","均线","macd","kdj","mtm","bias","zlmm","skdj","dma","rsi","wr","dmi","vol","expma","obv","asi","amv","roc","bbi","qlcx","emv","dpo","wvad","短线窥测","osc","vpt","psy","fsl"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('垂直上移','["di1值"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('向上发散','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('超卖反转','["kdj"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('回踩不破','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('均线发散','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('四线粘合向上','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('上破','["lwr"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('支撑','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('跌破上轨','["boll","ene"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('小绿柱','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('翻绿','["sar"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('上穿下轨','["薛斯通道"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('最有价值信号','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('底部钝化','["macd","kdj","rsi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('下轨以上','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('卖出信号','["lwr","pbx","trix","macd","kdj","mtm","bias","cci","skdj","dma","rsi","wr","boll","dmi","vr","cys","asi","adtm","roc","bbi","arbr","emv","dpo","新手炒股","均线出牛股","ene","wvad","osc","渔家得利","psy","sar"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('下轨以下','["boll","ene"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('所有均线上移','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('底背离','["lwr","trix","均线","macd","kdj","mtm","bias","cci","skdj","dma","rsi","wr","boll","dmi","cr","vr","obv","mfi","roc","dpo","psy","fsl"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('买入信号','["lwr","trix","macd","kdj","mtm","bias","cci","skdj","dma","rsi","wr","boll","dmi","cr","vr","cys","asi","adtm","roc","bbi","arbr","emv","dpo","新手炒股","均线出牛股","ene","wvad","osc","渔家得利","psy","sar"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('高位死叉','["trix","均线","macd","kdj","mtm","dma","vol","expma","obv","asi","amv","bbi","dpo","osc"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('指标创新高','["均线","amv","asi","cci","expma","kdj","mtm","obv","rsi","vol","vr","wr","zbcd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('一直走平','["vol"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('多头排列','["pbx","均线","macd","kdj","dma","rsi","dmi","cr","expma","obv","amo","amv","vol","fsl"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('零下死叉','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('超买','["kdj","bias","cci","skdj","rsi","wr","roc","psy"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('收窄','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('下破','["均线","行情收盘价","vol","expma","amv","lwr"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('低位粘合','["wr"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('均匀放量','["vol"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('顶部钝化','["kdj","cci","rsi","vr"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('强势','["fsl"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('中位死叉','["kdj"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('上穿所有均线','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('低位','["trix","均线","macd","kdj","bias","cci","skdj","dma","rsi","wr","boll","dmi","cr","vr","行情收盘价","行情成交量","vol","expma","obv","asi","amv","bbi","arbr","emv","dpo","ene","wvad","osc","psy","fsl","lwr2值","lwr1值","dea值","diff值","d值","j值","k值","cci值","k值","d值","rsi3值","rsi1值","rsi2值","wr2值","wr1值","cr值","ma1值","ma2值","ma3值","mfi值","adtm值","maadtm值","ar值","br值","psyma值","psy值"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('零下金叉','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('喇叭口','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('二次上穿100','["cci"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('绿柱缩短','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('反转风洞','["macd","kdj"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('下移 ','["obv"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('均线之吻','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('高位二次死叉','["kdj"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('所有均线走平后上移','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('三线合一','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('低位死叉','["均线","macd","kdj","osc"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('走平后上移','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('均线背离','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('短期大于长期','["rsi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('白龙出水','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('下穿','["lwr"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('长期上移','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('短线出现转向','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('0轴上首次死叉','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('上穿0轴','["macd","rsi","wvad","diff值","dea值","j值"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('指标创新低','["均线","amv","asi","cci","dma","expma","kdj","obv","rsi","vol","zbcd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('即将死叉','["trix","均线","macd","kdj","skdj","dma","rsi","bbi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('弱势','["fsl"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('跌破中轨','["boll","ene"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('红柱高于黄线','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('红二波','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('突破中轨','["boll","ene"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('金叉','["pbx","trix","均线","macd","kdj","mtm","bias","zlmm","skdj","dma","rsi","wr","dmi","cr","vol","expma","obv","asi","amv","roc","bbi","qlcx","emv","dpo","wvad","短线窥测","dbcd","osc","psy","vpt","fsl"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('指标创新高 ','["bias","macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('二次死叉','["macd","kdj"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('走平即将粘合','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('两次探底','["kdj"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('回踩上轨','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('中轨附近 ','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('有效下穿','["均线","vol","expma","amv"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('即将金叉','["trix","均线","macd","kdj","skdj","dma","rsi","dmi","vol","expma","amv","bbi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('渔家出海','["渔家得利"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('上穿','["lwr","均线","dmi","cr","行情收盘价","行情开盘价","行情成交量","vol","expma","amv","bbi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('红柱回升','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('指标创新低 ','["bias","macd","mtm"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('二次金叉','["lwr","均线","macd","kdj","mtm","bias","skdj","dma","rsi","dmi","vol","expma","amv","dpo"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('中轨以上 ','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('顶背离','["lwr","macd","kdj","bias","cci","skdj","rsi","wr","cr","vr","roc","psy","fsl"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('拒绝死叉','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('下轨附近','["ene"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('三线金叉','["rsi"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('上轨附近 ','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('两次回踩','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('在所有均线上','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('绿柱放大','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('在所有均线下','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('绿圈','["sar"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('三次底背离','["macd","kdj"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('躺底上勾','["kdj"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('五线金叉','["均线"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('中轨以下','["boll"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('走平','["trix","均线","macd","bias","boll","vol","expma","obv","amv","psy","lwr2值","lwr1值","pbx2值","pbx3值","pbx4值","pbx1值","pbx6值","pbx5值","trix值","trma值","dea值","diff值","d值","j值","k值","mamtm值","mtm值","mml值","mms值","mmm值","cci值","k值","d值","ddd值","ama值","rsi3值","rsi1值","rsi2值","wr2值","wr1值","lower值","upper值","mid值","di1值","di2值","adx值","adxr值","cr值","ma1值","ma2值","ma3值","vr值","lc值","obv值","cys值","mfi值","asit值","asi值","adtm值","maadtm值","roc值","rocma值","bbi值","ar值","br值","cd值","lon值","lonma值","emv值","maemv值","dpo值","madpo值","psyma值","psy值"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('长期粘合','["均线","macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('低位即将金叉','["macd"]',0,0,'script',NULL);
+insert into indexgroup(description, indexs, created_at, updated_at, created_by, updated_by) values('有效上穿','["均线","vol","expma","amv"]',0,0,'script',NULL);
+
+<IndexGroup id="202">
+<Index>均线</Index>
+<Description>平行</Description>
+</IndexGroup>
+
+<IndexGroup id="201">
+<Index>kdj</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>skdj</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>roc</Index>
+<Index>psy</Index>
+<Description>超卖</Description>
+</IndexGroup>
+
+<IndexGroup id="200">
+<Index>rsi</Index>
+<Description>二次顶背离</Description>
+</IndexGroup>
+
+<IndexGroup id="199">
+<Index>kdj</Index>
+<Description>短线超买</Description>
+</IndexGroup>
+
+<IndexGroup id="198">
+<Index>boll</Index>
+<Description>极限宽</Description>
+</IndexGroup>
+
+<IndexGroup id="197">
+<Index>pbx</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>wr</Index>
+<Index>vol</Index>
+<Index>arbr</Index>
+<Index>dpo</Index>
+<Description>粘合</Description>
+</IndexGroup>
+
+<IndexGroup id="196">
+<Index>均线</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Description>即将上穿</Description>
+</IndexGroup>
+
+<IndexGroup id="195">
+<Index>macd</Index>
+<Description>红柱放大</Description>
+</IndexGroup>
+
+<IndexGroup id="194">
+<Index>boll</Index>
+<Description>中轨拐头向上</Description>
+</IndexGroup>
+
+<IndexGroup id="193">
+<Index>boll</Index>
+<Description>下轨附近 </Description>
+</IndexGroup>
+
+<IndexGroup id="192">
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>cci</Index>
+<Index>rsi</Index>
+<Description>二次底背离</Description>
+</IndexGroup>
+
+<IndexGroup id="191">
+<Index>均线</Index>
+<Description>即将拐头向上</Description>
+</IndexGroup>
+
+<IndexGroup id="190">
+<Index>boll</Index>
+<Description>中轨支撑</Description>
+</IndexGroup>
+
+<IndexGroup id="189">
+<Index>均线</Index>
+<Description>两次上穿</Description>
+</IndexGroup>
+
+<IndexGroup id="188">
+<Index>sar</Index>
+<Description>翻红</Description>
+</IndexGroup>
+
+<IndexGroup id="187">
+<Index>dmi</Index>
+<Description>多头金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="186">
+<Index>均线</Index>
+<Description>下破所有均线</Description>
+</IndexGroup>
+
+<IndexGroup id="185">
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>rsi</Index>
+<Index>obv</Index>
+<Index>bbi</Index>
+<Description>低位二次金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="184">
+<Index>macd</Index>
+<Index>bias</Index>
+<Index>vol</Index>
+<Description>向上粘合</Description>
+</IndexGroup>
+
+<IndexGroup id="183">
+<Index>boll</Index>
+<Description>上轨以上</Description>
+</IndexGroup>
+
+<IndexGroup id="182">
+<Index>boll</Index>
+<Description>回踩下轨</Description>
+</IndexGroup>
+
+<IndexGroup id="181">
+<Index>boll</Index>
+<Description>上轨以下</Description>
+</IndexGroup>
+
+<IndexGroup id="180">
+<Index>boll</Index>
+<Description>开口缩小</Description>
+</IndexGroup>
+
+<IndexGroup id="179">
+<Index>boll</Index>
+<Description>二次跌破下轨</Description>
+</IndexGroup>
+
+<IndexGroup id="178">
+<Index>macd</Index>
+<Description>出现第二个红柱</Description>
+</IndexGroup>
+
+<IndexGroup id="177">
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>rsi</Index>
+<Description>三次金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="176">
+<Index>boll</Index>
+<Description>二次突破中轨</Description>
+</IndexGroup>
+
+<IndexGroup id="175">
+<Index>均线</Index>
+<Description>中线买入</Description>
+</IndexGroup>
+
+<IndexGroup id="174">
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>rsi</Index>
+<Index>boll</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>obv</Index>
+<Index>amv</Index>
+<Index>roc</Index>
+<Index>arbr</Index>
+<Index>dpo</Index>
+<Index>wvad</Index>
+<Index>osc</Index>
+<Index>psy</Index>
+<Index>fsl</Index>
+<Index>lwr2值</Index>
+<Index>lwr1值</Index>
+<Index>pbx2值</Index>
+<Index>pbx3值</Index>
+<Index>pbx4值</Index>
+<Index>pbx1值</Index>
+<Index>pbx6值</Index>
+<Index>pbx5值</Index>
+<Index>trix值</Index>
+<Index>trma值</Index>
+<Index>dea值</Index>
+<Index>diff值</Index>
+<Index>d值</Index>
+<Index>j值</Index>
+<Index>k值</Index>
+<Index>mamtm值</Index>
+<Index>mtm值</Index>
+<Index>bias3值</Index>
+<Index>mml值</Index>
+<Index>mms值</Index>
+<Index>mmm值</Index>
+<Index>cci值</Index>
+<Index>k值</Index>
+<Index>d值</Index>
+<Index>ddd值</Index>
+<Index>ama值</Index>
+<Index>rsi3值</Index>
+<Index>rsi1值</Index>
+<Index>rsi2值</Index>
+<Index>wr2值</Index>
+<Index>wr1值</Index>
+<Index>lower值</Index>
+<Index>upper值</Index>
+<Index>mid值</Index>
+<Index>di1值</Index>
+<Index>di2值</Index>
+<Index>adx值</Index>
+<Index>adxr值</Index>
+<Index>cr值</Index>
+<Index>ma1值</Index>
+<Index>ma2值</Index>
+<Index>ma3值</Index>
+<Index>vr值</Index>
+<Index>lc值</Index>
+<Index>obv值</Index>
+<Index>cys值</Index>
+<Index>mfi值</Index>
+<Index>asit值</Index>
+<Index>asi值</Index>
+<Index>adtm值</Index>
+<Index>maadtm值</Index>
+<Index>roc值</Index>
+<Index>rocma值</Index>
+<Index>bbi值</Index>
+<Index>ar值</Index>
+<Index>br值</Index>
+<Index>cd值</Index>
+<Index>lon值</Index>
+<Index>lonma值</Index>
+<Index>emv值</Index>
+<Index>maemv值</Index>
+<Index>dpo值</Index>
+<Index>madpo值</Index>
+<Index>maosc值</Index>
+<Index>osc值</Index>
+<Index>psyma值</Index>
+<Index>psy值</Index>
+<Description>拐头向上</Description>
+</IndexGroup>
+
+<IndexGroup id="173">
+<Index>cci</Index>
+<Description>二次上穿-100</Description>
+</IndexGroup>
+
+<IndexGroup id="172">
+<Index>boll</Index>
+<Index>ene</Index>
+<Index>薛斯通道</Index>
+<Description>突破下轨</Description>
+</IndexGroup>
+
+<IndexGroup id="171">
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>boll</Index>
+<Index>vr</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>asi</Index>
+<Index>amv</Index>
+<Index>bbi</Index>
+<Index>arbr</Index>
+<Index>dpo</Index>
+<Index>wvad</Index>
+<Index>osc</Index>
+<Index>均笔成交</Index>
+<Index>vpt</Index>
+<Index>psy</Index>
+<Index>sar</Index>
+<Index>fsl</Index>
+<Index>lwr2值</Index>
+<Index>lwr1值</Index>
+<Index>pbx2值</Index>
+<Index>pbx3值</Index>
+<Index>pbx4值</Index>
+<Index>pbx1值</Index>
+<Index>pbx6值</Index>
+<Index>pbx5值</Index>
+<Index>trix值</Index>
+<Index>trma值</Index>
+<Index>dea值</Index>
+<Index>diff值</Index>
+<Index>d值</Index>
+<Index>j值</Index>
+<Index>k值</Index>
+<Index>mamtm值</Index>
+<Index>mtm值</Index>
+<Index>mml值</Index>
+<Index>mms值</Index>
+<Index>mmm值</Index>
+<Index>cci值</Index>
+<Index>k值</Index>
+<Index>d值</Index>
+<Index>ddd值</Index>
+<Index>ama值</Index>
+<Index>rsi3值</Index>
+<Index>rsi1值</Index>
+<Index>rsi2值</Index>
+<Index>wr2值</Index>
+<Index>wr1值</Index>
+<Index>lower值</Index>
+<Index>upper值</Index>
+<Index>mid值</Index>
+<Index>di1值</Index>
+<Index>di2值</Index>
+<Index>adx值</Index>
+<Index>adxr值</Index>
+<Index>cr值</Index>
+<Index>ma1值</Index>
+<Index>ma2值</Index>
+<Index>ma3值</Index>
+<Index>vr值</Index>
+<Index>lc值</Index>
+<Index>obv值</Index>
+<Index>cys值</Index>
+<Index>mfi值</Index>
+<Index>asit值</Index>
+<Index>asi值</Index>
+<Index>adtm值</Index>
+<Index>maadtm值</Index>
+<Index>roc值</Index>
+<Index>rocma值</Index>
+<Index>bbi值</Index>
+<Index>ar值</Index>
+<Index>br值</Index>
+<Index>cd值</Index>
+<Index>lon值</Index>
+<Index>lonma值</Index>
+<Index>emv值</Index>
+<Index>maemv值</Index>
+<Index>dpo值</Index>
+<Index>madpo值</Index>
+<Index>psyma值</Index>
+<Index>psy值</Index>
+<Description>下移</Description>
+</IndexGroup>
+
+<IndexGroup id="170">
+<Index>lwr</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>rsi</Index>
+<Index>boll</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>obv</Index>
+<Index>amv</Index>
+<Index>arbr</Index>
+<Index>wvad</Index>
+<Index>osc</Index>
+<Index>psy</Index>
+<Index>fsl</Index>
+<Index>lwr2值</Index>
+<Index>lwr1值</Index>
+<Index>pbx2值</Index>
+<Index>pbx3值</Index>
+<Index>pbx4值</Index>
+<Index>pbx1值</Index>
+<Index>pbx6值</Index>
+<Index>pbx5值</Index>
+<Index>trix值</Index>
+<Index>trma值</Index>
+<Index>dea值</Index>
+<Index>diff值</Index>
+<Index>d值</Index>
+<Index>j值</Index>
+<Index>k值</Index>
+<Index>mamtm值</Index>
+<Index>mtm值</Index>
+<Index>mml值</Index>
+<Index>mms值</Index>
+<Index>mmm值</Index>
+<Index>cci值</Index>
+<Index>k值</Index>
+<Index>d值</Index>
+<Index>ddd值</Index>
+<Index>ama值</Index>
+<Index>rsi3值</Index>
+<Index>rsi1值</Index>
+<Index>rsi2值</Index>
+<Index>wr2值</Index>
+<Index>wr1值</Index>
+<Index>lower值</Index>
+<Index>upper值</Index>
+<Index>mid值</Index>
+<Index>di1值</Index>
+<Index>di2值</Index>
+<Index>adx值</Index>
+<Index>adxr值</Index>
+<Index>cr值</Index>
+<Index>ma1值</Index>
+<Index>ma2值</Index>
+<Index>ma3值</Index>
+<Index>vr值</Index>
+<Index>lc值</Index>
+<Index>obv值</Index>
+<Index>cys值</Index>
+<Index>mfi值</Index>
+<Index>asit值</Index>
+<Index>asi值</Index>
+<Index>adtm值</Index>
+<Index>maadtm值</Index>
+<Index>roc值</Index>
+<Index>rocma值</Index>
+<Index>bbi值</Index>
+<Index>ar值</Index>
+<Index>br值</Index>
+<Index>cd值</Index>
+<Index>lon值</Index>
+<Index>lonma值</Index>
+<Index>emv值</Index>
+<Index>maemv值</Index>
+<Index>dpo值</Index>
+<Index>madpo值</Index>
+<Index>maosc值</Index>
+<Index>osc值</Index>
+<Index>psyma值</Index>
+<Index>psy值</Index>
+<Description>拐头向下</Description>
+</IndexGroup>
+
+<IndexGroup id="169">
+<Index>lwr</Index>
+<Index>kdj</Index>
+<Index>roc</Index>
+<Index>osc</Index>
+<Description>高位金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="168">
+<Index>macd</Index>
+<Description>红柱缩短</Description>
+</IndexGroup>
+
+<IndexGroup id="167">
+<Index>均线</Index>
+<Index>dma</Index>
+<Description>上下震荡</Description>
+</IndexGroup>
+
+<IndexGroup id="166">
+<Index>均线</Index>
+<Description>阻力</Description>
+</IndexGroup>
+
+<IndexGroup id="165">
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>bias</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>dmi</Index>
+<Index>cr</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>obv</Index>
+<Index>asi</Index>
+<Index>amv</Index>
+<Index>roc</Index>
+<Index>bbi</Index>
+<Index>qlcx</Index>
+<Index>emv</Index>
+<Index>dpo</Index>
+<Index>osc</Index>
+<Description>低位金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="164">
+<Index>sar</Index>
+<Description>红圈</Description>
+</IndexGroup>
+
+<IndexGroup id="163">
+<Index>boll</Index>
+<Description>回踩中轨</Description>
+</IndexGroup>
+
+<IndexGroup id="162">
+<Index>kdj</Index>
+<Description>上穿0值</Description>
+</IndexGroup>
+
+<IndexGroup id="161">
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>cr</Index>
+<Index>行情收盘价</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>obv</Index>
+<Index>asi</Index>
+<Index>amv</Index>
+<Index>bbi</Index>
+<Index>arbr</Index>
+<Index>dpo</Index>
+<Index>wvad</Index>
+<Index>osc</Index>
+<Index>渔家得利</Index>
+<Index>psy</Index>
+<Index>fsl</Index>
+<Index>lwr2值</Index>
+<Index>lwr1值</Index>
+<Index>dea值</Index>
+<Index>diff值</Index>
+<Index>d值</Index>
+<Index>j值</Index>
+<Index>k值</Index>
+<Index>cci值</Index>
+<Index>k值</Index>
+<Index>d值</Index>
+<Index>rsi3值</Index>
+<Index>rsi1值</Index>
+<Index>rsi2值</Index>
+<Index>wr2值</Index>
+<Index>wr1值</Index>
+<Index>cr值</Index>
+<Index>ma1值</Index>
+<Index>ma2值</Index>
+<Index>ma3值</Index>
+<Index>mfi值</Index>
+<Index>adtm值</Index>
+<Index>maadtm值</Index>
+<Index>ar值</Index>
+<Index>br值</Index>
+<Index>psyma值</Index>
+<Index>psy值</Index>
+<Description>高位</Description>
+</IndexGroup>
+
+<IndexGroup id="160">
+<Index>均线</Index>
+<Description>四线粘合</Description>
+</IndexGroup>
+
+<IndexGroup id="159">
+<Index>kdj</Index>
+<Description>三线向上</Description>
+</IndexGroup>
+
+<IndexGroup id="158">
+<Index>macd</Index>
+<Index>diff值</Index>
+<Index>dea值</Index>
+<Description>下穿0轴</Description>
+</IndexGroup>
+
+<IndexGroup id="157">
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>rsi</Index>
+<Index>fsl</Index>
+<Description>空头排列</Description>
+</IndexGroup>
+
+<IndexGroup id="156">
+<Index>boll</Index>
+<Index>ene</Index>
+<Description>跌破下轨</Description>
+</IndexGroup>
+
+<IndexGroup id="155">
+<Index>行情收盘价</Index>
+<Description>中位</Description>
+</IndexGroup>
+
+<IndexGroup id="154">
+<Index>j值</Index>
+<Description>中线超跌</Description>
+</IndexGroup>
+
+<IndexGroup id="153">
+<Index>kdj</Index>
+<Index>rsi</Index>
+<Description>中位金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="152">
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>boll</Index>
+<Index>dmi</Index>
+<Index>vr</Index>
+<Index>行情收盘价</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>obv</Index>
+<Index>mfi</Index>
+<Index>asi</Index>
+<Index>amv</Index>
+<Index>roc</Index>
+<Index>bbi</Index>
+<Index>arbr</Index>
+<Index>dpo</Index>
+<Index>crsi</Index>
+<Index>wvad</Index>
+<Index>osc</Index>
+<Index>均笔成交</Index>
+<Index>vpt</Index>
+<Index>psy</Index>
+<Index>sar</Index>
+<Index>fsl</Index>
+<Index>lwr2值</Index>
+<Index>lwr1值</Index>
+<Index>pbx2值</Index>
+<Index>pbx3值</Index>
+<Index>pbx4值</Index>
+<Index>pbx1值</Index>
+<Index>pbx6值</Index>
+<Index>pbx5值</Index>
+<Index>trix值</Index>
+<Index>trma值</Index>
+<Index>dea值</Index>
+<Index>diff值</Index>
+<Index>d值</Index>
+<Index>j值</Index>
+<Index>k值</Index>
+<Index>mamtm值</Index>
+<Index>mtm值</Index>
+<Index>mml值</Index>
+<Index>mms值</Index>
+<Index>mmm值</Index>
+<Index>cci值</Index>
+<Index>k值</Index>
+<Index>d值</Index>
+<Index>ddd值</Index>
+<Index>ama值</Index>
+<Index>rsi3值</Index>
+<Index>rsi1值</Index>
+<Index>rsi2值</Index>
+<Index>wr2值</Index>
+<Index>wr1值</Index>
+<Index>lower值</Index>
+<Index>upper值</Index>
+<Index>mid值</Index>
+<Index>di1值</Index>
+<Index>di2值</Index>
+<Index>adx值</Index>
+<Index>adxr值</Index>
+<Index>cr值</Index>
+<Index>ma1值</Index>
+<Index>ma2值</Index>
+<Index>ma3值</Index>
+<Index>vr值</Index>
+<Index>lc值</Index>
+<Index>obv值</Index>
+<Index>cys值</Index>
+<Index>mfi值</Index>
+<Index>asit值</Index>
+<Index>asi值</Index>
+<Index>adtm值</Index>
+<Index>maadtm值</Index>
+<Index>roc值</Index>
+<Index>rocma值</Index>
+<Index>bbi值</Index>
+<Index>ar值</Index>
+<Index>br值</Index>
+<Index>cd值</Index>
+<Index>lon值</Index>
+<Index>lonma值</Index>
+<Index>emv值</Index>
+<Index>maemv值</Index>
+<Index>dpo值</Index>
+<Index>madpo值</Index>
+<Index>psyma值</Index>
+<Index>psy值</Index>
+<Description>上移</Description>
+</IndexGroup>
+
+<IndexGroup id="151">
+<Index>macd</Index>
+<Description>绿柱首次缩短</Description>
+</IndexGroup>
+
+<IndexGroup id="150">
+<Index>boll</Index>
+<Description>开口张开</Description>
+</IndexGroup>
+
+<IndexGroup id="149">
+<Index>均线</Index>
+<Index>kdj</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>amv</Index>
+<Description>有效金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="148">
+<Index>均线</Index>
+<Description>四均线强势上攻</Description>
+</IndexGroup>
+
+<IndexGroup id="147">
+<Index>boll</Index>
+<Index>ene</Index>
+<Index>薛斯通道</Index>
+<Description>突破上轨</Description>
+</IndexGroup>
+
+<IndexGroup id="146">
+<Index>macd</Index>
+<Description>卷土重来</Description>
+</IndexGroup>
+
+<IndexGroup id="145">
+<Index>均线</Index>
+<Description>反抽</Description>
+</IndexGroup>
+
+<IndexGroup id="144">
+<Index>均线</Index>
+<Description>短期均线多头排列</Description>
+</IndexGroup>
+
+<IndexGroup id="143">
+<Index>均线</Index>
+<Description>所有均线走平</Description>
+</IndexGroup>
+
+<IndexGroup id="142">
+<Index>均线</Index>
+<Description>将死不死</Description>
+</IndexGroup>
+
+<IndexGroup id="141">
+<Index>均线</Index>
+<Description>四线金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="140">
+<Index>均线</Index>
+<Index>行情最新价</Index>
+<Description>回踩</Description>
+</IndexGroup>
+
+<IndexGroup id="139">
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>bias</Index>
+<Index>zlmm</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>dmi</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>obv</Index>
+<Index>asi</Index>
+<Index>amv</Index>
+<Index>roc</Index>
+<Index>bbi</Index>
+<Index>qlcx</Index>
+<Index>emv</Index>
+<Index>dpo</Index>
+<Index>wvad</Index>
+<Index>短线窥测</Index>
+<Index>osc</Index>
+<Index>vpt</Index>
+<Index>psy</Index>
+<Index>fsl</Index>
+<Description>死叉</Description>
+</IndexGroup>
+
+<IndexGroup id="138">
+<Index>di1值</Index>
+<Description>垂直上移</Description>
+</IndexGroup>
+
+<IndexGroup id="137">
+<Index>macd</Index>
+<Description>向上发散</Description>
+</IndexGroup>
+
+<IndexGroup id="136">
+<Index>kdj</Index>
+<Description>超卖反转</Description>
+</IndexGroup>
+
+<IndexGroup id="135">
+<Index>均线</Index>
+<Description>回踩不破</Description>
+</IndexGroup>
+
+<IndexGroup id="134">
+<Index>均线</Index>
+<Description>均线发散</Description>
+</IndexGroup>
+
+<IndexGroup id="133">
+<Index>均线</Index>
+<Description>四线粘合向上</Description>
+</IndexGroup>
+
+<IndexGroup id="132">
+<Index>lwr</Index>
+<Description>上破</Description>
+</IndexGroup>
+
+<IndexGroup id="131">
+<Index>均线</Index>
+<Description>支撑</Description>
+</IndexGroup>
+
+<IndexGroup id="130">
+<Index>boll</Index>
+<Index>ene</Index>
+<Description>跌破上轨</Description>
+</IndexGroup>
+
+<IndexGroup id="129">
+<Index>macd</Index>
+<Description>小绿柱</Description>
+</IndexGroup>
+
+<IndexGroup id="128">
+<Index>sar</Index>
+<Description>翻绿</Description>
+</IndexGroup>
+
+<IndexGroup id="127">
+<Index>薛斯通道</Index>
+<Description>上穿下轨</Description>
+</IndexGroup>
+
+<IndexGroup id="126">
+<Index>macd</Index>
+<Description>最有价值信号</Description>
+</IndexGroup>
+
+<IndexGroup id="125">
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>rsi</Index>
+<Description>底部钝化</Description>
+</IndexGroup>
+
+<IndexGroup id="124">
+<Index>boll</Index>
+<Description>下轨以上</Description>
+</IndexGroup>
+
+<IndexGroup id="123">
+<Index>lwr</Index>
+<Index>pbx</Index>
+<Index>trix</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>boll</Index>
+<Index>dmi</Index>
+<Index>vr</Index>
+<Index>cys</Index>
+<Index>asi</Index>
+<Index>adtm</Index>
+<Index>roc</Index>
+<Index>bbi</Index>
+<Index>arbr</Index>
+<Index>emv</Index>
+<Index>dpo</Index>
+<Index>新手炒股</Index>
+<Index>均线出牛股</Index>
+<Index>ene</Index>
+<Index>wvad</Index>
+<Index>osc</Index>
+<Index>渔家得利</Index>
+<Index>psy</Index>
+<Index>sar</Index>
+<Description>卖出信号</Description>
+</IndexGroup>
+
+<IndexGroup id="122">
+<Index>boll</Index>
+<Index>ene</Index>
+<Description>下轨以下</Description>
+</IndexGroup>
+
+<IndexGroup id="121">
+<Index>均线</Index>
+<Description>所有均线上移</Description>
+</IndexGroup>
+
+<IndexGroup id="120">
+<Index>lwr</Index>
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>boll</Index>
+<Index>dmi</Index>
+<Index>cr</Index>
+<Index>vr</Index>
+<Index>obv</Index>
+<Index>mfi</Index>
+<Index>roc</Index>
+<Index>dpo</Index>
+<Index>psy</Index>
+<Index>fsl</Index>
+<Description>底背离</Description>
+</IndexGroup>
+
+<IndexGroup id="119">
+<Index>lwr</Index>
+<Index>trix</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>boll</Index>
+<Index>dmi</Index>
+<Index>cr</Index>
+<Index>vr</Index>
+<Index>cys</Index>
+<Index>asi</Index>
+<Index>adtm</Index>
+<Index>roc</Index>
+<Index>bbi</Index>
+<Index>arbr</Index>
+<Index>emv</Index>
+<Index>dpo</Index>
+<Index>新手炒股</Index>
+<Index>均线出牛股</Index>
+<Index>ene</Index>
+<Index>wvad</Index>
+<Index>osc</Index>
+<Index>渔家得利</Index>
+<Index>psy</Index>
+<Index>sar</Index>
+<Description>买入信号</Description>
+</IndexGroup>
+
+<IndexGroup id="118">
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>dma</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>obv</Index>
+<Index>asi</Index>
+<Index>amv</Index>
+<Index>bbi</Index>
+<Index>dpo</Index>
+<Index>osc</Index>
+<Description>高位死叉</Description>
+</IndexGroup>
+
+<IndexGroup id="117">
+<Index>���线</Index>
+<Index>amv</Index>
+<Index>asi</Index>
+<Index>cci</Index>
+<Index>expma</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>obv</Index>
+<Index>rsi</Index>
+<Index>vol</Index>
+<Index>vr</Index>
+<Index>wr</Index>
+<Index>zbcd</Index>
+<Description>指标创新高</Description>
+</IndexGroup>
+
+<IndexGroup id="116">
+<Index>vol</Index>
+<Description>一直走平</Description>
+</IndexGroup>
+
+<IndexGroup id="115">
+<Index>pbx</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>dmi</Index>
+<Index>cr</Index>
+<Index>expma</Index>
+<Index>obv</Index>
+<Index>amo</Index>
+<Index>amv</Index>
+<Index>vol</Index>
+<Index>fsl</Index>
+<Description>多头排列</Description>
+</IndexGroup>
+
+<IndexGroup id="114">
+<Index>macd</Index>
+<Description>零下死叉</Description>
+</IndexGroup>
+
+<IndexGroup id="113">
+<Index>kdj</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>skdj</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>roc</Index>
+<Index>psy</Index>
+<Description>超买</Description>
+</IndexGroup>
+
+<IndexGroup id="112">
+<Index>macd</Index>
+<Description>收窄</Description>
+</IndexGroup>
+
+<IndexGroup id="111">
+<Index>均线</Index>
+<Index>行情收盘价</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>amv</Index>
+<Index>lwr</Index>
+<Description>下破</Description>
+</IndexGroup>
+
+<IndexGroup id="110">
+<Index>wr</Index>
+<Description>低位粘合</Description>
+</IndexGroup>
+
+<IndexGroup id="109">
+<Index>vol</Index>
+<Description>均匀放量</Description>
+</IndexGroup>
+
+<IndexGroup id="108">
+<Index>kdj</Index>
+<Index>cci</Index>
+<Index>rsi</Index>
+<Index>vr</Index>
+<Description>顶部钝化</Description>
+</IndexGroup>
+
+<IndexGroup id="107">
+<Index>fsl</Index>
+<Description>强势</Description>
+</IndexGroup>
+
+<IndexGroup id="106">
+<Index>kdj</Index>
+<Description>中位死叉</Description>
+</IndexGroup>
+
+<IndexGroup id="105">
+<Index>均线</Index>
+<Description>上穿所有均线</Description>
+</IndexGroup>
+
+<IndexGroup id="104">
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>boll</Index>
+<Index>dmi</Index>
+<Index>cr</Index>
+<Index>vr</Index>
+<Index>行情收盘价</Index>
+<Index>行情成交量</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>obv</Index>
+<Index>asi</Index>
+<Index>amv</Index>
+<Index>bbi</Index>
+<Index>arbr</Index>
+<Index>emv</Index>
+<Index>dpo</Index>
+<Index>ene</Index>
+<Index>wvad</Index>
+<Index>osc</Index>
+<Index>psy</Index>
+<Index>fsl</Index>
+<Index>lwr2值</Index>
+<Index>lwr1值</Index>
+<Index>dea值</Index>
+<Index>diff值</Index>
+<Index>d值</Index>
+<Index>j值</Index>
+<Index>k值</Index>
+<Index>cci值</Index>
+<Index>k值</Index>
+<Index>d值</Index>
+<Index>rsi3值</Index>
+<Index>rsi1值</Index>
+<Index>rsi2值</Index>
+<Index>wr2值</Index>
+<Index>wr1值</Index>
+<Index>cr值</Index>
+<Index>ma1值</Index>
+<Index>ma2值</Index>
+<Index>ma3值</Index>
+<Index>mfi值</Index>
+<Index>adtm值</Index>
+<Index>maadtm值</Index>
+<Index>ar值</Index>
+<Index>br值</Index>
+<Index>psyma值</Index>
+<Index>psy值</Index>
+<Description>低位</Description>
+</IndexGroup>
+
+<IndexGroup id="103">
+<Index>macd</Index>
+<Description>零下金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="102">
+<Index>boll</Index>
+<Description>喇叭口</Description>
+</IndexGroup>
+
+<IndexGroup id="101">
+<Index>cci</Index>
+<Description>二次上穿100</Description>
+</IndexGroup>
+
+<IndexGroup id="100">
+<Index>macd</Index>
+<Description>绿柱缩短</Description>
+</IndexGroup>
+
+<IndexGroup id="99">
+<Index>macd</Index>
+<Index>kdj</Index>
+<Description>反转风洞</Description>
+</IndexGroup>
+
+<IndexGroup id="98">
+<Index>obv</Index>
+<Description>下移 </Description>
+</IndexGroup>
+
+<IndexGroup id="97">
+<Index>均线</Index>
+<Description>均线之吻</Description>
+</IndexGroup>
+
+<IndexGroup id="96">
+<Index>kdj</Index>
+<Description>高位二次死叉</Description>
+</IndexGroup>
+
+<IndexGroup id="95">
+<Index>均线</Index>
+<Description>所有均线走平后上移</Description>
+</IndexGroup>
+
+<IndexGroup id="94">
+<Index>均线</Index>
+<Description>三线合一</Description>
+</IndexGroup>
+
+<IndexGroup id="93">
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>osc</Index>
+<Description>低位死叉</Description>
+</IndexGroup>
+
+<IndexGroup id="92">
+<Index>均线</Index>
+<Description>走平后上移</Description>
+</IndexGroup>
+
+<IndexGroup id="91">
+<Index>均线</Index>
+<Description>均线背离</Description>
+</IndexGroup>
+
+<IndexGroup id="90">
+<Index>rsi</Index>
+<Description>短期大于长期</Description>
+</IndexGroup>
+
+<IndexGroup id="89">
+<Index>macd</Index>
+<Description>白龙出水</Description>
+</IndexGroup>
+
+<IndexGroup id="88">
+<Index>lwr</Index>
+<Description>下穿</Description>
+</IndexGroup>
+
+<IndexGroup id="87">
+<Index>macd</Index>
+<Description>长期上移</Description>
+</IndexGroup>
+
+<IndexGroup id="86">
+<Index>均线</Index>
+<Description>短线出现转向</Description>
+</IndexGroup>
+
+<IndexGroup id="85">
+<Index>macd</Index>
+<Description>0轴上首次死叉</Description>
+</IndexGroup>
+
+<IndexGroup id="84">
+<Index>macd</Index>
+<Index>rsi</Index>
+<Index>wvad</Index>
+<Index>diff值</Index>
+<Index>dea值</Index>
+<Index>j值</Index>
+<Description>上穿0轴</Description>
+</IndexGroup>
+
+<IndexGroup id="83">
+<Index>均线</Index>
+<Index>amv</Index>
+<Index>asi</Index>
+<Index>cci</Index>
+<Index>dma</Index>
+<Index>expma</Index>
+<Index>kdj</Index>
+<Index>obv</Index>
+<Index>rsi</Index>
+<Index>vol</Index>
+<Index>zbcd</Index>
+<Description>指标创新低</Description>
+</IndexGroup>
+
+<IndexGroup id="82">
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>bbi</Index>
+<Description>即将死叉</Description>
+</IndexGroup>
+
+<IndexGroup id="81">
+<Index>fsl</Index>
+<Description>弱势</Description>
+</IndexGroup>
+
+<IndexGroup id="80">
+<Index>boll</Index>
+<Index>ene</Index>
+<Description>跌破中轨</Description>
+</IndexGroup>
+
+<IndexGroup id="79">
+<Index>macd</Index>
+<Description>红柱高于黄线</Description>
+</IndexGroup>
+
+<IndexGroup id="78">
+<Index>macd</Index>
+<Description>红二波</Description>
+</IndexGroup>
+
+<IndexGroup id="77">
+<Index>boll</Index>
+<Index>ene</Index>
+<Description>突破中轨</Description>
+</IndexGroup>
+
+<IndexGroup id="76">
+<Index>pbx</Index>
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>bias</Index>
+<Index>zlmm</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>dmi</Index>
+<Index>cr</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>obv</Index>
+<Index>asi</Index>
+<Index>amv</Index>
+<Index>roc</Index>
+<Index>bbi</Index>
+<Index>qlcx</Index>
+<Index>emv</Index>
+<Index>dpo</Index>
+<Index>wvad</Index>
+<Index>短线窥测</Index>
+<Index>dbcd</Index>
+<Index>osc</Index>
+<Index>psy</Index>
+<Index>vpt</Index>
+<Index>fsl</Index>
+<Description>金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="75">
+<Index>bias</Index>
+<Index>macd</Index>
+<Description>指标创新高 </Description>
+</IndexGroup>
+
+<IndexGroup id="74">
+<Index>macd</Index>
+<Index>kdj</Index>
+<Description>二次死叉</Description>
+</IndexGroup>
+
+<IndexGroup id="73">
+<Index>均线</Index>
+<Description>走平即将粘合</Description>
+</IndexGroup>
+
+<IndexGroup id="72">
+<Index>kdj</Index>
+<Description>两次探底</Description>
+</IndexGroup>
+
+<IndexGroup id="71">
+<Index>boll</Index>
+<Description>回踩上轨</Description>
+</IndexGroup>
+
+<IndexGroup id="70">
+<Index>boll</Index>
+<Description>中轨附近 </Description>
+</IndexGroup>
+
+<IndexGroup id="69">
+<Index>均线</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>amv</Index>
+<Description>有效下穿</Description>
+</IndexGroup>
+
+<IndexGroup id="68">
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>dmi</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>amv</Index>
+<Index>bbi</Index>
+<Description>即将金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="67">
+<Index>渔家得利</Index>
+<Description>渔家出海</Description>
+</IndexGroup>
+
+<IndexGroup id="66">
+<Index>lwr</Index>
+<Index>均线</Index>
+<Index>dmi</Index>
+<Index>cr</Index>
+<Index>行情收盘价</Index>
+<Index>行情开盘价</Index>
+<Index>行情成交量</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>amv</Index>
+<Index>bbi</Index>
+<Description>上穿</Description>
+</IndexGroup>
+
+<IndexGroup id="65">
+<Index>macd</Index>
+<Description>红柱回升</Description>
+</IndexGroup>
+
+<IndexGroup id="64">
+<Index>bias</Index>
+<Index>macd</Index>
+<Index>mtm</Index>
+<Description>指标创新低 </Description>
+</IndexGroup>
+
+<IndexGroup id="63">
+<Index>lwr</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>mtm</Index>
+<Index>bias</Index>
+<Index>skdj</Index>
+<Index>dma</Index>
+<Index>rsi</Index>
+<Index>dmi</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>amv</Index>
+<Index>dpo</Index>
+<Description>二次金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="62">
+<Index>boll</Index>
+<Description>中轨以上 </Description>
+</IndexGroup>
+
+<IndexGroup id="61">
+<Index>lwr</Index>
+<Index>macd</Index>
+<Index>kdj</Index>
+<Index>bias</Index>
+<Index>cci</Index>
+<Index>skdj</Index>
+<Index>rsi</Index>
+<Index>wr</Index>
+<Index>cr</Index>
+<Index>vr</Index>
+<Index>roc</Index>
+<Index>psy</Index>
+<Index>fsl</Index>
+<Description>顶背离</Description>
+</IndexGroup>
+
+<IndexGroup id="60">
+<Index>macd</Index>
+<Description>拒绝死叉</Description>
+</IndexGroup>
+
+<IndexGroup id="59">
+<Index>ene</Index>
+<Description>下轨附近</Description>
+</IndexGroup>
+
+<IndexGroup id="58">
+<Index>rsi</Index>
+<Description>三线金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="57">
+<Index>boll</Index>
+<Description>上轨附近 </Description>
+</IndexGroup>
+
+<IndexGroup id="56">
+<Index>均线</Index>
+<Description>两次回踩</Description>
+</IndexGroup>
+
+<IndexGroup id="55">
+<Index>均线</Index>
+<Description>在所有均线上</Description>
+</IndexGroup>
+
+<IndexGroup id="54">
+<Index>macd</Index>
+<Description>绿柱放大</Description>
+</IndexGroup>
+
+<IndexGroup id="53">
+<Index>均线</Index>
+<Description>在所有均线下</Description>
+</IndexGroup>
+
+<IndexGroup id="52">
+<Index>sar</Index>
+<Description>绿圈</Description>
+</IndexGroup>
+
+<IndexGroup id="51">
+<Index>macd</Index>
+<Index>kdj</Index>
+<Description>三次底背离</Description>
+</IndexGroup>
+
+<IndexGroup id="50">
+<Index>kdj</Index>
+<Description>躺底上勾</Description>
+</IndexGroup>
+
+<IndexGroup id="49">
+<Index>均线</Index>
+<Description>五线金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="48">
+<Index>boll</Index>
+<Description>中轨以下</Description>
+</IndexGroup>
+
+<IndexGroup id="47">
+<Index>trix</Index>
+<Index>均线</Index>
+<Index>macd</Index>
+<Index>bias</Index>
+<Index>boll</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>obv</Index>
+<Index>amv</Index>
+<Index>psy</Index>
+<Index>lwr2值</Index>
+<Index>lwr1值</Index>
+<Index>pbx2值</Index>
+<Index>pbx3值</Index>
+<Index>pbx4值</Index>
+<Index>pbx1值</Index>
+<Index>pbx6值</Index>
+<Index>pbx5值</Index>
+<Index>trix值</Index>
+<Index>trma值</Index>
+<Index>dea值</Index>
+<Index>diff值</Index>
+<Index>d值</Index>
+<Index>j值</Index>
+<Index>k值</Index>
+<Index>mamtm值</Index>
+<Index>mtm值</Index>
+<Index>mml值</Index>
+<Index>mms值</Index>
+<Index>mmm值</Index>
+<Index>cci值</Index>
+<Index>k值</Index>
+<Index>d值</Index>
+<Index>ddd值</Index>
+<Index>ama值</Index>
+<Index>rsi3值</Index>
+<Index>rsi1值</Index>
+<Index>rsi2值</Index>
+<Index>wr2值</Index>
+<Index>wr1值</Index>
+<Index>lower值</Index>
+<Index>upper值</Index>
+<Index>mid值</Index>
+<Index>di1值</Index>
+<Index>di2值</Index>
+<Index>adx值</Index>
+<Index>adxr值</Index>
+<Index>cr值</Index>
+<Index>ma1值</Index>
+<Index>ma2值</Index>
+<Index>ma3值</Index>
+<Index>vr值</Index>
+<Index>lc值</Index>
+<Index>obv值</Index>
+<Index>cys值</Index>
+<Index>mfi值</Index>
+<Index>asit值</Index>
+<Index>asi值</Index>
+<Index>adtm值</Index>
+<Index>maadtm值</Index>
+<Index>roc值</Index>
+<Index>rocma值</Index>
+<Index>bbi值</Index>
+<Index>ar值</Index>
+<Index>br值</Index>
+<Index>cd值</Index>
+<Index>lon值</Index>
+<Index>lonma值</Index>
+<Index>emv值</Index>
+<Index>maemv值</Index>
+<Index>dpo值</Index>
+<Index>madpo值</Index>
+<Index>psyma值</Index>
+<Index>psy值</Index>
+<Description>走平</Description>
+</IndexGroup>
+
+<IndexGroup id="46">
+<Index>均线</Index>
+<Index>macd</Index>
+<Description>长期粘合</Description>
+</IndexGroup>
+
+<IndexGroup id="45">
+<Index>macd</Index>
+<Description>低位即将金叉</Description>
+</IndexGroup>
+
+<IndexGroup id="44">
+<Index>均线</Index>
+<Index>vol</Index>
+<Index>expma</Index>
+<Index>amv</Index>
+<Description>有效上穿</Description>
+</IndexGroup>

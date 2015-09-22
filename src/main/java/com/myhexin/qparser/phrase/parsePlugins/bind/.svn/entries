@@ -1,0 +1,68 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/qparser/phrase/parsePlugins/bind
+svn://172.20.23.253
+
+
+
+2015-09-19T03:28:01.769297Z
+446221
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+BindNumOrDateToIndex1.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+7248bec60e92f3f2aa2de253bb1fc8f6
+2015-09-19T03:28:01.769297Z
+446221
+liuxiaofeng
+has-props
+
+BindStrToIndex.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+b3b9a76885f54a49b3d74f43c3e1ed90
+2015-09-11T12:04:45.825749Z
+444620
+huangmin
+
+SimpleBindStrToIndex1.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+d6c2327be4f2e53b96fc49f86b2eb10b
+2015-04-01T02:44:09.236872Z
+411943
+liuxiaofeng
+
+stateMachine
+dir
+

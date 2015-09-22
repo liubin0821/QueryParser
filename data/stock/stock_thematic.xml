@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+该文件为专题配置文件，通过配置相应的专题信息返回具体是哪种类型的专题，相应的字段说明如下：
+name：专题的名称
+type：single时是当index只要有一个符合就满足条件，multiple时是index要大于一个符合时满足条件
+      just时问句中所有index 句式 语义 都必须出现在专题条件中, 而且不能有unknown类型
+dateRange：true时表示是一个区间类型，false表示不是区间类型，可以不配置
+index：当指标中包含该index，则该index符合条件
+
+
+-->
+<node>
+
+<!--新闻类-->
+<thematic name="NEWS" type="single">
+    <prop index="股票简称|股票代码|所属概念" />
+    <prop index="新闻" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE" />
+    <syntactic id="FREE_VAR" must_exist ="true"/>   
+</thematic>
+
+<!--知道类-->
+<thematic name="ZHIDAO" type="multiple">
+	<prop index="股票简称|股票代码|基金简称|基金代码|业务名称|主营产品名称|所属申万行业|姓名|评级研究员|董事会秘书姓名|法人代表|持有股票的基金经理|大股东名称|所属概念|泛产品|泛概念|泛人物|a股|港股|港股简称|港股代码|美股|银行|交易所|基金|保险|券商|私募|信托|信托产品|理财产品|政府机构"/>
+    <prop index="疑问词" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE"/>
+    <syntactic id="STR_INSTANCE" must_exist ="true"/>   
+</thematic>
+
+<!--Entity类-->
+<thematic name="ENTITY" type="just">
+	<prop index="股票简称|股票代码|基金简称|基金代码|全部基金代码|业务名称|主营产品名称|所属申万行业|姓名|评级研究员|董事会秘书姓名|法人代表|持有股票的基金经理|大股东名称|所属概念|泛产品|泛概念|泛人物|a股|港股|港股简称|港股代码|美股|银行|交易所|基金|保险|券商|私募|信托|信托产品|理财产品|政府机构" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE|KEY_VALUE" must_exist ="true"/>
+</thematic>
+
+<!--寻址类-->
+<thematic name="WEBSITE" type="multiple">
+	<prop index="股票简称|股票代码|基金简称|基金代码|业务名称|主营产品名称|所属申万行业|股票市场类型|所属概念|a股|港股|港股简称|港股代码|美股|银行|交易所|基金|保险|券商|私募|信托|信托产品|理财产品|政府机构"/>
+    <prop index="公司网站" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE"/>
+    <syntactic id="FREE_VAR" must_exist ="true"/>   
+</thematic>
+
+<!--知识类-->
+<thematic name="KNOWLEDGE" type="single">
+    <semantic id="1111|1139|11540" must_exist ="true"/>
+</thematic>
+
+<!--选基金-->
+<thematic name="SELECT_FUND" type="single">
+    <semantic id="1141|1142|1150" must_exist ="true"/>
+</thematic>
+
+<!--龙头股-->
+<thematic name="LEADER" type="single">
+    <semantic id="1417|1416|1415|1414|1413|1412|1411|1410|1409|1408|1407|1406|1405|1404|1403|1402" must_exist ="true"/>
+</thematic>
+
+<!--诊基金-->
+<thematic name="DIAG_FUND" type="multiple">
+	<prop index="基金简称|基金代码" must_exist ="true"/>
+    <prop index="适合定投" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE" must_exist ="true"/>
+    <syntactic id="FREE_VAR" must_exist ="true"/>
+</thematic>
+<thematic name="DIAG_FUND" type="single">
+    <syntactic id="1302" must_exist ="true"/>
+</thematic>
+
+<!--公告类-->
+<thematic name="PUBNOTE" type="multiple">
+	<prop index="股票简称|股票代码|基金简称|基金代码|a股|港股|港股简称|港股代码|美股|银行|交易所|基金|保险|券商|私募|信托|信托产品|理财产品|政府机构"/>
+    <prop index="公告" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE"/>
+    <syntactic id="FREE_VAR" must_exist ="true"/>   
+</thematic>
+<thematic name="PUBNOTE" type="multiple">
+	<prop index="股票简称|股票代码|基金简称|基金代码|a股|港股|港股简称|港股代码|美股|银行|交易所|基金|保险|券商|私募|信托|信托产品|理财产品|政府机构" must_exist ="true"/>
+    <prop index="周期性公告|事件公告|实施阶段复牌日|增发价格|定向增发|招股说明书|股权质押|股改进度|停牌原因|交易状态|股权激励|收购|公告类型|风险警示|除权除息日|吸收合并|股权登记日|重组|利润分配预案|要约收购|股权激励方案|存货|暂停上市|业绩报告" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE" must_exist ="true"/>
+    <syntactic id="FREE_VAR|STR_INSTANCE" must_exist ="true"/>   
+</thematic>
+<thematic name="PUBNOTE" type="multiple">
+    <prop index="股票简称|股票代码|基金简称|基金代码|a股|港股|港股简称|港股代码|美股|银行|交易所|基金|保险|券商|私募|信托|信托产品|理财产品|政府机构" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE" must_exist ="true"/>
+    <date must_exist ="true" isReport="true"/>  
+</thematic>
+
+
+
+<!--研报类-->
+<thematic name="REPORT" type="multiple">
+	<prop index="股票简称|股票代码|基金简称|基金代码|a股|港股|港股简称|港股代码|美股|银行|交易所|基金|保险|券商|私募|信托|信托产品|理财产品|政府机构|业务名称|主营产品名称|所属申万行业|姓名|评级研究员|董事会秘书姓名|评级研究员|董事会秘书姓名|法人代表|持有股票的基金经理|大股东名称|法人代表|持有股票的基金经理|大股东名称|所属概念|泛产品|泛概念|泛人物|研报常见标题"/>
+    <prop index="研报" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE"/>
+    <syntactic id="FREE_VAR" must_exist ="true"/>
+</thematic>
+<thematic name="REPORT" type="multiple">
+	<prop index="股票简称|股票代码|基金简称|基金代码|a股|港股|港股简称|港股代码|美股|银行|交易所|基金|保险|券商|私募|信托|信托产品|理财产品|政府机构" must_exist ="true"/>
+    <prop index="所属申万行业" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE" must_exist ="true"/>
+</thematic>
+<thematic name="REPORT" type="multiple">
+	<prop index="股票简称|股票代码|基金简称|基金代码|a股|港股|港股简称|港股代码|美股|银行|交易所|基金|保险|券商|私募|信托|信托产品|理财产品|政府机构" must_exist ="true"/>
+    <prop index="其他研报|目标价位" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE" must_exist ="true"/>
+    <syntactic id="FREE_VAR|STR_INSTANCE" must_exist ="true"/>
+</thematic>
+<thematic name="REPORT" type="multiple">
+	<prop index="其他研报" must_exist ="true"/>
+    <prop index="研报" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE" must_exist ="true"/>
+    <syntactic id="FREE_VAR" must_exist ="true"/>
+</thematic>
+<thematic name="REPORT" type="multiple">
+	<prop index="其他研报" must_exist ="true"/>
+    <prop index="所属申万行业" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE|KEY_VALUE" must_exist ="true"/>
+</thematic>
+
+<!--公司相关类-->
+<thematic name="COMPANY_RELATED" type="single">
+	<prop index="股票简称|股票代码|基金简称|基金代码|a股|港股|港股简称|港股代码|美股|银行|交易所|基金|保险|券商|私募|信托|信托产品|理财产品|政府机构" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE|KEY_VALUE" must_exist ="true"/>
+</thematic>
+
+<!--导航类-->
+<thematic name="NAVIGATION" type="multiple">
+	<prop index="股票简称|股票代码|业务名称|主营产品名称|所属申万行业|基金简称|基金代码|姓名|评级研究员|董事会秘书姓名|法人代表|持有股票的基金经理|大股东名称|所属概念|省份|泛产品|泛概念|泛人物|a股|港股|港股简称|港股代码|美股|银行|交易所|基金|保险|券商|私募|信托|信托产品|理财产品|政府机构"/>
+    <prop index="新闻|股吧|微博|论坛|博客|信息|最新公告|下载|相关新闻" must_exist ="true"/>
+    <syntactic id="STR_INSTANCE|KEY_VALUE|FREE_VAR"/>
+    <syntactic id="FREE_VAR" must_exist ="true"/>   
+</thematic>
+
+
+<!--限售解禁专题-->
+<thematic name="RELIEVE_BAN_STK" type="single">
+    <prop index="解禁股数"/>
+    <prop index="解禁股类型"/>
+    <prop index="解禁日期"/>
+    <prop index="解禁金额"/>
+    <prop index="解禁比例"/>
+    <syntactic id="11" must_exist ="true"/>    
+</thematic>
+
+<!--机构持股专题-->
+<thematic name="MIX_INST_HOLDER_STK" type="multiple">
+    <prop index="基金本期持股占流通股比例"/>
+    <prop index="信托公司本期持股占流通股比例"/>
+    <prop index="社保基金本期持股占流通股比例"/>
+    <prop index="保险公司本期持股占流通股比例"/>
+    <prop index="qfii本期持股占流通股比例"/>
+    <prop index="券商本期持股占流通股比例"/>
+    <prop index="机构本期持股占流通股比例"/>
+</thematic>
+<thematic name="INST_HOLDER_STK" type="single">
+    <prop index="机构持股家数"/>
+    <prop index="机构本期持股市值"/>
+    <prop index="机构本期持股占流通股比例"/>
+    <prop index="机构本期持股数量"/>
+</thematic>
+<thematic name="QFII_HOLDER_STK" type="single">
+    <prop index="qfii持股家数"/>
+    <prop index="qfii本期持股市值"/>
+    <prop index="qfii本期持股占流通股比例"/>
+    <prop index="qfii本期持股数量"/>
+</thematic>
+<thematic name="INSURE_HOLDER_STK" type="single">
+    <prop index="保险公司持股家数"/>
+    <prop index="保险公司本期持股市值"/>
+    <prop index="保险公司本期持股占流通股比例"/>
+    <prop index="保险公司本期持股数量"/>
+</thematic>
+<thematic name="BROKER_HOLDER_STK" type="single">
+    <prop index="券商持股家数"/>
+    <prop index="券商本期持股市值"/>
+    <prop index="券商本期持股占流通股比例"/>
+    <prop index="券商本期持股数量"/>
+</thematic>
+<thematic name="SOCIAL_HOLDER_STK" type="single">
+    <prop index="社保基金持股家数"/>
+    <prop index="社保基金本期持股市值"/>
+    <prop index="社保基金本期持股占流通股比例"/>
+    <prop index="社保基金本期持股数量"/>
+</thematic>
+<thematic name="TRUST_HOLDER_STK" type="single">
+    <prop index="信托公司持股家数"/>
+    <prop index="信托公司本期持股市值"/>
+    <prop index="信托公司本期持股占流通股比例"/>
+    <prop index="信托公司本期持股数量"/>
+</thematic>
+<thematic name="FUND_HOLDER_STK" type="single">
+    <prop index="基金持股家数"/>
+    <prop index="基金本期持股市值"/>
+    <prop index="基金本期持股占流通股比例"/>
+    <prop index="基金本期持股数量"/>
+</thematic>
+<!--机构新增专题-->
+<thematic name="MIX_INST_NEW_INCREASE_STK" type="multiple">
+    <prop index="新增基金本期持股占流通股比例"/>
+    <prop index="新增信托公司本期持股占流通股比例"/>
+    <prop index="新增社保基金本期持股占流通股比例"/>
+    <prop index="新增保险公司本期持股占流通股比例"/>
+    <prop index="新增qfii本期持股占流通股比例"/>
+    <prop index="新增券商本期持股占流通股比例"/>
+    <prop index="新增机构本期持股占流通股比例"/>
+</thematic>
+<thematic name="INST_NEW_INCREASE_STK" type="single">
+    <prop index="新增机构持股家数"/>
+    <prop index="新增机构本期持股市值"/>
+    <prop index="新增机构本期持股占流通股比例"/>
+    <prop index="新增机构本期持股数量"/>
+</thematic>
+<thematic name="QFII_NEW_INCREASE_STK" type="single">
+    <prop index="新增qfii持股家数"/>
+    <prop index="新增qfii本期持股市值"/>
+    <prop index="新增qfii本期持股占流通股比例"/>
+    <prop index="新增qfii本期持股数量"/>
+</thematic>
+<thematic name="INSURE_NEW_INCREASE_STK" type="single">
+    <prop index="新增保险公司持股家数"/>
+    <prop index="新增保险公司本期持股市值"/>
+    <prop index="新增保险公司本期持股占流通股比例"/>
+    <prop index="新增保险公司本期持股数量"/>
+</thematic>
+<thematic name="BROKER_NEW_INCREASE_STK" type="single">
+    <prop index="新增券商持股家数"/>
+    <prop index="新增券商本期持股市值"/>
+    <prop index="新增券商本期持股占流通股比例"/>
+    <prop index="新增券商本期持股数量"/>
+</thematic>
+<thematic name="SOCIAL_NEW_INCREASE_STK" type="single">
+    <prop index="新增社保基金持股家数"/>
+    <prop index="新增社保基金本期持股市值"/>
+    <prop index="新增社保基金本期持股占流通股比例"/>
+    <prop index="新增社保基金本期持股数量"/>
+</thematic>
+<thematic name="TRUST_NEW_INCREASE_STK" type="single">
+    <prop index="新增信托公司持股家数"/>
+    <prop index="新增信托公司本期持股市值"/>
+    <prop index="新增信托公司本期持股占流通股比例"/>
+    <prop index="新增信托公司本期持股数量"/>
+</thematic>
+<thematic name="FUND_NEW_INCREASE_STK" type="single">
+    <prop index="新增基金持股家数"/>
+    <prop index="新增基金本期持股市值"/>
+    <prop index="新增基金本期持股占流通股比例"/>
+    <prop index="新增基金本期持股数量"/>
+</thematic>
+<!--大股东增减持专题-->
+<thematic name="STRONG_HOLDER_STK" type="single" dateRange="false">
+    <prop index="大股东当日持股变动股数合计"/>
+    <prop index="大股东当日持股变动市值合计"/>
+    <prop index="大股东当日持股占流通股比例合计"/>
+</thematic>
+<thematic name="RANGE_STRONG_HOLDER_STK" type="single" dateRange="true">
+    <prop index="大股东当日持股变动股数合计"/>
+    <prop index="大股东当日持股变动市值合计"/>
+    <prop index="大股东当日持股占流通股比例合计"/>
+</thematic>
+<!--高管增减持专题-->
+<thematic name="RANGE_MANAGER_HOLDER_STK" type="single" dateRange="true">
+    <prop index="高管当日持股变动股数合计"/>
+    <prop index="高管当日持股变动市值合计"/>
+    <prop index="高管当日持股占流通股比例合计"/>
+</thematic>
+<thematic name="MANAGER_HOLDER_STK" type="single" dateRange="false">
+    <prop index="高管当日持股变动股数合计"/>
+    <prop index="高管当日持股变动市值合计"/>
+    <prop index="高管当日持股占流通股比例合计"/>
+</thematic>
+<!--增发专题-->
+<thematic name="INCREASE_SEND_STK" type="single">
+    <prop index="增发进度"/>
+    <prop index="增发价格"/>
+    <prop index="增发数量"/>
+    <prop index="增发上市日"/>
+    <prop index="增发募集资金"/>
+    <prop index="增发费用"/>
+    <prop index="增发预案公告日"/>
+    <prop index="增发股东大会公告日"/>
+    <prop index="增发获准日期"/>
+    <prop index="增发公告日"/>
+    <prop index="公开发行日"/>
+    <prop index="定向发行日"/>
+</thematic>
+<!--配股专题-->
+<thematic name="CONF_STOCK_STK" type="single">
+    <prop index="每股配股数"/>
+    <prop index="配股价格"/>
+    <prop index="配股进度"/>
+    <prop index="缴款起始日"/>
+    <prop index="缴款终止日"/>
+    <prop index="配股上市日"/>
+    <prop index="配股股权登记日"/>
+    <prop index="配股除权日"/>
+    <prop index="配股发行方式"/>
+    <prop index="配股费用"/>
+    <prop index="实际配股数"/>
+    <prop index="配股实际募集资金"/>
+    <prop index="配股预案公告日"/>
+    <prop index="配股股东大会公告日"/>
+    <prop index="配股获准公告日"/>
+</thematic>
+<!--龙虎榜机构专题-->
+<thematic name="LIST_AGENCY_STK" type="single">
+    <prop index="营业部名称"/>
+    <prop index="机构是否上榜"/>
+    <prop index="机构是否买入"/>
+    <prop index="机构是否卖出"/>
+    <prop index="机构买入金额"/>
+    <prop index="机构净额"/>
+    <prop index="机构卖出金额"/>
+</thematic>
+<thematic name="RANGE_LIST_AGENCY_STK" type="single" >
+    <prop index="区间机构是否上榜"/>
+    <prop index="区间机构是否买入"/>
+    <prop index="区间机构是否卖出"/>
+    <prop index="区间机构买入金额"/>
+    <prop index="区间机构卖出金额"/>
+    <prop index="区间机构净额"/>
+</thematic>
+</node>

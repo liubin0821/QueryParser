@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<bean id="phraseParserPrePlugins" class="com.myhexin.server.plugins.impl.ParserPrePlugins">
+		<property name="plugins">
+			<util:list list-class="java.util.ArrayList">
+				<ref bean="TextNormalize" />
+				<ref bean="CheckIsMessyCodeText" />
+				<ref bean="CheckIsNoParser" />
+				<ref bean="WordSegment" />
+				<ref bean="WordSegmentDynamic" />
+				<ref bean="WordSegmentPostTreat" />
+			</util:list>
+		</property>
+	</bean>
+	
+	<bean id="phraseParserHandlePlugins" class="com.myhexin.server.plugins.impl.ParserHandlePlugins">
+		<property name="plugins">
+			<util:list list-class="java.util.ArrayList">
+				<ref bean="NumParser" />
+				<ref bean="DateParser" />
+				<ref bean="StringParser" />
+				<ref bean="matchIndexAndKeywords" />
+				<ref bean="remainSomeDomain" />
+				<ref bean="removeSomeConditionNode" />
+				<ref bean="matchSyntacticPatternsByChunk" />
+				<ref bean="buildFixedArgumentsAndSemanticProps" />
+				<ref bean="addIndexOfStrInstance" />
+				<ref bean="checkIsSameElements" />
+				<ref bean="combineOnePhraseDate" />
+				<ref bean="dateNumModify" />
+				<ref bean="dealWithAmbiguity" />
+				<ref bean="dealWithIncrease" />
+				<!-- <ref bean="dealWithDateValueForIndex" /> -->
+				<!-- <ref bean="techperiodDetermine" /> -->
+				<ref bean="bindPropToIndex" />
+				<ref bean="bindNumOrDateToIndex" />
+				<ref bean="bindIndexToIndex" />
+				<ref bean="completionIndex" />
+				<ref bean="fillIndexPropDefaultValue" />
+				<ref bean="relationshipOfAndOrNotOld" />
+				<ref bean="calculateScore" />
+			</util:list>
+		</property>
+	</bean>
+	
+	<bean id="phraseParserPostPlugins" class="com.myhexin.server.plugins.impl.ParserHandlePlugins">
+		<property name="plugins">
+			<util:list list-class="java.util.ArrayList">
+				<ref bean="changeNewIndexToOldIndex" />
+				<ref bean="changeNewIndexToIfindIndex" />
+				<ref bean="createJsonResult" />
+				<ref bean="createJsonResultOfMacroIndustry" />
+				<ref bean="thematicClassify" />
+				<ref bean="changeToStandardOutput" />
+				<ref bean="changeToStandardOutputMultResult" />
+			</util:list>
+		</property>
+	</bean>
+	
+	<bean id="phraseParserProcessor" class="com.myhexin.server.processor.impl.ParserProcessor">
+		<property name="plugins">
+			<util:list list-class="java.util.ArrayList">
+				<ref bean="phraseParserPrePlugins" />
+				<ref bean="phraseParserHandlePlugins" />
+				<ref bean="phraseParserPostPlugins" />
+			</util:list>
+		</property>
+	</bean>
+	
+	<bean id="phraseParserService" class="com.myhexin.server.service.impl.PhraseParserService">
+		<property name="processor" ref="phraseParserProcessor" />
+	</bean>
+
+</beans>

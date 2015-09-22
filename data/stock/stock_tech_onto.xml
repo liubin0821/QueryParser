@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="中阴线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="大阴线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="光脚阴线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="光头阴线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="光头光脚阴线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="假阳线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="光脚阳线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="光头阳线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="光头光脚阳线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="阴线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="小阴星" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="小阴线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="lwr" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="rsv" type="DOUBLE" unit="unit"/>
+        <prop label="LWR1值" type="DOUBLE" unit="unit"/>
+        <prop label="LWR2值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="长上影线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="上影线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="长下影线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="下影线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="向上跳空缺口" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="向下跳空缺口" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="一阳五线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="刺穿线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="十字星" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="阳包阴" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="双飞乌鸦" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="pbx" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="PBX1值" type="DOUBLE" unit="unit"/>
+        <prop label="PBX2值" type="DOUBLE" unit="unit"/>
+        <prop label="PBX3值" type="DOUBLE" unit="unit"/>
+        <prop label="PBX4值" type="DOUBLE" unit="unit"/>
+        <prop label="PBX5值" type="DOUBLE" unit="unit"/>
+        <prop label="PBX6值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="旭日初升" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="红三兵" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="鹤立鸡群" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="仙鹤神针" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="士兵突击" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="trix" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="tr值" type="DOUBLE" unit="unit"/>
+        <prop label="trix值" type="DOUBLE" unit="unit"/>
+        <prop label="trma值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="均线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="macd" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="DIFF值" type="DOUBLE" unit="unit"/>
+        <prop label="DEA值" type="DOUBLE" unit="unit"/>
+        <prop label="macd值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="中流砥柱" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="阳盖阴" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="kdj" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="RSV值" type="DOUBLE" unit="unit"/>
+        <prop label="k值" type="DOUBLE" unit="unit"/>
+        <prop label="d值" type="DOUBLE" unit="unit"/>
+        <prop label="j值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="mtm" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="mtm值" type="DOUBLE" unit="unit"/>
+        <prop label="mamtm值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="bias" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="bias1值" type="DOUBLE" unit="unit"/>
+        <prop label="bias2值" type="DOUBLE" unit="unit"/>
+        <prop label="bias3值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="zlmm" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="LC值" type="DOUBLE" unit="unit"/>
+        <prop label="RSI2值" type="DOUBLE" unit="unit"/>
+        <prop label="RSI3值" type="DOUBLE" unit="unit"/>
+        <prop label="MMS值" type="DOUBLE" unit="unit"/>
+        <prop label="MMM值" type="DOUBLE" unit="unit"/>
+        <prop label="MML值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="cci" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="TYP值" type="DOUBLE" unit="unit"/>
+        <prop label="CCI值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="skdj" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="RSV值" type="DOUBLE" unit="unit"/>
+        <prop label="K值" type="DOUBLE" unit="unit"/>
+        <prop label="D值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="dma" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="DDD值" type="DOUBLE" unit="unit"/>
+        <prop label="AMA值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="rsi" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="RSI1值" type="DOUBLE" unit="unit"/>
+        <prop label="RSI2值" type="DOUBLE" unit="unit"/>
+        <prop label="RSI3值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="wr" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="wr1值" type="DOUBLE" unit="unit"/>
+        <prop label="wr2值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="boll" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="upper值" type="DOUBLE" unit="unit"/>
+        <prop label="mid值" type="DOUBLE" unit="unit"/>
+        <prop label="lower值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="dmi" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="tr值" type="DOUBLE" unit="unit"/>
+        <prop label="hd值" type="DOUBLE" unit="unit"/>
+        <prop label="ld值" type="DOUBLE" unit="unit"/>
+        <prop label="dmp值" type="DOUBLE" unit="unit"/>
+        <prop label="dmm值" type="DOUBLE" unit="unit"/>
+        <prop label="di1值" type="DOUBLE" unit="unit"/>
+        <prop label="di2值" type="DOUBLE" unit="unit"/>
+        <prop label="adx值" type="DOUBLE" unit="unit"/>
+        <prop label="adxr值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="cr" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="mid值" type="DOUBLE" unit="unit"/>
+        <prop label="cr值" type="DOUBLE" unit="unit"/>
+        <prop label="ma1值" type="DOUBLE" unit="unit"/>
+        <prop label="ma2值" type="DOUBLE" unit="unit"/>
+        <prop label="ma3值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="金针探底" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="双针探底" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="底部缩量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="底部孕线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="短线超跌" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="中线超跌" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="长线超跌" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="阴包阳" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="穿头破脚" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="锤子线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="倒锤线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="吊颈线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="射击之星" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="突出重围" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="vr" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="lc值" type="DOUBLE" unit="unit"/>
+        <prop label="vr值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="回踩通道线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="反弹先锋" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="早晨之星" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="上升通道" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="海底捞月" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="四阳夹一阴" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="曙光初现" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="趋势拐点" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="短线回调" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="聚宝盆" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="w底" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="杯柄形态" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="早晨十字星" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="两红夹一黑" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="底部放量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="一阳三线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="主力追踪" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="旗形" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="黄昏之星" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="短线超卖" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="sar抛物转向交易系统" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="太阳线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="阶段抄底" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="放量突破" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="回调缩量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="小三阳" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="双岛反转" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="仙人指路" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="涨停回马枪" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="假阴线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="平步青云" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="尖三兵" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="量顶天立地" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="三线开花" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="横盘" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="多方炮" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="出水芙蓉" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="强中选强" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="池底巨龙" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="突破压力位" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="明月战神" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="超级短线波段" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="大s均线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="串阴k线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="箱体突破" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="底部红三兵" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="红二兵" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="下降通道" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="火箭升空" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="行情收盘价" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="季价托" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="行情开盘价" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="行情最新价" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="数值线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit=""/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="金蜘蛛" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="行情成交量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit=""/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="vol" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit=""/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="expma" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit=""/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="老鸭头" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="连续拉升" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="青龙取水" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="蜻蜓点水" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="秋影金波" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="上升三法" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="身怀六甲" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="一字线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="放量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="缩量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="温和放量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="放巨量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="长期横盘" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="低位大阳" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="低位横盘" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="顶部放量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="巨量长阳" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="高位横盘" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="价升量涨" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="短线多头" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="中期均线买入" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="最新股价创历史新高" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="最新股价创历史新低" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="最新股价创阶段新高" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="最新股价创阶段新低" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="阶段放量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="阶段缩量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="平台整理" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="突破平台" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="obv" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="obv值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="cys" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="cyc13值" type="DOUBLE" unit="unit"/>
+        <prop label="cys值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="psy" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="psy值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="mfi" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="typ值" type="DOUBLE" unit="unit"/>
+        <prop label="v1值" type="DOUBLE" unit="unit"/>
+        <prop label="mfi值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="amo" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit=""/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="一阳二线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="asi" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="LC" type="DOUBLE" unit="unit"/>
+        <prop label="AA" type="DOUBLE" unit="unit"/>
+        <prop label="BB" type="DOUBLE" unit="unit"/>
+        <prop label="CC" type="DOUBLE" unit="unit"/>
+        <prop label="DD" type="DOUBLE" unit="unit"/>
+        <prop label="rr" type="DOUBLE" unit="unit"/>
+        <prop label="xx" type="DOUBLE" unit="unit"/>
+        <prop label="SI" type="DOUBLE" unit="unit"/>
+        <prop label="ASI值" type="DOUBLE" unit="unit"/>
+        <prop label="ASIT值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="amv" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit=""/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="adtm" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="DTM" type="DOUBLE" unit="unit"/>
+        <prop label="DBM" type="DOUBLE" unit="unit"/>
+        <prop label="STM" type="DOUBLE" unit="unit"/>
+        <prop label="SBM" type="DOUBLE" unit="unit"/>
+        <prop label="ADTM值" type="DOUBLE" unit="unit"/>
+        <prop label="MAADTM值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="roc" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="ROC值" type="DOUBLE" unit="unit"/>
+        <prop label="ROCMA值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="bbi" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="BBI值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="arbr" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="AR值" type="DOUBLE" unit="unit"/>
+        <prop label="BR值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="zbcd" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="VAR1" type="DOUBLE" unit="unit"/>
+        <prop label="VAR2" type="DOUBLE" unit="unit"/>
+        <prop label="VAR3" type="DOUBLE" unit="unit"/>
+        <prop label="VAR4" type="DOUBLE" unit="unit"/>
+        <prop label="CD值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="qlcx" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="Var1" type="DOUBLE" unit="unit"/>
+        <prop label="Var2" type="DOUBLE" unit="unit"/>
+        <prop label="Var3" type="DOUBLE" unit="unit"/>
+        <prop label="Var4" type="DOUBLE" unit="unit"/>
+        <prop label="Var5" type="DOUBLE" unit="unit"/>
+        <prop label="Var6" type="DOUBLE" unit="unit"/>
+        <prop label="LON值" type="DOUBLE" unit="unit"/>
+        <prop label="LONMA值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="emv" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="VOLUME" type="DOUBLE" unit="unit"/>
+        <prop label="MID" type="DOUBLE" unit="unit"/>
+        <prop label="EMV值" type="DOUBLE" unit="unit"/>
+        <prop label="MAEMV值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="dpo" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="DPO值" type="DOUBLE" unit="unit"/>
+        <prop label="MADPO值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="月价托" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="阳线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="小阳星" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="小阳线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="中阳线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="大阳线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="t字线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="倒t字线" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="阶段平台整理" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="阶段突破平台" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="天量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="地量" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="行情最低价" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_A_LINE" label="行情最高价" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="元"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="新手炒股" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="v1值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_LINES" label="均线出牛股" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="cng1值" type="DOUBLE" unit="unit"/>
+        <prop label="cng2值" type="DOUBLE" unit="unit"/>
+        <prop label="_浮点型数值" type="DOUBLE" unit="unit"/>
+    </class>
+    <class data_src="QUOTE" index_type="TECH_SPECIAL" label="未创新低" report_type="TRADE_DAILY">
+        <subclass>null</subclass>
+        <superclass>null</superclass>
+        <prop label="分析周期" type="TECH_PERIOD" unit="unit"/>
+        <prop label="交易日期" type="DATE" unit="unit"/>
+        <prop label="n日" type="DATE" unit="unit"/>
+        <prop label="_无值" type="UNKNOWN" unit="unit"/>
+    </class>
+</node>

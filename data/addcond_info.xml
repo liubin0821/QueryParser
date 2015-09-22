@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+本配置文件指定当遇到指标X时，需要额外新增其他指标
+key: 遇到的指标
+type: unidirMap:单向映射，只根据遇到的指标补集合内其它指标；mutualMap: 遇到集合内任意指标，
+                补全集合内其它指标。 
+use: alone：仅有此指标时补全；always：只要出现则补全
+needshow：该指标是否要在web上显示
+copyprop: 需要将key的该属性值补全到新增指标的对应属性上
+ -->
+<maps>
+    <map key="QUOTE" use="alone" type="unidirMap" needshow="false">
+        <index label="最新价"/>
+        <index label="最新涨跌幅"/>
+        <index label="市盈率(pe)"/>
+        <index label="最新换手率"/>
+    </map>
+<!--    <map key="HBASE" use="alone" type="unidirMap" needshow="true">
+        <index label="最新价"/>
+        <index label="最新涨跌幅"/>
+    </map> -->
+    <map key="所属概念" use="alone" type="unidirMap" needshow="true">
+        <index label="最新价"/>
+        <index label="最新涨跌幅"/>
+        <index label="最新dde大单净额"/>
+        <index label="成交额"/>
+        <index label="最新换手率"/>
+        <index label="市盈率(pe)"/>
+    </map>
+    <map key="所属申万行业" use="alone" type="unidirMap" needshow="true">
+        <index label="最新价"/>
+        <index label="最新涨跌幅"/>
+        <index label="最新dde大单净额"/>
+        <index label="成交额"/>
+        <index label="市盈率(pe)"/>
+        <index label="净利润"/>
+    </map>
+    <map key="董事group" use="always" type="mutualMap" needshow="true">
+        <index label="董事长薪酬"/>
+        <index label="董事长" valtype="STR"/>
+    </map>
+    <map key="近期创历史新高|近期创历史新低|近期创阶段新高|近期创阶段新低" use="always" type="unidirMap" needshow="false">
+        <index label="最新价"/>
+        <index label="最新涨跌幅"/>
+        <index label="最新换手率"/>
+        <index label="市盈率(pe)"/>
+    </map>
+    <map key="向下有效突破均线" use="alone" type="unidirMap" needshow="false">
+        <index label="最新价"/>
+        <index label="最新涨跌幅"/>
+        <index label="最新换手率"/>
+        <index label="市盈率(pe)"/>
+    </map>
+    <map key="向上有效突破均线" use="alone" type="unidirMap" needshow="false">
+        <index label="最新价"/>
+        <index label="最新涨跌幅"/>
+        <index label="最新换手率"/>
+        <index label="市盈率(pe)"/>
+    </map>
+    <map key="大宗交易(汇总)group" use="alone" type="mutualMap" needshow="true">
+        <index label="大宗交易量(汇总)" copyprop="起始交易日期##截止交易日期"/>
+        <index label="大宗交易额(汇总)" copyprop="起始交易日期##截止交易日期"/>
+        <index label="大宗交易均价" copyprop="起始交易日期##截止交易日期"/>
+    </map>
+    <map key="大宗交易笔数" use="alone" type="unidirMap" needshow="true">
+        <index label="大宗交易均价" copyprop="起始交易日期##截止交易日期"/>
+        <index label="大宗交易量(汇总)" copyprop="起始交易日期##截止交易日期"/>
+        <index label="大宗交易额(汇总)" copyprop="起始交易日期##截止交易日期"/>
+    </map>
+    <map key="大宗交易(明细)group" use="alone" type="mutualMap" needshow="true">
+        <index label="大宗交易量(明细)" copyprop="起始交易日期##截止交易日期"/>
+        <index label="大宗交易额(明细)" copyprop="起始交易日期##截止交易日期"/>
+        <!-- <index label="大宗交易日期" copyprop="起始交易日期##截止交易日期"/>  -->
+        <index label="买方营业厅" copyprop="起始交易日期##截止交易日期"/>
+        <index label="卖方营业厅" copyprop="起始交易日期##截止交易日期"/>
+    </map>   
+    <map key="最新资金流向group" use="alone" type="mutualMap" needshow="true">
+        <index label="最新资金流入"/>
+        <index label="最新资金流出"/>
+        <index label="最新资金净流入"/>
+    </map>
+    <map key="资金流向group" use="alone" type="mutualMap" needshow="true">
+        <index label="资金流入" copyprop="起始交易日期##截止交易日期"/>
+        <index label="资金流出" copyprop="起始交易日期##截止交易日期"/>
+        <index label="资金净流入" copyprop="起始交易日期##截止交易日期"/>
+    </map>
+    <map key="涨跌停" use="always" type="unidirMap" needshow="false">
+        <index label="涨跌幅" copyprop="交易日期"/>
+    </map>
+    <map key="最新涨跌停" use="always" type="unidirMap" needshow="false">
+        <index label="最新涨跌幅"/>
+    </map>
+    <map key="业绩预告group" use="alone" type="mutualMap" needshow="true">
+        <index label="业绩预告日期" copyprop="报告期"/>
+        <index label="业绩预告类型" copyprop="报告期"/>
+        <index label="业绩预告摘要" copyprop="报告期"/>
+        <index label="预告净利润变动幅度(%)" copyprop="报告期"/>
+        <index label="去年同期每股收益" copyprop="报告期"/>
+    </map>
+</maps>

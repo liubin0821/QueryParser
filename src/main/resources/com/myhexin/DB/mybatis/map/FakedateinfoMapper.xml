@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myhexin.DB.mybatis.dao.FakedateinfoMapper">
+	<resultMap id="BaseResultMap"
+		type="com.myhexin.DB.mybatis.mode.Fakedateinfo">
+
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="text" jdbcType="VARCHAR" property="text" />
+		<result column="report_type" jdbcType="VARCHAR" property="reporttype" />
+		<result column="value" jdbcType="VARCHAR" property="value" />
+	</resultMap>
+
+	<select id="selectAll" resultMap="BaseResultMap">
+		select * from fake_date_info
+	</select>
+
+</mapper>

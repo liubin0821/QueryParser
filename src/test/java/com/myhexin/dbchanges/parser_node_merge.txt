@@ -1,0 +1,23 @@
+DROP TABLE parser_node_merge;
+
+CREATE TABLE parser_node_merge
+(
+ID					INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+merge_pattern       VARCHAR(1000) NOT NULL,
+convert_pattern		VARCHAR(100) NULL,
+node_type			VARCHAR(31) NULL,
+is_regex 			CHAR(1) NULL,
+change_to_text		VARCHAR(1000) NOT NULL,
+)ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+
+
+INSERT INTO parser_node_merge(merge_pattern, convert_pattern, is_regex, node_type) VALUES('^(198\\d|199\\d|200\\d|201\\d)$_&_^(年)$', 'yyyy年', 'Y','Date');
+INSERT INTO parser_node_merge(merge_pattern, convert_pattern, is_regex, node_type) VALUES('^(198\\d|199\\d|200\\d|201\\d)(年)$_&_^([0-9]{1,2})(月)$', 'yyyy年MM月', 'Y','Date');
+INSERT INTO parser_node_merge(merge_pattern, convert_pattern, is_regex, node_type) VALUES('^([0-9]{1,2})$_&_^(日|号)$', 'dd日', 'Y','Date');
+INSERT INTO parser_node_merge(merge_pattern, convert_pattern, is_regex, node_type) VALUES('^(198\\d|199\\d|200\\d|201\\d)(年)([0-9]{1,2})(月)$_&_^([0-9]{1,2})(日|号)$', 'yyyy年MM月dd日', 'Y','Date');
+INSERT INTO parser_node_merge(merge_pattern, convert_pattern, is_regex, node_type) VALUES('^([0-9]{1,2})(月)$_&_^([0-9]{1,2})(日|号)$', 'MM月dd日', 'Y','Date');
+
+INSERT INTO parser_node_merge(merge_pattern, convert_pattern, is_regex, node_type,change_to_text) VALUES('现在', '?', 'N','Date','今天');
+
+ALTER TABLE `parser_node_merge` ADD COLUMN calc_expr VARCHAR(200) NULL AFTER convert_pattern;

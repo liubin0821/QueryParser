@@ -1,0 +1,52 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/config/jetty
+svn://172.20.23.253
+
+
+
+2015-09-19T03:03:42.689795Z
+446186
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+jetty.xml
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+f22422964531525da9fcb4082098a94c
+2015-03-24T01:47:31.605390Z
+409734
+liuxiaofeng
+
+web.xml
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+57fe584713ac35527179be8f7d3a9a69
+2015-09-19T03:03:42.689795Z
+446186
+liuxiaofeng
+

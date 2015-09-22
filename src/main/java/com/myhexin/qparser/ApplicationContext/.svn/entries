@@ -1,0 +1,52 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/qparser/ApplicationContext
+svn://172.20.23.253
+
+
+
+2015-04-01T01:37:52.840586Z
+411914
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+ApplicationContextHelper.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+a1c09701cf08e40e539edf906b6b32da
+2015-04-01T01:37:52.840586Z
+411914
+liuxiaofeng
+
+BeanNameConsts.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+5bdd0572ce2a03027093eff8a11215af
+2015-02-13T02:44:54.770785Z
+403951
+liuxiaofeng
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myhexin.DB.mybatis.dao.NodesMergerMapper">
+ <cache size="5200" flushInterval="60000"/>
+	
+	<resultMap id="nodeMerge" type="com.myhexin.DB.mybatis.mode.NodeMerge">
+		<id column="id" property="id" jdbcType="INTEGER" />
+    	<result column="merge_pattern" property="mergePattern" jdbcType="VARCHAR" />
+    	<result column="convert_pattern" property="convertPattern" jdbcType="VARCHAR" />
+    	<result column="calc_expr" property="calc_expr" jdbcType="VARCHAR" />
+    	<result column="node_type" property="node_type" jdbcType="VARCHAR" />
+    	<result column="is_regex" property="is_regex" jdbcType="VARCHAR" />
+    	<result column="change_to_text" property="change_to_text" jdbcType="VARCHAR" />
+    	
+	</resultMap>
+	
+	
+	<select id="selectNodeMergeList" resultMap="nodeMerge">
+		select * from configFile.parser_node_merge
+	</select>
+	
+</mapper>

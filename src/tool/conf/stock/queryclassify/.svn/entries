@@ -1,0 +1,52 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/tool/conf/stock/queryclassify
+svn://172.20.23.253
+
+
+
+2012-09-27T07:01:52.714551Z
+32054
+wangping
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+QueryClass.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+0626bf5695754c353b20ddc36bca4052
+2012-09-05T08:44:06.543122Z
+29112
+luwenxing
+
+StockQueryClassifierByIndex.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+ca0b4bfbde93d2f5c0a39ead29e840be
+2012-09-27T07:01:52.714551Z
+32054
+wangping
+

@@ -1,0 +1,52 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/tool/resouremanager/dict/file
+svn://172.20.23.253
+
+
+
+2012-10-30T08:31:47.363750Z
+35748
+luwenxing
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+IfindStockTrans.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+4f2d0be4789ff0984766bb374aca3e32
+2012-10-30T08:31:47.363750Z
+35748
+luwenxing
+
+StockTransDict.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+219bd53c04ad7426623ad74962443ca9
+2012-10-30T08:31:47.363750Z
+35748
+luwenxing
+

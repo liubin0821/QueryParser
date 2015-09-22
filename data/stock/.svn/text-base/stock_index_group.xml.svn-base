@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index-groups>
+    <index-group title="市盈率" default="市盈率(pe,ttm)">
+        <member>市盈率(pe)</member>
+        <member>市盈率(pe,ttm)</member>
+        <member>预测市盈率(pe,历史预测)</member>
+        <member>预测市盈率(pe,最新预测)</member>
+        <member>预测市盈率(pe,未来12个月)</member>
+    </index-group>
+    <index-group title="peg(市盈率/增长率)" default="预测peg值">
+        <member>历史peg值</member>
+        <member>预测peg值</member>
+    </index-group>
+    <index-group title="市净率" default="市净率(pb,最新)">
+        <member>市净率(pb)</member>
+        <member>市净率(pb,最新)</member>
+    </index-group>
+    <index-group title="市现率" default="市现率(pcf,现金净流量ttm)">
+        <member>市现率(pcf,经营现金流)</member>
+        <member>市现率(pcf,经营现金流ttm)</member>
+        <member>市现率(pcf,现金净流量)</member>
+        <member>市现率(pcf,现金净流量ttm)</member>
+    </index-group>
+    <index-group title="市销率" default="市销率(ps,ttm)">
+        <member>市销率(ps)</member>
+        <member>市销率(ps,ttm)</member>
+    </index-group>
+    <index-group title="总市值" default="a股市值(不含限售股)">
+        <member>总市值</member>
+        <member>总市值(证监会算法)</member>
+        <member>a股市值(含限售股)</member>
+        <member>a股市值(不含限售股)</member>
+        <member>b股市值(含限售股,交易币种)</member>
+        <member>b股市值(含限售股,折人民币)</member>
+        <member>b股市值(不含限售股,交易币种)</member>
+        <member>b股市值(不含限售股,折人民币)</member>
+    </index-group>
+    <index-group title="年化收益率" default="年化收益率(最近60个月)">
+        <member>年化收益率(最近100周)</member>
+        <member>年化收益率(最近24个月)</member>
+        <member>年化收益率(最近60个月)</member>
+        <member>平均收益率</member>
+        <member>平均收益率(年化)</member>
+    </index-group>
+    <index-group title="年化波动率" default="beta值(最近60个月)">
+        <member>年化波动率(最近100周)</member>
+        <member>年化波动率(最近24个月)</member>
+        <member>年化波动率(最近60个月)</member>
+        <member>beta值(最近100周)</member>
+        <member>beta值(最近24个月)</member>
+        <member>beta值(最近60个月)</member>
+        <member>波动率</member>
+        <member>波动率(年化)</member>
+        <member>beta</member>
+        <member>beta(剔除财务杠杆)</member>
+        <member>sharpe</member>
+        <member>treynor</member>
+        <member>jensen</member>
+        <member>jensen(年化)</member>
+    </index-group>
+    <index-group title="每股收益(eps)" default="每股收益eps(ttm)">
+        <member>每股收益eps-基本</member>
+        <member>每股收益eps-稀释</member>
+        <member>每股收益eps-期末股本摊薄</member>
+        <member>每股收益eps-最新股本摊薄</member>
+        <member>每股收益eps-扣除／基本</member>
+        <member>每股收益eps-扣除／稀释</member>
+        <member>每股收益eps-扣除／期末股本摊薄</member>
+        <member>每股收益eps(ttm)</member>
+        <member>单季度.每股收益eps</member>
+    </index-group>
+    <index-group title="每股净资产" default="每股净资产bps-最新股本摊薄">
+        <member>每股净资产bps</member>
+        <member>每股净资产bps-最新股本摊薄</member>
+        <member>每股净资产bps(最新公告)</member>
+    </index-group>
+    <index-group title="每股现金含量" default="每股经营活动产生的现金流量净额(ttm)">
+        <member>每股经营活动产生的现金流量净额</member>
+        <member>每股经营活动产生的现金流量净额(ttm)</member>
+        <member>每股现金流量净额</member>
+        <member>每股现金流量净额(ttm)</member>
+    </index-group>
+    <index-group title="每股营业收入" default="每股营业总收入">
+        <member>每股营业总收入</member>
+        <member>每股营业收入</member>
+        <member>每股营业收入(ttm)</member>
+    </index-group>
+    <index-group title="每股自由现金流量" default="每股股东自由现金流量">
+        <member>每股企业自由现金流量</member>
+        <member>每股股东自由现金流量</member>
+    </index-group>
+    <index-group title="净资产收益率(roe)" default="净资产收益率roe(摊薄,公布值)">
+        <member>净资产收益率roe(平均,同花顺计算)</member>
+        <member>净资产收益率roe(加权,公布值)</member>
+        <member>净资产收益率roe(摊薄,公布值)</member>
+        <member>净资产收益率roe-扣除非经常损益</member>
+        <member>净资产收益率roe(扣除／加权)</member>
+        <member>净资产收益率roe(扣除／摊薄)</member>
+        <member>净资产收益率roe-增发条件</member>
+        <member>年化净资产收益率</member>
+        <member>净资产收益率roe(ttm)</member>
+        <member>单季度.净资产收益率roe</member>
+        <member>单季度.净资产收益率(扣除非经常损益)</member>
+    </index-group>
+    <index-group title="总资产报酬率" default="总资产报酬率roa">
+        <member>总资产报酬率roa</member>
+        <member>总资产净利率roa</member>
+        <member>年化总资产报酬率</member>
+        <member>年化总资产净利率</member>
+        <member>总资产报酬率roa(ttm)</member>
+        <member>总资产净利率roa(ttm)</member>
+    </index-group>
+    <index-group title="经营活动净收益／利润总额" default="经营活动净收益／利润总额">
+        <member>经营活动净收益／利润总额</member>
+        <member>经营活动净收益／利润总额(ttm)</member>
+    </index-group>
+    <index-group title="价值变动净收益／利润总额" default="价值变动净收益／利润总额">
+        <member>价值变动净收益／利润总额</member>
+        <member>价值变动净收益／利润总额(ttm)</member>
+    </index-group>
+    <index-group title="营业外收支净额／利润总额" default="营业外收支净额／利润总额">
+        <member>营业外收支净额／利润总额</member>
+        <member>营业外收支净额／利润总额(ttm)</member>
+    </index-group>
+    <index-group title="预测每股收益" default="预测每股收益中值">
+        <member>预测每股收益平均值</member>
+        <member>预测每股收益最大值</member>
+        <member>预测每股收益最小值</member>
+        <member>预测每股收益中值</member>
+    </index-group>
+    <index-group title="预测主营业务收入" default="预测主营业务收入中值">
+        <member>预测主营业务收入平均值</member>
+        <member>预测主营业务收入最大值</member>
+        <member>预测主营业务收入最小值</member>
+        <member>预测主营业务收入中值</member>
+    </index-group>
+    <index-group title="预测净利润" default="预测净利润中值">
+        <member>预测净利润平均值</member>
+        <member>预测净利润最大值</member>
+        <member>预测净利润最小值</member>
+        <member>预测净利润中值</member>
+    </index-group>
+    <index-group title="预测每股现金流(cps)" default="预测每股现金流(cps)中值">
+        <member>预测每股现金流(cps)平均值</member>
+        <member>预测每股现金流(cps)最大值</member>
+        <member>预测每股现金流(cps)最小值</member>
+        <member>预测每股现金流(cps)中值</member>
+    </index-group>
+    <index-group title="预测每股股利(dps)" default="预测每股股利(dps)中值">
+        <member>预测每股股利(dps)平均值</member>
+        <member>预测每股股利(dps)最大值</member>
+        <member>预测每股股利(dps)最小值</member>
+        <member>预测每股股利(dps)中值</member>
+    </index-group>
+    <index-group title="预测息税前利润(ebit)" default="预测息税前利润(ebit)中值">
+        <member>预测息税前利润(ebit)平均值</member>
+        <member>预测息税前利润(ebit)最大值</member>
+        <member>预测息税前利润(ebit)最小值</member>
+        <member>预测息税前利润(ebit)中值</member>
+        <member>预测息税折旧摊销前利润(ebitda)平均值</member>
+        <member>预测息税折旧摊销前利润(ebitda)最大值</member>
+        <member>预测息税折旧摊销前利润(ebitda)最小值</member>
+        <member>预测息税折旧摊销前利润(ebitda)中值</member>
+    </index-group>
+    <index-group title="预测每股净资产(bps)" default="预测每股净资产(bps)中值">
+        <member>预测每股净资产(bps)平均值</member>
+        <member>预测每股净资产(bps)最大值</member>
+        <member>预测每股净资产(bps)最小值</member>
+        <member>预测每股净资产(bps)中值</member>
+    </index-group>
+    <index-group title="预测利润总额" default="预测利润总额中值">
+        <member>预测利润总额平均值</member>
+        <member>预测利润总额最大值</member>
+        <member>预测利润总额最小值</member>
+        <member>预测利润总额中值</member>
+    </index-group>
+    <index-group title="预测总资产收益率(roa)" default="预测总资产收益率(roa)中值">
+        <member>预测总资产收益率(roa)平均值</member>
+        <member>预测总资产收益率(roa)最大值</member>
+        <member>预测总资产收益率(roa)最小值</member>
+        <member>预测总资产收益率(roa)中值</member>
+    </index-group>
+    <index-group title="预测净资产收益率(roe)" default="预测净资产收益率(roe)中值">
+        <member>预测净资产收益率(roe)平均值</member>
+        <member>预测净资产收益率(roe)最大值</member>
+        <member>预测净资产收益率(roe)最小值</member>
+        <member>预测净资产收益率(roe)中值</member>
+    </index-group>
+</index-groups>

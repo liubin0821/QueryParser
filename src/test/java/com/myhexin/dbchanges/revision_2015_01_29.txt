@@ -1,0 +1,92 @@
+#指数ID映射需求
+DELETE FROM configFile.parser_ref_code WHERE attr_id=1002;
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4283','指数ID映射需求',NULL);
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4285','指数ID映射需求',NULL);
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4287','指数ID映射需求',NULL);
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4401','指数ID映射需求',NULL);
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4409','指数ID映射需求',NULL);
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4317','指数ID映射需求',NULL);
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4357','指数ID映射需求',NULL);
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4371','指数ID映射需求',NULL);
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4275','指数ID映射需求',NULL);
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4383','指数ID映射需求',NULL);
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4379','指数ID映射需求',NULL);
+INSERT INTO configFile.parser_ref_code (attr_id, code_value, code_short_desc, code_long_desc) VALUES(1002, '4425','指数ID映射需求',NULL);
+SELECT * FROM configFile.parser_ref_code WHERE attr_id=1002;
+
+
+
+CREATE TABLE parser_datetime_defaults
+(
+ID INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+key_name 		VARCHAR(100) NOT NULL,
+dt_format	VARCHAR(31) NOT NULL,
+dt_from		VARCHAR(31) NOT NULL,
+dt_to		VARCHAR(31) NOT NULL,		
+dt_val          VARCHAR(31) NOT NULL,	
+offset_val	INT NOT NULL,
+sign_val	CHAR(1) NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8; 
+
+
+CREATE TABLE parser_datetime_periods
+(
+ID INT(11) NOT NULL AUTO_INCREMENT  PRIMARY KEY, 
+key_name 		VARCHAR(100) NOT NULL,
+dt_format		VARCHAR(31) NULL,
+dt_from			VARCHAR(31) NULL,
+dt_to			VARCHAR(31)  NULL,
+dt_next			CHAR(1) NULL,		
+dt_current          	CHAR(1) NULL,	
+dt_previous          	CHAR(1) NULL,
+previous_x_year		VARCHAR(15) NULL,
+previous_x_season	VARCHAR(15) NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8; 
+
+
+INSERT INTO parser_datetime_periods(key_name, dt_format,dt_from,dt_to,dt_next,dt_current,dt_previous,previous_x_year,previous_x_season) VALUES('报告期','MMdd','0130','0331','N','Y','Y','X','X');
+INSERT INTO parser_datetime_periods(key_name, dt_format,dt_from,dt_to,dt_next,dt_current,dt_previous,previous_x_year,previous_x_season) VALUES('报告期','MMdd','0410','0414','Y','Y','Y','X','X');
+INSERT INTO parser_datetime_periods(key_name, dt_format,dt_from,dt_to,dt_next,dt_current,dt_previous,previous_x_year,previous_x_season) VALUES('报告期','MMdd','0415','0630','N','Y','Y','X','X');
+INSERT INTO parser_datetime_periods(key_name, dt_format,dt_from,dt_to,dt_next,dt_current,dt_previous,previous_x_year,previous_x_season) VALUES('报告期','MMdd','0701','0724','Y','Y','Y','X','X');
+INSERT INTO parser_datetime_periods(key_name, dt_format,dt_from,dt_to,dt_next,dt_current,dt_previous,previous_x_year,previous_x_season) VALUES('报告期','MMdd','0725','0930','N','Y','Y','X','X');
+INSERT INTO parser_datetime_periods(key_name, dt_format,dt_from,dt_to,dt_next,dt_current,dt_previous,previous_x_year,previous_x_season) VALUES('报告期','MMdd','1001','1014','Y','Y','Y','X','X');
+INSERT INTO parser_datetime_periods(key_name, dt_format,dt_from,dt_to,dt_next,dt_current,dt_previous,previous_x_year,previous_x_season) VALUES('报告期','MMdd','1015','1231','N','Y','Y','X','X');
+INSERT INTO parser_datetime_periods(key_name, dt_format,dt_from,dt_to,dt_next,dt_current,dt_previous,previous_x_year,previous_x_season) VALUES('报告期','MMdd','0101','0130','Y','Y','Y','X','X');
+
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('报告期','MMdd','0131','0414','1231',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('报告期','MMdd','0415','0724','0331',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('报告期','MMdd','0725','1014','0630',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('报告期','MMdd','1015','1231','0930',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('报告期','MMdd','0101','0130','0930',1,'-');
+
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('龙虎榜','hhmmss','180000','235900','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('龙虎榜','hhmmss','000001','175959','yyMMdd',1,'-');
+
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '报告期', 'MMdd', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '龙虎榜', 'hhmmss', NULL);
+
+
+
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '营业部买卖方向', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '营业部-交易日期', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '营业部买入金额', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '买入占总成交额比例', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '营业部净额', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '营业部名称', 'hhmmss', NULL);
+INSERT  INTO parser_ref_code(attr_id, code_value, code_short_desc, code_long_desc) VALUES(1003, '营业部-上榜原因', 'hhmmss', NULL);
+
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部买卖方向','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部买卖方向','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部-交易日期','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部-交易日期','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部买入金额','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部买入金额','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('买入占总成交额比例','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('买入占总成交额比例','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部净额','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部净额','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部名称','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部名称','hhmmss','180001','235959','yyMMdd',0,'+');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部-上榜原因','hhmmss','000001','180000','yyMMdd',1,'-');
+INSERT INTO parser_datetime_defaults(key_name, dt_format, dt_from,dt_to,dt_val,offset_val,sign_val) VALUES ('营业部-上榜原因','hhmmss','180001','235959','yyMMdd',0,'+');
+

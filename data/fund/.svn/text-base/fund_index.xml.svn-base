@@ -1,0 +1,2571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indexes>
+<index id="00001" pub-unit="" title="基金简称" unit-list=""/>
+<index id="00002" pub-unit="" title="基金代码" unit-list=""/>
+<index id="00003" pub-unit="" title="基金同花顺代码" unit-list=""/>
+<index id="00004" pub-unit="" title="基金全称" unit-list=""/>
+<index id="00005" pub-unit="" title="基金类型" unit-list=""/>
+<index id="05251" pub-unit="" title="投资类型(一级分类)" unit-list=""/>
+<index id="00006" pub-unit="" title="投资类型(二级分类)" unit-list=""/>
+<index id="05632" pub-unit="" title="晨星分类" unit-list=""/>
+<index id="05633" pub-unit="" title="银河分类" unit-list=""/>
+<index id="00007" pub-unit="" title="投资风格" unit-list=""/>
+<index id="00008" pub-unit="" title="投资目标" unit-list=""/>
+<index id="00009" pub-unit="" title="投资范围" unit-list=""/>
+<index id="00010" pub-unit="" title="业绩比较基准" unit-list=""/>
+<index id="00011" pub-unit="" title="基金上市地点" unit-list=""/>
+<index id="00012" pub-unit="" title="面值" unit-list=""/>
+<index id="05634" pub-unit="" title="基金规模" unit-list="P00141"/>
+<index id="05635" pub-unit="" title="同类基金平均规模" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00152" name="F14" title="基金分类"/>
+</params>
+</index>
+<index id="05636" pub-unit="" title="同类基金数量" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00152" name="F14" title="基金分类"/>
+</params>
+</index>
+<index id="05637" pub-unit="" title="规模同类排名" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00152" name="F14" title="基金分类"/>
+</params>
+</index>
+<index id="00013" pub-unit="" title="管理费率" unit-list=""/>
+<index id="00014" pub-unit="" title="托管费率" unit-list=""/>
+<index id="00015" pub-unit="" title="最高申购费率" unit-list=""/>
+<index id="00016" pub-unit="" title="最高赎回费率" unit-list=""/>
+<index id="00017" pub-unit="" title="基金经理(现任)" unit-list=""/>
+<index id="00018" pub-unit="" title="基金经理(历任)" unit-list=""/>
+<index id="00019" pub-unit="" title="基金管理人" unit-list=""/>
+<index id="00020" pub-unit="" title="基金托管人" unit-list=""/>
+<index id="00021" pub-unit="" title="基金发起人" unit-list=""/>
+<index id="00022" pub-unit="" title="基金存续期" unit-list=""/>
+<index id="00023" pub-unit="" title="剩余存续期" unit-list=""/>
+<index id="00024" pub-unit="" title="基金成立日" unit-list=""/>
+<index id="00025" pub-unit="" title="基金到期日" unit-list=""/>
+<index id="00026" pub-unit="" title="开始托管日期" unit-list=""/>
+<index id="00027" pub-unit="" title="托管结束日期" unit-list=""/>
+<index id="00028" pub-unit="" title="赎回起始日" unit-list=""/>
+<index id="04251" pub-unit="" title="申购赎回状态" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD" title="日期"/>
+</params>
+</index>
+<index id="06030" pub-unit="" title="上市日期" unit-list=""/>
+<index id="06031" pub-unit="" title="上市交易份额" unit-list="P00141"/>
+<index id="06018" pub-unit="" title="网上现金发售代码" unit-list=""/>
+<index id="06019" pub-unit="" title="一级市场基金代码" unit-list=""/>
+<index id="06020" pub-unit="" title="网上现金认购起始日" unit-list=""/>
+<index id="06021" pub-unit="" title="网上现金认购截止日" unit-list=""/>
+<index id="06022" pub-unit="" title="网上现金认购份额下限" unit-list=""/>
+<index id="06023" pub-unit="" title="网上现金认购份额上限" unit-list=""/>
+<index id="06024" pub-unit="" title="网下现金认购起始日" unit-list=""/>
+<index id="06025" pub-unit="" title="网下现金认购截止日" unit-list=""/>
+<index id="06026" pub-unit="" title="网下现金认购份额下限" unit-list=""/>
+<index id="06027" pub-unit="" title="网下股票认购起始日" unit-list=""/>
+<index id="06028" pub-unit="" title="网下股票认购截止日" unit-list=""/>
+<index id="06029" pub-unit="" title="网下股票认购份额下限" unit-list=""/>
+<index id="06032" pub-unit="" title="基金份额折算日" unit-list=""/>
+<index id="06033" pub-unit="" title="基金份额折算比例" unit-list=""/>
+<index id="06034" pub-unit="" title="申购赎回简称" unit-list=""/>
+<index id="06035" pub-unit="" title="保本周期" unit-list=""/>
+<index id="06036" pub-unit="" title="保本费率" unit-list=""/>
+<index id="06037" pub-unit="" title="保证人" unit-list=""/>
+<index id="06038" pub-unit="" title="保证人简介" unit-list=""/>
+<index id="06039" pub-unit="" title="投资区域" unit-list=""/>
+<index id="06040" pub-unit="" title="主要投资区域说明" unit-list=""/>
+<index id="06041" pub-unit="" title="境外投资顾问" unit-list=""/>
+<index id="06042" pub-unit="" title="境外托管人" unit-list=""/>
+<index id="00029" pub-unit="" title="基金管理人中文名称" unit-list=""/>
+<index id="00030" pub-unit="" title="基金管理人英文名称" unit-list=""/>
+<index id="00031" pub-unit="" title="基金管理人注册地址" unit-list=""/>
+<index id="00032" pub-unit="" title="基金管理人办公地址" unit-list=""/>
+<index id="00033" pub-unit="" title="基金管理人法人代表" unit-list=""/>
+<index id="00034" pub-unit="" title="基金管理人总经理" unit-list=""/>
+<index id="00035" pub-unit="" title="基金管理人电话" unit-list=""/>
+<index id="00036" pub-unit="" title="基金管理人传真" unit-list=""/>
+<index id="00037" pub-unit="" title="基金管理人电子邮箱" unit-list=""/>
+<index id="00038" pub-unit="" title="前收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00039" pub-unit="" title="开盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00040" pub-unit="" title="最高价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00041" pub-unit="" title="最低价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00042" pub-unit="" title="收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00043" pub-unit="" title="均价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00044" pub-unit="" title="涨跌" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00045" pub-unit="" title="涨跌幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00046" pub-unit="" title="换手率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00047" pub-unit="" title="成交量" unit-list="P00142">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00048" pub-unit="" title="成交额" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00049" pub-unit="" title="振幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00050" pub-unit="" title="贴水" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00051" pub-unit="" title="贴水率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00052" pub-unit="" title="周前收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00053" pub-unit="" title="周开盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00054" pub-unit="" title="周最高价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00055" pub-unit="" title="周最低价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00056" pub-unit="" title="周收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00057" pub-unit="" title="周最高收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00058" pub-unit="" title="周最低收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00059" pub-unit="" title="周均价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00060" pub-unit="" title="周涨跌" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00061" pub-unit="" title="周涨跌幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00062" pub-unit="" title="周换手率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00063" pub-unit="" title="周平均换手率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00064" pub-unit="" title="周振幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00065" pub-unit="" title="周成交量" unit-list="P00142">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00066" pub-unit="" title="周成交额" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00067" pub-unit="" title="周均贴水" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00068" pub-unit="" title="周均贴水率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00069" pub-unit="" title="周最高价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00070" pub-unit="" title="周最低价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00071" pub-unit="" title="周最高收盘价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00072" pub-unit="" title="周最低收盘价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00073" pub-unit="" title="月前收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00074" pub-unit="" title="月开盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00075" pub-unit="" title="月最高价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00076" pub-unit="" title="月最低价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00077" pub-unit="" title="月收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00078" pub-unit="" title="月最高收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00079" pub-unit="" title="月最低收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00080" pub-unit="" title="月均价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00081" pub-unit="" title="月涨跌" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00082" pub-unit="" title="月涨跌幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00083" pub-unit="" title="月换手率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00084" pub-unit="" title="月平均换手率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00085" pub-unit="" title="月振幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00086" pub-unit="" title="月成交量" unit-list="P00142">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00087" pub-unit="" title="月成交额" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00088" pub-unit="" title="月均贴水" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00089" pub-unit="" title="月均贴水率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00090" pub-unit="" title="月最高价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00091" pub-unit="" title="月最低价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00092" pub-unit="" title="月最高收盘价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00093" pub-unit="" title="月最低收盘价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00094" pub-unit="" title="月相对大盘涨跌幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00038" name="FJ" title="大盘指数选项"/>
+</params>
+</index>
+<index id="00095" pub-unit="" title="年前收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00096" pub-unit="" title="年开盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00097" pub-unit="" title="年最高价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00098" pub-unit="" title="年最低价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00099" pub-unit="" title="年收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00100" pub-unit="" title="年最高收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00101" pub-unit="" title="年最低收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00102" pub-unit="" title="年均价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00103" pub-unit="" title="年涨跌" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00104" pub-unit="" title="年涨跌幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00105" pub-unit="" title="年换手率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00106" pub-unit="" title="年平均换手率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00107" pub-unit="" title="年振幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00108" pub-unit="" title="年成交量" unit-list="P00142">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00109" pub-unit="" title="年成交额" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00110" pub-unit="" title="年均贴水" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00111" pub-unit="" title="年均贴水率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00112" pub-unit="" title="年最高价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00113" pub-unit="" title="年最低价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00114" pub-unit="" title="年最高收盘价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00115" pub-unit="" title="年最低收盘价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00116" pub-unit="" title="年相对大盘涨跌幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00004" name="FD0" title="交易日期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00038" name="FJ" title="大盘指数选项"/>
+</params>
+</index>
+<index id="00117" pub-unit="" title="区间前收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00118" pub-unit="" title="区间开盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00119" pub-unit="" title="区间最高价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00120" pub-unit="" title="区间最低价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00121" pub-unit="" title="区间收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00122" pub-unit="" title="区间最高收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00123" pub-unit="" title="区间最低收盘价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00124" pub-unit="" title="区间成交均价" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00125" pub-unit="" title="区间涨跌" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00126" pub-unit="" title="区间涨跌幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00127" pub-unit="" title="区间换手率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00128" pub-unit="" title="区间日均换手率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00129" pub-unit="" title="区间振幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00130" pub-unit="" title="区间成交量" unit-list="P00142">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00131" pub-unit="" title="区间成交额" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00132" pub-unit="" title="区间均贴水" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00133" pub-unit="" title="区间均贴水率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00134" pub-unit="" title="区间最高价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00071" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00135" pub-unit="" title="区间最低价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00071" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00136" pub-unit="" title="区间最高收盘价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00071" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00137" pub-unit="" title="区间最低收盘价日" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00071" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00138" pub-unit="" title="相对大盘区间涨跌幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00038" name="FJ" title="大盘指数选项"/>
+	<param default_val="0" ifind_type="dt_integer" list_name="P00072" name="FT" title="复权方式"/>
+</params>
+</index>
+<index id="00139" pub-unit="" title="区间成交天数" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00140" pub-unit="" title="单位净值" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00141" pub-unit="" title="复权单位净值" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00142" pub-unit="" title="累计单位净值" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00143" pub-unit="" title="复权单位净值增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00144" pub-unit="" title="累计单位净值增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00145" pub-unit="" title="复权单位净值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="04252" pub-unit="" title="累计单位净值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="05638" pub-unit="" title="现金分红净值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00146" pub-unit="" title="复权单位净值相对大盘增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00038" name="FJ" title="大盘指数选项"/>
+</params>
+</index>
+<index id="00147" pub-unit="" title="自成立日起复权单位净值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00001" name="FD0" title="截止交易日期"/>
+</params>
+</index>
+<index id="05639" pub-unit="" title="同类基金区间平均收益率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00152" name="F14" title="基金分类"/>
+</params>
+</index>
+<index id="05640" pub-unit="" title="同类基金区间收益排名" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00152" name="F14" title="基金分类"/>
+</params>
+</index>
+<index id="05666" pub-unit="" title="同类基金区间收益排名(百分比)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00152" name="F14" title="基金分类"/>
+</params>
+</index>
+<index id="05641" pub-unit="" title="区间最高单位净值" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="05642" pub-unit="" title="区间最低单位净值" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="05643" pub-unit="" title="区间最高复权单位净值" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="05644" pub-unit="" title="区间最低复权单位净值" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="05645" pub-unit="" title="区间最高累计单位净值" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="05646" pub-unit="" title="区间最低累计单位净值" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00148" pub-unit="" title="报告期净值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00058" name="FJ" title="报告期净值数据项"/>
+</params>
+</index>
+<index id="00149" pub-unit="" title="报告期净值增长率标准差" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00058" name="FJ" title="报告期净值数据项"/>
+</params>
+</index>
+<index id="00150" pub-unit="" title="报告期业绩比较基准增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00058" name="FJ" title="报告期净值数据项"/>
+</params>
+</index>
+<index id="00151" pub-unit="" title="报告期业绩比较基准增长率标准差" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00058" name="FJ" title="报告期净值数据项"/>
+</params>
+</index>
+<index id="00152" pub-unit="" title="报告期净值增长率减基准增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00058" name="FJ" title="报告期净值数据项"/>
+</params>
+</index>
+<index id="00153" pub-unit="" title="报告期净值增长率标准差减基准标准差" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00058" name="FJ" title="报告期净值数据项"/>
+</params>
+</index>
+<index id="00154" pub-unit="" title="万份基金单位收益" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00002" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00155" pub-unit="" title="7日年化收益率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00002" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00156" pub-unit="" title="区间万份基金单位收益均值" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00010" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00157" pub-unit="" title="区间7日年化收益率均值" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00010" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00158" pub-unit="" title="区间万份基金单位收益方差" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00010" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="00159" pub-unit="" title="区间7日年化收益率方差" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00010" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="04950" pub-unit="" title="市场综合评级" unit-list="">
+<params>
+	<param default_val="2007" ifind_type="dt_year" list_name="" name="FD" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00124" name="F2" title="月份"/>
+</params>
+</index>
+<index id="04336" pub-unit="" title="晨星3年评级" unit-list="">
+<params>
+	<param default_val="2007" ifind_type="dt_year" list_name="" name="FD" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00124" name="F2" title="月份"/>
+</params>
+</index>
+<index id="04951" pub-unit="" title="晨星5年评级" unit-list="">
+<params>
+	<param default_val="2007" ifind_type="dt_year" list_name="" name="FD" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00124" name="F2" title="月份"/>
+</params>
+</index>
+<index id="00407" pub-unit="" title="银河3年评级" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="06105" pub-unit="" title="银河4年评级" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="04952" pub-unit="" title="银河5年评级" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="06106" pub-unit="" title="上海证券3年评级" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="06107" pub-unit="" title="上海证券5年评级" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="06108" pub-unit="" title="招商证券评级" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="06109" pub-unit="" title="海通证券评级" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="06110" pub-unit="" title="济安金信综合评级" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00416" pub-unit="" title="理柏3年评级(总回报)" unit-list="">
+<params>
+	<param default_val="2007" ifind_type="dt_year" list_name="" name="FD" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00124" name="F2" title="月份"/>
+</params>
+</index>
+<index id="00417" pub-unit="" title="理柏3年评级(保本能力)" unit-list="">
+<params>
+	<param default_val="2007" ifind_type="dt_year" list_name="" name="FD" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00124" name="F2" title="月份"/>
+</params>
+</index>
+<index id="00418" pub-unit="" title="理柏3年评级(稳定回报)" unit-list="">
+<params>
+	<param default_val="2007" ifind_type="dt_year" list_name="" name="FD" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00124" name="F2" title="月份"/>
+</params>
+</index>
+<index id="00419" pub-unit="" title="理柏3年评级(费用)" unit-list="">
+<params>
+	<param default_val="2007" ifind_type="dt_year" list_name="" name="FD" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00124" name="F2" title="月份"/>
+</params>
+</index>
+<index id="04343" pub-unit="" title="Treynor" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00111" name="FL" title="无风险收益率"/>
+	<param default_val="000001.SH" ifind_type="dt_string" list_name="P00060" name="FI" title="标的指数"/>
+</params>
+</index>
+<index id="04344" pub-unit="" title="Jensen" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00111" name="FL" title="无风险收益率"/>
+	<param default_val="000001.SH" ifind_type="dt_string" list_name="P00060" name="FI" title="标的指数"/>
+</params>
+</index>
+<index id="04345" pub-unit="" title="平均收益率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+</params>
+</index>
+<index id="04346" pub-unit="" title="年化收益率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+</params>
+</index>
+<index id="05121" pub-unit="" title="几何平均收益率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+</params>
+</index>
+<index id="05122" pub-unit="" title="平均风险收益率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00111" name="FL" title="无风险收益率"/>
+</params>
+</index>
+<index id="04347" pub-unit="" title="几何平均风险收益率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00111" name="FL" title="无风险收益率"/>
+</params>
+</index>
+<index id="04348" pub-unit="" title="收益标准差" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+</params>
+</index>
+<index id="04349" pub-unit="" title="年化波动率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+</params>
+</index>
+<index id="04350" pub-unit="" title="Beta" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="000001.SH" ifind_type="dt_string" list_name="P00060" name="FI" title="标的指数"/>
+</params>
+</index>
+<index id="04351" pub-unit="" title="可决系数" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="000001.SH" ifind_type="dt_string" list_name="P00060" name="FI" title="标的指数"/>
+</params>
+</index>
+<index id="04352" pub-unit="" title="非系统风险" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="000001.SH" ifind_type="dt_string" list_name="P00060" name="FI" title="标的指数"/>
+</params>
+</index>
+<index id="04341" pub-unit="" title="Alpha" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="000001.SH" ifind_type="dt_string" list_name="P00060" name="FI" title="标的指数"/>
+</params>
+</index>
+<index id="04342" pub-unit="" title="Sharpe" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00111" name="FL" title="无风险收益率"/>
+</params>
+</index>
+<index id="04353" pub-unit="" title="选时能力" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00111" name="FL" title="无风险收益率"/>
+	<param default_val="000001.SH" ifind_type="dt_string" list_name="P00060" name="FI" title="标的指数"/>
+</params>
+</index>
+<index id="04354" pub-unit="" title="选股能力" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00111" name="FL" title="无风险收益率"/>
+	<param default_val="000001.SH" ifind_type="dt_string" list_name="P00060" name="FI" title="标的指数"/>
+</params>
+</index>
+<index id="04355" pub-unit="" title="跟踪误差" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00111" name="FL" title="无风险收益率"/>
+	<param default_val="000001.SH" ifind_type="dt_string" list_name="P00060" name="FI" title="标的指数"/>
+</params>
+</index>
+<index id="04356" pub-unit="" title="信息比率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00092" name="FT" title="计算周期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00107" name="FJ" title="收益率计算方法"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00111" name="FL" title="无风险收益率"/>
+	<param default_val="000001.SH" ifind_type="dt_string" list_name="P00060" name="FI" title="标的指数"/>
+</params>
+</index>
+<index id="00160" pub-unit="" title="单位年度分红" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FD" title="年度"/>
+</params>
+</index>
+<index id="00161" pub-unit="" title="年度分红总额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FD" title="年度"/>
+</params>
+</index>
+<index id="00162" pub-unit="" title="年度分红次数" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FD" title="年度"/>
+</params>
+</index>
+<index id="00163" pub-unit="" title="累计分红总额" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00164" pub-unit="" title="累计分红次数" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00003" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00165" pub-unit="" title="基金份额" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD" title="交易日期"/>
+</params>
+</index>
+<index id="00166" pub-unit="" title="基金份额变化" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD1" title="起始日期"/>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD2" title="截至日期"/>
+</params>
+</index>
+<index id="00167" pub-unit="" title="基金份额变化率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD1" title="起始日期"/>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD2" title="截至日期"/>
+</params>
+</index>
+<index id="00168" pub-unit="" title="报告期总申购份额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00169" pub-unit="" title="报告期总赎回份额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00170" pub-unit="" title="报告期申购赎回净额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00171" pub-unit="" title="单季度总申购份额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00172" pub-unit="" title="单季度总赎回份额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00173" pub-unit="" title="单季度申购赎回净额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00174" pub-unit="" title="场内流通份额" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_date" list_name="P00001" name="FD0" title="交易日期"/>
+</params>
+</index>
+<index id="00177" pub-unit="" title="基金份额持有人户数" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00178" pub-unit="" title="平均每户持有基金份额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00179" pub-unit="" title="机构投资者持有份额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00180" pub-unit="" title="机构投资者持有比例" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04255" pub-unit="" title="管理人员工持有份额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04256" pub-unit="" title="管理人员工持有比例" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00181" pub-unit="" title="个人投资者持有份额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00182" pub-unit="" title="个人投资者持有比例" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00183" pub-unit="" title="第N名持有人名称(封闭式)" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00062" name="FS" title="排名"/>
+</params>
+</index>
+<index id="00184" pub-unit="" title="第N名持有人持有份额(封闭式)" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00063" name="FS" title="排名"/>
+</params>
+</index>
+<index id="00185" pub-unit="" title="第N名持有人持有比例(封闭式)" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00063" name="FS" title="排名"/>
+</params>
+</index>
+<index id="00186" pub-unit="" title="前十大持有人持有比例合计(封闭式)" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00187" pub-unit="" title="前十大持有人持有份额合计(封闭式)" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00188" pub-unit="" title="基金资产总值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00189" pub-unit="" title="基金资产净值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00190" pub-unit="" title="股票投资市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00191" pub-unit="" title="债券投资市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06111" pub-unit="" title="基金投资市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00192" pub-unit="" title="权证投资市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="04302" pub-unit="" title="银行存款" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04315" pub-unit="" title="其他资产" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00195" pub-unit="" title="股票市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00196" pub-unit="" title="债券市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06112" pub-unit="" title="基金市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00197" pub-unit="" title="权证市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00198" pub-unit="" title="银行存款占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00199" pub-unit="" title="其他资产占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00200" pub-unit="" title="股票市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00201" pub-unit="" title="债券市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06113" pub-unit="" title="基金市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00202" pub-unit="" title="权证市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00203" pub-unit="" title="银行存款占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00204" pub-unit="" title="其他资产占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00205" pub-unit="" title="基金净值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06050" pub-unit="" title="股票市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06051" pub-unit="" title="债券市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06114" pub-unit="" title="基金市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06052" pub-unit="" title="权证市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06053" pub-unit="" title="银行存款市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06054" pub-unit="" title="其他资产市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06055" pub-unit="" title="基金资产净值变动" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06056" pub-unit="" title="基金资产净值变动率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06057" pub-unit="" title="基金资产总值变动" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06058" pub-unit="" title="基金资产总值变动率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06059" pub-unit="" title="股票市值占基金资产净值比例增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06060" pub-unit="" title="债券市值占基金资产净值比例增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06115" pub-unit="" title="基金市值占基金资产净值比例增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06061" pub-unit="" title="权证市值占基金资产净值比例增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06062" pub-unit="" title="银行存款市值占基金资产净值比例增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06063" pub-unit="" title="其他资产市值占基金资产净值比例增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06064" pub-unit="" title="所属基金公司资产净值合计" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06065" pub-unit="" title="所属基金公司资产净值合计排名" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06066" pub-unit="" title="所属基金公司资产净值合计变动率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00206" pub-unit="" title="分行业投资市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="13" ifind_type="dt_integer" list_name="P00120" name="F02" title="行业类别"/>
+</params>
+</index>
+<index id="00207" pub-unit="" title="分行业市值占股票投资市值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="13" ifind_type="dt_integer" list_name="P00120" name="FJ" title="行业类别"/>
+</params>
+</index>
+<index id="00208" pub-unit="" title="分行业市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="13" ifind_type="dt_integer" list_name="P00120" name="FJ" title="行业类别"/>
+</params>
+</index>
+<index id="00209" pub-unit="" title="分行业市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="13" ifind_type="dt_integer" list_name="P00120" name="FJ" title="行业类别"/>
+</params>
+</index>
+<index id="06067" pub-unit="" title="分行业市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="13" ifind_type="dt_integer" list_name="P00120" name="FJ" title="行业类别"/>
+</params>
+</index>
+<index id="06068" pub-unit="" title="分行业市值占基金资产净值比增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="13" ifind_type="dt_integer" list_name="P00120" name="FJ" title="行业类别"/>
+</params>
+</index>
+<index id="06069" pub-unit="" title="重仓行业名称" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="06070" pub-unit="" title="重仓行业代码" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="06071" pub-unit="" title="重仓行业市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="06072" pub-unit="" title="重仓行业市值占股票投资市值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="06073" pub-unit="" title="重仓行业市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="06074" pub-unit="" title="重仓行业市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="06075" pub-unit="" title="所属基金公司重仓行业市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="13" ifind_type="dt_integer" list_name="P00120" name="FJ" title="行业类别"/>
+</params>
+</index>
+<index id="00210" pub-unit="" title="报告期末持有股票个数(中报、年报)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00211" pub-unit="" title="重仓股股票名称" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00212" pub-unit="" title="重仓股股票代码" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00213" pub-unit="" title="重仓股持股数量" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00214" pub-unit="" title="重仓股持股市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00215" pub-unit="" title="重仓股市值占股票投资市值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00216" pub-unit="" title="重仓股市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00217" pub-unit="" title="重仓股市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00218" pub-unit="" title="前N名重仓股票市值合计占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="5" ifind_type="dt_integer" list_name="" name="F04" title="名次"/>
+</params>
+</index>
+<index id="06076" pub-unit="" title="重仓股持仓变动" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="06077" pub-unit="" title="重仓股持仓占流通股比例" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="06078" pub-unit="" title="重仓股涨跌幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+</params>
+</index>
+<index id="06079" pub-unit="" title="重仓股票持有基金数" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00219" pub-unit="" title="国债市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00220" pub-unit="" title="金融债市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00221" pub-unit="" title="企业债市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00222" pub-unit="" title="可转债市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00223" pub-unit="" title="央行票据市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00224" pub-unit="" title="国债市值占债券投资市值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00225" pub-unit="" title="金融债市值占债券投资市值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00226" pub-unit="" title="企业债市值占债券投资市值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00227" pub-unit="" title="可转债市值占债券投资市值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00228" pub-unit="" title="央行票据市值占债券投资市值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00229" pub-unit="" title="国债市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00230" pub-unit="" title="金融债市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00231" pub-unit="" title="企业债市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00232" pub-unit="" title="可转债市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00233" pub-unit="" title="央行票据市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00234" pub-unit="" title="国债市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00235" pub-unit="" title="金融债市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00236" pub-unit="" title="企业债市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00237" pub-unit="" title="可转债市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00238" pub-unit="" title="央行票据市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06116" pub-unit="" title="国债市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06117" pub-unit="" title="金融债市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06118" pub-unit="" title="企业债市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06119" pub-unit="" title="可转债市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06120" pub-unit="" title="央行票据市值增长率" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06121" pub-unit="" title="国债市值占基金资产净值比例增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06122" pub-unit="" title="金融债市值占基金资产净值比例增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06123" pub-unit="" title="企业债市值占基金资产净值比例增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06124" pub-unit="" title="可转债市值占基金资产净值比例增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="06125" pub-unit="" title="央行票据市值占基金资产净值比例增长" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00239" pub-unit="" title="重仓债券名称" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00100" name="FS" title="名次"/>
+</params>
+</index>
+<index id="06126" pub-unit="" title="重仓债券代码" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00100" name="FS" title="名次"/>
+</params>
+</index>
+<index id="06127" pub-unit="" title="重仓债券持仓数量" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00100" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00240" pub-unit="" title="重仓债券持有市值" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00100" name="FS" title="名次"/>
+</params>
+</index>
+<index id="06128" pub-unit="" title="重仓债券持仓变动" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00100" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00241" pub-unit="" title="重仓债券市值占债券投资市值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00100" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00242" pub-unit="" title="重仓债券市值占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00100" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00243" pub-unit="" title="重仓债券市值占基金资产总值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00100" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00244" pub-unit="" title="前N名重仓债券市值合计占债券投资市值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="5" ifind_type="dt_integer" list_name="" name="F04" title="名次"/>
+</params>
+</index>
+<index id="06129" pub-unit="" title="前N名重仓债券市值合计占基金资产净值比" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="5" ifind_type="dt_integer" list_name="" name="F04" title="名次"/>
+</params>
+</index>
+<index id="06130" pub-unit="" title="重仓债券涨跌幅" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00100" name="FS" title="名次"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00011" name="FD1" title="起始交易日期"/>
+	<param default_val="1" ifind_type="dt_tradedate" list_name="P00009" name="FD2" title="截止交易日期"/>
+	<param default_val="2" ifind_type="dt_integer" list_name="P00128" name="FJ" title="债券价格类型"/>
+</params>
+</index>
+<index id="06131" pub-unit="" title="重仓债券持有基金数" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00100" name="FS" title="名次"/>
+</params>
+</index>
+<index id="00245" pub-unit="" title="债券投资金额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00246" pub-unit="" title="买入返售证券金额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00247" pub-unit="" title="银行存款和清算备付金" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00249" pub-unit="" title="债券投资占基金资产总值的比例" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00250" pub-unit="" title="买入返售证券占基金资产总值的比例" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00251" pub-unit="" title="银行存款和清算备付金合计占基金资产总值的比例" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00252" pub-unit="" title="其他资产占基金资产总值的比例" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00253" pub-unit="" title="报告期内债券回购融资余额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00254" pub-unit="" title="报告期末债券回购融资余额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00255" pub-unit="" title="报告期内债券回购融资余额占基金资产净值比例" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00256" pub-unit="" title="报告期末债券回购融资余额占基金资产净值比例" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00257" pub-unit="" title="报告期末投资组合平均剩余期限" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00258" pub-unit="" title="报告期内投资组合平均剩余期限最高值" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00259" pub-unit="" title="报告期内投资组合平均剩余期限最低值" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00260" pub-unit="" title="报告期内偏离度的绝对值在0.25%(含)-0.5%间的次数" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00261" pub-unit="" title="报告期内偏离度的最高值" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00262" pub-unit="" title="报告期内偏离度的最低值" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00263" pub-unit="" title="报告期内每个工作日偏离度的绝对值的简单平均值" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00264" pub-unit="" title="各期限资产占基金资产净值比例" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00140" name="FJ" title="组合剩余期限"/>
+</params>
+</index>
+<index id="05647" pub-unit="" title="国家/地区投资市值(QDII)" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00149" name="FCOUNTRY" title="国家"/>
+</params>
+</index>
+<index id="05648" pub-unit="" title="国家/地区投资市值占基金资产净值比例(QDII)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00149" name="FCOUNTRY" title="国家"/>
+</params>
+</index>
+<index id="05649" pub-unit="" title="重仓行业名称(QDII)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="05650" pub-unit="" title="重仓行业投资市值(QDII)" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="05651" pub-unit="" title="重仓行业投资市值占基金资产净值比例(QDII)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="05652" pub-unit="" title="分行业投资市值(QDII)" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00178" name="FS" title="行业类别"/>
+</params>
+</index>
+<index id="05653" pub-unit="" title="分行业投资市值占基金资产净值比例(QDII)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00178" name="FS" title="行业类别"/>
+</params>
+</index>
+<index id="05654" pub-unit="" title="重仓证券名称(QDII)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="05655" pub-unit="" title="重仓证券代码(QDII)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="05656" pub-unit="" title="重仓证券类型(QDII)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="05657" pub-unit="" title="重仓持仓数量(QDII)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="05658" pub-unit="" title="重仓持仓市值(QDII)" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="05659" pub-unit="" title="重仓持仓市值变化(QDII)" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="05660" pub-unit="" title="重仓持仓市值占基金资产净值比例(QDII)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="05661" pub-unit="" title="重仓证券上市地点(QDII)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="05662" pub-unit="" title="重仓证券所属国家(QDII)" unit-list="">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="1" ifind_type="dt_integer" list_name="P00099" name="FS" title="名次"/>
+</params>
+</index>
+<index id="04261" pub-unit="" title="报告期利润" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04262" pub-unit="" title="报告期利润扣减当期公允价值变动损益后的净额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04263" pub-unit="" title="报告期加权平均份额利润" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04264" pub-unit="" title="报告期末可供分配基金利润" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04265" pub-unit="" title="报告期末可供分配基金份额利润" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04266" pub-unit="" title="基金加权平均净值利润率" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04267" pub-unit="" title="季度基金利润" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="4" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04268" pub-unit="" title="本期利润扣减公允价值变动损益后的净额" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="4" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04269" pub-unit="" title="加权平均基金份额本期利润" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="4" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04270" pub-unit="" title="报告期期末基金资产净值" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="4" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04271" pub-unit="" title="报告期期末基金份额净值" unit-list="">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="4" ifind_type="dt_integer" list_name="P00084" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04272" pub-unit="" title="期初所有者权益(基金净值)" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04273" pub-unit="" title="本期经营活动产生的基金净值变动数(本期净利润)" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04274" pub-unit="" title="本期基金份额交易产生的基金净值变动数" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04275" pub-unit="" title="基金申购款" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04276" pub-unit="" title="基金赎回款" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04277" pub-unit="" title="本期向基金份额持有人分配利润产生的基金净值变动数" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04278" pub-unit="" title="期末所有者权益(基金净值)" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04279" pub-unit="" title="收入" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04280" pub-unit="" title="利息收入" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04281" pub-unit="" title="存款利息收入" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04282" pub-unit="" title="债券利息收入" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04283" pub-unit="" title="买入返售金融资产收入" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04284" pub-unit="" title="资产支持证券利息收入" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04285" pub-unit="" title="投资收益" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04286" pub-unit="" title="股票投资收益" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04287" pub-unit="" title="债券投资收益" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04288" pub-unit="" title="资产支持证券投资收益" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04289" pub-unit="" title="衍生工具收益" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04290" pub-unit="" title="股利收益" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04291" pub-unit="" title="公允价值变动收益" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04292" pub-unit="" title="其他收入" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04293" pub-unit="" title="费用" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04294" pub-unit="" title="管理人报酬" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04295" pub-unit="" title="托管费" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04296" pub-unit="" title="销售服务费" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04297" pub-unit="" title="交易费用" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04298" pub-unit="" title="利息支出" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04299" pub-unit="" title="卖出回购金融资产支出" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04300" pub-unit="" title="其他费用" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04301" pub-unit="" title="利润总额" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04303" pub-unit="" title="结算备付金" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04304" pub-unit="" title="存出保证金" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04305" pub-unit="" title="交易性金融资产" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04306" pub-unit="" title="股票投资" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04307" pub-unit="" title="债券投资" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04308" pub-unit="" title="资产支持证券投资" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04309" pub-unit="" title="衍生金融资产" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04310" pub-unit="" title="买入返售金融资产" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04311" pub-unit="" title="应收证券清算款" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04312" pub-unit="" title="应收利息" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04313" pub-unit="" title="应收股利" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04314" pub-unit="" title="应收申购款" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04316" pub-unit="" title="资产合计" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04317" pub-unit="" title="短期借款" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04318" pub-unit="" title="交易性金融负债" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04319" pub-unit="" title="衍生金融负债" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04320" pub-unit="" title="卖出回购金融资产款" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04321" pub-unit="" title="应付证券清算款" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04322" pub-unit="" title="应付赎回款" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04323" pub-unit="" title="应付管理人报酬" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04324" pub-unit="" title="应付托管费" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04325" pub-unit="" title="应付销售服务费" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04326" pub-unit="" title="应付交易费用" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04327" pub-unit="" title="应付税费" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04328" pub-unit="" title="应付利息" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04329" pub-unit="" title="应付利润" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04330" pub-unit="" title="其他负债" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04331" pub-unit="" title="负债合计" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04332" pub-unit="" title="实收基金" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04333" pub-unit="" title="未分配利润" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04334" pub-unit="" title="所有者权益合计" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="04335" pub-unit="" title="负债及持有人权益合计" unit-list="P00141">
+<params>
+	<param default_val="2011" ifind_type="dt_year" list_name="" name="FY" title="年度"/>
+	<param default_val="6" ifind_type="dt_integer" list_name="P00085" name="FJ" title="基金报告期"/>
+</params>
+</index>
+<index id="00363" pub-unit="" title="交易佣金(合计值)" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+</params>
+</index>
+<index id="00364" pub-unit="" title="交易佣金(分券商明细)" unit-list="P00141">
+<params>
+	<param default_val="1" ifind_type="dt_YQ" list_name="P00007" name="FD" title="报告期"/>
+	<param default_val="中信证券股份有限公司" ifind_type="dt_string" list_name="P00090" name="FJ" title="机构"/>
+</params>
+</index>
+<index id="00365" pub-unit="" title="发行日期" unit-list=""/>
+<index id="00366" pub-unit="" title="发行方式" unit-list=""/>
+<index id="00367" pub-unit="" title="发行对象" unit-list=""/>
+<index id="00368" pub-unit="" title="发行总份额" unit-list=""/>
+<index id="00369" pub-unit="" title="上市基金发行价格" unit-list=""/>
+<index id="00370" pub-unit="" title="基金主承销商" unit-list=""/>
+<index id="00371" pub-unit="" title="基金发行协调人" unit-list=""/>
+<index id="00372" pub-unit="" title="基金销售代理人" unit-list=""/>
+<index id="00373" pub-unit="" title="基金上市推荐人" unit-list=""/>
+<index id="00374" pub-unit="" title="基金注册与过户登记人" unit-list=""/>
+<index id="00375" pub-unit="" title="开放式基金认购户数" unit-list=""/>
+<index id="00376" pub-unit="" title="发行封闭期" unit-list=""/>
+<index id="00377" pub-unit="" title="成立条件-净认购份额" unit-list=""/>
+<index id="00378" pub-unit="" title="成立条件-认购户数" unit-list=""/>
+<index id="00379" pub-unit="" title="募集份额上限" unit-list=""/>
+<index id="00380" pub-unit="" title="个人投资者认购方式" unit-list=""/>
+<index id="00381" pub-unit="" title="个人投资者认购金额下限" unit-list=""/>
+<index id="00382" pub-unit="" title="个人投资者认购金额上限" unit-list=""/>
+<index id="00383" pub-unit="" title="个人投资者认购起始日" unit-list=""/>
+<index id="00384" pub-unit="" title="个人投资者认购终止日" unit-list=""/>
+<index id="00385" pub-unit="" title="封闭期机构投资者认购方式" unit-list=""/>
+<index id="00386" pub-unit="" title="机构投资者设立认购起始日" unit-list=""/>
+<index id="00387" pub-unit="" title="机构投资者设立认购终止日" unit-list=""/>
+<index id="00388" pub-unit="" title="封闭期机构投资者认购下限" unit-list=""/>
+<index id="00389" pub-unit="" title="封闭期机构投资者认购上限" unit-list=""/>
+<index id="00390" pub-unit="" title="申购起始日" unit-list=""/>
+<index id="00391" pub-unit="" title="申购金额下限" unit-list=""/>
+<index id="00392" pub-unit="" title="申购费率上限" unit-list=""/>
+<index id="00393" pub-unit="" title="单笔赎回份额下限" unit-list=""/>
+<index id="00394" pub-unit="" title="赎回费率上限" unit-list=""/>
+<index id="00395" pub-unit="" title="封闭式基金认购数量" unit-list=""/>
+<index id="00396" pub-unit="" title="封闭式基金超额认购倍数" unit-list=""/>
+<index id="00397" pub-unit="" title="封闭式基金中签率" unit-list=""/>
+<index id="00398" pub-unit="" title="封闭式基金上市日期" unit-list=""/>
+<index id="00399" pub-unit="" title="基金上市首日涨跌幅" unit-list=""/>
+<index id="00400" pub-unit="" title="基金上市首日换手率" unit-list=""/>
+<index id="00401" pub-unit="" title="基金上市后N日涨跌幅" unit-list="">
+<params>
+	<param default_val="5" ifind_type="dt_integer" list_name="" name="FN" title="天数"/>
+</params>
+</index>
+<index id="00402" pub-unit="" title="基金上市后N日换手率" unit-list="">
+<params>
+	<param default_val="5" ifind_type="dt_integer" list_name="" name="FN" title="天数"/>
+</params>
+</index>
+</indexes>

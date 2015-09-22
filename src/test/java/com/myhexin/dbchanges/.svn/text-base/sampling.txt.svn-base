@@ -1,0 +1,30 @@
+DROP TABLE sampling_queries;
+
+CREATE TABLE  sampling_queries (
+  ID   						INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  query 					VARCHAR(300) NOT NULL,
+  status					INT NULL
+) ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+DROP TABLE sampling_results;
+
+CREATE TABLE  sampling_results (
+  ID   						INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  query 					VARCHAR(300) NOT NULL,
+  synt_semantic_info 		VARCHAR(255) NULL,
+  score						INT NULL,
+  std_query		 		VARCHAR(300) NULL,
+  comments					VARCHAR(100) NULL,
+  upd_dt					DATETIME NULL
+) ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+CREATE TABLE  np_mapping_ifind_params (
+  ID   						INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  index_name 				VARCHAR(100) NOT NULL,
+  item_name	 				VARCHAR(15) NULL,
+  param_name				VARCHAR(15) NULL,
+  param_val					VARCHAR(15) NULL,
+  param_system				VARCHAR(7) NULL
+) ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+      

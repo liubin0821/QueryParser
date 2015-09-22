@@ -1,0 +1,13 @@
+/.svn/
+/DB/
+/applicationContext.xml
+/com/
+/jetty/
+/log4j.properties
+/mybatis/
+/plugin/
+/service/
+/servlet/
+/spring/
+/templates/
+/webapp/

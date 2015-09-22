@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <Types>
+	<Type>LEADER</Type>
+    <Type>NEWS</Type>
+    <Type>NAVIGATION</Type>
+    <Type>WEBSITE</Type>
+    <Type>PUBNOTE</Type>
+    <Type>REPORT</Type>
+    <Type>SELECT_FUND</Type>
+    <Type>DIAG_FUND</Type>
+    <Type>ZHIDAO</Type>
+    <Type>KNOWLEDGE</Type>
+    <Type>ENTITY</Type>
+    <Type>COMPANY_RELATED</Type>
+    <Type>UNKNOWN</Type>
+  </Types>
+  <Type label="LEADER">
+    <Description>龙头</Description>
+    <SubType label="CONCEPT_LEADER">所属概念</SubType>
+    <SubType label="INDUSTRY_LEADER">所属申万行业</SubType>
+  </Type>
+  <Type label="NEWS">
+    <Description>新闻</Description>
+    <SubType label="ASTOCK">股票简称|股票代码</SubType>
+    <SubType label="CONCEPT">所属概念</SubType>
+  </Type>
+  <Type label="NAVIGATION">
+    <Description>导航类问句</Description>
+    <Channel label="DOWNLOAD">下载</Channel>
+   	<SubType label="ASTOCK">a股|股票简称|股票代码</SubType>
+   	<SubType label="BSTOCK">b股</SubType>
+	<SubType label="NEWTB">新三板股</SubType>
+   	<SubType label="FUND">基金简称|基金代码|全部基金代码|全部基金(含未成立、已到期)代码|全部基金(含未成立、已到期)简称</SubType>
+   	<SubType label="HKSTOCK">港股|港股简称|港股代码|港股全称</SubType>
+   	<SubType label="USSTOCK">美股</SubType>
+   	<SubType label="BANK">银行</SubType>
+   	<SubType label="EXCHANGE">交易所</SubType>
+   	<SubType label="PUBLIC_FUND_COM">基金</SubType>
+   	<SubType label="INSURANCE">保险</SubType>
+   	<SubType label="BROKER">券商</SubType>
+   	<SubType label="PRIVATE_EQUITY_COM">私募</SubType>
+   	<SubType label="TRUST_COM">信托</SubType>
+    <SubType label="TRUST">信托产品</SubType>
+    <SubType label="LICAI">理财产品</SubType>
+   	<SubType label="GOVERNMENT">政府机构</SubType>
+   	<SubType label="INDUSTRY">所属申万行业</SubType>
+   	<SubType label="CONCEPT">所属概念|泛概念</SubType>
+   	<SubType label="SURNAME">姓</SubType>
+   	<SubType label="PEOPLE">姓名|评级研究员|董事会秘书姓名|法人代表|持有股票的基金经理|大股东自然人名称|泛人物</SubType>
+   	<SubType label="PRODUCT">主营产品名称|泛产品</SubType>
+   	<SubType label="BUSINESS">业务名称</SubType>
+   	<SubType label="UNKOWN">UNKNOWN</SubType>
+   	<Channel label="NEWS">新闻|信息|相关新闻</Channel>
+   	<Channel label="NEGATIVE_NEWS">负面新闻</Channel>
+   	<Channel label="POSITIVE_NEWS">正面新闻</Channel>
+   	<Channel label="GUBA">股吧</Channel>
+   	<Channel label="WEIBO">微博</Channel>
+   	<Channel label="FORUM">论坛</Channel>
+   	<Channel label="BLOG">博客</Channel>
+  </Type>
+  <Type label="WEBSITE">
+    <Description>寻址类问句</Description>
+   	<SubType label="ASTOCK">a股|股票简称|股票代码</SubType>
+   	<SubType label="BSTOCK">b股</SubType>
+   	<SubType label="NEWTB">新三板股</SubType>
+   	<SubType label="FUND">基金简称|基金代码|全部基金代码|全部基金(含未成立、已到期)代码|全部基金(含未成立、已到期)简称</SubType>
+   	<SubType label="HKSTOCK">港股|港股简称|港股代码|港股全称</SubType>
+   	<SubType label="USSTOCK">美股</SubType>
+   	<SubType label="BANK">银行</SubType>
+   	<SubType label="EXCHANGE">交易所</SubType>
+   	<SubType label="PUBLIC_FUND_COM">基金</SubType>
+   	<SubType label="INSURANCE">保险</SubType>
+   	<SubType label="BROKER">券商</SubType>
+   	<SubType label="PRIVATE_EQUITY_COM">私募</SubType>
+   	<SubType label="TRUST_COM">信托</SubType>
+   	<SubType label="TRUST">信托产品</SubType>
+   	<SubType label="LICAI">理财产品</SubType>
+   	<SubType label="GOVERNMENT">政府机构</SubType>
+   	<SubType label="INDUSTRY">所属申万行业</SubType>
+   	<SubType label="SURNAME">姓</SubType>
+   	<SubType label="PEOPLE">姓名|评级研究员|董事会秘书姓名|法人代表|持有股票的基金经理|大股东自然人名称|泛人物</SubType>
+   	<SubType label="PRODUCT">主营产品名称|泛产品</SubType>
+   	<SubType label="CONCEPT">所属概念|泛概念</SubType>
+   	<SubType label="BUSINESS">业务名称</SubType>
+   	<SubType label="UNKOWN">UNKNOWN</SubType>
+  </Type>
+  <Type label="PUBNOTE">
+    <Description>公告类问句</Description>
+   	<SubType label="EVENT">事件公告|增发价格|定向增发|招股说明书|股权质押|股改进度|停牌原因|交易状态|股权激励|收购|吸收合并|重组|利润分配预案|要约收购|公告类型|风险警示|股权激励方案|存货</SubType>
+   	<SubType label="PERIODIC">周期性公告|除权除息日|股权登记日|实施阶段复牌日|暂停上市|业绩报告</SubType>
+   	<SubType label="ASTOCK">a股|股票简称|股票代码</SubType>
+   	<SubType label="BSTOCK">b股</SubType>
+   	<SubType label="NEWTB">新三板股</SubType>
+   	<SubType label="FUND">基金简称|基金代码|全部基金代码|全部基金(含未成立、已到期)代码|全部基金(含未成立、已到期)简称</SubType>
+   	<SubType label="HKSTOCK">港股|港股简称|港股代码|港股全称</SubType>
+   	<SubType label="USSTOCK">美股</SubType>
+   	<SubType label="BANK">银行</SubType>
+   	<SubType label="EXCHANGE">交易所</SubType>
+   	<SubType label="PUBLIC_FUND_COM">基金</SubType>
+   	<SubType label="INSURANCE">保险</SubType>
+   	<SubType label="BROKER">券商</SubType>
+   	<SubType label="PRIVATE_EQUITY_COM">私募</SubType>
+   	<SubType label="TRUST_COM">信托</SubType>
+    <SubType label="TRUST">信托产品</SubType>
+    <SubType label="LICAI">理财产品</SubType>
+   	<SubType label="GOVERNMENT">政府机构</SubType>
+  </Type>
+  <Type label="REPORT">
+    <Description>研报类问句</Description>
+   	<SubType label="INDUSTRY">所属申万行业</SubType>
+   	<SubType label="ASTOCK">a股|股票简称|股票代码</SubType>
+   	<SubType label="BSTOCK">b股</SubType>
+   	<SubType label="NEWTB">新三板股</SubType>
+   	<SubType label="FUND">基金简称|基金代码|全部基金代码|全部基金(含未成立、已到期)代码|全部基金(含未成立、已到期)简称</SubType>
+   	<SubType label="HKSTOCK">港股|港股简称|港股代码|港股全称</SubType>
+   	<SubType label="USSTOCK">美股</SubType>
+   	<SubType label="BANK">银行</SubType>
+   	<SubType label="EXCHANGE">交易所</SubType>
+   	<SubType label="PUBLIC_FUND_COM">基金</SubType>
+   	<SubType label="INSURANCE">保险</SubType>
+   	<SubType label="BROKER">券商</SubType>
+   	<SubType label="PRIVATE_EQUITY_COM">私募</SubType>
+   	<SubType label="TRUST_COM">信托</SubType>
+    <SubType label="TRUST">信托产品</SubType>
+    <SubType label="LICAI">理财产品</SubType>
+   	<SubType label="GOVERNMENT">政府机构</SubType>
+   	<SubType label="OTHER">其他研报|目标价位</SubType>
+   	<SubType label="INDUSTRY">所属申万行业</SubType>
+   	<SubType label="SURNAME">姓</SubType>
+   	<SubType label="PEOPLE">姓名|评级研究员|董事会秘书姓名|法人代表|持有股票的基金经理|大股东自然人名称|泛人物</SubType>
+   	<SubType label="CONCEPT">所属概念|泛概念</SubType>
+   	<SubType label="BUSINESS">业务名称</SubType>
+   	<SubType label="THEME">研报常见标题</SubType>
+    <SubType label="UNKOWN">UNKNOWN</SubType>
+   	<Channel label="RESEARCH">研报</Channel>
+  </Type>
+  <Type label="ENTITY">
+    <Description>ENTITY类问句</Description>
+   	<SubType label="INDUSTRY">所属申万行业</SubType>
+   	<SubType label="CONCEPT">所属概念|泛概念</SubType>
+   	<SubType label="SURNAME">姓</SubType>
+   	<SubType label="PEOPLE">姓名|评级研究员|董事会秘书姓名|法人代表|持有股票的基金经理|大股东自然人名称|泛人物</SubType>
+   	<SubType label="PRODUCT">主营产品名称|泛产品</SubType>
+   	<SubType label="BUSINESS">业务名称</SubType>
+   	<SubType label="UNKOWN">UNKNOWN</SubType>
+   	<SubType label="ASTOCK">a股|股票简称|股票代码</SubType>
+   	<SubType label="BSTOCK">b股</SubType>
+   	<SubType label="NEWTB">新三板股</SubType>
+   	<SubType label="FUND">基金简称|基金代码|全部基金代码|全部基金(含未成立、已到期)代码|全部基金(含未成立、已到期)简称</SubType>
+   	<SubType label="HKSTOCK">港股|港股简称|港股代码|港股全称</SubType>
+   	<SubType label="USSTOCK">美股</SubType>
+   	<SubType label="BANK">银行</SubType>
+   	<SubType label="EXCHANGE">交易所</SubType>
+   	<SubType label="PUBLIC_FUND_COM">基金</SubType>
+   	<SubType label="INSURANCE">保险</SubType>
+   	<SubType label="BROKER">券商</SubType>
+   	<SubType label="PRIVATE_EQUITY_COM">私募</SubType>
+   	<SubType label="TRUST_COM">信托</SubType>
+    <SubType label="TRUST">信托产品</SubType>
+    <SubType label="LICAI">理财产品</SubType>
+   	<SubType label="GOVERNMENT">政府机构</SubType>
+  </Type>
+  <Type label="COMPANY_RELATED">
+    <Description>公司相关类问句</Description>
+   	<SubType label="INDUSTRY">所属申万行业</SubType>
+   	<SubType label="CONCEPT">所属概念|泛概念</SubType>
+   	<SubType label="SURNAME">姓</SubType>
+   	<SubType label="PEOPLE">姓名|评级研究员|董事会秘书姓名|法人代表|持有股票的基金经理|大股东自然人名称|泛人物</SubType>
+   	<SubType label="PRODUCT">主营产品名称|泛产品</SubType>
+   	<SubType label="BUSINESS">业务名称</SubType>
+   	<SubType label="UNKOWN">UNKNOWN</SubType>
+   	<SubType label="ASTOCK">a股|股票简称|股票代码</SubType>
+   	<SubType label="BSTOCK">b股</SubType>
+   	<SubType label="NEWTB">新三板股</SubType>
+   	<SubType label="FUND">基金简称|基金代码|全部基金代码|全部基金(含未成立、已到期)代码|全部基金(含未成立、已到期)简称</SubType>
+   	<SubType label="HKSTOCK">港股|港股简称|港股代码|港股全称</SubType>
+   	<SubType label="USSTOCK">美股</SubType>
+   	<SubType label="BANK">银行</SubType>
+   	<SubType label="EXCHANGE">交易所</SubType>
+   	<SubType label="PUBLIC_FUND_COM">基金</SubType>
+   	<SubType label="INSURANCE">保险</SubType>
+   	<SubType label="BROKER">券商</SubType>
+   	<SubType label="PRIVATE_EQUITY_COM">私募</SubType>
+   	<SubType label="TRUST_COM">信托</SubType>
+    <SubType label="TRUST">信托产品</SubType>
+    <SubType label="LICAI">理财产品</SubType>
+   	<SubType label="GOVERNMENT">政府机构</SubType>
+   	<SubType label="ASTOCKINDEX">ASTOCKINDEX</SubType>
+   	<SubType label="FUNDINDEX">FUNDINDEX</SubType>
+   	<SubType label="HKSTOCKINDEX">HKSTOCKINDEX</SubType>
+  </Type>
+  <Type label="ZHIDAO">
+    <Description>知道类问句</Description>
+    <SubType label="INDUSTRY">所属申万行业</SubType>
+    <SubType label="SURNAME">姓</SubType>
+    <SubType label="PEOPLE">姓名|评级研究员|董事会秘书姓名|法人代表|持有股票的基金经理|大股东自然人名称|泛人物</SubType>
+   	<SubType label="CONCEPT">所属概念|泛概念</SubType>
+   	<SubType label="PRODUCT">主营产品名称|泛产品</SubType>
+   	<SubType label="BUSINESS">业务名称</SubType>
+   	<SubType label="ASTOCK">a股|股票简称|股票代码</SubType>
+   	<SubType label="BSTOCK">b股</SubType>
+   	<SubType label="NEWTB">新三板股</SubType>
+   	<SubType label="FUND">基金简称|基金代码|全部基金代码|全部基金(含未成立、已到期)代码|全部基金(含未成立、已到期)简称</SubType>
+   	<SubType label="HKSTOCK">港股|港股简称|港股代码|港股全称</SubType>
+   	<SubType label="USSTOCK">美股</SubType>
+   	<SubType label="BANK">银行</SubType>
+   	<SubType label="EXCHANGE">交易所</SubType>
+   	<SubType label="PUBLIC_FUND_COM">基金</SubType>
+   	<SubType label="INSURANCE">保险</SubType>
+   	<SubType label="BROKER">券商</SubType>
+   	<SubType label="PRIVATE_EQUITY_COM">私募</SubType>
+   	<SubType label="TRUST_COM">信托</SubType>
+    <SubType label="TRUST">信托产品</SubType>
+    <SubType label="LICAI">理财产品</SubType>
+   	<SubType label="GOVERNMENT">政府机构</SubType>
+   	<SubType label="UNKOWN">疑问词</SubType>
+   	<SubType label="UNKOWN">UNKNOWN</SubType>
+  </Type>
+  <Type label="KNOWLEDGE">
+    <Description>知识类问句</Description>
+  </Type>
+  <Type label="SELECT_FUND">
+    <Description>选基金问句</Description>
+  </Type>
+  <Type label="DIAG_FUND">
+    <Description>诊基金问句</Description>
+  </Type>
+  <Type label="UNKNOWN">
+    <Description>UNKNOWN</Description>
+  </Type>
+</Config>

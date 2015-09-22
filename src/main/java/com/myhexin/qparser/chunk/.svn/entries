@@ -1,0 +1,79 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/qparser/chunk
+svn://172.20.23.253
+
+
+
+2015-05-05T12:06:16.899978Z
+418723
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+Chunk.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+68867ecb2d071f2774c3d9f98e9ebf78
+2015-02-11T01:25:46.332220Z
+403076
+liuxiaofeng
+
+ChunkQueryResult.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+a507776577ae463326637c60f2e5de08
+2014-09-24T08:26:34.934671Z
+370613
+wuyonghang
+
+ClassifyChunkQuery.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+380622a2af99d3240c7769c67a6f73f5
+2015-01-14T07:46:40.231425Z
+397797
+liuxiaofeng
+
+FeatureGen.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+cdd73ad7d540b4cd9e318d63d5461db9
+2015-03-24T01:51:02.084448Z
+409747
+liuxiaofeng
+
+crf
+dir
+

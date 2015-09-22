@@ -1,0 +1,52 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/test/java/com/myhexin/qparser/onto
+svn://172.20.23.253
+
+
+
+2015-03-24T01:57:57.802248Z
+409795
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+GetIndexsFromSrc.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+11f5d6ec49fc4278b9f74806fd2063da
+2014-04-15T02:48:39.551727Z
+284276
+linpeikun
+
+JunitForInfoOntoXML.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+e3d527969432b25c489aaef2e6223667
+2015-03-24T01:57:57.802248Z
+409795
+liuxiaofeng
+

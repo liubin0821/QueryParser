@@ -1,0 +1,52 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/server/service/impl
+svn://172.20.23.253
+
+
+
+2015-07-06T07:33:53.010264Z
+430194
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+ChunkParserService.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+1f367799ef9df66a62eb6e4690317e15
+2015-07-06T07:33:53.010264Z
+430194
+liuxiaofeng
+
+PhraseParserService.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+4cac35ed58da64c6ded1837c7d5a4a25
+2015-07-06T07:33:53.010264Z
+430194
+liuxiaofeng
+

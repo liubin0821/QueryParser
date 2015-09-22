@@ -1,0 +1,35 @@
+DROP TABLE parser_cond_ops;
+
+CREATE TABLE parser_cond_ops
+(
+ID	INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+semantic_id             INT NOT NULL,
+ch_fulltext		VARCHAR(100) NULL,
+ex_word			VARCHAR(30) NULL,
+opClazzName		VARCHAR(30) NULL,
+opName			VARCHAR(30) NULL,
+opProperty		VARCHAR(100) NULL,
+opSonSize		INT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+DROP TABLE parser_cond_index_ops;
+CREATE TABLE parser_cond_index_ops
+(
+ID	INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+semantic_id             INT NOT NULL,
+ch_fulltext		VARCHAR(100) NULL,
+index_op_nm			VARCHAR(100) NULL,
+index_op_val			VARCHAR(30) NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+DROP TABLE parser_cond_props;
+CREATE TABLE parser_cond_props
+(
+ID			INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+prop_nm             	VARCHAR(100) NOT NULL,
+flg_always		INT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+INSERT INTO parser_cond_props(prop_nm,flg_always) VALUES('交易日期', 1);
+INSERT INTO parser_cond_props(prop_nm,flg_always) VALUES('起始日期', 0);
+INSERT INTO parser_cond_props(prop_nm,flg_always) VALUES('截止日期', 0);

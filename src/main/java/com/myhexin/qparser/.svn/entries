@@ -1,0 +1,230 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/qparser
+svn://172.20.23.253
+
+
+
+2015-09-22T01:31:02.168785Z
+446640
+liuxiaofeng
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+ApplicationContext
+dir
+
+Param.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+2662a01b849d824b5039c3cfb1f4a2ea
+2015-09-09T06:17:53.137724Z
+443943
+sunzhiyong
+has-props
+
+ParseLog.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+3b49dd4bcea7d15e34afbc7389cb89fe
+2012-10-26T09:15:19.066556Z
+35356
+wangping
+
+ParseResult.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+5c4cfc1574c0b7b0a0bea2a3c3361030
+2015-08-24T02:01:45.351733Z
+440343
+liuxiaofeng
+
+Query.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+cff4011a13c095e5aee43704174579da
+2015-07-10T06:07:07.676799Z
+431217
+liuxiaofeng
+
+QueryIndex.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+6261f92d9d0bce8d119ba182dca1c95f
+2015-03-24T01:47:52.546050Z
+409735
+liuxiaofeng
+
+QueryIndexWithProp.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+ed7dc6636d9a76e81923d32243334e47
+2015-03-24T01:47:52.546050Z
+409735
+liuxiaofeng
+
+QueryNodes.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+fd185140e0ee2813ec99346aa51f8be4
+2015-03-24T01:47:52.546050Z
+409735
+liuxiaofeng
+
+QuerySplitInfo.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+06f16871fdf258809b499113779e32aa
+2014-03-03T13:37:37.928741Z
+255459
+linpeikun
+
+ambiguty
+dir
+
+chunk
+dir
+
+conf
+dir
+
+date
+dir
+
+define
+dir
+
+except
+dir
+
+frequency
+dir
+
+fuzzy
+dir
+
+ifind
+dir
+
+interaction
+dir
+
+iterator
+dir
+
+matcher
+dir
+
+ml
+dir
+
+node
+dir
+
+number
+dir
+
+onto
+dir
+
+pattern
+dir
+
+phrase
+dir
+
+resource
+dir
+
+rule
+dir
+
+server
+dir
+
+servlet
+dir
+
+similarity
+dir
+
+smart
+dir
+
+strategyoptm
+dir
+
+suggest
+dir
+
+suggest2
+dir
+
+tech
+dir
+
+time
+dir
+
+tokenize
+dir
+
+tool
+dir
+
+trietree
+dir
+
+util
+dir
+
+xmlreader
+dir
+

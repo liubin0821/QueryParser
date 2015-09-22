@@ -1,0 +1,53 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/test/java/com/myhexin/qparser/resource/model
+svn://172.20.23.253
+
+
+
+2015-09-07T08:37:32.610981Z
+443421
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+IndexDefDateTestCase.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+290435274a1c7f830012157b12b39004
+2015-09-07T08:37:32.610981Z
+443421
+liuxiaofeng
+
+IndexIdNameMapInfoTestCase.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+7e4f47cf37394230d89625f235950c2d
+2015-08-14T01:34:43.279276Z
+438609
+liuxiaofeng
+has-props
+

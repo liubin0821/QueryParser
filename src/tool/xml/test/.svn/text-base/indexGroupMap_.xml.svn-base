@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <IndexGroup id="8">
+    <Index>行情最新价</Index>
+    <Index>行情最高价</Index>
+    <Index>收盘价</Index>
+    <Index>最新价</Index>
+    <Index>成交量</Index>
+    <Index>行情最低价</Index>
+    <Index>行情成交量</Index>
+    <Index>行情开盘价</Index>
+    <Index>行情收盘价</Index>
+    <Index>均线</Index>
+    <Index>vol</Index>
+    <Index>amo</Index>
+    <Index>amv</Index>
+    <Index>expma</Index>
+    <Index>数值线</Index>
+    <Description>单线+均线</Description>
+  </IndexGroup>
+</Config>

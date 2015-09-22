@@ -1,0 +1,34 @@
+INSERT INTO parser_node_merge(merge_pattern,convert_pattern, calc_expr, node_type, is_regex, change_to_text)
+VALUES('^([0-9]{1,2})(个小时|小时)$', 'TIME_CALC', NULL, 'Time','Y',NULL);
+
+INSERT INTO parser_node_merge(merge_pattern,convert_pattern, calc_expr, node_type, is_regex, change_to_text)
+VALUES('^([0-9]{1,2})(天)(前|后)$', 'DAY_RELATIVE_CALC', NULL, 'Date','Y',NULL);
+
+INSERT INTO parser_node_merge(merge_pattern,convert_pattern, calc_expr, node_type, is_regex, change_to_text)
+VALUES('^([0-9]{1,2})(个)(周期)$', 'CONSIST_PERIOD_CALC', NULL, 'ConsistPeriod','Y',NULL);
+
+INSERT INTO parser_node_merge(merge_pattern,convert_pattern, calc_expr, node_type, is_regex, change_to_text)
+VALUES('^(连续)([0-9]{1,2})(个周期)$', 'CONSIST_PERIOD_CALC', NULL, 'ConsistPeriod','Y',NULL);
+
+
+
+INSERT INTO parser_node_merge(merge_pattern,convert_pattern, calc_expr, node_type, is_regex, change_to_text)
+VALUES('现在', NULL, NULL, 'Date','N','今天');
+
+INSERT INTO parser_node_merge(merge_pattern,convert_pattern, calc_expr, node_type, is_regex, change_to_text)
+VALUES('当年', NULL, NULL, 'Date','N','今年');
+
+INSERT INTO parser_node_merge(merge_pattern,convert_pattern, calc_expr, node_type, is_regex, change_to_text)
+VALUES('当季', NULL, NULL, 'Date','N','本季度');
+
+INSERT INTO parser_node_merge(merge_pattern,convert_pattern, calc_expr, node_type, is_regex, change_to_text)
+VALUES('大前年', NULL, NULL, 'Date','N',NULL);
+
+INSERT INTO parser_node_merge(merge_pattern,convert_pattern, calc_expr, node_type, is_regex, change_to_text)
+VALUES('上一个交易日', 'TRADE_DAY_CALC', '-1', 'Date','N',NULL);
+
+
+
+
+
+

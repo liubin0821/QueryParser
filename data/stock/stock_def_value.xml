@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 示例
+<def_value label="净利润" >
+    <value default ="大于0" movable_range="5%" max = "1亿" min ="500"/>
+    <web_style style = "HIGH_LIGHT"/>
+</def_value>
+ -->
+<def_values>
+<def_value label="近期创阶段新高" >
+    <value default ="为是"/>
+</def_value>
+<def_value label="近期创历史新高" >
+    <value default ="为是"/>
+</def_value>
+<def_value label="近期创阶段新低" >
+    <value default ="为是"/>
+</def_value>
+<def_value label="近期创历史新低" >
+    <value default ="为是"/>
+</def_value>
+<def_value label="流通a股占总股本比例" >
+    <value movable_range ="0"/>
+</def_value>
+<def_value label="是否属于重要指数成分" >
+    <value default ="为是"/>
+</def_value>     
+<def_value label="是否分红" >
+    <value default ="为是"/>
+</def_value>   
+<def_value label="大股东名称" >
+    <web_style style ="HIGH_LIGHT"/>
+</def_value>         
+<def_value label="评级买入家数" >
+    <value movable_range ="0"/>
+</def_value>     
+<def_value label="最新所属热门行业" >
+    <value default ="---"/>
+</def_value>    
+<def_value label="最新盘前所属热门行业" >
+    <value default ="---"/>
+</def_value>   
+<def_value label="最新所属热门概念" >
+    <value default ="---"/>
+</def_value>       
+<def_value label="最新盘前所属热门概念" >
+    <value default ="---"/>
+</def_value>   
+<def_value label="热门股" >
+    <value default ="---"/>
+</def_value> 
+<def_value label="最新热门股" >
+    <value default ="---"/>
+</def_value>   
+<def_value label="最新所属利空行业" >
+    <value default ="---"/>
+</def_value>   
+<def_value label="最新所属利好行业" >
+    <value default ="---"/>
+</def_value>  
+<def_value label="最新所属热点事件" >
+    <value default ="---"/>
+</def_value>  
+<def_value label="最新个股热门等级" >
+    <value default ="---"/>
+</def_value>  
+<def_value label="所属热门概念" >
+    <value default ="---"/>
+</def_value>   
+<def_value label="盘前所属热门概念" >
+    <value default ="---"/>
+</def_value>  
+<def_value label="所属热门行业" >
+    <value default ="---"/>
+</def_value>  
+<def_value label="盘前所属热门行业" >
+    <value default ="---"/>
+</def_value>     
+<def_value label="所属利空行业" >
+    <value default ="---"/>
+</def_value> 
+<def_value label="所属利好行业" >
+    <value default ="---"/>
+</def_value> 
+<def_value label="所属热点事件" >
+    <value default ="---"/>
+</def_value>  
+<def_value label="大股东名称" >
+    <web_style style ="HIGH_LIGHT"/>
+</def_value>
+
+<def_value label="流通股东名称" >
+    <web_style style ="HIGH_LIGHT"/>
+</def_value>
+ 
+<!--    
+<def_value label="资金流入" >
+    <value default ="大于0"/>
+</def_value> 
+<def_value label="每股转增股本" >
+    <value default ="大于0"/>
+</def_value> 
+<def_value label="担保发生额合计" >
+    <value default ="大于0"/>
+</def_value> 
+<def_value label="社保基金持股比例" >
+    <value default ="大于0"/>
+</def_value> 
+<def_value label="香港上市股" >
+    <value default ="大于1"/>
+</def_value> 
+<def_value label="每股分红送转" >
+    <value default ="大于0"/>
+</def_value> 
+<def_value label="每股红股" >
+    <value default ="大于0"/>
+</def_value>  
+<def_value label="股息率(股票获利率)" >
+    <value default ="大于0"/>
+</def_value>  
+-->
+</def_values>

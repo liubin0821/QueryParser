@@ -1,0 +1,80 @@
+<root>
+<test text="2013年 2014年" result="2013-01-01 -- 2014-12-31" />
+<test text="2011年度" result="2011-01-01 -- 2011-12-31" />
+<test text="2013年 2月" result="2013-02-01 -- 2013-02-28" />
+<test text="2013-2月" result="2013-02-01 -- 2013-02-28" />
+<test text="31号" result="2014-10-31 -- 2014-10-31" />
+<test text="10分钟" result="" />
+<test text="2013年5月6日" result="2013-05-06 -- 2013-05-06" />
+<test text="2013年 5月 6日" result="2013-05-06 -- 2013-05-06" />
+<test text="2013年度 5月份 6日" result="2013-05-06 -- 2013-05-06" />
+<test text="20130506日" result="2013-05-06 -- 2013-05-06" />
+<test text="09年6月" result="2009-06-01 -- 2009-06-30" />
+<test text="5月 6日" result="2014-05-06 -- 2014-05-06" />
+<test text="2013年 到 2014年" result="2013-01-01 -- 2014-12-31" />
+<test text="从 自 2013年5月 到 2014年3月" result="2013-05-01 -- 2014-03-31" />
+<test text="2013年 5月 到 2014年 3月" result="2013-05-01 -- 2014-03-31" />
+<test text="从 自 2012年5月 到 3月" result="" />
+<test text="上个年度" result="2013-01-01 -- 2013-12-31" />
+<test text="上个月" result="2014-09-01 -- 2014-09-30" />
+<test text="今天" result="" />
+<test text="昨天" result="" />
+<test text="前天" result="" />
+<test text="后天" result="" />
+<test text="最近" result="" />
+<test text="上个交易日" result="" />
+<test text="未来 2 个交易日" result="" />
+<test text="前15日" result="" />
+<test text="6个交易日以前" result="" />
+<test text="3个交易日以后" result="" />
+<test text="2015年" result="2015-01-01 -- 2015-12-31" />
+<test text="上半年" result="2014-01-01 -- 2014-06-30" />
+<test text="下半年" result="2014-07-01 -- 2014-12-31" />
+<test text="2013上半年" result="2013-01-01 -- 2013-06-30" />
+<test text="2013 上半年" result="2013-01-01 -- 2013-06-30" />
+<test text="2013 下半年" result="2013-07-01 -- 2013-12-31" />
+<test text="最近 连续 3天" result="" />
+<test text="最近 半天" result="" />
+<test text="最近 3周" result="" />
+<test text="2011 上半年" result="2011-01-01 -- 2011-06-30" />
+<test text="未来 3年" result="2014-10-27 -- 2017-10-27" />
+<test text="未来 3周" result="2014-10-27 -- 2014-11-17" />
+<test text="未来 3个月" result="2014-10-27 -- 2015-01-27" />
+<test text="未来 5季度" result="2015-01-01 -- 2016-03-30" />
+<test text="未来 2季度" result="2015-01-01 -- 2015-06-30" />
+<test text="未来1季度" result="2015-01-01 -- 2015-03-31" />
+<test text="最近 5个季度" result="2013-07-01 -- 2014-09-30" />
+<test text="最近 2个季度" result="2014-04-01 -- 2014-09-30" />
+<test text="最近1个季度" result="2014-07-01 -- 2014-09-30" />
+<test text="这个季度" result="2014-10-01 -- 2014-12-31" />
+<test text="上个季度" result="2014-07-01 -- 2014-09-30" />
+<test text="上上个季度" result="2014-04-01 -- 2014-06-30" />
+<test text="下个季度" result="2015-01-01 -- 2015-03-31" />
+<test text="下下个季度" result="2015-04-01 -- 2015-06-30" />
+<test text="连续 3个季度" result="2014-01-01 -- 2014-09-30" />
+<test text="连续 3天" result="2014-10-24 -- 2014-10-27" />
+<test text="连续 3个月" result="2014-07-27 -- 2014-10-27" />
+<test text="连续 3年" result="2011-10-27 -- 2014-10-27" />
+<test text="3个季度 以后" result="" />
+<test text="3天 以后" result="" />
+<test text="3个月 以后" result="" />
+<test text="3年 以后" result="" />
+<test text="从 2012年 5月 到 6月" result="" />
+<test text="2013年 2月 上旬" result="2013-02-01 -- 2013-02-10" />
+<test text="2013年 2月 中旬" result="2013-02-11 -- 2013-02-20" />
+<test text="2013年 2月 下旬" result="2013-02-21 -- 2013-02-28" />
+
+
+<test text="2月 上旬" result="" />
+<test text="3月 中旬" result="" />
+<test text="下旬" result="" />
+<test text="2 日 以后" result="" />
+<test text="5天以后" result="" />
+<test text="2 年" result="" />
+<test text="1月 2 号" result="" />
+
+<test text="10月 24日 涨停 后 连 跌" result="" />
+<test text="股价 创 阶段 新高 后 连续 3日 下跌" result="" />
+
+
+</root>

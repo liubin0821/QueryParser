@@ -1,0 +1,55 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/server/plugins
+svn://172.20.23.253
+
+
+
+2015-07-06T07:25:53.095651Z
+430186
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+ParserPluginsAbstract.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+0b22f4a684aa1ef5f23c9625830a6b35
+2015-07-06T07:24:31.802743Z
+430185
+liuxiaofeng
+
+Plugins.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+9f2d18c013aaad91b86064bc74369024
+2015-07-06T07:24:31.802743Z
+430185
+liuxiaofeng
+
+impl
+dir
+

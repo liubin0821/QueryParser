@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- 
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${mysql.driverClass}"/>
+        <property name="jdbcUrl" value="${mysql.jdbcUrl}"/>
+        <property name="user" value="${mysql.user}"/>
+        <property name="password" value="${mysql.password}"/>
+        <property name="breakAfterAcquireFailure" value="${mysql.breakAfterAcquireFailure}"/>
+        <property name="testConnectionOnCheckout" value="${mysql.testConnectionOnCheckout}"/>
+        <property name="testConnectionOnCheckin" value="${mysql.testConnectionOnCheckin}"/>
+        <property name="idleConnectionTestPeriod" value="${mysql.idleConnectionTestPeriod}"/>
+        <property name="acquireRetryAttempts" value="${mysql.acquireRetryAttempts}"/>
+        <property name="acquireRetryDelay" value="${mysql.acquireRetryDelay}"/>
+        
+        <property name="maxPoolSize" value="${mysql.maxPoolSize}"/>
+        <property name="minPoolSize" value="${mysql.minPoolSize}"/>
+        <property name="initialPoolSize" value="${mysql.initialPoolSize}"/>
+        <property name="maxIdleTime" value="${mysql.maxIdleTime}"/>
+    </bean>
+     -->
+     
+     <!-- liuxiaofeng 2015/3/31 解析启动后不会访问数据库,所以不需要使用连接池 -->
+    <bean id="dataSource" class="com.myhexin.DB.mybatis.HexinSimpleDataSource" destroy-method="close">
+        <property name="driverClass" value="${mysql.driverClass}"/>
+        <property name="jdbcUrl" value="${mysql.jdbcUrl}"/>
+        <property name="user" value="${mysql.user}"/>
+        <property name="password" value="${mysql.password}"/>
+    </bean>
+    
+    <!-- dingchen query_class 数据库 分类id -->
+    <bean id="dataSourceQueryClass" class="com.myhexin.DB.mybatis.HexinSimpleDataSource" destroy-method="close">
+        <property name="driverClass" value="${mysql.query_class.driverClass}"/>
+        <property name="jdbcUrl" value="${mysql.query_class.jdbcUrl}"/>
+        <property name="user" value="${mysql.query_class.user}"/>
+        <property name="password" value="${mysql.query_class.password}"/>
+    </bean>
+    
+    <!-- liushichao diagnosis_stock 数据库 分类id 优先级 -->
+    <bean id="dataSourceDiagnosis" class="com.myhexin.DB.mybatis.HexinSimpleDataSource" destroy-method="close">
+        <property name="driverClass" value="${mysql.diagnosis.driverClass}"/>
+        <property name="jdbcUrl" value="${mysql.diagnosis.jdbcUrl}"/>
+        <property name="user" value="${mysql.diagnosis.user}"/>
+        <property name="password" value="${mysql.diagnosis.password}"/>
+    </bean>
+</beans>

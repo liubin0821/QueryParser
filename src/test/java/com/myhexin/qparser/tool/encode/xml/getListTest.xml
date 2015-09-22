@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category>
+<container id="list1" class="java.util.ArrayList">
+	<bean id="bean1" class="com.myhexin.qparser.node.IndexProCategory">
+		<property name="name" class="String">学校</property>
+		<property name="index" class="String">_高管毕业学校|_董事长毕业学校|_总经理毕业学校|_董事毕业学校|_独立董事毕业学校|_财务总监毕业学校|_董事会秘书毕业学校|_监事长毕业学校|_监事毕业学校|_副总经理毕业学校</property>
+	</bean>
+	<bean id="bean1" class="com.myhexin.qparser.node.IndexProCategory">
+        <property name="name" class="String">生肖</property>
+        <property name="index" class="String">_高管生肖|_董事长生肖|_总经理生肖|_董事生肖|_独立董事生肖|_财务总监生肖|_董事会秘书生肖|_监事长生肖|_监事生肖|_副总经理生肖</property>
+    </bean>
+    <bean id="bean1" class="com.myhexin.qparser.node.IndexProCategory">
+        <property name="name" class="String">津贴</property>
+        <property name="index" class="String">_高管所获政府奖励|_董事长所获政府奖励|_总经理所获政府奖励|_董事所获政府奖励|_独立董事所获政府奖励|_财务总监所获政府奖励|_董事会秘书所获政府奖励|_监事长所获政府奖励|_监事所获政府奖励|_副总经理所获政府奖励</property>
+    </bean>
+    <bean id="bean1" class="com.myhexin.qparser.node.IndexProCategory">
+        <property name="name" class="String">国家</property>
+        <property name="index" class="String">_高管国籍|_董事长国籍|_总经理国籍|_董事国籍|_独立董事国籍|_财务总监国籍|_董事会秘书国籍|_监事长国籍|_监事国籍|_副总经理国籍</property>
+    </bean>
+    <bean id="bean1" class="com.myhexin.qparser.node.IndexProCategory">
+        <property name="name" class="String">学历</property>
+        <property name="index" class="String">_高管学历|_董事长学历|_总经理学历|_董事学历|_独立董事学历|_财务总监学历|_董事会秘书学历|_监事长学历|_监事学历|_副总经理学历</property>
+    </bean>
+    <bean id="bean1" class="com.myhexin.qparser.node.IndexProCategory">
+        <property name="name" class="String">姓名</property>
+        <property name="index" class="String">_高管姓名|_董事长姓名|_总经理姓名|_董事姓名|_独立董事姓名|_财务总监姓名|_董事会秘书姓名|_监事长姓名|_监事姓名|_副总经理姓名</property>
+    </bean>
+    <bean id="bean1" class="com.myhexin.qparser.node.IndexProCategory">
+        <property name="name" class="String">姓</property>
+        <property name="index" class="String">_高管姓名|_董事长姓名|_总经理姓名|_董事姓名|_独立董事姓名|_财务总监姓名|_董事会秘书姓名|_监事长姓名|_监事姓名|_副总经理姓名</property>
+    </bean>
+    <bean id="bean1" class="com.myhexin.qparser.node.IndexProCategory">
+        <property name="name" class="String">婚姻</property>
+        <property name="index" class="String">_高管婚姻状况|_董事长婚姻状况|_总经理婚姻状况|_董事婚姻状况|_独立董事婚姻状况|_财务总监婚姻状况|_董事会秘书婚姻状况|_监事长婚姻状况|_监事婚姻状况|_副总经理婚姻状况</property>
+    </bean>
+        <bean id="bean1" class="com.myhexin.qparser.node.IndexProCategory">
+        <property name="name" class="String">性别</property>
+        <property name="index" class="String">_高管性别|_董事长性别|_总经理性别|_董事性别|_独立董事性别|_财务总监性别|_董事会秘书性别|_监事长性别|_监事性别|_副总经理性别</property>
+    </bean>
+    <bean id="bean1" class="com.myhexin.qparser.node.IndexProCategory">
+        <property name="name" class="String">为官</property>
+        <property name="index" class="String">_高管是否为官员|_董事长是否为官员|_总经理是否为官员|_董事是否为官员|_独立董事是否为官员|_财务总监是否为官员|_董事会秘书是否为官员|_监事长是否为官员|_监事是否为官员|_副总经理是否为官员</property>
+    </bean>
+</container>
+</category>

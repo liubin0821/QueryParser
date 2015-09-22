@@ -1,0 +1,52 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/qparser/ml
+svn://172.20.23.253
+
+
+
+2015-07-03T07:27:55.743993Z
+429964
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+NodesSemanticInfo.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+40bdef29b17491a63fa5ebae6aa4780b
+2015-07-02T07:21:21.998103Z
+429716
+liuxiaofeng
+
+NodesSemanticInfoBuilder.java
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+78a5fff04c23fa71987ef15501778835
+2015-07-03T07:27:55.743993Z
+429964
+liuxiaofeng
+

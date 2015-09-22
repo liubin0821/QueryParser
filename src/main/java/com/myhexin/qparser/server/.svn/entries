@@ -1,0 +1,46 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/qparser/server
+svn://172.20.23.253
+
+
+
+2015-06-27T09:37:07.984377Z
+428767
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+ReplyServlet.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+f7ac9ac8c77432c053e824cfec8f87d6
+2012-03-08T07:32:44.011169Z
+10694
+wangping
+
+db
+dir
+
+suggest
+dir
+

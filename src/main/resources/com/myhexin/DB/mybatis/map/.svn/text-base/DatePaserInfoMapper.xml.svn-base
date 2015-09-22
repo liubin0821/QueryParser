@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myhexin.DB.mybatis.dao.DateParserInfoMapper">
+	
+	<resultMap id="condUseNewapi" type="com.myhexin.DB.mybatis.mode.CondUseNewapi">
+		<result column="ID" property="id" jdbcType="INTEGER" />
+		<result column="include_name" property="include_names" jdbcType="VARCHAR" />
+		<result column="exclude_name" property="exclude_names" jdbcType="VARCHAR" />
+	</resultMap>
+	
+	<resultMap id="indexCalcExpr" type="com.myhexin.DB.mybatis.mode.IndexCalcExpr">
+		<id column="ID" jdbcType="INTEGER" property="id" />
+		<result column="index_name" jdbcType="VARCHAR" property="index_name" />
+		<result column="calc_expr" jdbcType="VARCHAR" property="calc_expr" />
+		<result column="prop_calc_expr" jdbcType="VARCHAR" property="prop_calc_expr" />
+		
+	</resultMap>
+	
+	<resultMap id="indexRenameRule" type="com.myhexin.DB.mybatis.mode.IndexRenameRule">
+		<id column="ID" jdbcType="INTEGER" property="id" />
+		<result column="domain" jdbcType="VARCHAR" property="domain" />
+		<result column="original_name" jdbcType="VARCHAR" property="original_name" />
+		<result column="new_rename" jdbcType="VARCHAR" property="new_rename" />
+	</resultMap>
+
+	<resultMap id="configTextLine" type="com.myhexin.DB.mybatis.mode.ConfigTextLine">
+		<result column="ID" property="id" jdbcType="INTEGER" />
+		<result column="file_name" property="fileName" jdbcType="VARCHAR" />
+		<result column="line" property="line" jdbcType="VARCHAR" />
+		<result column="seq" property="seq" jdbcType="INTEGER" />
+	</resultMap>
+	
+	<resultMap id="refCode" type="com.myhexin.DB.mybatis.mode.RefCode">
+		<result column="attr_id" property="attr_id" jdbcType="INTEGER" />
+		<result column="code_value" property="code_value" jdbcType="VARCHAR" />
+		<result column="code_short_desc" property="code_short_desc" jdbcType="VARCHAR" />
+		<result column="code_long_desc" property="code_long_desc" jdbcType="VARCHAR" />
+	</resultMap>
+	
+	<resultMap id="dataType" type="com.myhexin.DB.mybatis.mode.DataType">
+		<result column="id" property="id" jdbcType="INTEGER" />
+		<result column="label" property="label" jdbcType="VARCHAR" />
+	</resultMap>
+	
+	<resultMap id="superType" type="com.myhexin.DB.mybatis.mode.SuperType">
+		<result column="super_id" property="super_id" jdbcType="INTEGER" />
+		<result column="type_id" property="type_id" jdbcType="INTEGER" />
+	</resultMap>
+	
+	<resultMap id="indexDefDate" type="com.myhexin.DB.mybatis.mode.IndexDefDate">
+		<id column="ID" jdbcType="INTEGER" property="id" />
+		<result column="index_name" property="indexName" jdbcType="VARCHAR" />
+		<result column="report_type" property="reportType" jdbcType="VARCHAR" />
+		<result column="report_type2" property="reportType2" jdbcType="VARCHAR" />
+		
+		<result column="domain" property="domain" jdbcType="VARCHAR" />
+		<result column="hhmmss_use_today" property="hhmmss_use_today" jdbcType="VARCHAR" />
+		<result column="calc_expr1" property="calcExpr" jdbcType="VARCHAR" />
+		
+		<result column="def_from" property="defFrom" jdbcType="VARCHAR" />
+		<result column="def_to" property="defTo" jdbcType="VARCHAR" />
+	</resultMap>
+	
+	<resultMap id="defaultRptPeriod" type="com.myhexin.qparser.util.cfgdate.CfgRptPeriodDefault">
+		<result column="id" property="id" jdbcType="INTEGER" />
+		<result column="key_name" property="key_name" jdbcType="VARCHAR" />
+		<result column="dt_format" property="dt_format" jdbcType="VARCHAR" />
+		<result column="dt_from" property="dt_from" jdbcType="VARCHAR" />
+		<result column="dt_to" property="dt_to" jdbcType="VARCHAR" />
+		<result column="dt_val" property="dt_val" jdbcType="VARCHAR" />
+		<result column="offset_val" property="offset_val" jdbcType="INTEGER" />
+		<result column="sign_val" property="sign_val" jdbcType="VARCHAR" />
+	</resultMap>
+	
+	<resultMap id="cfgDateEntity" type="com.myhexin.qparser.util.cfgdate.CfgDateEntity">
+		<result column="id" property="id" jdbcType="INTEGER" />
+		<result column="key_name" property="key_name" jdbcType="VARCHAR" />
+		<result column="dt_format" property="dt_format" jdbcType="VARCHAR" />
+		<result column="dt_from" property="dt_from" jdbcType="VARCHAR" />
+		<result column="dt_to" property="dt_to" jdbcType="VARCHAR" />
+		<result column="dt_next" property="dt_next" jdbcType="VARCHAR" />
+		<result column="dt_current" property="dt_current" jdbcType="VARCHAR" />
+		<result column="dt_previous" property="dt_previous" jdbcType="VARCHAR" />
+		<result column="previous_x_year" property="previous_year_num" jdbcType="VARCHAR" />
+		<result column="previous_x_season" property="previous_season_num" jdbcType="VARCHAR" />
+	</resultMap>
+	
+	
+	<select id="getDateTimeDefaults" resultMap="defaultRptPeriod">
+		SELECT * FROM configFile.parser_datetime_defaults 
+	</select>
+	
+	<select id="getDateTimePeriods" resultMap="cfgDateEntity">
+		SELECT * FROM configFile.parser_datetime_periods 
+	</select>
+	<!-- 
+	SELECT ontologydb.data_type.id, ontologydb.data_type.label 
+		FROM ontologydb.data_type INNER JOIN
+		(SELECT CAST(code_value AS UNSIGNED) type_id FROM configFile.parser_ref_code  WHERE attr_id=1002) a
+		ON ontologydb.data_type.id = a.type_id 
+	 -->
+	<select id="getDataTypes" resultMap="dataType">
+		SELECT ontologydb.data_type.id, ontologydb.data_type.label FROM ontologydb.data_type 
+	</select>
+	
+	<select id="selectIndexDefDate" resultMap="indexDefDate">
+		SELECT 
+		parser_index_defdate.id, 
+		parser_index_defdate.index_name, 
+		parser_index_defdate.domain,
+		parser_index_defdate.hhmmss_use_today,
+		parser_index_defdate.calc_expr1,
+		parser_index_defdate.report_type2,
+		parser_index_defdate.def_from,
+		parser_index_defdate.def_to,
+		indexs.report_type
+		FROM configFile.parser_index_defdate LEFT OUTER JOIN ontologydb.indexs
+		ON parser_index_defdate.index_name = indexs.label
+	</select>
+	
+	<select id="getSuperTypes" resultMap="superType">
+		SELECT super_id, type_id FROM ontologydb.super_type
+	</select>
+	
+	<select id="getRefCode" resultMap="refCode">
+		SELECT attr_id, code_value, code_short_desc, code_long_desc FROM configFile.parser_ref_code
+	</select>
+	
+	<select id="getRenameRuleList" resultMap="indexRenameRule">
+		SELECT ID, domain, original_name, new_rename FROM configFile.parser_rename_rule
+	</select>
+	
+	<select id="selectCalcExpr" resultMap="indexCalcExpr">
+		SELECT ID, index_name, calc_expr, prop_calc_expr FROM configFile.parser_calc_expr
+	</select>
+	
+	<select id="selectConfigFileLines" parameterType="String" resultMap="configTextLine">
+		SELECT ID, file_name, line, seq FROM configFile.parser_configfiles WHERE file_name=#{0}
+	</select>
+	
+	<select id="selectAllConfigFileLines" parameterType="String" resultMap="configTextLine">
+		SELECT ID, file_name, line, seq FROM configFile.parser_configfiles
+	</select>
+	
+	<select id="selectCondUserNewapiInfos" resultMap="condUseNewapi">
+		select * from configFile.cond_use_newapi
+	</select>
+</mapper>

@@ -1,0 +1,1331 @@
+一：建表
+   CREATE TABLE  `ontologydb`.`z_aliases_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11),
+  `index_id` int(11) default NULL,
+  `label` varchar(150) default NULL,
+  `is_default` tinyint(1) default '0',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+
+   CREATE TABLE  `ontologydb`.`z_automatic_synchronization_crl_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11) NOT NULL ,
+  `dict_type` varchar(50) NOT NULL,
+  `db_type` varchar(50) NOT NULL default 'mongo',
+  `sql` text NOT NULL,
+  `host` varchar(100) NOT NULL default '172.20.23.51',
+  `port` varchar(10) NOT NULL default '27018',
+  `userName` varchar(50) NOT NULL default 'admin',
+  `password` varchar(50) NOT NULL default 'admin',
+  `database` varchar(50) NOT NULL default 'OntologyData',
+  `table` varchar(50) default NULL,
+  `is_using` tinyint(1) NOT NULL default '1',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+ ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_data_lines_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11) NOT NULL ,
+  `type_id` int(11) default NULL,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value` varchar(200) default NULL,
+  `infos` varchar(200) NOT NULL,
+  `priority` int(1) default '0',
+  `from_where` varchar(100) default NULL COMMENT '词典文件名称',
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP COMMENT '代码中忽略这个字段',
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+  CREATE TABLE  `ontologydb`.`z_data_relation_arch` (
+ 
+ `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+ `prop_id` int(11) NOT NULL,
+ `type_id` int(11) NOT NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+ )
+ ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+
+CREATE TABLE  `ontologydb`.`z_data_type_arch` (
+ 
+ `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+`id` int(11) NOT NULL,
+ 
+`label` varchar(200) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_dict_no_value_arch` (
+ 
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+ `id` int(10) unsigned NOT NULL ,
+  
+ `text` varchar(200) NOT NULL,
+ 
+ `cate` varchar(50) default 'pretreat',
+
+  `seg` varchar(200) default NULL,
+ 
+ `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+ 
+ `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM AUTO_INCREMENT=13396 DEFAULT CHARSET=utf8;
+
+
+
+  CREATE TABLE  `ontologydb`.`z_dict_onto_change_arch` (
+
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+ 
+ `text` varchar(200) NOT NULL,
+ 
+ `cate` varchar(50) default 'pretreat',
+ 
+  `seg` varchar(200) default NULL,
+  
+  `value` varchar(200) default NULL,
+  
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+
+   `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_class_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+ 
+ `id` int(10) unsigned NOT NULL,
+ 
+ `text` varchar(200) NOT NULL,
+
+  `cate` varchar(50) default 'pretreat',
+
+  `seg` varchar(200) default NULL,
+
+  `value` varchar(200) default NULL,
+
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM AUTO_INCREMENT=54974 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_date_arch` (
+ 
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+ 
+ `id` int(10) unsigned NOT NULL,
+
+ `text` varchar(200) NOT NULL,
+ 
+ `cate` varchar(50) default 'pretreat',
+
+  `seg` varchar(200) default NULL,
+ 
+ `value` varchar(200) default NULL,
+ 
+ `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  
+ `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+ `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_keyword_arch` (
+ 
+ `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+ `id` int(10) unsigned NOT NULL ,
+ 
+ `text` varchar(200) NOT NULL,
+ 
+ `cate` varchar(50) default 'pretreat',
+  
+ `seg` varchar(200) default NULL,
+
+  `value` varchar(200) default NULL,
+
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+ 
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_logic_arch` (
+ `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  
+ `text` varchar(200) NOT NULL,
+
+  `cate` varchar(50) default 'pretreat',
+ 
+  `seg` varchar(200) default NULL,
+
+  `logic_type` varchar(20) default NULL,
+ 
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+ 
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_qword_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `type` varchar(20) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+
+ CREATE TABLE  `ontologydb`.`z_dict_onto_sort_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value_type` varchar(20) default NULL,
+  `descending` varchar(10) NOT NULL,
+  `k` int(11) default NULL,
+  `is_top_k` varchar(10) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_special_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `msg` varchar(200) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_techOp_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value` varchar(200) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM AUTO_INCREMENT=204 DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_techPeriod_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL, 
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value` varchar(200) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_trigger_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value` varchar(200) default NULL,
+  `direction` varchar(10) default NULL,
+  `isindex` varchar(10) default NULL,
+  `skiplist` varchar(50) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_onto_vagueNum_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `vague_type` varchar(20) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_dict_trans_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(10) unsigned NOT NULL ,
+  `text` varchar(200) NOT NULL,
+  `cate` varchar(50) default 'pretreat',
+  `seg` varchar(200) default NULL,
+  `value` varchar(200) default NULL,
+  `last_update_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `create_date` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_dict_update_recode_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `text` varchar(200) NOT NULL,
+  `tableName` varchar(20) NOT NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+
+ CREATE TABLE  `ontologydb`.`z_field_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11) NOT NULL,
+  `label` varchar(200) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;
+
+
+  CREATE TABLE  `ontologydb`.`z_field_to_index_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `index_id` int(11) default NULL,
+  `field_id` int(11) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_index_prop_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11) NOT NULL ,
+  `label` varchar(150) default NULL,
+  `type`  varchar(20) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE  `ontologydb`.`z_indexs_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `id` int(11) NOT NULL ,
+  `label` varchar(100) default NULL,
+  `report_type` varchar(20) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE  `ontologydb`.`z_normal_relation_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `prop_id` int(11) default NULL,
+  `type` varchar(50) default NULL,
+  `unit` varchar(50) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+
+
+CREATE TABLE  `ontologydb`.`z_object_relation_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `prop_id` int(11) NOT NULL,
+  `ref_id` int(11) NOT NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+
+ CREATE TABLE  `ontologydb`.`z_prop_to_index_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `prop_id` int(11) default NULL,
+  `index_id` int(11) default NULL,
+  `seq` int(11) default '1',
+  `is_value_prop` tinyint(1) default '0',
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+
+
+CREATE TABLE  `ontologydb`.`z_resolve_aliases_conflicts_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `aliase_id` int(11) default NULL,
+  `word` varchar(150) default NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE  `ontologydb`.`z_super_index_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `super_id` int(11) NOT NULL,
+  `index_id` int(11) NOT NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+ CREATE TABLE  `ontologydb`.`z_super_type_arch` (
+  `arch_upd_dt`   datetime default NULL,
+  `arch_upd_user` varchar(10) default  NULL,
+  `arch_upd_type` varchar(1) default NULL,
+  `super_id` int(11) NOT NULL,
+  `type_id` int(11) NOT NULL,
+  `upd_date`  datetime default NULL,
+  `upd_user` varchar(31) default  NULL,
+  `upd_comment` varchar(31) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+
+二：触发器
+
+create trigger aliases_trigger_insert
+after insert on aliases
+for each row
+insert into z_aliases_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,index_id,label,is_default,upd_date,upd_user,upd_comment)values(
+NOW(),new.upd_user,'I',new.id,new.index_id,new.label,new.is_default,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger aliases_trigger_delete
+before delete on aliases
+for each row
+insert into z_aliases_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,index_id,label,is_default,upd_date,upd_user,upd_comment)values(
+now(),old.upd_user,'D',old.id,old.index_id,old.label,old.is_default,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger aliases_trigger_update
+after update on aliases
+for each row
+insert into z_aliases_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,index_id,label,is_default,upd_date,upd_user,upd_comment)values(
+NOW(),new.upd_user,'U',new.id,new.index_id,new.label,new.is_default,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into aliases(id,index_id,label,is_default,upd_date,upd_user,upd_comment)values(1,75589,'ss',0,null,'dzc',null);
+update aliases set upd_comment='dzsc' where upd_user='dzc';
+delete from aliases where upd_comment='dzsc';
+
+
+create trigger data_lines_insert
+after insert on data_lines
+for each row
+insert into z_data_lines_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,type_id,text,cate,seg,value,infos,priority,from_where,
+last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.type_id,new.text,new.cate,new.seg,new.value,new.infos,
+new.priority,new.from_where,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger  data_lines_delete
+before delete on data_lines
+for each row
+insert into z_data_lines_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,type_id,text,cate,seg,value,infos,priority,from_where,
+last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.type_id,old.text,old.cate,old.seg,old.value,old.infos,
+old.priority,old.from_where,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger  data_lines_update
+after update on data_lines
+for each row 
+insert into z_data_lines_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,type_id,text,cate,seg,value,infos,priority,from_where,
+last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.type_id,new.text,new.cate,new.seg,new.value,new.infos,
+new.priority,new.from_where,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into data_lines(type_id,text,cate,seg,value,infos,priority,from_where,last_update_date,create_date,upd_date,upd_user,upd_comment)values(
+2721,'sSs','ssS',null,null,'s',0,'',null,null,null,null,'dd');
+update data_lines set upd_user='dzscs' where upd_comment='dd';
+delete from data_lines where upd_user='dzscs';
+
+
+create trigger data_relation_trigger_insert
+after insert on data_relation
+for each row
+insert into z_data_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type_id,upd_date,upd_user,upd_comment)values
+(NOW(),new.upd_user,'I',new.prop_id,new.type_id,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger data_relation_trigger_delete
+before delete on data_relation
+for each row
+insert into z_data_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type_id,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.prop_id,old.type_id,old.upd_date,old.upd_user,old.upd_comment);
+
+
+create trigger data_relation_trigger_update
+after update on data_relation
+for each row
+insert into z_data_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type_id,upd_date,upd_user,upd_comment)values
+(NOW(),new.upd_user,'U',new.prop_id,new.type_id,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into data_relation(prop_id,type_id,upd_date,upd_user,upd_comment)values(42755,2720,null,'','test');
+update data_relation set upd_user='dzc' where upd_comment='test';
+delete from data_relation where upd_comment='test';
+
+
+create trigger data_type_trigger_insert
+after insert on data_type
+for each row
+insert into z_data_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.label,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger  data_type_trigger_delete
+before delete on data_type
+for each row
+insert into z_data_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.label,old.upd_date,old.upd_user,old.upd_comment);
+
+
+create trigger data_type_trigger_update
+after update on data_type
+for each row
+insert into z_data_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.label,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into data_type(id,label,upd_date,upd_user,upd_comment)values(1,'test',null,'dzc','test');
+update data_type set upd_user='dzsc' where id=1;
+delete from data_type where id=1;
+
+
+create trigger dict_no_value_trigger_insert
+after insert on dict_no_value
+for each row
+insert into z_dict_no_value_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_no_value_trigger_delete
+after delete on dict_no_value
+for each row
+insert into z_dict_no_value_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_no_value_trigger_update
+after update on dict_no_value
+for each row
+insert into z_dict_no_value_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into dict_no_value(text,cate,seg,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,null,null,null,null);
+update dict_no_value set upd_user='dzsc' where cate='dzc';
+delete from dict_no_value where cate='dzc';
+
+
+create trigger dict_onto_change_trigger_insert
+after insert on dict_onto_change
+for each row
+insert into  z_dict_onto_change_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_change_trigger_delete 
+after delete on dict_onto_change
+for each row
+insert into z_dict_onto_change_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_change_trigger_update 
+after update on dict_onto_change
+for each row
+insert into z_dict_onto_change_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+
+insert into dict_onto_change(text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,null,null,null,null,null);
+update dict_onto_change set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_change  where cate='dzc';
+
+
+create trigger dict_onto_class_trigger_insert
+after insert on dict_onto_class
+for each row
+insert into  z_dict_onto_class_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_class_trigger_delete 
+after delete on dict_onto_class
+for each row
+insert into z_dict_onto_class_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_class_trigger_update 
+after update on dict_onto_class
+for each row
+insert into z_dict_onto_class_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into dict_onto_class(id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values(1,'test','dzc',null,null,null,null,null,null,null);
+update dict_onto_class set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_class  where cate='dzc';
+
+
+create trigger dict_onto_date_trigger_insert
+after insert on dict_onto_date
+for each row
+insert into  z_dict_onto_date_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_date_trigger_delete 
+after delete on dict_onto_date
+for each row
+insert into z_dict_onto_date_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_date_trigger_update 
+after update on dict_onto_date
+for each row
+insert into z_dict_onto_date_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into dict_onto_date(id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values(1,'test','dzc',null,null,null,null,null,null,null);
+update dict_onto_date set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_date  where cate='dzc';
+
+
+create trigger dict_onto_keyword_trigger_insert
+after insert on dict_onto_keyword
+for each row
+insert into  z_dict_onto_keyword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_keyword_trigger_delete 
+after delete on dict_onto_keyword
+for each row
+insert into z_dict_onto_keyword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_keyword_trigger_update 
+after update on dict_onto_keyword
+for each row
+insert into z_dict_onto_keyword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into dict_onto_keyword(text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,null,null,null,null,null);
+update dict_onto_keyword set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_keyword  where cate='dzc';
+
+
+create trigger dict_onto_logic_trigger_insert
+after insert on dict_onto_logic
+for each row
+insert into  z_dict_onto_logic_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,logic_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.logic_type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_logic_trigger_delete 
+after delete on dict_onto_logic
+for each row
+insert into z_dict_onto_logic_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,logic_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.logic_type,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_logic_trigger_update 
+after update on dict_onto_logic
+for each row
+insert into z_dict_onto_logic_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,logic_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.logic_type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into dict_onto_logic(text,cate,seg,logic_type,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,null,null,null,null,null);
+update dict_onto_logic set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_logic  where cate='dzc';
+
+
+create trigger dict_onto_qword_trigger_insert
+after insert on dict_onto_qword
+for each row
+insert into  z_dict_onto_qword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_qword_trigger_delete 
+after delete on dict_onto_qword
+for each row
+insert into z_dict_onto_qword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.type,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_qword_trigger_update 
+after update on dict_onto_qword
+for each row
+insert into z_dict_onto_qword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into dict_onto_qword(text,cate,seg,type,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,null,null,null,null,null);
+update dict_onto_qword set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_qword  where cate='dzc';
+
+
+create trigger dict_onto_sort_trigger_insert
+after insert on dict_onto_sort
+for each row
+insert into  z_dict_onto_sort_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value_type,descending,k,is_top_k,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value_type,new.descending,new.k,new.is_top_k,new.last_update_date,new.create_date,
+new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_sort_trigger_delete 
+after delete on dict_onto_sort
+for each row
+insert into z_dict_onto_sort_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value_type,descending,k,is_top_k,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value_type,old.descending,old.k,old.is_top_k,old.last_update_date,old.create_date,
+old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_sort_trigger_update 
+after update  on dict_onto_sort
+for each row
+insert into  z_dict_onto_sort_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value_type,descending,k,is_top_k,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value_type,new.descending,new.k,new.is_top_k,new.last_update_date,new.create_date,
+new.upd_date,new.upd_user,new.upd_comment);
+
+insert into dict_onto_sort(text,cate,seg,value_type,descending,k,is_top_k,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values('test','dzc',null,null,'true',null,null,null,null,null,null,null);
+update dict_onto_sort set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_sort  where cate='dzc';
+
+
+create trigger dict_onto_special_trigger_insert
+after insert on dict_onto_special
+for each row
+insert into  z_dict_onto_special_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,msg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.msg,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_special_trigger_delete 
+after delete on dict_onto_special
+for each row
+insert into z_dict_onto_special_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,msg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.msg,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_special_trigger_update 
+after update on dict_onto_special
+for each row
+insert into z_dict_onto_special_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,msg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.msg,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into dict_onto_special(text,cate,seg,msg,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true',null,null,null,null);
+update dict_onto_special set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_special where cate='dzc';
+
+
+
+create trigger dict_onto_techOp_trigger_insert
+after insert on dict_onto_techOp
+for each row
+insert into  z_dict_onto_techOp_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_techOp_trigger_delete 
+after delete on dict_onto_techOp
+for each row
+insert into z_dict_onto_techOp_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_techOp_trigger_update 
+after update on dict_onto_techOp
+for each row
+insert into z_dict_onto_techOp_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into dict_onto_techOp(text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true',null,null,null,null);
+update dict_onto_techOp set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_techOp where cate='dzc';
+
+
+create trigger dict_onto_techPeriod_trigger_insert
+after insert on dict_onto_techPeriod
+for each row
+insert into  z_dict_onto_techPeriod_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_techPeriod_trigger_delete 
+after delete on dict_onto_techPeriod
+for each row
+insert into z_dict_onto_techPeriod_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_techPeriod_trigger_update 
+after update on dict_onto_techPeriod
+for each row
+insert into z_dict_onto_techPeriod_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into dict_onto_techPeriod(text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true',null,null,null,null);
+update dict_onto_techPeriod set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_techPeriod where cate='dzc';
+
+
+create trigger dict_onto_trigger_trigger_insert
+after insert on dict_onto_trigger
+for each row
+insert into  z_dict_onto_trigger_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,direction,isindex,skiplist,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.direction,new.isindex,new.skiplist,new.last_update_date,new.create_date,
+new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_trigger_trigger_delete 
+after delete on dict_onto_trigger
+for each row
+insert into z_dict_onto_trigger_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,direction,isindex,skiplist,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.direction,old.isindex,old.skiplist,old.last_update_date,old.create_date,
+old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_trigger_trigger_update 
+after update  on dict_onto_trigger
+for each row
+insert into  z_dict_onto_trigger_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,direction,isindex,skiplist,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.direction,new.isindex,new.skiplist,new.last_update_date,new.create_date,
+new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into dict_onto_trigger(text,cate,seg,value,direction,isindex,skiplist,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values('test','dzc',null,null,'true',null,null,null,null,null,null,null);
+update dict_onto_trigger set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_trigger  where cate='dzc';
+
+
+
+create trigger dict_onto_vagueNum_trigger_insert
+after insert on dict_onto_vagueNum
+for each row
+insert into  z_dict_onto_vagueNum_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,vague_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.vague_type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_vagueNum_trigger_delete 
+after delete on dict_onto_vagueNum
+for each row
+insert into z_dict_onto_vagueNum_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,vague_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.vague_type,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_vagueNum_trigger_update 
+after update on dict_onto_vagueNum
+for each row
+insert into z_dict_onto_vagueNum_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,vague_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.vague_type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into dict_onto_vagueNum(text,cate,seg,vague_type,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true',null,null,null,null);
+update dict_onto_vagueNum set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_vagueNum where cate='dzc';
+
+
+create trigger dict_trans_trigger_insert
+after insert on dict_trans
+for each row
+insert into  z_dict_trans_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_trans_trigger_delete 
+after delete on dict_trans
+for each row
+insert into z_dict_trans_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_trans_trigger_update 
+after update on dict_trans
+for each row
+insert into  z_dict_trans_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into dict_trans(text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true',null,null,null,null);
+update dict_trans set upd_user='dzsc' where cate='dzc';
+delete from dict_trans where cate='dzc';
+
+
+create trigger dict_update_recode_trigger_insert
+after insert on dict_update_recode
+for each row
+insert into  z_dict_update_recode_arch(arch_upd_dt,arch_upd_user,arch_upd_type,text,tableName,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.text,new.tableName,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_update_recode_trigger_delete 
+after delete on dict_update_recode
+for each row
+insert into z_dict_update_recode_arch(arch_upd_dt,arch_upd_user,arch_upd_type,text,tableName,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.text,old.tableName,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_update_recode_trigger_update 
+after update on dict_update_recode
+for each row
+insert into  z_dict_update_recode_arch(arch_upd_dt,arch_upd_user,arch_upd_type,text,tableName,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.text,new.tableName,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into dict_update_recode(text,tableName,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true');
+update dict_update_recode set upd_user='dzsc' where tableName='dzc';
+delete from dict_update_recode where tableName='dzc';
+
+
+create trigger field_trigger_insert
+after insert on field
+for each row
+insert into  z_field_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.label,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger field_trigger_delete 
+after delete on field
+for each row
+insert into z_field_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.label,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger field_trigger_update 
+after update on field
+for each row
+insert into  z_field_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.label,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into field values(11,null,null,null,null);
+update field set upd_user='dzsc' where id=11;
+delete from field where id=11;
+
+
+
+create trigger field_to_index_trigger_insert
+after insert on field_to_index
+for each row
+insert into  z_field_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,index_id,field_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.index_id,new.field_id,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger field_to_index_trigger_delete 
+after delete on field_to_index
+for each row
+insert into z_field_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,index_id,field_id,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.index_id,old.field_id,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger field_to_index_trigger_update 
+after update on field_to_index
+for each row
+insert into  z_field_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,index_id,field_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.index_id,new.field_id,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into field_to_index(index_id,field_id,upd_date,upd_user,upd_comment) values(75589,141,null,'dzc',null);
+update field_to_index set upd_comment='dzsc' where upd_user='dzc';
+delete from field_to_index where upd_user='dzc';
+
+
+
+create trigger index_prop_trigger_insert
+after insert on index_prop
+for each row
+insert into  z_index_prop_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,type,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.label,new.type,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger index_prop_trigger_delete 
+after delete on index_prop
+for each row
+insert into z_index_prop_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,type,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.label,old.type,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger index_prop_trigger_update 
+after update on index_prop
+for each row
+insert into  z_index_prop_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,type,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.label,new.type,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into index_prop(id,label,type,upd_date,upd_user,upd_comment) values(1,'d','s',null,'dzc',null);
+update index_prop set upd_comment='dzsc' where upd_user='dzc';
+delete from index_prop where upd_user='dzc';
+
+
+
+create trigger indexs_trigger_insert
+after insert on indexs
+for each row
+insert into  z_indexs_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,report_type,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.label,new.report_type,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger indexs_trigger_delete 
+after delete on indexs
+for each row
+insert into z_indexs_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,report_type,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.label,old.report_type,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger indexs_trigger_update 
+after update on indexs
+for each row
+insert into  z_indexs_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,report_type,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.label,new.report_type,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into indexs(id,label,report_type,upd_date,upd_user,upd_comment) values(1,null,null,null,'dzc',null);
+update indexs set upd_comment='dzsc' where upd_user='dzc';
+delete from indexs  where upd_user='dzc';
+
+
+
+create trigger normal_relation_trigger_insert
+after insert on normal_relation
+for each row
+insert into  z_normal_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type,unit,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.prop_id,new.type,new.unit,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger normal_relation_trigger_delete 
+after delete on normal_relation
+for each row
+insert into z_normal_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type,unit,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.prop_id,old.type,old.unit,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger normal_relation_trigger_update 
+after update on normal_relation
+for each row
+insert into  z_normal_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type,unit,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.prop_id,new.type,new.unit,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into normal_relation(prop_id,type,unit,upd_date,upd_user,upd_comment) values(42753,null,null,null,'dzc',null);
+update normal_relation set upd_comment='dzsc' where upd_user='dzc';
+delete from normal_relation where upd_user='dzc';
+
+
+
+create trigger object_relation_trigger_insert
+after insert on object_relation
+for each row
+insert into  z_object_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,ref_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.prop_id,new.ref_id,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger object_relation_trigger_delete 
+after delete on object_relation
+for each row
+insert into z_object_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,ref_id,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.prop_id,old.ref_id,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger object_relation_trigger_update 
+after update on object_relation
+for each row
+insert into  z_object_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,ref_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.prop_id,new.ref_id,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into object_relation(prop_id,ref_id,upd_date,upd_user,upd_comment) values(45985,80657,null,'dzc',null);
+update object_relation set upd_comment='dzsc' where upd_user='dzc';
+delete from object_relation where upd_user='dzc';
+
+
+
+create trigger prop_to_index_trigger_insert
+after insert on prop_to_index
+for each row
+insert into  z_prop_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,index_id,seq,is_value_prop,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.prop_id,new.index_id,new.seq,new.is_value_prop,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger prop_to_index_trigger_delete 
+after delete on  prop_to_index
+for each row
+insert into z_prop_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,index_id,seq,is_value_prop,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.prop_id,old.index_id,old.seq,old.is_value_prop,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger prop_to_index_trigger_update 
+after update on prop_to_index
+for each row
+insert into  z_prop_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,index_id,seq,is_value_prop,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.prop_id,new.index_id,new.seq,new.is_value_prop,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into prop_to_index(prop_id,index_id,seq,is_value_prop,upd_date,upd_user,upd_comment) values(45985,80657,null,null,null,'dzc',null);
+update prop_to_index set upd_comment='dzsc' where upd_user='dzc';
+delete from prop_to_index where upd_comment='dzsc';
+
+
+
+create trigger resolve_aliases_conflicts_trigger_insert
+after insert on resolve_aliases_conflicts
+for each row
+insert into  z_resolve_aliases_conflicts_arch(arch_upd_dt,arch_upd_user,arch_upd_type,aliase_id,word,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.aliase_id,new.word,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger resolve_aliases_conflicts_trigger_delete 
+after delete on resolve_aliases_conflicts
+for each row
+insert into z_resolve_aliases_conflicts_arch(arch_upd_dt,arch_upd_user,arch_upd_type,aliase_id,word,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.aliase_id,old.word,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger resolve_aliases_conflicts_trigger_update 
+after update on resolve_aliases_conflicts
+for each row
+insert into  z_resolve_aliases_conflicts_arch(arch_upd_dt,arch_upd_user,arch_upd_type,aliase_id,word,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.aliase_id,new.word,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into resolve_aliases_conflicts(aliase_id,word,upd_date,upd_user,upd_comment) values(83271,80657,null,'dzc',null);
+update resolve_aliases_conflicts set upd_comment='dzsc' where upd_user='dzc';
+delete from resolve_aliases_conflicts where upd_comment='dzsc';
+
+
+create trigger super_index_trigger_insert
+after insert on super_index
+for each row
+insert into  z_super_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,index_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.super_id,new.index_id,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger super_index_trigger_delete 
+after delete on super_index
+for each row
+insert into z_super_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,index_id,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.super_id,old.index_id,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger super_index_trigger_update 
+after update on super_index
+for each row
+insert into  z_super_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,index_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.super_id,new.index_id,new.upd_date,new.upd_user,new.upd_comment);
+
+insert into super_index(super_id,index_id,upd_date,upd_user,upd_comment) values(83271,80657,null,'dzc',null);
+update super_index set upd_comment='dzsc' where upd_user='dzc';
+delete from super_index where upd_comment='dzsc';
+
+
+
+create trigger super_type_trigger_insert
+after insert on super_type
+for each row
+insert into  z_super_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,type_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.super_id,new.type_id,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger super_type_trigger_delete 
+after delete on super_type
+for each row
+insert into z_super_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,type_id,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.super_id,old.type_id,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger super_type_trigger_update 
+after update on super_type
+for each row
+insert into  z_super_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,type_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.super_id,new.type_id,new.upd_date,new.upd_user,new.upd_comment);
+
+
+insert into super_type(super_id,type_id,upd_date,upd_user,upd_comment) values(2719,2720,null,'dzc',null);
+update super_type set upd_comment='dzsc' where upd_user='dzc';
+delete from super_type where upd_comment='dzsc';
+
+
+三：修改表
+alter table aliases add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table automatic_synchronization_crl add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table data_lines add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table data_relation add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table data_type add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_no_value add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_change add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_class add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_date add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_keyword add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_logic add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_qword add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_sort add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_special add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_techOp add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_techPeriod add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_trigger  add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_onto_vagueNum add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_trans add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table dict_update_recode  add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table field add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table field_to_index add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table index_prop add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table indexs add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table normal_relation add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table object_relation add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table prop_to_index add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table resolve_aliases_conflicts add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table super_index add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+alter table super_type add `upd_date`datetime default NULL,add `upd_user` varchar(31) default NULL,add `upd_comment` varchar(31) default NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

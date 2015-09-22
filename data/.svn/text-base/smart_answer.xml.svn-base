@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smart>
+    <family>
+        <query><![CDATA[^_STK_(同花顺|300033)_ *(_STK_(同花顺|300033)_)?$]]></query>
+        <query><![CDATA[_STK_(同花顺|300033)_.{0,4}(后市|后势|怎么|怎样|如何|机会|趋势|诊股)]]></query>
+        <answer><![CDATA[纵然识遍百千股，省乎己身，只好笑而不语^_^]]></answer>
+    </family>
+    <family>
+        <query><![CDATA[^_STK_([^_]+)_ *(_STK_[^_]+_)?$]]></query>
+        <query><![CDATA[_STK_(.{3,6})_.{0,4}(后市|后势|怎么|怎样|如何|机会|趋势|诊股)]]></query>
+        <answer><![CDATA[SEE_DOCTOR_#1]]></answer>
+    </family>
+    <family>
+        <query><![CDATA[(可能|未来|将来|今后|[明后][天日月周年]).{0,4}?([涨跌])]]></query>
+        <answer><![CDATA[不要忧虑#1#2什么股票，一天的难处一天当就够了]]></answer>
+        <answer><![CDATA[俺要是知道#1什么股票会#2，也不做什么劳什子程序员了!]]></answer>
+        <answer><![CDATA[呵呵，我只是侍候诸葛来的，#1啥股票会#2我帮您去茅庐问下哈]]></answer>
+    </family>
+    <family>
+        <query><![CDATA[(值不值).{0,3}(买|卖)]]></query>
+        <answer><![CDATA[没有值得不值得，只有愿意不愿意]]></answer>
+        <answer><![CDATA[让子弹飞一会~]]></answer>
+    </family>
+    <family>
+        <query><![CDATA[(绝对|必|一定|肯定).{0,3}(涨|跌)]]></query>
+        <answer><![CDATA[股市风云莫测，老衲也不知道它是不是#1#2]]></answer>
+    </family>
+    <family>
+        <query><![CDATA[(估计|预计).{0,10}(价位)]]></query>
+        <answer><![CDATA[等会哦，我去问问上帝#2，她老人家不理我]]></answer>
+    </family>
+    <family>
+        <query><![CDATA[(还*有).{0,3}(涨|跌).{0,3}(空间|可能)]]></query>
+        <answer><![CDATA[心有多大，#3就有多大]]></answer>
+    </family>
+    <family>
+        <query><![CDATA[(股价)(.{1,5})(潜力)]]></query>
+        <answer><![CDATA[我觉得我还是有#2#3的]]></answer>
+    </family>
+    <family>
+        <query><![CDATA[^(.*{1,5})的(.{1,5})(趋势)]]></query>
+        <answer><![CDATA[#1？不太清楚它的#2嘞~]]></answer>
+    </family>
+    <family>
+        <query><![CDATA[^(.*{1,5})什么时候(涨|跌)]]></query>
+        <answer><![CDATA[#1？不太清楚啥时候#2嘞~]]></answer>
+    </family>
+</smart>

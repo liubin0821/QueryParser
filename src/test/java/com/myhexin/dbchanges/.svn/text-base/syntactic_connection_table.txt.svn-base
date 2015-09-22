@@ -1,0 +1,20 @@
+DROP TABLE parser_syntactic_connection;
+
+CREATE TABLE parser_syntactic_connection
+(
+ID	INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+synt_id         	VARCHAR(100) NOT NULL,
+child_synt_id		VARCHAR(100) NULL,
+child_index_nm		VARCHAR(300) NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+
+INSERT INTO parser_syntactic_connection(synt_id, child_synt_id, child_index_nm) VALUES('189','KEY_VALUE','所属申万行业');
+INSERT INTO parser_syntactic_connection(synt_id, child_synt_id, child_index_nm) VALUES('189','FREE_VAR','所属申万行业');
+INSERT INTO parser_syntactic_connection(synt_id, child_synt_id, child_index_nm) VALUES('189','KEY_VALUE','所属同花顺行业');
+INSERT INTO parser_syntactic_connection(synt_id, child_synt_id, child_index_nm) VALUES('189','FREE_VAR','所属同花顺行业');
+
+
+INSERT INTO parser_syntactic_connection(synt_id, child_synt_id, child_index_nm) VALUES('372','KEY_VALUE','所属同花顺行业');
+INSERT INTO parser_syntactic_connection(synt_id, child_synt_id, child_index_nm) VALUES('372','FREE_VAR','所属同花顺行业');
+

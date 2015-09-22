@@ -1,0 +1,611 @@
+#pattern 中的 num：后接字符串为该数字需符合的单位
+#pattern 中的 index：括号内为指标类型
+#PTN=> Pattern全部替换
+#LAB=> 只有Label被替换
+#详细请见 http://172.20.0.52/wiki/index.php/语义树预处理-Pattern配置
+
+#请确保同类问题pattern、regex放在一起
+#regex越详尽放在越前面，因为目前还没有对regex做优先级判别
+
+#特别节点类型，说明
+#index(指标1|指标2) index(%|元|倍|股|户|只|无) index(number) index(date) index(string) index() index
+#date(年|季|月|周|日,连续|非连续|时间点|时间段) date(年|季|月|周|日) date(连续|非连续|时间点|时间段) date() date
+#num(%|元|倍|股|户|只|家|个|unknown) num() num
+#oper(加|减|乘|除|比率|ADD|SUB|DIV|MUL|RATE) oper()
+#str(文本1|文本2,属性1|属性2|属性3) str(文本1|文本2) 其中，文本可以为不带“括号”正则表达式，如str(.{1,6},_大股东名称)
+#prop(属性1|属性2) prop(number) prop(date) prop(string) prop() prop
+#qword(HOW_MUCH|WHAT|WHO|WHERE|WHEN|WHICH|UNKNOWN) qword()
+
+pattern:label=缩量;date label num(%)? PTN=> group(1) index(成交量) oper(RATE,减少) group(3) logic(AND) group(1) index(换手率) num(<2%);
+pattern:label=缩量;label num(%)? PTN=> index(成交量) oper(RATE,减少) group(2) logic(AND) index(换手率) num(<2%);
+pattern:label=放量;date label num(%)? PTN=> group(1) index(成交量) oper(RATE,增长) group(3) logic(AND) group(1) index(换手率) num(>2%);
+pattern:label=放量;label num(%)? PTN=> index(成交量) oper(RATE,增长) group(2) logic(AND) index(换手率) num(>2%);
+pattern:label=收阴;label LAB=> index(收盘价) oper(SUB) num(<0) index(开盘价);
+pattern:label=收阴;date() label LAB=> group(1) index(收盘价) oper(SUB) num(<0) group(1) index(开盘价);
+#pattern:label=业绩大增;label num(%|倍|unknown) LAB=> index(净利润(同比增长率));
+#pattern:label=业绩大增;label num(%|倍|unknown)! LAB=> index(净利润(同比增长率)) num(>50%);
+
+pattern:label=年报|中报|季报;sort str(公布|披露|发表|发布) label PTN=> group(1) index(定期报告实际披露日期) group(3)
+pattern:label=均线;start label techop PTN=> group(3);
+#pattern:label=增发认购方式;label oper(SUB)? index(货币资金) end PTN=> index(增发认购方式) strval(包含,现金,增发认购方式);
+#pattern:label=增发认购方式;label str? index(货币资金) end PTN=> index(增发认购方式) strval(包含,现金,增发认购方式);
+#pattern:label=增发认购方式;label str(不为) index(货币资金) end PTN=> index(增发认购方式) strval(不包含,现金,增发认购方式);
+#pattern:label=已实施|已经实施|实施;index(增发进度) oper? label PTN=> index(增发进度) strval(包含,已实施,增发进度);
+#pattern:label=已实施|已经实施|实施;str(增发方案|增发|增发状态|增发数据) str? label PTN=> index(增发进度) strval(包含,已实施,增发进度);
+#pattern:label=未实施;index(增发进度) oper? label PTN=> index(增发进度) strval(包含,未实施,增发进度);
+#pattern:label=未实施;str(增发方案|增发|增发状态|增发数据) str? label PTN=> index(增发进度) strval(包含,未实施,增发进度);
+#pattern:label=停止实施|停止|停滞状态;index(增发进度) oper? label PTN=> index(增发进度) strval(包含,停止实施,增发进度);
+#pattern:label=停止实施|停止|停滞状态;str(增发方案|增发|增发状态|增发数据) str? label PTN=> index(增发进度) strval(包含,停止实施,增发进度);
+#pattern:label=增发发行对象|增发对象;label str? str(机构投资者) PTN=> index(增发发行对象) strval(包含,机构投资者,增发发行对象);
+#pattern:label=增发发行对象|增发对象;label str? str(控股)? str(股东) PTN=> index(增发发行对象) strval(包含,控股股东,增发发行对象);
+#pattern:label=增发发行对象|增发对象;label str? str(个人投资者|个人) PTN=> index(增发发行对象) strval(包含,个人投资者,增发发行对象);
+#pattern:label=增发发行对象|增发对象;label str? str(境内自然人|自然人) PTN=> index(增发发行对象) strval(包含,境内自然人,增发发行对象);
+#pattern:label=增发发行对象|增发对象;label str? str(大股东) PTN=> index(增发发行对象) strval(包含,大股东,增发发行对象);
+pattern:label=同比;index(number) label num(%|倍|unknown) LAB=> oper(RATE,同比增长);
+pattern:label=市盈率(pe);label sort PTN=> group(1) num(>0) logic(AND) group(1) group(2);
+pattern:label=市现率(pcf,经营现金流);label sort PTN=> group(1) num(>0) logic(AND) group(1) group(2);
+pattern:label=市净率(pb);label sort PTN=> group(1) num(>0) logic(AND) group(1) group(2);
+pattern:label=流通a股;label num(%) LAB=> index(流通a股占总股本比例) prop(_浮点型数值);
+pattern:label=年报披露;date() label LAB=> prop(_日期) index(定期报告实际披露日期);
+pattern:label=年报披露;label LAB=> index(定期报告实际披露日期) prop(_日期) date(今年1月1日以后);
+pattern:label=发行|上市|新发行;date() label LAB=> prop(_日期) index(首发上市日期);
+#pattern:label=新股;date label str(除外) PTN=>index(上市天数) num(大于60) index(首发上市日期) group(1);
+#pattern:label=新股;label str(除外) PTN=> index(上市天数) num(>60) prop(_日期);
+#pattern:label=新股;label LAB=> date(最近60天) index(首发上市日期);
+#pattern:label=新股;date() label LAB=> prop(_日期) index(首发上市日期);
+
+pattern:label=低价股|低价;label LAB=> index(最新价) num(<10元);
+pattern:label=低价股|低价;num(元|unknown) label LAB=>prop(_浮点型数值) index(收盘价);
+pattern:label=低价股|低价;label num(元|unknown) LAB=> index(收盘价) prop(_浮点型数值);
+
+# ========== 以下关于增发的问题 ==================
+pattern:label=增发;date() label num(元|unknown) LAB=> prop(_日期) index(增发上市日) index(增发募集资金) prop(_浮点型数值);
+pattern:label=增发;date() label num(股) LAB=> prop(_日期) index(增发上市日) index(增发数量) prop(_浮点型数值);
+pattern:label=增发|实施增发|发生增发;date() str(打算|将要|发生)? label LAB=> index(增发上市日);
+pattern:label=增发|实施增发|发生增发;str(距离)? str(上次|上一次)? label str(超过)? date(年) PTN=> index(增发上市日) group(5);
+pattern:label=增发;label LAB=> index(增发数量) num(>0);
+pattern:label=增发;start label prop(date) PTN=> prop(_日期) index(增发上市日) index(增发数量) num(>0);
+pattern:label=定向增发|非定向增发|增发;label num(元|unknown) LAB=> index(增发募集资金);
+pattern:label=定向增发|非定向增发|增发;label num(股) LAB=> index(增发数量);
+pattern:label=定向增发;date() label num(股) LAB=> prop(_日期) index(定向发行日) index(增发数量);
+pattern:label=定向增发;date() label num(元|unknown) LAB=> prop(_日期) index(定向发行日) index(增发募集资金);
+pattern:label=定向增发;date() label LAB=> prop(_日期) index(定向发行日);
+pattern:label=定向增发;label LAB=> index(增发发行方式) strval(包含,定向,_增发发行方式);
+pattern:label=非定向增发;label LAB=> index(增发发行方式) strval(不包含,定向,_增发发行方式);
+pattern:label=非定向增发;date() label num(股) LAB=> prop(_日期) index(公开发行日) index(增发数量);
+pattern:label=非定向增发;date() label num(元|unknown) LAB=> prop(_日期) index(公开发行日) index(增发募集资金);
+pattern:label=非定向增发;date() label LAB=> prop(_日期) index(公开发行日);
+#pattern:label=办公地址;date() label LAB=> prop(_日期) index(成立日期) prop(_办公地址);
+#pattern:label=位于;date() label LAB=> prop(_日期) index(成立日期) prop(_办公地址);
+#pattern:label=注册地址;date() label LAB=> prop(_日期) index(成立日期) prop(_注册地址);
+
+# ============以下关于大中小盘 ==============
+pattern:label=小盘;index(总股本) num(股) label LAB=> index(总股本) group(2);
+pattern:label=小盘|小盘股|中小盘|中小盘股;index(总股本)! num(股) label LAB=> index(总股本);
+pattern:label=小盘|小盘股|中小盘|中小盘股;index(number)! num(unknown) label LAB=> index(总股本);
+pattern:label=小盘|小盘股|中小盘|中小盘股;index(number) num(unknown) label LAB=> index(总股本) num(<100000000股);
+pattern:label=小盘|小盘股|中小盘|中小盘股;num(股) label LAB=> index(总股本);
+pattern:label=小盘|小盘股|中小盘|中小盘股;label LAB=> index(总股本) num(<100000000股);
+pattern:label=小盘|小盘股|中小盘|中小盘股;index(总股本)! num(股|unknown) label LAB=> index(总股本) num(<100000000股);
+pattern:label=大盘|大盘股;index(总股本) num(股|unknown) label LAB=> index(总股本) num(>500000000股);
+pattern:label=大盘|大盘股;label LAB=> index(总股本) num(>500000000股);
+pattern:label=超级大盘|超大盘;index(number) num(股|unknown) label LAB=> index(总股本) num(>1000000000股);
+pattern:label=超级大盘|超大盘;label LAB=> index(总股本) num(>1000000000股);
+pattern:label=超级大盘|超大盘;index(number)! num(股|unknown) label LAB=> index(总股本);
+pattern:label=大盘|大盘股;start index(总股本)! num(股|unknown) label LAB=> index(总股本);
+
+#pattern:label=小市值|中小市值;index(number) num(元|unknown) label LAB=> index(a股市值(含限售股)) sort(前10%,数字);
+#pattern:label=小市值|中小市值;label LAB=> index(a股市值(含限售股)) sort(前10%,数字);
+pattern:label=小市值|中小市值;num(元|unknown) label LAB=> index(a股市值(含限售股));
+
+# ============= 以下关于分红送转配股 =================
+pattern:label=分红|每股分红|每股分红送转;label oper index(number) LAB=> index(每股分红送转);
+pattern:label=分红|每股分红|每股分红送转;label index(净利润) num(%|unknown) PTN=> index(每股分红送转) oper(div) index(每股股利(税前)) group(3);
+pattern:label=高分红|高分红送转|高配送|高送转|分红|分红送转|配送|送转;label num(元|unknown) LAB=> index(每股分红送转);
+pattern:label=高分红|高分红送转|高配送|高送转;label LAB=> index(每股分红送转) num(>0.5);
+pattern:label=高|大|多;str(分红|分红送转|配送|送转) label PTN=> index(每股分红送转) num(>0.5);
+pattern:label=分红|送配|送转|分红送转;label LAB=> index(每股分红送转) num(>0);
+pattern:label=分红|送配|送转|分红送转;label num(元|unknown) LAB=> index(每股分红送转);
+pattern:label=分红|送配|送转|分红送转;label LAB=> index(每股分红送转) num(>0);
+pattern:label=分红|分红率;label num(%) LAB=> index(三年累计分红占比(再融资条件));
+
+pattern:label=分红|送配|送转|分红送转|每股分红送转;date(时间点) label end PTN=> group(1) index(除权除息日) index(每股分红送转);
+pattern:label=现金分红|每股股利(税前);date(时间点) label PTN=> group(1) index(除权除息日) index(每股股利(税前));
+pattern:label=现金分红;label LAB=> index(每股股利(税前));
+pattern:label=配股;date() label LAB=> prop(_日期) index(配股上市日);
+pattern:label=配股;label LAB=> index(配股上市日);
+
+pattern:label=10转;label num(股|unknown) LAB=> index(每股转增股本) change_num(2,div,10);
+pattern:label=10送|送股;label num(股|unknown) LAB=> index(每股红股) change_num(2,div,10);
+pattern:label=10送转;label num(股|unknown) LAB=> index(每股红股) index(每股转增股本) change_num(2,div,10);
+pattern:label=10派;label num(元|unknown) LAB=> index(每股股利(税前)) change_num(2,div,10);
+
+pattern:label=除权;date() label LAB=> prop(_日期) index(除权除息日);
+pattern:label=终止上市;date() label LAB=> prop(_日期) index(摘牌日期);label LAB=> index(摘牌日期) date(今天之前);
+pattern:label=连涨|连续涨|连续上涨;label date() LAB=> index(连涨天数);
+pattern:label=发行|上市;label date() LAB=> index(首发上市日期);
+pattern:label=业绩预告;date() label LAB=> prop(_日期) index(业绩快报披露日);
+pattern:label=业绩预告;label LAB=> index(业绩预告类型);
+pattern:label=预增|季报预增;index(净利润) label num(%|倍|unknown) PTN=> index(预告净利润变动幅度(%)) group(3);
+pattern:label=预增|季报预增;index(净利润) label sort PTN=> index(预告净利润变动幅度(%)) group(3);
+pattern:label=预增|季报预增;index(净利润)? date? label qword PTN=> group(2) index(预告净利润变动幅度(%));
+pattern:label=预增|季报预增;date? index(净利润)? label qword PTN=> group(1) index(预告净利润变动幅度(%));
+pattern:label=预增|季报预增;label num(%|倍|unknown) LAB=> index(预告净利润变动幅度(%));
+pattern:label=预增|季报预增;label sort LAB=> index(预告净利润变动幅度(%));
+pattern:label=预增|季报预增;label LAB=> index(业绩预告类型) strval(+,预增,_业绩预告类型);
+
+pattern:label=预亏|预减;label LAB=> index(业绩预告类型) strval(+,首亏|续亏|预减,_业绩预告类型);
+pattern:label=预亏|预减;label num(%) LAB=> index(预告净利润变动幅度(%)) change_num(2,MUL,-1);
+
+pattern:label=业绩预告日期;label str(为|是|在) LAB=> index(业绩预告日期) prop(_日期);
+pattern:label=基本每股收益;label num(%) LAB=> index(基本每股收益(同比增长率));
+pattern:label=每股收益eps-基本;label num(%) LAB=> index(基本每股收益(同比增长率));
+pattern:label=创立;label date() LAB=> index(成立日期);
+pattern:label=成立|创立;date() label LAB=> prop(_日期) index(成立日期);
+#pattern:label=飘红;label num(%|unknown) LAB=> index(涨跌幅);
+#pattern:label=飘红;label LAB=> index(涨跌幅) num(>0);
+pattern:label=发行|上市|新发行|上市公司;qword(WHEN) label LAB=> index(首发上市日期);
+pattern:label=生产;label qword(WHAT) LAB=> index(主营产品名称);
+pattern:label=上市首日涨跌幅;date() label num(%) LAB=> prop(_日期) index(首发上市日期) index(上市首日涨跌幅);
+pattern:label=上市首日涨跌幅;date() label LAB=> prop(_日期) index(首发上市日期) index(上市首日涨跌幅);
+#pattern:label=上市公司|上市;date() label end LAB=> index(首发上市日期);
+pattern:label=中报;str(已披露|披露) label PTN=> index(定期报告实际披露日期) date(今天前);
+
+#大宗交易相关
+pattern:label=大宗交易;index(成交量)? num(股|unknown) label PTN=> index(大宗交易成交数量) group(2)
+pattern:label=大宗交易;index(成交额)? num(元|unknown) label PTN=> index(大宗交易成交金额) group(2)
+pattern:label=大宗交易;str(成交价格|成交均价) num(元|unknown) label PTN=> index(大宗交易成交均价) group(2)
+pattern:label=大宗交易; label PTN=> index(大宗交易成交金额)
+
+#持股比例
+pattern:label=机构持股;label num(%) LAB=> index(机构持股比例合计);
+pattern:label=机构持股;oper label LAB=> index(机构持股比例合计);
+pattern:label=机构持股;label oper LAB=> index(机构持股比例合计);
+pattern:label=机构持股;label num(股|unknown) LAB=> index(机构持股数量合计);
+pattern:label=基金持股;label num(%) LAB=> index(基金持股比例);
+pattern:label=基金持股;oper label LAB=> index(基金持股比例);
+pattern:label=基金持股;label oper LAB=> index(基金持股比例);
+pattern:label=基金持股;label num(股|unknown) LAB=> index(基金持股数量);
+pattern:label=社保持股;label num(%) LAB=> index(社保基金持股比例);
+pattern:label=社保持股;oper label LAB=> index(社保基金持股比例);
+pattern:label=社保持股;label oper LAB=> index(社保基金持股比例);
+pattern:label=社保持股;label num(股|unknown) LAB=> index(社保基金持股数量);
+pattern:label=券商持股;label num(%) LAB=> index(券商持股比例);
+pattern:label=券商持股;oper label LAB=> index(券商持股比例);
+pattern:label=券商持股;label oper LAB=> index(券商持股比例);
+pattern:label=券商持股数量;label num(股|unknown) LAB=> index(券商持股数量);
+pattern:label=社保重仓;label num(股|unknown) LAB=> index(社保基金持股数量);
+
+#===== 以下解决近期创阶段新高相关问题 =======
+pattern:label=突破|跌破|破|创造|创下|创出|创;date() label date() str(新低|低点) PTN=> group(1) prop(近n天内) index(近期创阶段新低) group(3) prop(创n天以来新低);
+pattern:label=突破|跌破|破|创造|创下|创出|创;label date() str(新低|低点) PTN=> group(2) prop(创n天以来新低) index(近期创阶段新低);
+pattern:label=突破|破|创造|创下|创出|创;date() label date() str(新高|高点) PTN=> group(1) prop(近n天内) index(近期创阶段新高) group(3) prop(创n天以来新高);
+pattern:label=突破|破|创造|创下|创出|创;label date() str(新高|高点) PTN=> group(2) prop(创n天以来新高) index(近期创阶段新高);
+pattern:label=新高|高点|创新高;str(突破|跌破|破|创造|创下|创出|创)? str(上市|历史) label LAB=> index(近期创历史新高);
+pattern:label=新低|低点|创新低;str(突破|跌破|破|创造|创下|创出|创)? str(上市|历史) label LAB=> index(近期创历史新低);
+pattern:label=创新高|破新高|新高;date(时间点) label LAB=> prop(交易日期) index(近期创阶段新高);
+pattern:label=创新高|破新高|新高;date(时间段) label LAB=> prop(近n天内) index(近期创阶段新高);
+pattern:label=创新高|破新高|新高;label LAB=> index(近期创阶段新高);
+pattern:label=创新低|破新低|新低;date(时间点) label LAB=> prop(交易日期) index(近期创阶段新低);
+pattern:label=创新低|破新低|新低;date(时间段) label LAB=> prop(近n天内) index(近期创阶段新低);
+pattern:label=创新低|破新低|新低;label LAB=> index(近期创阶段新低);
+pattern:label=近期创阶段新低|近期创阶段新高|近期创历史新低|近期创历史新高;date() label PTN=> prop(交易日期) group(1) group(2);
+pattern:label=近期创历史新低|;date() str(突破|跌破|破|创造|创下|创出|创) date() label PTN=> index(近期创阶段新低) prop(近n天内) group(1) prop(创n天以来新低) group(3);
+pattern:label=近期创历史新低|;str(突破|跌破|破|创造|创下|创出|创) date() label PTN=> index(近期创阶段新低) prop(创n天以来新低) group(2);
+pattern:label=近期创历史新高|;date() str(突破|破|创造|创下|创出|创) date() label PTN=> index(近期创阶段新高) prop(近n天内) group(1) prop(创n天以来新高) group(3);
+#===== 以下解决指标遇到%数字时转成增长率指标的问题 =======
+pattern:label=毛利;oper! date? label date? num(%) PTN=> group(1) group(2) index(销售毛利率) group(4) group(5);
+pattern:label=净利润;oper! date? label date? num(%) PTN=> group(1) group(2) index(净利润(同比增长率)) group(4) group(5);
+pattern:label=净利润;date(季,连续) label oper(SUB)? num(%) PTN=> group(1) index(单季度.净利润环比增长率) group(4);
+pattern:label=营业利润;oper! date? label date? num(%) PTN=> group(1) group(2) index(营业利润(同比增长率)) group(4) group(5);
+pattern:label=营业收入;oper! date? label date? num(%) PTN=> group(1) group(2) index(营业收入(同比增长率)) group(4) group(5);
+pattern:label=主营业务收入;oper! date? label date? num(%) PTN=> group(1) group(2) index(主营业务收入同比增长率) group(4) group(5);
+pattern:label=毛利|净利润|营业利润|营业收入|主营业务收入;oper date? label date? num(%) PTN=> group(1) group(2) group(3) group(4) group(5);
+pattern:label=占|比|较|是|相比|相对;label date? index(毛利|净利润|营业利润) PTN=> group(1) group(2) group(3);
+pattern:label=机构预测每股收益;start label num(%) PTN=> group(2) oper(RATE,同比增长) group(3);
+pattern:label=主营产品名称 ;label str index(主营产品名称) PTN=> group(1) group(2);
+pattern:label=流通;label num(股|unknown) LAB=> index(流通a股);
+pattern:label=对外担保|担保;label oper? index? num LAB=> index(担保发生额合计);
+
+#特殊计算
+pattern:label=在|于|位于;index(number) label date? index(number) str(之上|以上|上面) PTN=> group(1) oper(SUB) group(3) group(4) num(>0);
+pattern:label=在|于|位于;index(number) label date? index(number) str(之下|以下|下面) PTN=> group(1) oper(SUB) group(3) group(4) num(<0);
+pattern:label=增发; index(收盘价|最新价|最新收盘价) oper(SUB) label LAB=>index(增发价格)
+pattern:label=发行价|首发价格|首发价;str(相对) label oper(sub) num(%) PTN=> index(相对发行价涨跌幅) group(4);
+pattern:label=股东权益合计|股东权益合计(净利润); index(收盘价|最新价) oper(sub) label LAB=>index(每股净资产(bps));
+pattern:label=股东权益合计|股东权益合计(净利润); label oper(sub) index(收盘价|最新价) LAB=>index(每股净资产(bps));
+pattern:label=相同|相等|一样;index(number) index(number) label PTN=> group(1) oper(div) group(2) num(0.95到1.05);
+pattern:label=不错;index(number) num(unknown)? label end PTN=> group(1) sort(DECR,10);
+pattern:label=分别|依次|各自;index(number) index(number) label num num PTN=> group(1) group(4) group(2) group(5);
+pattern:label=分别|依次|各自;index(number) index(number) index(number) label num num num PTN=> group(1) group(5) group(2) group(6) group(3) group(7);
+pattern:label=股东权益合计;start oper label num(%|倍)? PTN=> group(1) index(最新价) group(2) index(每股净资产(bps)) group(4);
+pattern:label=不等于;index(number) label date? index(number) PTN=> group(1) oper(SUB) num(>0) group(3) group(4) logic(OR) group(1) oper(SUB) num(<0) group(3) group(4);
+pattern:label=低;index(最新价|收盘价) label num! PTN=> group(1) num(<10) group(3);
+pattern:label=低;label index(最新价|收盘价) num! PTN=> group(2) num(<10) group(3);
+pattern:label=年;index(number) label oper(SUB) num(%) PTN=> date(去年) group(1) group(2) group(3) group(4);
+pattern:label=最大跌幅; date label PTN=> group(1) index(涨跌幅) sort(DECR,1);
+pattern:label=全年;date! label LAB=> group(1) date(今年);
+pattern:label=比;index(number) date? label date? index(number) str(放大) PTN=> group(1) group(2) oper(SUB) group(4) group(5);
+pattern:label=比;index(number) date? label date str(放大) PTN=> group(1) group(2) oper(SUB) group(4) group(1);
+pattern:label=首发价格;index(number)! oper(SUB|RATE) label PTN=> group(1) index(相对发行价涨跌幅) num(<0);
+pattern:label=非|没有;label index(number) oper(div) index(number) num(%) PTN=> group(2) group(3) group(4) change_num(5,sub2,100);
+
+# test
+pattern:label=坏账;str(存在) label LAB=> index(计提的坏账准备或转销的坏账) num(>0);
+pattern:label=坏账;str(不存在) label LAB=> index(计提的坏账准备或转销的坏账) num(0);
+#pattern:label=股票; index(number) whatever(较低) label PTN=> group(1) fakenum(less);
+
+#周、月、年+指标
+pattern:label=周;label index(涨跌幅|最新涨跌幅) PTN=> index(周涨跌幅);
+pattern:label=月;label index(涨跌幅|最新涨跌幅) PTN=> index(月涨跌幅);
+pattern:label=年;label index(涨跌幅|最新涨跌幅) PTN=> index(年涨跌幅);
+pattern:label=周;label index(换手率) PTN=> index(周换手率);
+pattern:label=月;label index(换手率) PTN=> index(月换手率);
+pattern:label=年;label index(换手率) PTN=> index(年换手率);
+
+#主力资金
+pattern:label=主力资金; label LAB=> index(主力净流向);
+pattern:label=主力资金; label date? str(流进|流入) PTN=> group(2) index(主力净流向) num(>0);
+pattern:label=主力资金流入;label sort PTN=> index(主力净流向) group(2) logic(AND) index(主力净流向) num(>0);
+pattern:label=主力资金流入;label num! PTN=> index(主力净流向) num(>0) group(2);
+pattern:label=主力资金流出;label sort PTN=> index(主力净流向) group(2) logic(AND) index(主力净流向) num(<0);
+pattern:label=主力资金流出;label num! PTN=> index(主力净流向) num(<0) group(2);
+
+#大股东名称
+pattern:label=持有;label str(,_股票简称) PTN=> index(大股东名称) index(股票简称) group(2);
+##简单的测试pattern:label=持有;label str(同花顺|万科,_股票简称|_股票代码) PTN=> index(大股东名称) index(股票简称) group(2);
+
+#B、H股
+regex:(?:[A|a]?股?[、|+|和|有|与])[H|h]股 REG=> 香港上市股大于0 ;
+regex:(?:[A|a]?股?[、|+|和|有|与])[B|b]股 REG=> b股合计大于0 ;
+
+#---------------------------下面解决技术指标问题（勿要乱添加别的功能）---------------------------------#
+######技术指标相关pattern
+pattern:label=突破;label date(日) index(日均线) LAB=> techop(上穿,2);
+pattern:label=上|站上;label date(日) index(日均线) LAB=> techop(上穿,2);
+pattern:label=<;start label date(日) index(日均线) LAB=> techop(下破,2);
+pattern:label=上扬;date(日) index(日均线) label LAB=> techop(上移,1);
+pattern:label=在;index(number) label date? index(number) str(之上) PTN=> group(1) oper(SUB) group(3) group(4) num(>0);
+pattern:label=穿越|穿过|穿;date(日) index(日均线) label date(日) index(日均线) LAB=> techop(上穿,2);
+pattern:label=均线;start label techop PTN=> group(3)
+pattern:label=在|站在|位于;str(k线) label date? index(number) str(之上|以上|上面|上) PTN=> index(收盘价) oper(SUB) group(3) group(4) num(>0);
+pattern:label=在|站在|位于;str(k线) label date? index(number) str(之下|以下|下面|下) PTN=> index(收盘价) oper(SUB) group(3) group(4) num(<0);
+pattern:label=在|站在|位于|站上;index(开盘价|最新价|收盘价) label date? index(number) str(之上|以上|上面|上)? PTN=> group(1) oper(SUB) group(3) group(4) num(>0);
+pattern:label=在|站在|位于;index(开盘价|最新价|收盘价) label date? index(number) str(之下|以下|下面|下)? PTN=> group(1) oper(SUB) group(3) group(4) num(<0);
+pattern:label=线叉|叉|金线|短线强势|强势|强势买入 ;index(wr|mtm|rsi|周rsi|kdj|周kdj|skdj|周skdj|macd|周macd) label LAB=> techop(金叉,2)
+pattern:label=交叉;date(日) index(日均线) label date(日) index(日均线) LAB=> techop(金叉,2);
+pattern:label=交叉;date(日) index(日均线) date(日) index(日均线) label LAB=> techop(金叉,2);
+#pattern:label=和|及|与|以及|跟;date(日) index(日均线) label date(日) index(日均线) str(分别)? oper date(日) index(日均线) PTN=> group(1) group(2) group(7) group(8) group(9) group(4) group(5) group(7) group(8) group(9)
+pattern:label=上轨;index(收盘价|最新价)? whatever(上穿|突破) index(boll) label PTN=> index(boll) techop(突破上轨,1)
+pattern:label=中轨;index(收盘价|最新价)? whatever(上穿|突破) index(boll) label PTN=> index(boll) techop(突破中轨,1)
+pattern:label=下轨;index(收盘价|最新价)? whatever(上穿|突破) index(boll) label PTN=> index(boll) techop(突破下轨,1)
+pattern:label=上轨;index(收盘价|最新价)? whatever(下穿|跌破) index(boll) label PTN=> index(boll) techop(跌破上轨,1)
+pattern:label=中轨;index(收盘价|最新价)? whatever(下穿|跌破) index(boll) label PTN=> index(boll) techop(跌破中轨,1)
+pattern:label=下轨;index(收盘价|最新价)? whatever(下穿|跌破) index(boll) label PTN=> index(boll) techop(跌破下轨,1)
+pattern:label=红色|红柱|红线;index(macd|周macd|月macd) str(显示)? label LAB=> num(>0)
+pattern:label=绿色|绿柱|绿线;index(macd|周macd|月macd) str(显示)? label LAB=> num(<0)
+pattern:label=翻红|泛红|飘红|反红;index(macd|周macd|月macd) label LAB=> techop(上穿0轴,1)
+pattern:label=翻绿|泛绿|飘绿|反绿;index(macd|周macd|月macd) label LAB=> techop(下穿0轴,1)
+pattern:label=和|与|同;index(macd|kdj) str(指标)? label index(收盘价|开盘价|最新价) whatever(顶背离|底背离) PTN=> group(1) group(5)
+pattern:label=和|与|同;index(收盘价|开盘价|最新价) label index(macd|kdj) str(指标)? whatever(顶背离|底背离) PTN=> group(3) group(5)
+pattern:label=kd;label whatever(金叉|死叉|顶背离|底背离) PTN=> index(kdj) group(2)
+pattern:label=提示买入|指标买入|提示|买点|买入信号|买入条件|买入;index(macd|周macd|月macd|kdj|周kdj|月kdj) str(指标|分钟)? label LAB=> techop(低位金叉,2)
+pattern:label=提示买入|指标买入|提示|买点|买入信号|买入条件|买入;index(rsi) str(指标|分钟)? label LAB=> techop(金叉,2)
+pattern:label=提示买入|指标买入|提示|买点|买入信号|买入条件|买入;index(cci|周cci) str(指标|分钟)? label LAB=> num(>100)
+pattern:label=处于下轨|底部|值小|见底|到底;index(macd|周macd|月macd|kdj|周kdj|月kdj) label PTN=> group(1) techop(低位,1)
+pattern:label=底部|低位|见底;label index whatever(金叉) PTN=> group(2) techop(低位金叉,1) 
+pattern:label=高位|顶部;label index whatever(死叉) PTN=> group(2) techop(高位死叉,1) 
+pattern:label=正值;index label LAB=> num(>0)
+pattern:label=周|周k线|周k线图;label index(macd) PTN=> index(周macd) 
+pattern:label=周|周k线|周k线图;label index(kdj) PTN=> index(周macd) 
+pattern:label=周|周k线|周k线图;label index(cci) PTN=> index(周macd) 
+
+#################### added by zd on 2012-10-26 ###################
+regex:(股价|最新价|价格|收盘价|收盘)(?:在|位于)NUM(?:至|到|和)NUM(?:日|天|日日)?均线(?:之间|之中|当中|间)? REG=>group1>group2日日均线且<group3日日均线
+regex:周线(?:股价|价|价格)?大于NUM(?:日|天|日日)?均线 REG=> 收盘价>group1周周均线
+regex:NUM(?:日|天)?均线上(?:出现)?(?:第一个)?跳空缺口(?:股票)? REG=> 收盘价>group1日日均线且跳空缺口
+regex:(股价|最新价|价格|收盘价|行情收盘价|收盘)在?长期均线(?:上|以上) REG=> 收盘价>120日日均线且>250日日均线 
+regex:(股价|最新价|价格|收盘价|行情收盘价|收盘)在?(?:所有|全部)均线上 REG=> 收盘价>5日日均线，>10日日均线，>20日日均线，>30日日均线且>60日日均线且>120日日均线且>250日日均线
+regex:(股价|最新价|价格|收盘价|行情收盘价|收盘)(?:大于|高于)(?:所有|全部)均线 REG=> 收盘价>5日日均线且>10日日均线且>20日日均线且>30日日均线且>60日日均线且>120日日均线且>250日日均线
+regex:(股价|最新价|价格|收盘价|行情收盘价|收盘)(?:上|上穿|穿|上跨|向上交叉)NUM(日|天|月|周|日日|月月|周周)平?均线 REG=> 收盘价上穿group2group3均线
+regex:(股价|最新价|价格|收盘价|行情收盘价|收盘)(大于|》|>)短期均线 REG=> group1>20日日均线
+regex:(股价|最新价|价格|收盘价|行情收盘价|收盘)(小于|《|<)短期均线 REG=> group1<20日日均线
+regex:(股价|最新价|价格|收盘价|行情收盘价|收盘)在?(?:短期均线|移动平均线)线?(?:下的|下|以下) REG=> 收盘价<20日日均线
+regex:NUM(日|天|月|周|日日|月月|周周)均线(?:拐头向上|抬头)的?(?:股票|股)? REG=> group1group2均线拐头向上
+regex:(?:dde大单净额|dde|DDE|ＤＤＥ)(大于|》|>|)NUM(万|亿)NUM(日|天|月|周|日日|月月|周周)(?:均线)?(?:和|且|\s+|，|、|,)?NUM(日|天|月|周|日日|月月|周周)均线(?:都|全|全部)?(?:向上|上扬|上行) REG=> dde大单净额>group2group3元且group4group5均线上移且group6group7均线上移
+regex:(?:dde大单净额|dde|DDE|ＤＤＥ)(小于|《|<)NUM(万|亿)NUM(日|天|月|周|日日|月月|周周)(?:均线)?(?:和|且|\s+|，|、|,)?NUM(日|天|月|周|日日|月月|周周)均线(?:都|全|全部)?(?:向上|上扬|上行) REG=> dde大单净额<group2group3元且group4group5均线上移且group6group7均线上移
+regex:(?:dde大单净额|dde|DDE|ＤＤＥ)(大于|》|>|)NUM(万|亿)且?NUM(日|天|月|周|日日|月月|周周)均线(?:都|全|全部)?(?:向上|上扬|上行) REG=> dde大单净额>group2group3元且group4group5均线上移
+regex:(?:dde大单净额|dde|DDE|ＤＤＥ)(小于|《|<)NUM(万|亿)且?NUM(日|天|月|周|日日|月月|周周)均线(?:都|全|全部)?(?:向上|上扬|上行) REG=> dde大单净额<group2group3元且group4group5均线上移
+regex:单阳(?:k线|K线|线)?(?:突破|破|上穿|穿)NUM(日|天|月|周|日日|月月|周周)均线的?(?:股票|股)? REG=> 收盘价>开盘价且上穿group1group2均线
+regex:(?:一根)?K线(?:穿越|上穿|穿过)(?:所有|全部)均线 REG=> 收盘价上穿5日日均线且上穿10日日均线且上穿20日日均线且上穿30日日均线且上穿60日日均线且上穿120日日均线且上穿250日日均线
+regex:(?:一根|一)阳线?(?:穿越|上穿|穿过|超过)(?:所有|全部)均线 REG=> 收盘价>开盘价且收盘价上穿5日日均线且上穿10日日均线且上穿20日日均线且上穿30日日均线且上穿60日日均线且上穿120日日均线且上穿250日日均线
+regex:.?成交量(?:突破|破|冲破|穿|上穿)NUM(日|天|月|周|日日|月月|周周)(?:量均|均量)线 REG=> 成交量上穿group1group2vol
+##### end zd ######
+
+#################### added by miaoyuanyuan ###################
+regex:月[k|K|均]?线NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM月[\s|,|。|、|，|\.]{0,2}NUM月{0,2}[K|k|均]?线?[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线，group3月月均线大于group4月月均线
+regex:月[k|K|均]?线NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM月{0,2}[K|k|均]?线?[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线
+#################### added by miaoyuanyuan ###################
+
+##################  lunwenxing     混合(粘合+拐头向上)     ##################
+#五线粘合五线上移
+regex:NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。){0,2}(?:5|五)?(?:条|只|根)?中?长?期?(?:日平均线|日均线|平均线|均线|日线|线)(?:粘合|黏合|粘和|重合|在一起|一起)(?:同时|并且|而且|\s)?(?:向上|上移) REG=> group1日日均线粘合group2日日均线 并且 group2日日均线粘合group3日日均线 并且 group3日日均线粘合group4日日均线 并且 group4日日均线粘合group5日日均线 并且 group1日日均线上移 并且 group2日日均线上移 并且 group3日日均线上移 并且 group4日日均线上移 并且 group5日日均线上移
+#四线
+regex:(?<!\d日|日|\d+)均线(?:相互)?(?:粘合|缠绕|粘结|黏合|粘和|重合|靠近)(?:在一起|一起)?(?:将要|即将)(?:上扬|上移|上行) REG=> 5日日均线粘合10日日均线 并且 10日日均线粘合30日日均线 并且 30日日均线粘合60日日均线 并且 5日日均线上移 并且 10日日均线上移 并且 30日日均线上移 并且 60日日均线上移
+#两线粘合两线上移
+regex:NUM(?:\s)?(?:日|\s|天|,|，|、|。|MA|ma|Ma|mA)(?:日平均线|日均线|平均线|均线|日线|线)?(?:值|数值)?(?:和|与|于|跟|\s)?NUM(?:\s)?(?:日|\s|天|,|，|、|。|MA|ma|Ma|mA)(?:日平均线|日均线|平均线|均线|日线|线)?(?:值|数值)?(?:粘|贴|贴和|贴合)?(?:平行|并拢)(?:接近|靠近|靠拢|粘合|黏合|粘和|粘连|重合|在一起|一起|集于一点)?(?:\s|,|，|、|。)?(?:上窜|向上|上行|拐头向上|上移|有减到增|由递减转递增|递增|由递减到递增) REG=> group1日日均线粘合group2日日均线 并且 group1日日均线上移 并且 group2日日均线上移
+#两线粘合一线上移
+regex:NUM(?:\s)?(?:日|\s|天|,|，|、|。|MA|ma|Ma|mA)(?:日平均线|日均线|平均线|均线|日线|线)?(?:值|数值)?(?:和|与|于|跟|\s)?NUM(?:\s)?(?:日|\s|天|,|，|、|。|MA|ma|Ma|mA)(?:日平均线|日均线|平均线|均线|日线|线)?(?:值|数值)?(?:粘|贴|贴和|贴合)?(?:接近|靠近|靠拢|粘合|黏合|粘和|粘连|重合|在一起|一起|集于一点)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?(?:上窜|向上|上移|递增) REG=> group1日日均线粘合group2日日均线 并且 group3日日均线上移
+regex:NUM(?:\s)?(?:日|\s|天|,|，|、|。|MA|ma|Ma|mA)(?:日平均线|日均线|平均线|均线|日线|线)?(?:值|数值)?(?:和|与|于|跟|\s)?NUM(?:\s)?(?:日|\s|天|,|，|、|。|MA|ma|Ma|mA)(?:日平均线|日均线|平均线|均线|日线|线)?(?:值|数值)?(?:粘|贴|贴和|贴合)?(?:接近|靠近|靠拢|粘合|黏合|粘和|粘连|重合|在一起|一起|集于一点)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?(?:拐头向上|有减到增|由递减转递增|由递减到递增) REG=> group1日日均线粘合group2日日均线 并且 group3日日均线拐头向上
+#五线粘合
+regex:NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。){0,2}(?:5|五)?(?:条|只|根)?中?长?期?(?:日平均线|日均线|平均线|均线|日线|线)(?:粘合|黏合|粘和|重合|在一起|一起) REG=> group1日日均线粘合group2日日均线 并且 group2日日均线粘合group3日日均线 并且 group3日日均线粘合group4日日均线 并且 group4日日均线粘合group5日日均线
+#30日，60日，120均线多头排列。均线粘合
+regex:NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?多头排?列(?:\s|,|，|、|。|且|并且|同时){0,2}均线(?:近|接近)(?:粘合|黏合|粘和|重合) REG=> group1日日均线>group2日日均线,group2日日均线>group3日日均线 并且 group1日日均线粘合group2日日均线 并且 group2日日均线粘合group3日日均线
+#四线粘合
+regex:NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。){1,2}(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。){1,2}(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。){0,2}(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。){0,2}(?:4|四)?(?:条|只|根)?中?长?期?(?:日平均线|日均线|平均线|均线|日线|线)(?:粘合|黏合|粘和|重合|在一起|一起) REG=> group1日日均线粘合group2日日均线 并且 group2日日均线粘合group3日日均线 并且 group3日日均线粘合group4日日均线
+#三线粘合
+regex:NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:\s|,|，|、|。){0,2}(?:3|三)?(?:条|只|根)?(?:日平均线|日均线|平均线|均线|日线|线)(?:接近|靠近|粘合|黏合|粘和|重合|在一起|一起)后?(?:同时|并且)?(?:上穿|向上穿越)NUM(?:日|\s|天|,|，|、|。)?(?:日平均线|日均线|平均线|均线|日线|线)? REG=> group1日日均线粘合group2日日均线 并且 group2日日均线粘合group3日日均线 并且 group1日日均线上穿group4 并且 group2日日均线上穿group4 并且 group3日日均线上穿group4
+regex:NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:\s|,|，|、|。){0,2}(?:3|三)?(?:条|只|根)?(?:日平均线|日均线|平均线|均线|日线|线)(?:接近|靠近|粘合|黏合|粘和|重合|在一起|一起) REG=> group1日日均线粘合group2日日均线 并且 group2日日均线粘合group3日日均线 
+#两线粘合(数值)
+regex:NUM(?:\s)?(?:日|\s|天|,|，|、|。|MA|ma|Ma|mA)(?:日平均线|日均线|平均线|均线|日线|线)?(?:值|数值)?(?:和|与|于|跟|\s)?NUM(?:\s)?(?:日|\s|天|,|，|、|。|MA|ma|Ma|mA)(?:日平均线|日均线|平均线|均线|日线|线)?(?:值|数值)?(?:粘|贴|贴和|贴合)?(?:接近|靠近|靠拢|聚合|粘合|黏合|粘和|粘连|重合|在一起|一起|集于一点) REG=> group1日日均线粘合group2日日均线
+#regex:NUM(?:和|与|于|跟|\s)?NUM(?:\s)?(?:日|\s|天|,|，|、|。|MA|ma|Ma|mA)(?:日平均线|日均线|平均线|均线|日线|线)?(?:值|数值)?(?:粘|贴|贴和|贴合)?(?:接近|靠近|靠拢|粘合|黏合|粘和|粘连|重合|在一起|一起|集于一点) REG=> group1日日均线粘合group2日日均线
+#三条均线合一的股票
+regex:^(?:3|三)(?:条|只|根)(?:日平均线|日均线|平均线|均线|日线|线)(?:合一|粘合|缠绕|粘结|黏合|粘和|重合|靠近) REG=> 5日日均线粘合10日日均线 并且 10日日均线粘合30日日均线
+#6条均线粘合
+regex:(?:6|六)(?:条|只|根)(?:日平均线|日均线|平均线|均线|日线|线)(?:合一|粘合|缠绕|粘结|黏合|粘和|重合|靠近) REG=> 5日日均线粘合10日日均线 并且 10日日均线粘合20日日均线 并且 20日日均线粘合30日日均线 并且 30日日均线粘合60日日均线 并且 60日日均线粘合120日日均线
+#"均线"粘合
+regex:(?<!\d日|日|\d+)均线NUM(?:日|\s|天|,|，|、|。)?(?:和|与|跟|\s)?NUM(?:日|\s|天|,|，|、|。)?(?:相互)?(?:粘|粘合|缠绕|粘结|黏合|粘和|重合|靠近)(?:在一起|一起)? REG=> group1日日均线粘合group2日日均线
+regex:(?:所有)?(?<!\d日|日|\d+)均线(?:相互)?(?:粘合|缠绕|粘结|黏合|粘和|重合|靠近)(?:在一起|一起)? REG=> 5日日均线粘合10日日均线 并且 10日日均线粘合30日日均线 并且 30日日均线粘合60日日均线
+regex:(?:所有)?(?<!\d日|日|\d+)均线之?间?的?(?:距离|间隔|空隙)(?:很近|很小) REG=> 5日日均线粘合10日日均线，10日日均线粘合30日日均线 并且 30日日均线粘合60日日均线
+regex:(?:所有)?(?<!\d日|日|\d+)均线(?:呈|呈现|出现)?(?:密集)(?:交叉) REG=> 5日日均线粘合10日日均线，10日日均线粘合30日日均线 并且 30日日均线粘合60日日均线
+regex:(?:所有)?(?<!\d日|\d+)日?均线(?:都|都在)?(?:粘合|缠绕|粘结|黏合|粘和|重合|靠近)?(?:在一起|一起|一线) REG=> 5日日均线粘合10日日均线 并且 10日日均线粘合30日日均线 并且 30日日均线粘合60日日均线
+###---拐头向上
+#混合
+regex:NUM(?:\s)?(?:日|\s|天|,|，|、|。|MA|ma|Ma|mA)(?:日平均线|日均线|平均线|均线|日线|线)?(?:值|数值)?(?:和|与|于|跟|\s)?NUM(?:\s)?(?:日|\s|天|,|，|、|。|MA|ma|Ma|mA)(?:日平均线|日均线|平均线|均线|日线|线)?(?:值|数值)?(?:粘|贴|贴和|贴合)?(?:接近|靠近|靠拢|粘合|黏合|粘和|粘连|重合|在一起|一起|集于一点)?(?:\s|,|，|、|。)?NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?(?:上窜|向上|拐头向上|上移|递增) REG=> group1日日均线粘合group2日日均线 并且 group3日日均线上移
+#单日线
+regex:NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?(?:拐头向上|有减到增|由递减转递增) REG=> group1日日均线拐头向上
+regex:NUM(?:日|\s|天|,|，|、|。)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?(?:上窜|向上|上移) REG=> group1日日均线上移
+#A线上穿B和C线
+regex:NUM(?:日|\s|天|,|，|、|。|线)(?:日平均线|日均线|平均线|均线|日线|线)?(?:\s|,|，|、|。)?(?:上穿|上窜|上叉)NUM(?:日|\s|天|,|，|、|。|线)(?:日均线|均线|日线|线)?(?:和|与|跟|\s)?NUM(?:日|\s|天|,|，|、|。|线)(?:日均线|均线|日线|线)? REG=> group1日日均线大于group2日日均线 并且 group1日日均线大于group3日日均线
+##### 以上regex luwenxing添加部分------------均线粘合--------------########
+
+
+
+######解决N1日，N2日，。。N5日 techOp 类型问题（5日10日20日均多头排列）,强规则写在前面
+regex:周[K|k]?线?NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}[\s|\S]{0,2}?多头排?列? REG=> group1周周均线大于group2周周均线，group2周周均线大于group3周周均线，group3周周均线大于group4周周均线
+regex:NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}周[K|k]?线?[\s|\S]{0,2}?多头排?列? REG=> group1周周均线大于group2周周均线，group2周周均线大于group3周周均线，group3周周均线大于group4周周均线
+regex:周[K|k]?线?NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}[\s|\S]{0,2}?多头排?列? REG=> group1周周均线大于group2周周均线，group2周周均线大于group3周周均线
+regex:NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}周[K|k]?线?[\s|\S]{0,2}?多头排?列? REG=> group1周周均线大于group2周周均线，group2周周均线大于group3周周均线
+regex:周[K|k]?线?NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}[\s|\S]{0,2}?多头排?列? REG=> group1周周均线大于group2周周均线
+regex:NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}周[K|k]?线?[\s|\S]{0,2}?多头排?列? REG=> group1周周均线大于group2周周均线
+
+regex:月[K|k]?线?NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线，group3月月均线大于group4月月均线
+regex:NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}月[K|k]?线?[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线，group3月月均线大于group4月月均线
+regex:月[K|k]?线?NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线
+regex:NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}月[K|k]?线?[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线
+regex:月[K|k]?线?NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线
+regex:NUM(?:日|\s|天|,|，|、|。){1,2}NUM(?:日|\s|天|,|，|、|。){0,2}月[K|k]?线?[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线
+
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){0,2}均?线?[\s|\S]{0,2}?多头排?列? REG=> group1日日均线大于group2日日均线,group2日日均线大于group3日日均线,group3日日均线大于group4日日均线,group4日日均线大于group5日日均线,
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){0,2}均?线?[\s|\S]{0,2}?(向上|向下|上移|下移) REG=> group1日日均线group6，group2日日均线group6,group3日日均线group6,group4日日均线group6,group5日日均线group6
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){0,2}均?线?[\s|\S]{0,2}?(金叉|死叉|交叉|粘合|二次金叉) REG=> group1日日均线group6group2日日均线,group2日日均线group6group3日日均线,group3日日均线group6group4日日均线，group4日日均线group6group5日日均线,
+
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){0,2}均?线?[\s|\S]{0,2}?多头排?列? REG=> group1日日均线大于group2日日均线,group2日日均线大于group3日日均线,group3日日均线大于group4日日均线,
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){0,2}均?线?[\s|\S]{0,2}?(向上|向下|上移|下移) REG=> group1日日均线group5，group2日日均线group5,group3日日均线group5,group4日日均线group5
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){0,2}均?线?[\s|\S]{0,2}?(金叉|死叉|交叉|粘合|二次金叉) REG=> group1日日均线group5group2日日均线,group2日日均线group5group3日日均线,group3日日均线group5group4日日均线
+
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){0,2}均?线?[\s|\S]{0,2}?多头排?列? REG=> group1日日均线大于group2日日均线,group2日日均线大于group3日日均线,
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){0,2}均?线?[\s|\S]{0,2}?(向上|向下|上移|下移) REG=> group1日日均线group4，group2日日均线group4,group3日日均线group4
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){0,2}均?线?[\s|\S]{0,2}?(金叉|死叉|交叉|粘合|二次金叉) REG=> group1日日均线group4group2日日均线，group2日日均线group4group3日日均线
+
+regex:NUM(?:日|\s|天|,|，|、|。)(?:日均线|均线|线)?NUM(?:日|\s|天|,|，|、|。)(?:日均线|均线|线)?NUM(?:日|\s|天|,|，|、|。)(?:\s|,|，|、|。){0,2}(?:3|三)?(?:条|只根)?(?:日均线|均线|日线|线)(?:粘合|黏合|粘和|重合) REG=> group1日日均线粘合group2日日均线 并且 group2日日均线粘合group3日日均线 
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){1,2}均?线?[\s|\S]{0,2}?多头排?列? REG=> group1日日均线大于group2日日均线
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){1,2}均?线?[\s|\S]{0,2}?(金叉|死叉|交叉|粘合|二次金叉) REG=> group1日日均线group3group2日日均线
+regex:[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。){1,2}均?线?[\s|,|。|、|，|\.]?[M|m]?[A|a]?NUM(?:日|\s|天|,|，|、|。|M|m|A|a){1,2}均?线?[\s|\S]{0,2}?(向上|向下|上移|下移) REG=> group1日日均线group3，group2日日均线group3
+regex:上?[.]?下?(轨|口)(变窄|收窄|变小|缩小) REG=> 开口缩小
+
+#################### added by miaoyuanyuan ###################
+########分钟线多头排列########
+regex:NUM[\s|,|。|、|，|\.]{1,2}NUM[\s|,|。|、|，|\.]{1,2}NUM[\s|,|。|、|，|\.]{1,2}NUM[\s|,|。|、|，|\.]{0,2}分[k|K|均]线多头(?:排|牌)?列?股?  REG=> 1分钟均线group1日大于group2日，group2日大于group3日，group3日大于group4日
+regex:NUM[\s|,|。|、|，|\.]{1,2}NUM[\s|,|。|、|，|\.]{1,2}NUM[\s|,|。|、|，|\.]{0,2}分[k|K|均]线多头(?:排|牌)?列?股?  REG=> 1分钟均线group1日大于group2日，group2日大于group3日
+regex:NUM[\s|,|。|、|，|\.]{1,2}NUM[\s|,|。|、|，|\.]{0,2}分[k|K|均]线多头(?:排|牌)?列?股?  REG=> 1分钟均线group1日大于group2日
+########  均线多头排列   ########
+regex:(?:短期)均线[\s|,|。|、|，|\.]多头排?列?  REG=> 5日日均线大于10日日均线,10日日均线大于20日日均线
+regex:(?:中期)均线[\s|,|。|、|，|\.]多头排?列?  REG=> 30日日均线>60日日均线
+regex:(?:长期)均线[\s|,|。|、|，|\.]多头排?列?  REG=> 120日日均线>250日日均线
+regex:NUM(?:月?[k|K|均]?线?)[\s|,|。|、|，|\.]{1,2}NUM(?:月?[k|K|均]?线?)[\s|,|。|、|，|\.]{1,2}NUM(?:月?[k|K|均]?线?)[\s|,|。|、|，|\.]{1,2}NUM(?:月[k|K|均]?线){0,2}[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线，group3月月均线大于group4月月均线
+regex:NUM(?:月?[k|K|均]?线?)[\s|,|。|、|，|\.]{1,2}NUM(?:月?[k|K|均]?线?)[\s|,|。|、|，|\.]{1,2}NUM(?:月[k|K|均]?线){0,2}[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线
+#need to up
+#regex:月[k|K|均]?线NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM月[\s|,|。|、|，|\.]{0,2}NUM月{0,2}[K|k|均]?线?[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线，group3月月均线大于group4月月均线
+regex:NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM月[\s|,|。|、|，|\.]{0,2}NUM月{0,2}[K|k|均]?线?[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线，group3月月均线大于group4月月均线
+#need to up
+#regex:月[k|K|均]?线NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM月{0,2}[K|k|均]?线?[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线
+regex:NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM(?:月)[\s|,|。|、|，|\.]{0,2}NUM月{0,2}[K|k|均]?线?[\s|\S]{0,2}?多头排?列? REG=> group1月月均线大于group2月月均线，group2月月均线大于group3月月均线
+regex:([月|周])[k|K|均]?线(均线){0,1}多头(向上)?排?列? REG=> group1线多头排列
+regex:均线(刚开始呈)?多头(向上)?排?列?  REG=> 5日日均线大于10日日均线,10日日均线大于20日日均线,20日日均线大于30日日均线,30日日均线大于60日日均线,60日日均线大于120日日均线，
+########  均线空头排列  ########
+regex:NUM(?:日|天)?均?线?[\s|,|。|、|，|\.]{0,2}NUM(?:日|天)?均?线?[\s|,|。|、|，|\.]{0,2}NUM(?:日|天)?均?线?[\s|,|。|、|，|\.]{0,2}NUM(?:日|天)?均?线?空头(?:向下)?排?列?(?:状态)? REG=> group1日日均线小于group2日日均线，group2日日均线小于group3日日均线，group3日日均线小于group4日日均线
+regex:均线(刚开始呈)?空头(向下)?排?列?  REG=> 5日日均线小于10日日均线，10日日均线小于20日日均线，20日日均线小于30日日均线，30日日均线小于60日日均线，60日日均线小于120日日均线，
+########    上穿    ########
+regex:NUM日[k|K|均]?线(?:突破|上穿)NUM日[k|K|均]?线?[\s|,|。|、|，|\.]{0,2}NUM日[k|K|均]?线?[\s|,|。|、|，|\.]{0,2}NUM日[k|K|均]?线  REG=> group1日日均线上穿group2日日均线，group1日日均线上穿group3日日均线，group1日日均线上穿group4日日均线
+regex:NUM日[k|K|均]?线(?:突破|上穿)NUM日[k|K|均]?线?[\s|,|。|、|，|\.]{0,2}NUM日[k|K|均]?线  REG=> group1日日均线上穿group2日日均线，group1日日均线上穿group3日日均线
+regex:NUM日[k|K|均]?线?[\s|,|。|、|，|\.]{0,2}NUM日[k|K|均]?线?(?:两条均线)?(?:同时|一起)?(?:突破|上穿)NUM日[k|K|均]?线  REG=> group1日日均线上穿group3日日均线，group2日日均线上穿group3日日均线
+regex:(?:均线)?跳上NUM日?均线  REG=> 股价上穿group1日日均线
+regex:(?:最近)NUM个?月[月|平]?[k|K|均]?线(?:突破|上穿|向上交|上交|爬上)NUM个?月[月|平]?均?线? REG=> group1月月均线上穿group2月月均线
+regex:月[k|K|均]?线NUM月[月|平]?均?线?(?:突破|上穿|向上交|上交)NUM月[月|平]?均?线? REG=> group1月月均线上穿group2月月均线
+regex:NUM月[k|K|均]?线(?:(?:向上)?突破|上穿|向上交|上交)NUM月[月|平]?均?线  REG=> group1月月均线上穿group2月月均线
+regex:周[k|K|均]?线NUM(?:日|天|周)?均?线?(?:突破|上穿)NUM(?:日|天|周)?均?线? REG=> group1周周均线上穿group2周周均线
+#################### added by miaoyuanyuan ###################
+
+######技术指标相关regex
+regex:(?:在|站在|位于)?(零轴线|零轴|0轴线|o轴线|O轴线|0轴|o轴|O轴|0线|零线|零)(之上|以上|上面|上方|上) REG=> >0,
+regex:(?:在|站在|位于)?(零轴线|零轴|0轴线|o轴线|O轴线|0轴|o轴|O轴|0线|零线|零)(之下|以下|下面|下方|下) REG=> <0,
+regex:(在|站在|位于)[oO0](之上|以上|上面|上方|上) REG=> >0,
+regex:(在|站在|位于)[oO0](之下|以下|下面|下方|下) REG=> <0,
+regex:(macd|kdj|skdj|rsi)(?:在|站在|位于)?(?:零轴线|零轴|0轴线|o轴线|O轴线|0轴|o轴|O轴|0线|零线)(?:之上|以上|上面|上)\s?周线(金叉|死叉|背离|顶背离|底背离) REG=> 周group1>0,group2
+regex:(macd|kdj|skdj|rsi)(?:在|站在|位于)?(?:零轴线|零轴|0轴线|o轴线|O轴线|0轴|o轴|O轴|0线|零线)(?:之下|以下|下面|下)\s?周线(金叉|死叉|背离|顶背离|底背离) REG=> 周group1<0,group2
+regex:(收盘价|最新价|开盘价|开盘股价)(?:在|站在|站上|位于)?NUM[日|天]?均?线(?:之上|上|以上|上面) REG=> 行情group1大于group2日日均线
+regex:(收盘价|最新价|开盘价|开盘股价)(?:在|站在|站上|位于)?NUM[日|天]{0,2}均?[线|价](?:之上|上|以上|上面) REG=> 行情group1大于group2日日均线
+regex:(收盘价|最新价|开盘价|开盘股价)(?:在|站在|站上|位于)?NUM(周|月)均?线(?:之上|上|以上|上面) REG=> 行情group1大于group2group3group3均线
+regex:(收盘价|最新价|开盘价|开盘股价)(?:在|站在|站上|位于)NUM[日|天]{0,2}均?[线|价](?:之上|上|以上|上面)? REG=> 行情group1大于group2日日均线
+regex:(收盘价|最新价|开盘价|开盘股价)(?:在|站在|站上|位于)NUM(周|月)均?线(?:之上|上|以上|上面)? REG=> 行情group1大于group2group3group3均线
+regex:(收盘价|最新价|开盘价|开盘股价)(?:在|站在|位于)?NUM[日|天]{0,2}均?[线|价](?:之下|下|以下|下面) REG=> 行情group1小于group2日日均线
+regex:(收盘价|最新价|开盘价|开盘股价)(?:在|站在|位于)?NUM(周|月)均?线(?:之下|下|以下|下面) REG=> 行情group1小于于group2group3group3均线
+regex:(收盘价|最新价|开盘价|开盘股价)(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<|》|《|》=|《=))NUM[日|天]{0,2}均?[线|价] REG=> 行情group1group2group3日日均线
+regex:(收盘价|最新价|开盘价|开盘股价)(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<|》|《|》=|《=))NUM(周|月)均?线 REG=> 行情group1group2group3group4group4均线
+regex:([Mm][Aa][Cc][Dd]|[Kk][Dd][Jj]|[Ss][Kk][Dd][Jj]|[Rr][Ss][Ii])(?:指标|线|日线)?与?(?:股价|收盘价|价格)(背离|底背离|顶背离|低背离) REG=> group1group2
+
+
+####### 增加的技术指标 zd 2012-10-30 #########
+regex:(=<|=《|<=|≤) REG=> <=
+regex:(=>|=》|>=|≥) REG=> >=
+regex:macd(反身向上|上翘|上扬|转折) REG=> macd拐头向上
+regex:(越上|爬上|越过)macd0轴线 REG=> macd上穿0轴
+regex:在?(?:布林线|bool|boll|BOLL|BOOL)(上|下|中)轨上(面|方)? REG=> boll突破group1轨
+regex:(?:冲破|突破|穿过)(?:布林线|bool|boll|BOLL|BOOL)(上|下|中)(?:轨|档) REG=> boll突破group1轨
+regex:cci(?:在|处于|处在)NUM(?:-|~|和|，|、|\s)?NUN(?:之间|当中|间|)? REG=> cci>group1且cci<group2
+regex:(无大变化|变化不大) REG=> 走平
+regex:(macd|MACD|kdj|KDJ)金叉(?:且|并且)?(?:股票|股价|价格|价)?(小于|<|大于|>|低于|高于)NUM REG=> group1金叉且股价group2group3
+regex:^(k|K|d|D|j|J)NUM(?:以下|下面)金叉 REG=> group1<group2且kdj金叉
+regex:^(kd|KD)NUM(?:以下|下面)金叉 REG=> k<group2且d<group2且kdj金叉
+regex:^(kj|KJ)NUM(?:以下|下面)金叉 REG=> k<group2且j<group2且kdj金叉
+regex:^(dj|DJ)NUM(?:以下|下面)金叉 REG=> j<group2且d<group2且kdj金叉
+regex:(kdj|KDJ)NUM(?:以下|下面)金叉 REG=> k<group2且d<group2且j<group2且kdj金叉
+regex:正NUM REG=> group1
+regex:负NUM REG=> -group1 
+####### end 2012-10-30 #######
+
+######K线在N(日|周|月)均线之上。。等
+regex:(?:[K|k]线|价格|股价)(?:在|站在|站上|位于)?NUM[日|天]{0,2}均?[线|价](?:之上|上|以上|上面) REG=> 行情收盘价大于group1日日均线
+regex:(?:[K|k]线|价格|股价)(?:在|站在|站上|位于)?NUM(周|月)均?线(?:之上|上|以上|上面) REG=> 行情收盘价大于group1group2group2均线
+regex:(?:[K|k]线|价格|股价)(?:在|站在|位于)?NUM[日|天]{0,2}均?[线|价](?:之下|下|以下|下面) REG=> 行情收盘价小于group1日日均线
+regex:(?:[K|k]线|价格|股价)(?:在|站在|位于)?NUM(周|月)均?线(?:之下|下|以下|下面) REG=> 行情收盘价小于group1group2group2均线
+regex:(?:[K|k]线|价格|股价)(?:在|站在|站上|位于)NUM[日|天]{0,2}均?[线|价](?:之上|上|以上|上面)? REG=> 行情收盘价大于group1日日均线
+regex:(?:[K|k]线|价格|股价)(?:在|站在|站上|位于)NUM(周|月)均?线(?:之上|上|以上|上面)? REG=> 行情收盘价大于group1group2group2均线
+regex:(?:[K|k]线|价格|股价)(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<|》|《|》=|《=))NUM[日|天]{0,2}均?[线|价] REG=> 行情收盘价group1group2日日均线
+regex:(?:[K|k]线|价格|股价)(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<|》|《|》=|《=))NUM(周|月)均?线 REG=> 行情收盘价group1group2group3group3均线
+
+#######K线大于均线。。等
+regex:日?(?:[K|k]线)(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<))日?(?:均线|周线|线) REG=> 行情收盘价group15日日均线
+regex:日?(?:[K|k]线)(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<))月线 REG=> 行情收盘价group120日日均线
+regex:日?(?:[K|k]线)(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<))季线 REG=> 行情收盘价group160日日均线
+regex:日?(?:[K|k]线)(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<))半年线 REG=> 行情收盘价group1120日日均线
+regex:日?(?:[K|k]线)(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<))年线 REG=> 行情收盘价group1250日日均线
+regex:(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<))日?(?:均线|周线|线) REG=> group150日日均线
+regex:(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<))月线 REG=> group120日日均线
+regex:(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<))季线 REG=> group160日日均线
+regex:(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<))半年线 REG=> group1120日日均线
+regex:(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<))年 REG=> group1250日日均线
+regex:NUM(%|元|倍|)(《|《=|<|小于|<=)([^ 元,%,，]{2,5})(《|《=|<|<=|小于|低于)NUM(%|元|倍|) REG=> group4>group1group2且<group5group6group7
+regex:NUM(%|元|倍|)(》|》=|>|大于|高于|>=)([^ 元,%,，]{2,5})(》|》=|>|>=|大于|高于)NUM(%|元|倍|) REG=> group4<group1group2且>group5group6group7
+regex:NUM(日|周)(金叉|上穿|穿越|死叉|下破)NUM(日|周)(?:日均线|周均线|均线)? REG=> group1group2group2均线group3group4group5group5均线
+regex:NUM(日|周)均(金叉|上穿|穿越|死叉|下破)NUM(日|周)均 REG=> group1group2group2均线group3group4group5group5均线
+regex:NUM均(金叉|上穿|穿越|死叉|下破)NUM均 REG=> group1日日均线group2group3日日均线
+regex:(?<!一阳|一阳穿)(?:收盘价)?的?NUM(日|周|月)(?:均线|线|平均价|均价) REG=> group1group2group2均线
+regex:(?<!一阳|一阳穿)(?:收盘价)?的?NUM天(?:线|均线|平均价) REG=> group1日日均线
+
+######解决MA5>MA10>MA30类表达式
+regex:(?<=小于|大于|高于|低于|等于|>=|>|=|<=|<)([Mm][Aa]\d+)(?=小于|大于|高于|低于|等于|>=|>|=|<=|<)REG=> group1和group1
+regex:周线(?:[Mm][Aa])(\d+) REG=> group1周周均线
+regex:(?<!一阳|一阳穿|线)[Mm]?[Aa]?NUM日?均?线 REG=> group1日日均线
+regex:[Mm][Aa]?(?:[Vv][Oo0][Ll])(\d+) REG=> group1日vol，
+regex:NUM日[vV][oO0][Ll](金叉|上穿|穿越|死叉|下破)NUM日?(?:vol)? REG=> group1日volgroup2group3日vol，
+#regex:(\d+)(?:[Vv][Oo][Ll]|平均成交量) REG=> group1日vol  
+regex:(?<!月)NUM日?(?:[Vv][Oo][Ll]|平均成交量|均量) REG=> group1日vol， 
+regex:(?:平均成交量|均量)NUM日(不?(?:小于|大于|高于|低于|等于|>=|>|=|<=|<))NUM日 REG=> group1日volgroup2group3日vol
+regex:(?<!线)(?:[Mm][Aa])(\d+) REG=> group1日日均线
+regex:kdj?底?背离 REG=> kdj 底背离
+regex:kdj?顶?背离 REG=> kdj 顶背离
+regex:[Mm]?[Aa]?[Vv][Oo0][Ll](金叉|死叉) REG=> 5日 vol group1 20日 vol
+regex:(?<!\d日|日)均线粘合 REG=> 5日日均线粘合10日日均线，10日日均线粘合30日日均线，30日日均线粘合60日日均线
+#--------------------------上面是技术行情相关regex---------------------------#
+
+regex:(有|发生|发生过|发生了)大宗交易 REG=> 大宗交易成交金额
+regex:大宗交易(发生价格|价格|的价格|价|成交价|成交的价格) REG=> 大宗交易成交均价
+
+regex:(dde|DDE|ＤＤＥ)(?:大单)?.{1,3}流出 REG=> dde大单净额{{小于0}} 
+regex:(dde|DDE|ＤＤＥ)(?:大单)?.{1,3}流入 REG=> dde大单净额{{大于0}} 
+#regex:(^| |　|的)汽车行业 REG=> group1所属行业汽车且所属行业非汽车
+
+regex:上市NUM(个月|年)([^以之]|$) REG=> 上市>group1group2group3
+regex:([^产州])茅台  REG=>  group1贵州茅台
+regex:([\d\.]+)w[^\w]? REG=> group1万
+# regex:^(.*)(已买|已买入|已经买入|持有|参股)的?(哪些)?(个股|股票) REG=> 股东是group1的股票;
+regex:净利润\s{0,4}NUM年(涨|长|增|增长|上涨|增加|提高|降|减|跌|下降|减少|下跌|降低)NUM% REG=> 净利润group1年累计group2group3%
+regex:([^续]|^)([跌涨]停|收[阴阳])NUM(日|天|个交易日) REG=> group1连续group3group4group2
+regex:([连持]续)([跌涨]停|收[阴阳])NUM(日|天|个交易日) REG=> group1group3group4group2
+regex:^连续NUM个?(涨停|跌停) REG=> 连续group1天group2;
+regex:^NUM(?:天|连)(涨停|跌停)板? REG=> 连续group1天group2;
+regex:^NUM(?:天|连)板 REG=> 连续group1天涨停;
+
+##连涨跌天数，时间单位为“天”
+regex:连续?(?:上|下|)(跌|涨)(>|>=|》|》=|大于|超过|高于|《|《=|<|<=|小于|等于|=|)NUM(?:天|日|个交易日)(以上|以下|) REG=> 连group1天数group2group3天group4;
+regex:NUM(?:天|日|个交易日)(以上|以下|)(?:连续|连续上|连续下|连)(跌|涨)([^停跌大小幅超低达到><\d一二三四五六七八九十百]|$) REG=> 连group3天数group1天group2group4;
+regex:NUM(?:天|日|个交易日)(以上|以下|)(?:连续)(?:涨|上涨|跌|下跌)([大小><\d一二三四五六七八九十百].*?) REG=> 连续group1天group2涨跌幅group3;
+regex:(?:连续|连)NUM(?:天|日|个交易日)(以上|以下|)(?:上|下|)(跌|涨)([^停跌大小幅超低达到><\d一二三四五六七八九十百]|$) REG=> 连group3天数group1天group2group4
+
+##连涨跌，非天数
+#regex:(?:连续|连)NUM(?:条|根|).{0,2}(阴|阳|十字)线 REG=> 连续group1天收group2;
+#regex:创.?近NUM日(?:股价历史|历史股价|历史|股价|)新(高|低) REG=> 近n天内group1天近期创阶段新group2;
+#regex:连续NUM天站上NUM日均线 REG=> 有效突破确认天数group1天均线group2天向上有效突破均线;
+#regex:(?:连续|连)(上|下|)(跌|涨)NUM(?:月) REG=> 连续group3个月group1group2;
+#regex:(?:连续|连)NUM(?:月)(上|下|)(跌|涨) REG=> 连续group1个月group2group3;
+
+##LING改动，向上/下突破 N日均线
+regex:向(上|下)(?:有效|)突破NUM[日|天]?均?线 REG=> 向group1有效突破group2天均线;
+regex:(?:收盘价|价格|股价|最新价)(?:突破)NUM[日|天]?均?线 REG=> 向上有效突破group1天日均线;
+regex:(?:比|较)NUM(%|元|倍|)(?:大|高|多) REG=> 大于group1group2
+regex:(?:比|较)NUM(%|元|倍|)(?:小|低|少) REG=> 小于group1group2
+regex:上穿NUM(?:天|日|个交易日)均?线 REG=> 向上有效突破group1天均线;
+
+regex:(?<![预骤])减NUM REG=> 减少group1
+regex:近NUM年内 REG=> 近group1年
+regex:(股价|价格)?跌?破(每股)?净资产 REG=>  PB{{<1}} PB{{>0}}
+regex:(股价|价格)?跌?破发(行价)? REG=> 相对发行价涨跌幅{{<0}}  
+regex:(股价|价格)?跌?破增发价 REG=> 股价后复权小于增发价
+regex:^周涨跌?幅 REG=> 上周涨跌幅
+regex:^月涨跌?幅 REG=> 上个月涨跌幅
+regex:^年涨跌?幅 REG=> 去年涨跌幅
+regex:最贵的?股票? REG=> 收盘价最高
+regex:最(便宜|贱)的?股票? REG=> 收盘价最低
+regex:NUM[天个]?(?:连|边)(阳|阴) REG=> 连续group1天收group2
+regex:连收NUM(阳|阴) REG=> 连续group1天收group2
+regex:[持连]续(放|缩)量 REG=> 连续3天group1量
+
+#处理“月末”、“年末”
+#regex:NUM月末 REG=> group1月下旬
+regex:NUM年末 REG=> group1年12月31日
+#处理 年报|三季报增300%
+regex:报增[加长]? REG=> 报净利润增长
+regex:^(1[0-3])([中年]报|[1-4一二三四]季报) REG=> 20group1group2
+#特殊处理指标“均线多空头排列看涨看跌”
+regex:均线多空头排列看涨(看跌|) REG=> 均线多空头排列看涨看跌+是
+regex:均线多空头排列看跌 REG=> 均线多空头排列看涨看跌+否
+#季度的转换
+regex:([续连近])NUM期  REG=> group1group2个季度
+regex:([续连近][1234一二三四])季度? REG=> group1个季度
+regex:(?<![前第续连\\d])([1234])季[度报]? REG=> 第group1季度
+regex:(?<![前第续连])([一二三四])季[度报]? REG=> 第group1季度
+regex:第([1234一二三四])季(?![度报]) REG=> 第group1季度
+#regex:前NUM季度? REG=> 前group1个季度
+#上市时间范围调整
+regex:上市NUM(个月|年)以?内 REG=> 首发上市日期<group1group2
+regex:上市NUM(个月|年) REG=> 首发上市日期>group1group2
+
+#低开高开: 就转 低开和高开
+#regex:(低|高)开(大于|等于|小于|>|>=|<|<=|=|)-?(\d+\.?\d*)?%?(?:以上)? REG=> 开盘价group1于前一天收盘价group2group3%
+
+#regex特殊计算
+regex:大股东(.{0,5})(增持|减持) REG=> group1大股东group2
+#A低于3倍C ， 由 数字解析解决
+regex:(.{1,5}[额|价|率|值])(=|等于|<|<=|小于|低于|>|>=|大于|高于)NUM[\*|X|x](.{1,5}[额|价|率|值]) REG=> group1/group4group2group3
+#股票代码后紧跟其他数字（很可能是时间），其他数字不能是0开头
+regex:(?<!\d)([036]0\d{4})([1-9]\d*) REG=> group1 group2;
+
+#特殊数字处理
+regex:NUM(?:w|W)(元) REG=> group1万group2
+regex:NUM(?:多)(万|亿)UNIT REG=> group1group2group3多
+regex:(\d+?)。(\d+?)([^\d日]|$) REG=> group1.group2group3
+#===连续的空白替换成一个
+regex:(\s)\s+ REG=> group1;
+regex:　  REG=>  ;

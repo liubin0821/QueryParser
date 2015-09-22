@@ -1,0 +1,94 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/tool/conf/stock
+svn://172.20.23.253
+
+
+
+2012-11-05T11:21:33.740283Z
+36453
+luwenxing
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+DateType.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+bf1c3ba7a3fdefbf8c7d385f75ab5e53
+2012-08-20T12:17:28.470727Z
+26706
+luwenxing
+
+StockIndex.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+f0c3cebf49f29a6efd3fb94e46d4f51b
+2012-11-05T11:21:33.740283Z
+36453
+luwenxing
+
+StockIndexConfIndexTypeAdjuster.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+caf783a7ad3107377aa45fc14fe3009b
+2012-11-05T11:21:33.740283Z
+36453
+luwenxing
+
+StockIndexConfUpdate.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+209b36f74e222839e4b42de747bcea37
+2012-11-05T11:21:33.740283Z
+36453
+luwenxing
+
+StockIndexFilter2File.java
+file
+
+
+
+
+2015-09-22T01:38:47.000000Z
+b5fd1cb99ac8c74b4226bb1e3cea94b4
+2012-11-05T11:21:33.740283Z
+36453
+luwenxing
+
+queryclassify
+dir
+
+servlet
+dir
+

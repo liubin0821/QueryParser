@@ -1,0 +1,104 @@
+drop trigger aliases_trigger_insert;
+drop trigger aliases_trigger_delete;
+drop trigger aliases_trigger_update;
+drop trigger automatic_synchronization_crl_insert;
+drop trigger automatic_synchronization_crl_delete;
+drop trigger automatic_synchronization_crl_update;
+drop trigger data_lines_insert;
+drop trigger data_lines_delete;
+drop trigger data_lines_update;
+drop trigger data_relation_trigger_insert; 
+drop trigger data_relation_trigger_delete;
+drop trigger data_relation_trigger_update;
+drop trigger data_type_trigger_insert;
+drop trigger data_type_trigger_delete;
+drop trigger data_type_trigger_update;
+drop trigger dict_no_value_trigger_insert;
+drop trigger dict_no_value_trigger_delete;
+drop trigger dict_no_value_trigger_update;
+drop trigger dict_onto_change_trigger_insert;
+drop trigger dict_onto_change_trigger_delete ;
+drop trigger dict_onto_change_trigger_update ;
+drop trigger dict_onto_class_trigger_insert;
+drop trigger dict_onto_class_trigger_delete ;
+drop trigger dict_onto_class_trigger_update ;
+drop trigger dict_onto_date_trigger_insert;
+drop trigger dict_onto_date_trigger_delete; 
+drop trigger dict_onto_date_trigger_update ;
+drop trigger dict_onto_keyword_trigger_insert;
+drop trigger dict_onto_keyword_trigger_delete ;
+drop trigger dict_onto_keyword_trigger_update ;
+drop trigger dict_onto_logic_trigger_insert;
+drop trigger dict_onto_logic_trigger_delete;  
+drop trigger dict_onto_logic_trigger_update ;
+drop trigger dict_onto_qword_trigger_insert;
+drop trigger dict_onto_qword_trigger_delete ;
+drop trigger dict_onto_qword_trigger_update ;
+drop trigger dict_onto_sort_trigger_insert;
+drop trigger dict_onto_sort_trigger_delete ;
+drop trigger dict_onto_sort_trigger_update ;
+drop trigger dict_onto_special_trigger_insert;
+drop trigger dict_onto_special_trigger_delete ;
+drop trigger dict_onto_special_trigger_update; 
+drop trigger dict_onto_techOp_trigger_insert;
+drop trigger dict_onto_techOp_trigger_delete ;
+drop trigger dict_onto_techOp_trigger_update ;
+drop trigger dict_onto_techPeriod_trigger_insert;
+drop trigger dict_onto_techPeriod_trigger_delete; 
+drop trigger dict_onto_techPeriod_trigger_update; 
+drop trigger dict_onto_trigger_trigger_insert;
+drop trigger dict_onto_trigger_trigger_delete; 
+drop trigger dict_onto_trigger_trigger_update ;
+drop trigger dict_onto_vagueNum_trigger_insert;
+drop trigger dict_onto_vagueNum_trigger_delete ;
+drop trigger dict_onto_vagueNum_trigger_update; 
+drop trigger dict_trans_trigger_insert;
+drop trigger dict_trans_trigger_delete ;
+drop trigger dict_trans_trigger_update ;
+drop trigger dict_update_recode_trigger_insert;
+drop trigger dict_update_recode_trigger_delete ;
+drop trigger dict_update_recode_trigger_update; 
+drop trigger field_trigger_insert;
+drop trigger field_trigger_delete ;
+drop trigger field_trigger_update ;
+drop trigger field_to_index_trigger_insert;
+drop trigger field_to_index_trigger_delete ;
+drop trigger field_to_index_trigger_update ;
+drop trigger index_prop_trigger_insert;
+drop trigger index_prop_trigger_delete ;
+drop trigger index_prop_trigger_update; 
+drop trigger indexs_trigger_insert;
+drop trigger indexs_trigger_delete ;
+drop trigger indexs_trigger_update ;
+drop trigger normal_relation_trigger_insert;
+drop trigger normal_relation_trigger_delete; 
+drop trigger normal_relation_trigger_update; 
+drop trigger object_relation_trigger_insert;
+drop trigger object_relation_trigger_delete ;
+drop trigger object_relation_trigger_update; 
+drop trigger prop_to_index_trigger_insert;
+drop trigger prop_to_index_trigger_delete ;
+drop trigger prop_to_index_trigger_update; 
+drop trigger resolve_aliases_conflicts_trigger_insert;
+drop trigger resolve_aliases_conflicts_trigger_delete;  
+drop trigger resolve_aliases_conflicts_trigger_update; 
+drop trigger super_index_trigger_insert ;
+drop trigger super_index_trigger_delete ; 
+drop trigger super_index_trigger_update  ;
+drop trigger super_type_trigger_insert  ;
+drop trigger super_type_trigger_delete;   
+drop trigger super_type_trigger_update;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

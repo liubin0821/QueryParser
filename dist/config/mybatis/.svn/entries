@@ -1,0 +1,53 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/config/mybatis
+svn://172.20.23.253
+
+
+
+2015-09-09T09:08:27.431694Z
+444057
+sunzhiyong
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+mybatis-beans.xml
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+d722bc239d544090af3df45aadce9828
+2015-09-09T09:08:27.431694Z
+444057
+sunzhiyong
+has-props
+
+mybatis-helper.xml
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+e09e99ae843b726a292e6012af28475f
+2015-02-13T02:44:02.559308Z
+403948
+liuxiaofeng
+

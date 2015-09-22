@@ -1,0 +1,113 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/test/java/com/myhexin/qparser/util
+svn://172.20.23.253
+
+
+
+2015-09-19T03:23:07.348069Z
+446216
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+GetUserIndexAndGenerateSql.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+665204416ca53a73632dca935631dc97
+2015-09-19T03:23:07.348069Z
+446216
+liuxiaofeng
+has-props
+
+LogAnalisys.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+c5d651fe632bdbe05866a3ebc152b34d
+2015-03-05T01:56:34.160810Z
+406229
+liuxiaofeng
+
+MemoryUtil.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+8b21c77760725d0702005949bb7a13f8
+2015-02-11T01:30:22.754915Z
+403101
+liuxiaofeng
+
+SamplingQueryUtil.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+733f1f3fa4214b107365444719f83170
+2015-04-16T06:35:35.885204Z
+414864
+liuxiaofeng
+
+ThreadMonitorTestCase.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+dfd77605b912e4a4e6ff7a8c1b1d3186
+2015-06-11T07:48:59.590336Z
+426670
+liuxiaofeng
+
+backtest
+dir
+
+cfgdate
+dir
+
+condition
+dir
+
+lightparser
+dir
+
+sampling.sh
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+42a32c02ad8aaba7593065ec51196292
+2015-04-16T06:35:35.885204Z
+414864
+liuxiaofeng
+

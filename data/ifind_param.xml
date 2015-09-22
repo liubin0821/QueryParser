@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<params>
+<param name="P00108" datatype="dt_integer">
+<item name="上证50指数" value="1"/>
+<item name="上证180指数" value="2"/>
+<item name="沪深300指数" value="3"/>
+<item name="中证100指数" value="4"/>
+<item name="深证100指数" value="5"/>
+</param>
+<param name="P00085" datatype="dt_integer">
+<item name="中报" value="5"/>
+<item name="年报" value="6"/>
+</param>
+<param name="P00091" datatype="dt_integer">
+<item name="日" value="1"/>
+<item name="周" value="2"/>
+<item name="月" value="3"/>
+<item name="年" value="4"/>
+<item name="本区间" value="5"/>
+</param>
+<param name="P00092" datatype="dt_integer">
+<item name="日" value="1"/>
+<item name="周" value="2"/>
+<item name="月" value="3"/>
+<item name="年" value="4"/>
+</param>
+<param name="P00111" datatype="dt_integer">
+<item name="一年定存利率（税前）" value="1"/>
+<item name="一年定存利率（税后）" value="2"/>
+<item name="一年期国债收益率" value="3"/>
+<item name="最新发行的一年期央票利率" value="4"/>
+<item name="银行间市场七日回购利率" value="5"/>
+</param>
+<param name="P00060" datatype="dt_string">
+<item name="上证综合指数" value="000001.SH"/>
+<item name="上证50指数" value="000016.SH"/>
+<item name="上证180指数" value="000010.SH"/>
+<item name="深圳成份指数" value="399001.SZ"/>
+<item name="深圳综合指数" value="399106.SZ"/>
+<item name="中证100指数" value="399903.SZ"/>
+<item name="沪深300指数" value="000300.SH"/>
+<item name="MSCI CHINA A指数" value="133333.MI"/>
+</param>
+<param name="P00107" datatype="dt_integer">
+<item name="普通收益率" value="1"/>
+<item name="对数收益率" value="2"/>
+</param>
+<param name="P00054" datatype="dt_integer">
+<item name="合并报表" value="1"/>
+<item name="母公司报表" value="2"/>
+<item name="合并报表(调整)" value="3"/>
+<item name="母公司报表(调整)" value="4"/>
+</param>
+<param name="P00055" datatype="dt_integer">
+<item name="合并报表" value="1"/>
+<item name="母公司报表" value="2"/>
+<item name="合并报表(调整)" value="3"/>
+<item name="母公司报表(调整)" value="4"/>
+</param>
+<param name="P00124" datatype="dt_integer">
+<item name="1月" value="1"/>
+<item name="2月" value="2"/>
+<item name="3月" value="3"/>
+<item name="4月" value="4"/>
+<item name="5月" value="5"/>
+<item name="6月" value="6"/>
+<item name="7月" value="7"/>
+<item name="8月" value="8"/>
+<item name="9月" value="9"/>
+<item name="10月" value="10"/>
+<item name="11月" value="11"/>
+<item name="12月" value="12"/>
+</param>
+<param name="P00129" datatype="dt_integer">
+<item name="1年以内" value="1"/>
+<item name="1-2年" value="2"/>
+<item name="2-3年" value="3"/>
+<item name="3年以上" value="4"/>
+</param>
+<param name="P00136" datatype="dt_integer">
+<item name="期末数" value="1"/>
+<item name="本期增加" value="2"/>
+<item name="本期转回" value="3"/>
+</param>
+<param name="P00128" datatype="dt_integer">
+<item name="全价" value="2"/>
+<item name="净价" value="1"/>
+</param>
+<param name="P00032" datatype="dt_integer">
+<item name="前年年报" value="11"/>
+<item name="上年年报" value="2"/>
+<item name="当年一季×4" value="3"/>
+<item name="当年中报×2" value="4"/>
+<item name="当年三季×4/3" value="5"/>
+<item name="当年年报" value="8"/>
+<item name="最新年报(LYR)" value="10"/>
+<item name="前推12个月(TTM)" value="9"/>
+<item name="上年三季×4/3" value="7"/>
+</param>
+<param name="P00037" datatype="dt_integer">
+<item name="前年年报" value="11"/>
+<item name="上年年报" value="2"/>
+<item name="当年一季×4" value="3"/>
+<item name="当年中报×2" value="4"/>
+<item name="当年三季×4/3" value="5"/>
+<item name="当年年报" value="8"/>
+<item name="最新年报(LYR)" value="10"/>
+<item name="上年三季×4/3" value="7"/>
+</param>
+<param name="P00035" datatype="dt_integer">
+<item name="前年年报" value="11"/>
+<item name="上年年报" value="2"/>
+<item name="当年一季×4" value="3"/>
+<item name="当年中报×2" value="4"/>
+<item name="当年三季×4/3" value="5"/>
+<item name="当年年报" value="8"/>
+<item name="最新年报(LYR)" value="10"/>
+<item name="上年三季×4/3" value="7"/>
+<item name="最新报告期(MRQ)" value="999"/>
+</param>
+<param name="P00033" datatype="dt_integer">
+<item name="前年年报" value="11"/>
+<item name="上年年报" value="2"/>
+<item name="当年一季" value="3"/>
+<item name="当年中报" value="4"/>
+<item name="当年三季" value="5"/>
+<item name="当年年报" value="8"/>
+<item name="最新年报(LYR)" value="10"/>
+<item name="最新报告期(MRQ)" value="9"/>
+</param>
+<param name="P00038" datatype="dt_integer">
+<item name="上证指数" value="1"/>
+<item name="上证180" value="2"/>
+<item name="深证成指" value="3"/>
+<item name="深证100" value="4"/>
+<item name="沪深300" value="5"/>
+</param>
+<param name="P00062" datatype="dt_integer">
+<item name="前10名" value="0"/>
+<item name="第1名" value="1"/>
+<item name="第2名" value="2"/>
+<item name="第3名" value="3"/>
+<item name="第4名" value="4"/>
+<item name="第5名" value="5"/>
+<item name="第6名" value="6"/>
+<item name="第7名" value="7"/>
+<item name="第8名" value="8"/>
+<item name="第9名" value="9"/>
+<item name="第10名" value="10"/>
+</param>
+<param name="P00063" datatype="dt_integer">
+<item name="第1名" value="1"/>
+<item name="第2名" value="2"/>
+<item name="第3名" value="3"/>
+<item name="第4名" value="4"/>
+<item name="第5名" value="5"/>
+<item name="第6名" value="6"/>
+<item name="第7名" value="7"/>
+<item name="第8名" value="8"/>
+<item name="第9名" value="9"/>
+<item name="第10名" value="10"/>
+</param>
+<param name="P00003" default="最新" datatype="dt_string">
+<item name="最新" value="1"/>
+<!-- 最新交易日 -->
+<item name="前一交易日" value="2"/>
+<item name="1周前" value="3"/>
+<item name="1月前" value="4"/>
+<item name="3月前" value="5"/>
+<item name="6月前" value="6"/>
+<item name="1年前" value="7"/>
+<item name="2年前" value="8"/>
+<item name="本年初" value="9"/>
+<item name="本月初" value="10"/>
+<item name="本周一" value="11"/>
+<item name="上市首日" value="12"/>
+</param>
+<param name="P00005" default="最新" datatype="dt_string">
+<item name="最新" value="1"/>
+<item name="前一交易日" value="2"/>
+<item name="1周前" value="3"/>
+<item name="1月前" value="4"/>
+<item name="3月前" value="5"/>
+<item name="6月前" value="6"/>
+<item name="1年前" value="7"/>
+<item name="2年前" value="8"/>
+<item name="本年初" value="9"/>
+<item name="本月初" value="10"/>
+<item name="本周一" value="11"/>
+<item name="上市首日" value="12"/>
+</param>
+<param name="P00004" default="最新" datatype="dt_string">
+<item name="最新" value="1"/>
+<item name="前一交易日" value="2"/>
+<item name="1周前" value="3"/>
+<item name="1月前" value="4"/>
+<item name="3月前" value="5"/>
+<item name="6月前" value="6"/>
+<item name="1年前" value="7"/>
+<item name="2年前" value="8"/>
+<item name="本年初" value="9"/>
+<item name="本月初" value="10"/>
+<item name="本周一" value="11"/>
+</param>
+<param name="P00006" default="最新" datatype="dt_string">
+<item name="最新" value="1"/>
+<item name="前一月" value="2"/>
+<item name="前两月" value="3"/>
+<item name="前三月" value="4"/>
+<item name="前五月" value="5"/>
+</param>
+<param name="P00002" default="最新" datatype="dt_string">
+<item name="最新" value="1"/>
+</param>
+<param name="P00001" default="最新" datatype="dt_string">
+<item name="最新" value="1"/>
+</param>
+<param name="P00007" default="最新一期(MRQ)" datatype="dt_string">
+<item name="去年年报" value="1"/>
+<item name="今年一季" value="2"/>
+<item name="今年中报" value="3"/>
+<item name="今年三季" value="4"/>
+<item name="最新一期(MRQ)" value="8"/>
+<item name="去年一季" value="5"/>
+<item name="去年中报" value="6"/>
+<item name="去年三季" value="7"/>
+</param>
+<param name="P00008" default="去年年报" datatype="dt_string">
+<item name="去年年报" value="1"/>
+<item name="今年一季" value="2"/>
+<item name="今年中报" value="3"/>
+<item name="今年三季" value="4"/>
+<item name="去年一季" value="5"/>
+<item name="去年中报" value="6"/>
+<item name="去年三季" value="7"/>
+</param>
+<param name="P00009" default="最新" datatype="dt_string">
+<item name="最新" value="1"/>
+<item name="前一交易日" value="2"/>
+<item name="上周末" value="3"/>
+<item name="上月末" value="4"/>
+<item name="上年末" value="5"/>
+<item name="上半年末" value="6"/>
+</param>
+<param name="P00010" default="最新" datatype="dt_string">
+<item name="最新" value="1"/>
+<item name="前一交易日" value="2"/>
+<item name="上周末" value="3"/>
+<item name="上月末" value="4"/>
+<item name="上年末" value="5"/>
+<item name="上半年末" value="6"/>
+</param>
+<param name="P00011" default="截止日52周前" datatype="dt_string">
+<item name="最新" value="0"/>
+<item name="截止日前一交易日" value="1"/>
+<item name="截止日1周前" value="2"/>
+<item name="截止日2周前" value="3"/>
+<item name="截止日52周前" value="4"/>
+<item name="截止日1月前" value="5"/>
+<item name="截止日3月前" value="6"/>
+<item name="截止日6月前" value="7"/>
+<item name="截止日1年前" value="8"/>
+<item name="截止日3年前" value="9"/>
+<item name="本年初" value="10"/>
+<item name="本月初" value="11"/>
+<item name="本周一" value="12"/>
+<item name="下半年初" value="13"/>
+<item name="上市首日" value="14"/>
+</param>
+<param name="P00012" default="截止日52周前" datatype="dt_string">
+<item name="截止日前一交易日" value="1"/>
+<item name="截止日1周前" value="2"/>
+<item name="截止日2周前" value="3"/>
+<item name="截止日52周前" value="4"/>
+<item name="截止日1月前" value="5"/>
+<item name="截止日3月前" value="6"/>
+<item name="截止日6月前" value="7"/>
+<item name="截止日1年前" value="8"/>
+<item name="截止日3年前" value="9"/>
+<item name="本年初" value="10"/>
+<item name="本月初" value="11"/>
+<item name="本周一" value="12"/>
+<item name="下半年初" value="13"/>
+</param>
+<param name="P00141" datatype="dt_float" is_unit="true">
+<item name="" value="1"/>
+<item name="千" value="1000"/>
+<item name="万" value="10000"/>
+<item name="百万" value="1000000"/>
+<item name="亿" value="100000000"/>
+<item name="十亿" value="1000000000"/>
+</param>
+<param name="P00142" datatype="dt_float" is_unit="true">
+<item name="股" value="1"/>
+<item name="万股" value="10000"/>
+<item name="手" value="100"/>
+<item name="万手" value="1000000"/>
+</param>
+<param name="P00900" datatype="dt_float" is_unit="true">
+<item name="张" value="0.1"/>
+<item name="手" value="1"/>
+<item name="万张" value="1000"/>
+<item name="万手" value="10000"/>
+</param>
+<param name="P00120" datatype="dt_integer">
+<item name="农、林、牧、渔业(A)" value="13"/>
+<item name="采掘业(B)" value="1"/>
+<item name="制造业(C)" value="22"/>
+<item name="食品、饮料(C0)" value="18"/>
+<item name="纺织、服装、皮毛(C1)" value="6"/>
+<item name="木材、家具(C2)" value="12"/>
+<item name="造纸、印刷(C3)" value="21"/>
+<item name="石油、化学、塑胶、塑料(C4)" value="17"/>
+<item name="电子(C5)" value="4"/>
+<item name="金属、非金属(C6)" value="11"/>
+<item name="机械、设备、仪表(C7)" value="7"/>
+<item name="医药、生物制品(C8)" value="20"/>
+<item name="其他制造业(C99)" value="15"/>
+<item name="电力、煤气及水的生产和供应业(D)" value="3"/>
+<item name="建筑业(E)" value="8"/>
+<item name="交通运输、仓储业(F)" value="9"/>
+<item name="信息技术业(G)" value="19"/>
+<item name="批发和零售贸易(H)" value="14"/>
+<item name="金融、保险业(I)" value="10"/>
+<item name="房地产业(J)" value="5"/>
+<item name="社会服务业(K)" value="16"/>
+<item name="传播与文化产业(L)" value="2"/>
+<item name="综合类(M)" value="23"/>
+</param>
+<param name="P00071" datatype="dt_integer">
+<item name="不复权" value="0"/>
+<item name="后复权" value="1"/>
+</param>
+<param name="P00072" datatype="dt_integer">
+<item name="不复权" value="0"/>
+<item name="后复权" value="1"/>
+<item name="前复权" value="2"/>
+</param>
+<param name="P00073" datatype="dt_integer">
+<item name="流通股本" value="1"/>
+<item name="总股本" value="2"/>
+</param>
+<param name="P00116" datatype="dt_integer">
+<item name="门类行业" value="1"/>
+<item name="次类行业(限制造业)" value="2"/>
+<item name="大类行业" value="3"/>
+<item name="中类行业" value="4"/>
+<item name="全部明细" value="5"/>
+<item name="门类-次类" value="6"/>
+</param>
+<param name="P00118" datatype="dt_integer">
+<item name="一级行业" value="1"/>
+<item name="二级行业" value="2"/>
+<item name="三级行业" value="3"/>
+<item name="全部明细" value="4"/>
+</param>
+<param name="P00064" default="第四季度" datatype="dt_integer">
+<item name="第一季度" value="1"/>
+<item name="第二季度" value="2"/>
+<item name="第三季度" value="3"/>
+<item name="第四季度" value="4"/>
+</param>
+<param name="P00099" datatype="dt_integer">
+<item name="第1名" value="1"/>
+<item name="第2名" value="2"/>
+<item name="第3名" value="3"/>
+<item name="第4名" value="4"/>
+<item name="第5名" value="5"/>
+<item name="第6名" value="6"/>
+<item name="第7名" value="7"/>
+<item name="第8名" value="8"/>
+<item name="第9名" value="9"/>
+<item name="第10名" value="10"/>
+</param>
+<param name="P00103" datatype="dt_integer">
+<item name="境内" value="1"/>
+<item name="境外" value="2"/>
+</param>
+<param name="P00058" datatype="dt_integer">
+<item name="过去1个月" value="1"/>
+<item name="过去3个月" value="3"/>
+<item name="过去6个月" value="6"/>
+<item name="过去1年" value="12"/>
+<item name="过去3年" value="36"/>
+<item name="自基金成立起至今" value="0"/>
+</param>
+<param name="P00084" datatype="dt_integer">
+<item name="第一季度" value="1"/>
+<item name="第二季度" value="2"/>
+<item name="第三季度" value="3"/>
+<item name="第四季度" value="4"/>
+</param>
+<param name="P00140" datatype="dt_integer">
+<item name="30天以内" value="1"/>
+<item name="30天以内(剩余存续期超过397天的浮动利率债)" value="2"/>
+<item name="30天(含)-60天" value="3"/>
+<item name="30天(含)-60天(剩余存续期超过397天的浮动利率债)" value="4"/>
+<item name="60天(含)-90天" value="5"/>
+<item name="60天(含)-90天(剩余存续期超过397天的浮动利率债)" value="6"/>
+<item name="90天(含)-180天" value="7"/>
+<item name="90天(含)-180天(剩余存续期超过397天的浮动利率债)" value="8"/>
+<item name="180天(含)-397天" value="9"/>
+<item name="180天(含)-397天(剩余存续期超过397天的浮动利率债)" value="10"/>
+</param>
+<param name="P00100" datatype="dt_integer">
+<item name="第1名" value="1"/>
+<item name="第2名" value="2"/>
+<item name="第3名" value="3"/>
+<item name="第4名" value="4"/>
+<item name="第5名" value="5"/>
+</param>
+<param name="P00123" datatype="dt_integer">
+<item name="2004" value="2004"/>
+<item name="2005" value="2005"/>
+<item name="2006" value="2006"/>.
+<item name="2007" value="2007"/>
+<item name="2008" value="2008"/>
+<item name="2009" value="2009"/>
+<item name="2010" value="2010"/>
+<item name="2011" value="2011"/>
+<item name="2012" value="2012"/>
+<item name="2013" value="2013"/>
+<item name="2014" value="2014"/>
+</param>
+<param name="P00027" datatype="dt_integer">
+<item name="不调整" value="1"/>
+<item name="剔除负值" value="2"/>
+</param>
+<param name="P00028" datatype="dt_integer">
+<item name="不调整" value="1"/>
+<item name="剔除负值" value="2"/>
+<item name="剔除负值或数值大于1000的股票" value="3"/>
+<item name="剔除负值或数值大于500的股票" value="4"/>
+</param>
+<param name="P00029" datatype="dt_integer">
+<item name="不调整" value="1"/>
+<item name="剔除负值" value="2"/>
+<item name="剔除负值或数值大于100的股票" value="5"/>
+<item name="剔除负值或数值大于50的股票" value="6"/>
+</param>
+<param name="P00030" datatype="dt_integer">
+<item name="不调整" value="1"/>
+<item name="剔除负值" value="2"/>
+<item name="剔除负值或数值大于50的股票" value="6"/>
+<item name="剔除负值或数值大于25的股票" value="7"/>
+</param>
+<param name="P00090" datatype="dt_string" default="最新">
+<item name="渤海证券" value="渤海证券有限责任公司"/>
+<item name="长城证券" value="长城证券有限责任公司"/>
+<item name="长江证券" value="长江证券有限责任公司"/>
+<item name="大鹏证券" value="大鹏证券有限责任公司"/>
+<item name="东北证券" value="东北证券股份有限公司"/>
+<item name="东方证券" value="东方证券股份有限公司"/>
+<item name="东吴证券" value="东吴证券有限责任公司"/>
+<item name="方正证券" value="方正证券有限责任公司"/>
+<item name="光大证券" value="光大证券股份有限公司"/>
+<item name="广发证券" value="广发证券股份有限公司"/>
+<item name="国金证券" value="国金证券有限责任公司"/>
+<item name="国泰君安证券" value="国泰君安证券股份有限公司"/>
+<item name="国信证券" value="国信证券有限责任公司"/>
+<item name="国元证券" value="国元证券股份有限公司"/>
+<item name="海通证券" value="海通证券股份有限公司"/>
+<item name="汉唐证券" value="汉唐证券有限责任公司"/>
+<item name="河北证券" value="河北证券有限责任公司"/>
+<item name="宏源证券" value="宏源证券股份有限公司"/>
+<item name="华安证券" value="华安证券有限责任公司"/>
+<item name="华泰证券" value="华泰证券股份有限公司"/>
+<item name="联合证券" value="联合证券有限责任公司"/>
+<item name="南方证券" value="南方证券股份有限公司"/>
+<item name="平安证券" value="平安证券有限责任公司"/>
+<item name="瑞银证券" value="瑞银证券有限责任公司"/>
+<item name="上海证券" value="上海证券有限责任公司"/>
+<item name="申银万国证券" value="申银万国证券股份有限公司"/>
+<item name="泰阳证券" value="泰阳证券有限责任公司"/>
+<item name="天同证券" value="天同证券有限责任公司"/>
+<item name="西南证券" value="西南证券有限责任公司"/>
+<item name="湘财证券" value="湘财证券有限责任公司"/>
+<item name="兴业证券" value="兴业证券股份有限公司"/>
+<item name="英大证券" value="英大证券有限责任公司"/>
+<item name="招商证券" value="招商证券股份有限公司"/>
+<item name="浙商证券" value="浙商证券有限责任公司"/>
+<item name="中国银河证券" value="中国银河证券股份有限公司"/>
+<item name="中信建投证券" value="中信建投证券有限责任公司"/>
+<item name="中信万通证券" value="中信万通证券有限责任公司"/>
+<item name="中信证券" value="中信证券股份有限公司"/>
+<item name="中银国际证券" value="中银国际证券有限责任公司"/>
+</param>
+<param name="P00013" datatype="dt_integer">
+<item name="上年年报增长率" value="5"/>
+<item name="上年1季*4较上上年年报增长率" value="6"/>
+<item name="上年中报*2较上上年年报增长率" value="7"/>
+<item name="上年3季*4/3较上上年年报增长率" value="8"/>
+<item name="当年年报增长率" value="1"/>
+<item name="当年1季*4较上年年报增长率" value="2"/>
+<item name="当年中报*2较上年年报增长率" value="3"/>
+<item name="当年3季*4/3较上年年报增长率" value="4"/>
+</param>
+<param name="P00109" datatype="dt_integer">
+<item name="一级行业代码" value="1"/>
+<item name="二级行业代码" value="2"/>
+<item name="三级行业代码" value="3"/>
+<item name="四级行业代码" value="4"/>
+</param>
+<param name="P00056" datatype="dt_integer">
+<item name="2010" value="2010"/>
+<item name="2009" value="2009"/>
+<item name="2008" value="2008"/>
+<item name="2007" value="2007"/>
+<item name="2006" value="2006"/>
+<item name="2005" value="2005"/>
+<item name="2004" value="2004"/>
+<item name="2003" value="2003"/>
+<item name="2002" value="2002"/>
+<item name="2001" value="2001"/>
+<item name="2000" value="2000"/>
+<item name="1999" value="1999"/>
+<item name="1998" value="1998"/>
+<item name="1997" value="1997"/>
+<item name="1996" value="1996"/>
+<item name="1995" value="1995"/>
+<item name="1994" value="1994"/>
+<item name="1993" value="1993"/>
+<item name="1992" value="1992"/>
+<item name="1991" value="1991"/>
+<item name="1990" value="1990"/>
+<item name="1989" value="1989"/>
+</param>
+<param name="P00144" datatype="dt_integer">
+<item name="最新年报(LYR)" value="1"/>
+<item name="前年年报" value="3"/>
+<item name="上年年报" value="4"/>
+<item name="上年三季×4/3" value="5"/>
+<item name="当年一季×4" value="6"/>
+<item name="当年中报×2" value="7"/>
+<item name="当年三季×4/3" value="8"/>
+<item name="当年年报" value="9"/>
+</param>
+<param name="P00145" datatype="dt_integer">
+<item name="最新年报(LYR)" value="1"/>
+<item name="前年年报" value="3"/>
+<item name="上年年报" value="4"/>
+<item name="当年一季" value="5"/>
+<item name="当年中报" value="6"/>
+<item name="当年三季" value="7"/>
+<item name="当年年报" value="8"/>
+</param>
+<param name="P00150" datatype="dt_integer"> 
+<item name="申银万国证券股份有限公司" value="1"/> 
+<item name="国泰君安证券股份有限公司" value="2"/> 
+<item name="中银国际证券有限责任公司" value="3"/> 
+<item name="国信证券有限责任公司" value="4"/> 
+<item name="海通证券股份有限公司" value="5"/> 
+<item name="招商证券股份有限公司" value="6"/> 
+<item name="光大证券股份有限公司" value="7"/> 
+<item name="中信证券股份有限公司" value="8"/> 
+<item name="国金证券股份有限公司" value="9"/> 
+<item name="兴业证券股份有限公司" value="10"/> 
+<item name="东方证券股份有限公司" value="11"/> 
+<item name="长江证券股份有限公司" value="12"/> 
+<item name="华泰证券股份有限公司" value="13"/> 
+<item name="平安证券有限责任公司" value="14"/> 
+<item name="中信建投证券有限责任公司" value="15"/> 
+<item name="中国建银投资证券有限责任公司" value="16"/> 
+<item name="中国银河证券股份有限公司" value="17"/> 
+<item name="上海证券有限责任公司" value="18"/> 
+<item name="西南证券股份有限公司" value="19"/> 
+<item name="华泰联合证券有限责任公司" value="21"/> 
+<item name="宏源证券股份有限公司" value="22"/> 
+<item name="东海证券有限责任公司" value="24"/> 
+<item name="江南证券有限责任公司" value="25"/> 
+<item name="长城证券有限责任公司" value="26"/> 
+<item name="广发证券股份有限公司" value="27"/> 
+<item name="世纪证券有限责任公司" value="28"/> 
+<item name="华西证券有限责任公司" value="29"/> 
+<item name="国元证券股份有限公司" value="30"/> 
+<item name="渤海证券股份有限公司" value="31"/> 
+<item name="爱建证券有限责任公司" value="32"/> 
+<item name="安信证券股份有限公司" value="33"/> 
+<item name="财富证券有限责任公司" value="34"/> 
+<item name="大通证券股份有限公司" value="35"/> 
+<item name="大同证券经纪有限责任公司" value="36"/> 
+<item name="德邦证券有限责任公司" value="37"/> 
+<item name="东北证券股份有限公司" value="38"/> 
+<item name="东莞证券有限责任公司" value="39"/> 
+<item name="东吴证券股份有限公司" value="40"/> 
+<item name="东兴证券股份有限公司" value="41"/> 
+<item name="方正证券股份有限公司" value="42"/> 
+<item name="广州证券有限责任公司" value="43"/> 
+<item name="国都证券有限责任公司" value="44"/> 
+<item name="国海证券有限责任公司" value="45"/> 
+<item name="国联证券股份有限公司" value="46"/> 
+<item name="国盛证券有限责任公司" value="47"/> 
+<item name="恒泰证券股份有限公司" value="48"/> 
+<item name="华安证券有限责任公司" value="49"/> 
+<item name="华创证券有限责任公司" value="50"/> 
+<item name="华林证券有限责任公司" value="51"/> 
+<item name="华融证券股份有限公司" value="52"/> 
+<item name="江海证券有限公司" value="53"/> 
+<item name="金元证券股份有限公司" value="54"/> 
+<item name="民生证券有限责任公司" value="55"/> 
+<item name="南京证券有限责任公司" value="56"/> 
+<item name="齐鲁证券有限公司" value="57"/> 
+<item name="日信证券有限责任公司" value="58"/> 
+<item name="瑞信方正证券有限责任公司" value="59"/> 
+<item name="瑞银证券有限责任公司" value="60"/> 
+<item name="山西证券股份有限公司" value="61"/> 
+<item name="万联证券有限责任公司" value="62"/> 
+<item name="湘财证券有限责任公司" value="63"/> 
+<item name="新时代证券有限责任公司" value="64"/> 
+<item name="信达证券股份有限公司" value="65"/> 
+<item name="英大证券有限责任公司" value="66"/> 
+<item name="浙商证券有限责任公司" value="67"/> 
+<item name="中信万通证券有限责任公司" value="68"/> 
+<item name="中邮证券有限责任公司" value="69"/> 
+<item name="中原证券股份有限公司" value="70"/>
+<item name="中国国际金融有限公司" value="71"/> 
+<item name="中信金通证券有限责任公司" value="1001"/>  
+</param>
+<param name="P00157" datatype="dt_integer">
+<item name="天" value="1"/>
+<item name="年" value="2"/>
+</param>
+<param name="P00159" datatype="dt_integer">
+<item name="显示在X轴" value="1"/>
+<item name="显示在Y轴" value="2"/>
+</param>
+<param name="P00160" datatype="dt_integer">
+<item name="农、林、牧、渔业(A)" value="1"/>
+<item name="采掘业(B)" value="2"/>
+<item name="制造业(C)" value="3"/>
+<item name="食品、饮料(C0)" value="4"/>
+<item name="纺织、服装、皮毛(C1)" value="5"/>
+<item name="木材、家具(C2)" value="6"/>
+<item name="造纸、印刷(C3)" value="7"/>
+<item name="石油、化学、塑胶、塑料(C4)" value="8"/>
+<item name="电子(C5)" value="9"/>
+<item name="金属、非金属(C6)" value="10"/>
+<item name="机械、设备、仪表(C7)" value="11"/>
+<item name="医药、生物制品(C8)" value="12"/>
+<item name="其他制造业(C99)" value="13"/>
+<item name="电力、煤气及水的生产和供应业(D)" value="14"/>
+<item name="建筑业(E)" value="15"/>
+<item name="交通运输、仓储业(F)" value="16"/>
+<item name="信息技术业(G)" value="17"/>
+<item name="批发和零售贸易(H)" value="18"/>
+<item name="金融、保险业(I)" value="19"/>
+<item name="房地产业(J)" value="20"/>
+<item name="社会服务业(K)" value="21"/>
+<item name="传播与文化产业(L)" value="22"/>
+<item name="综合类(M)" value="23"/>
+</param>
+<param name="P00131" datatype="dt_integer">
+<item name="推荐" value="1"/>
+<item name="不推荐" value="2"/>
+</param>
+<param name="P00162" datatype="dt_integer">
+<item name="第1名" value="1"/>
+<item name="第2名" value="2"/>
+<item name="第3名" value="3"/>
+<item name="第4名" value="4"/>
+<item name="第5名" value="5"/>
+<item name="第6名" value="6"/>
+<item name="第7名" value="7"/>
+<item name="第8名" value="8"/>
+<item name="第9名" value="9"/>
+<item name="第10名" value="10"/>
+<item name="第11名" value="11"/>
+<item name="第12名" value="12"/>
+<item name="第13名" value="13"/>
+<item name="第14名" value="14"/>
+<item name="第15名" value="15"/>
+<item name="第16名" value="16"/>
+<item name="第17名" value="17"/>
+<item name="第18名" value="18"/>
+<item name="第19名" value="19"/>
+<item name="第20名" value="20"/>
+</param>
+<param name="WP0001" default="前一交易日" datatype="dt_string">
+<item name="前一交易日" value="1"/>
+<item name="前三个交易日" value="2"/>
+<item name="上周末" value="3"/>
+<item name="上月末" value="4"/>
+<item name="上半年末" value="5"/>
+<item name="上年末" value="6"/>
+</param>
+</params>

@@ -1,0 +1,7 @@
+CREATE TABLE `syntacticdb` (
+  `syAndSmId` varchar(50) NOT NULL,
+  `description` varchar(200) DEFAULT NULL,
+  `query` varchar(200) NOT NULL,
+  `result` varchar(300) DEFAULT NULL,
+  PRIMARY KEY (`syAndSmId`,`query`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

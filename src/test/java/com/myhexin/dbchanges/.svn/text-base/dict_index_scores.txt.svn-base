@@ -1,0 +1,16 @@
+  CREATE TABLE  dict_index_scores (
+  ID   			INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  dict_txt 		VARCHAR(100) NOT NULL,
+  dict_typeid	INT NULL,
+  index_txt 	VARCHAR(100) NOT NULL,
+  score			INT NOT NULL
+  ) ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+  
+  INSERT INTO dict_index_scores(dict_txt, dict_typeid, index_txt, score)
+  VALUES('易峥',NULL,'大股东名称', 10);
+  
+   INSERT INTO dict_index_scores(dict_txt, dict_typeid, index_txt, score)
+  VALUES('交通银行',NULL,'港股简称', 100);
+  
+  

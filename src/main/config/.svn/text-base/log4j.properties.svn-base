@@ -1,0 +1,40 @@
+#DEBUG < INFO < WARN < ERROR < FATAL
+
+log4j.rootCategory=info,I,E
+
+#log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+#log4j.appender.stdout.Threshold = INFO
+#log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+#log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss.SSS} %5p (%C.java:%L) - %m%n
+
+
+#log4j.appender.I=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.I=org.apache.log4j.ExDailyRollingFileAppender
+log4j.appender.I.File=./log/log.txt
+log4j.appender.I.Threshold = INFO 
+log4j.appender.I.MaxBackupIndex=2
+log4j.appender.I.maxFileSize=300000000
+log4j.appender.I.DatePattern='.'yyyy-MM-dd
+log4j.appender.I.layout=org.apache.log4j.PatternLayout
+log4j.appender.I.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p - %m%n
+
+#warn exception
+#log4j.appender.W=org.apache.log4j.ExDailyRollingFileAppender
+#log4j.appender.W.File=./log/warning.txt
+#log4j.appender.W.Threshold = WARN 
+#log4j.appender.W.MaxBackupIndex=2
+#log4j.appender.W.maxFileSize=500000000
+#log4j.appender.W.DatePattern='.'yyyy-MM-dd
+#log4j.appender.W.layout=org.apache.log4j.PatternLayout
+#log4j.appender.W.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p (%C.java:%L) - %m%n
+
+#error exception
+log4j.appender.E=org.apache.log4j.ExDailyRollingFileAppender
+log4j.appender.E.File=./log/error.txt
+#log4j.appender.E.encoding=GBK
+log4j.appender.E.Threshold = ERROR 
+log4j.appender.E.MaxBackupIndex=3
+log4j.appender.E.maxFileSize=500000000
+log4j.appender.E.DatePattern='.'yyyy-MM-dd
+log4j.appender.E.layout=org.apache.log4j.PatternLayout
+log4j.appender.E.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p (%C.java:%L) - %m%n

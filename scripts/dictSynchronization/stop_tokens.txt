@@ -1,0 +1,2 @@
+#余额宝/*Cate=posttreat;Seg=;Value=trans:天弘增利宝;$
+#平均/*Cate=pretreat;Seg=;Value=onto_avg:groupbyinfo=行业,所属申万行业;$

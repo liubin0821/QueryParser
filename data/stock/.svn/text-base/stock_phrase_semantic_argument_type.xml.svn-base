@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <IndexNode ValueType="UNDEFINED">
+  	<desc>未定义</desc>
+  	<subclass>STRING</subclass>
+  	<subclass>DATE</subclass>
+  	<subclass>FIGURE</subclass>
+  	<PropNode type="UNKNOWN" unit="unit"/>
+  </IndexNode>
+  <IndexNode ValueType="STRING">
+  	<desc>字符串</desc>
+  	<PropNode type="STR" unit="unit"/>
+  </IndexNode>
+  <IndexNode ValueType="DATE">
+  	<desc>时间</desc>
+  	<PropNode type="DATE" unit="null"/>
+  	<PropNode type="DATE" unit="unit"/>
+  	<PropNode type="DATE" unit="日"/>
+  </IndexNode>
+  <IndexNode ValueType="FIGURE">
+  	<desc>数值+比值</desc>
+  	<subclass>NUMBER</subclass>
+  	<subclass>RATIO</subclass>
+  </IndexNode>
+  <IndexNode ValueType="NUMBER">
+  	<desc>数值</desc>
+  	<subclass>LONG_NUM</subclass>
+  	<subclass>DOUBLE_NUM</subclass>
+  </IndexNode>
+  <IndexNode ValueType="LONG_NUM">
+  	<desc>整形数值</desc>
+  	<PropNode type="LONG" unit="unit"/>
+  	<PropNode type="LONG" unit="户"/>
+  	<PropNode type="LONG" unit="家"/>
+  </IndexNode>
+  <IndexNode ValueType="DOUBLE_NUM">
+  	<desc>浮点型数值</desc>
+  	<PropNode type="DOUBLE" unit="unit"/>
+  	<PropNode type="DOUBLE" unit="次"/>
+  	<PropNode type="DOUBLE" unit="股"/>
+  	<PropNode type="DOUBLE" unit="户"/>
+  	<PropNode type="DOUBLE" unit="元"/>
+  	<PropNode type="DOUBLE" unit="张"/>
+  </IndexNode>
+  <IndexNode ValueType="RATIO">
+  	<desc>比值</desc>
+  	<subclass>PERCENTAGE</subclass>
+  	<subclass>TIMES</subclass>
+  </IndexNode>
+  <IndexNode ValueType="PERCENTAGE">
+  	<desc>百分比</desc>
+  	<PropNode type="DOUBLE" unit="%"/>
+  </IndexNode>
+  <IndexNode ValueType="TIMES">
+  	<desc>倍数</desc>
+  	<PropNode type="DOUBLE" unit="倍"/>
+  </IndexNode>
+</Config>

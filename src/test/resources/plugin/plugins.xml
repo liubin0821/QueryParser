@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.myhexin.qparser" />  
+
+
+	<!-- pre plugins -->
+	<bean id="TextNormalize"
+		class="com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginTextNormalize" />
+	<bean id="CheckIsMessyCodeText"
+		class="com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginCheckIsMessyCodeText" />
+	<bean id="CheckIsNoParser"
+		class="com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginCheckIsNoParser" />
+	<bean id="ClassifyChunkQuery"
+		class="com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginClassifyChunkQuery" />
+	<bean id="WordSegment"
+		class="com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginWordSegment" />
+	<bean id="WordSegmentDynamic"
+		class="com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginWordSegmentDynamic" />
+	<bean id="WordSegmentPostTreat"
+		class="com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginWordSegmentPostTreat" />
+
+	<!-- plugins -->
+	<bean id="NodesMerger"
+        class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginNodesMerge"/>
+	<bean id="TriggerParser"
+        class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginTriggerParser"/>
+	<bean id="NumParser"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginNumParser" />
+	<bean id="TimeParser"
+        class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginTimeParser" />	
+	<bean id="DateParser"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDateParser" />
+		
+	<bean id="DateAxisParser"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDateAxisParser" />	
+		
+	<bean id="StringParser"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginStringParser"/>
+	
+	<bean id="matchIndexAndKeywords"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginMatchIndexAndKeywords" />
+		
+	<bean id="inferenceDomain"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginInferenceDomain" />
+	<bean id="multResultAccordingDomain"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginMultResultAccordingDomain" />
+		
+	<bean id="DateSequence"
+        class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDateParserSequence" />
+	<bean id="remainSomeDomain"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginRemainSomeDomain" />
+	<bean id="removeSomeConditionNode"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginRemoveSomeConditionNode" />
+	<bean id="simpleBindStrToIndex"
+        class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginSimpleBindStrToIndex" />
+	<bean id="matchSyntacticPatterns"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginMatchSyntacticPatterns" />
+		
+	<bean id="newMatchSyntacticPatternsByChunk"
+	 class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginNewMatchSyntacticPatternsByChunk"/>	
+	
+	<bean id="findSimilarity"
+		class="com.myhexin.qparser.phrase.parsePrePlugins.PhraseParserPrePluginFindSimilarity" />
+		
+	<bean id="matchSyntacticPatternsByChunk"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginMatchSyntacticPatternsByChunk" />
+	
+	<bean id="matchSyntacticPatternsBySemicolonChunk"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginMatchSyntacticPatternsBySemicolonChunk" />	
+		
+	<bean id="buildFixedArgumentsAndSemanticProps"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginBuildFixedArgumentsAndSemanticProps" />
+	<bean id="addIndexOfStrInstance"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginAddIndexOfStrInstance" />
+	<bean id="checkIsSameElements"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginCheckIsSameElements" />
+	<bean id="combineOnePhraseDate"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginCombineOnePhraseDate" />
+
+	<bean id="dealWithAmbiguity"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDealWithAmbiguity" />
+	<bean id="dealWithIncrease"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDealWithIncrease" />
+	<bean id="dealWithDateValueForIndex"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDealWithDateValueForIndex" />
+	<bean id="techperiodDetermine"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginTechperiodDetermine" />
+	<bean id="dateNumModify"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginDateNumModify" />
+	<bean id="bindPropToIndex"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginBindStrToIndex" />
+	<bean id="bindNumOrDateToIndex"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginBindNumOrDateToIndex" />
+	<bean id="bindIndexToIndex"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginBindIndexToIndex" />
+	<bean id="completionIndex"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginCompletionIndex" />
+	
+
+	<bean id="fillIndexPropDefaultValue"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginFillIndexPropDefaultValue" />
+    <bean id="completeIndexOfIndexProp"
+        class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginCompleteIndexOfIndexProp"/>
+        		
+	<bean id="calculateScore"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginCalculateScore" />
+	<!-- 
+	<bean id="relationshipOfAndOrNot"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginRelationshipOfAndOrNot" />
+	-->
+	<bean id="relationshipOfAndOrNotOld"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginRelationshipOfAndOrNotOld" />
+		
+    <!-- 技术指标处理插件 -->
+    <bean id="multilineTechopAppend"
+        class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginMultilineTechopAppend"/>
+    <bean id="bindTechIndexParentChild"
+        class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginBindTechIndexParentChild"/>
+	<bean id="conditionHangYeSort"
+        class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginConditionHangYeSort"/>
+    
+		
+		
+	<!-- post plugins -->	
+	<bean id="getUesedSubtypeOfStrInstance"
+        class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginGetUesedSubtypeOfStrInstance" />
+        
+	<bean id="changeToStandardOutputMultResult"
+		class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginChangeToStandardOutputMultResult" />
+	<bean id="changeToStandardOutput"
+		class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginChangeToStandardOutput" />
+	<bean id="changeNewIndexToOldIndex"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginChangeNewIndexToOldIndex" />
+	<bean id="createJsonResultOfMacroIndustry"
+		class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginCreateJsonResultOfMacroIndustry" />
+	<bean id="createJsonResult"
+		class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginCreateJsonResult" />
+	<bean id="createLuaResult"
+		class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginCreateLuaResult" />
+	<bean id="thematicClassify"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginThematicClassify" />
+	
+	<bean id="changeNewIndexToIfindIndex"
+		class="com.myhexin.qparser.phrase.parsePlugins.PhraseParserPluginChangeNewIndexToIfindIndex" />
+	<bean id="relationshipOfOrigChunk"
+		class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginRelationshipOfOrigChunk" />
+	<bean id="searchReport"
+		class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginSearchReport"/>
+    <bean id="indexFilter"
+        class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginFilter"/>
+    <bean id="syntacticIdNodeWeight"
+        class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginSyntacticIdNodeWeight"/>
+    <bean id="entityAmbiguityHandler"
+        class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginEntityAmbiguityHandler"/>
+    <bean id="searchPropConfigNodeWeight"
+        class="com.myhexin.qparser.phrase.parsePostPlugins.PhraseParserPluginSearchPropConfigNodeWeight"/>
+    
+  
+</beans>

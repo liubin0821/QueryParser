@@ -1,0 +1,2 @@
+label=较高|较多|较大|高|多|大;fakeNumType=more;isDescending=true;
+label=较低|较少|较小|少|低|小;fakeNumType=less;isDescending=false;

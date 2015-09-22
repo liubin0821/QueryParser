@@ -1,0 +1,9 @@
+java -cp config/:QueryParser-1.0.0.jar com.myhexin.qparser.util.itoperation.LoadSampleQueryToDisk ./query_list.txt
+
+java -cp config/:QueryParser-1.0.0.jar com.myhexin.qparser.util.itoperation.FindoutUnknowTypeNode ./query_list.txt ./unknow.txt
+
+
+regex.txt
+
+skip.txt
+

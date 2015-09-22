@@ -1,0 +1,597 @@
+create trigger aliases_trigger_insert
+after insert on aliases
+for each row
+insert into z_aliases_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,index_id,label,is_default,upd_date,upd_user,upd_comment)values(
+NOW(),new.upd_user,'I',new.id,new.index_id,new.label,new.is_default,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger aliases_trigger_delete
+before delete on aliases
+for each row
+insert into z_aliases_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,index_id,label,is_default,upd_date,upd_user,upd_comment)values(
+now(),old.upd_user,'D',old.id,old.index_id,old.label,old.is_default,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger aliases_trigger_update
+after update on aliases
+for each row
+insert into z_aliases_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,index_id,label,is_default,upd_date,upd_user,upd_comment)values(
+NOW(),new.upd_user,'U',new.id,new.index_id,new.label,new.is_default,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger automatic_synchronization_ctrl_insert
+after insert on automatic_synchronization_ctrl
+for each  row
+insert into z_automatic_synchronization_ctrl_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,dict_type,db_type,sql_str,host_str,port_str,userName,password_str,database_str,table_str,
+is_using,upd_date,upd_user,upd_comment)values(NOW(),new.upd_user,'I',new.id,new.dict_type,new.db_type,new.sql_str,
+new.host_str,new.port_str,new.userName,new.password_str,new.database_str,new.table_str,new.is_using,new.upd_date,new.upd_user,new.upd_comment)
+
+create trigger automatic_synchronization_ctrl_delete
+before delete on  automatic_synchronization_ctrl 
+for each row
+insert into z_automatic_synchronization_ctrl_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,dict_type,db_type,sql_str,host_str,port_str,userName,password_str,database_str,table_str,
+is_using,upd_date,upd_user,upd_comment)values(now(),old.upd_user,'D',old.id,old.dict_type,old.db_type,old.sql_str,old.host_str,old.port_str,old.userName,
+old.password_str,old.database_str,old.table_str,old.is_using,old.upd_date,old.upd_user,old.upd_comment)
+
+
+create trigger automatic_synchronization_ctrl_update
+after update on automatic_synchronization_ctrl 
+for each row
+insert into z_automatic_synchronization_ctrl_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,dict_type,db_type,sql_str,host_str,port_str,userName,password_str,database_str,table_str,
+is_using,upd_date,upd_user,upd_comment)values(NOW(),new.upd_user,'U',new.id,new.dict_type,new.db_type,new.sql_str,
+new.host_str,new.port_str,new.userName,new.password_str,new.database_str,new.table_str,new.is_using,new.upd_date,new.upd_user,new.upd_comment)
+
+create trigger data_lines_insert
+after insert on data_lines
+for each row
+insert into z_data_lines_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,type_id,text,cate,seg,value,infos,priority,from_where,
+last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.type_id,new.text,new.cate,new.seg,new.value,new.infos,
+new.priority,new.from_where,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger  data_lines_delete
+before delete on data_lines
+for each row
+insert into z_data_lines_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,type_id,text,cate,seg,value,infos,priority,from_where,
+last_update_date,create_date,upd_date,upd_user,upd_comment) 
+values(now(),old.upd_user,'D',old.id,old.type_id,old.text,old.cate,old.seg,old.value,old.infos,
+old.priority,old.from_where,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger  data_lines_update
+after update on data_lines
+for each row 
+insert into z_data_lines_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,type_id,text,cate,seg,value,infos,priority,from_where,
+last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.type_id,new.text,new.cate,new.seg,new.value,new.infos,
+new.priority,new.from_where,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger data_relation_trigger_insert
+after insert on data_relation
+for each row
+insert into z_data_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type_id,upd_date,upd_user,upd_comment)values
+(NOW(),new.upd_user,'I',new.prop_id,new.type_id,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger data_relation_trigger_delete
+before delete on data_relation
+for each row
+insert into z_data_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type_id,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.prop_id,old.type_id,old.upd_date,old.upd_user,old.upd_comment);
+
+
+create trigger data_relation_trigger_update
+after update on data_relation
+for each row
+insert into z_data_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type_id,upd_date,upd_user,upd_comment)values
+(NOW(),new.upd_user,'U',new.prop_id,new.type_id,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger data_type_trigger_insert
+after insert on data_type
+for each row
+insert into z_data_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.label,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger  data_type_trigger_delete
+before delete on data_type
+for each row
+insert into z_data_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.label,old.upd_date,old.upd_user,old.upd_comment);
+
+
+create trigger data_type_trigger_update
+after update on data_type
+for each row
+insert into z_data_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.label,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_no_value_trigger_insert
+after insert on dict_no_value
+for each row
+insert into z_dict_no_value_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_no_value_trigger_delete
+after delete on dict_no_value
+for each row
+insert into z_dict_no_value_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_no_value_trigger_update
+after update on dict_no_value
+for each row
+insert into z_dict_no_value_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_onto_change_trigger_insert
+after insert on dict_onto_change
+for each row
+insert into  z_dict_onto_change_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_change_trigger_delete 
+after delete on dict_onto_change
+for each row
+insert into z_dict_onto_change_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_change_trigger_update 
+after update on dict_onto_change
+for each row
+insert into z_dict_onto_change_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_onto_class_trigger_insert
+after insert on dict_onto_class
+for each row
+insert into  z_dict_onto_class_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_class_trigger_delete 
+after delete on dict_onto_class
+for each row
+insert into z_dict_onto_class_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_class_trigger_update 
+after update on dict_onto_class
+for each row
+insert into z_dict_onto_class_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_date_trigger_insert
+after insert on dict_onto_date
+for each row
+insert into  z_dict_onto_date_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_date_trigger_delete 
+after delete on dict_onto_date
+for each row
+insert into z_dict_onto_date_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_date_trigger_update 
+after update on dict_onto_date
+for each row
+insert into z_dict_onto_date_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_onto_keyword_trigger_insert
+after insert on dict_onto_keyword
+for each row
+insert into  z_dict_onto_keyword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_keyword_trigger_delete 
+after delete on dict_onto_keyword
+for each row
+insert into z_dict_onto_keyword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_keyword_trigger_update 
+after update on dict_onto_keyword
+for each row
+insert into z_dict_onto_keyword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_onto_logic_trigger_insert
+after insert on dict_onto_logic
+for each row
+insert into  z_dict_onto_logic_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,logic_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.logic_type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_logic_trigger_delete 
+after delete on dict_onto_logic
+for each row
+insert into z_dict_onto_logic_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,logic_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.logic_type,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_logic_trigger_update 
+after update on dict_onto_logic
+for each row
+insert into z_dict_onto_logic_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,logic_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.logic_type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_qword_trigger_insert
+after insert on dict_onto_qword
+for each row
+insert into  z_dict_onto_qword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_qword_trigger_delete 
+after delete on dict_onto_qword
+for each row
+insert into z_dict_onto_qword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.type,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_qword_trigger_update 
+after update on dict_onto_qword
+for each row
+insert into z_dict_onto_qword_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_onto_sort_trigger_insert
+after insert on dict_onto_sort
+for each row
+insert into  z_dict_onto_sort_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value_type,descending,k,is_top_k,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value_type,new.descending,new.k,new.is_top_k,new.last_update_date,new.create_date,
+new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_sort_trigger_delete 
+after delete on dict_onto_sort
+for each row
+insert into z_dict_onto_sort_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value_type,descending,k,is_top_k,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value_type,old.descending,old.k,old.is_top_k,old.last_update_date,old.create_date,
+old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_sort_trigger_update 
+after update  on dict_onto_sort
+for each row
+insert into  z_dict_onto_sort_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value_type,descending,k,is_top_k,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value_type,new.descending,new.k,new.is_top_k,new.last_update_date,new.create_date,
+new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_onto_special_trigger_insert
+after insert on dict_onto_special
+for each row
+insert into  z_dict_onto_special_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,msg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.msg,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_special_trigger_delete 
+after delete on dict_onto_special
+for each row
+insert into z_dict_onto_special_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,msg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.msg,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_special_trigger_update 
+after update on dict_onto_special
+for each row
+insert into z_dict_onto_special_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,msg,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.msg,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_onto_techOp_trigger_insert
+after insert on dict_onto_techOp
+for each row
+insert into  z_dict_onto_techOp_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_techOp_trigger_delete 
+after delete on dict_onto_techOp
+for each row
+insert into z_dict_onto_techOp_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_techOp_trigger_update 
+after update on dict_onto_techOp
+for each row
+insert into z_dict_onto_techOp_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_onto_techPeriod_trigger_insert
+after insert on dict_onto_techPeriod
+for each row
+insert into  z_dict_onto_techPeriod_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_techPeriod_trigger_delete 
+after delete on dict_onto_techPeriod
+for each row
+insert into z_dict_onto_techPeriod_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_techPeriod_trigger_update 
+after update on dict_onto_techPeriod
+for each row
+insert into z_dict_onto_techPeriod_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_onto_trigger_trigger_insert
+after insert on dict_onto_trigger
+for each row
+insert into  z_dict_onto_trigger_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,direction,isindex,skiplist,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.direction,new.isindex,new.skiplist,new.last_update_date,new.create_date,
+new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_trigger_trigger_delete 
+after delete on dict_onto_trigger
+for each row
+insert into z_dict_onto_trigger_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,direction,isindex,skiplist,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.direction,old.isindex,old.skiplist,old.last_update_date,old.create_date,
+old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_trigger_trigger_update 
+after update  on dict_onto_trigger
+for each row
+insert into  z_dict_onto_trigger_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,direction,isindex,skiplist,last_update_date,create_date,
+upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.direction,new.isindex,new.skiplist,new.last_update_date,new.create_date,
+new.upd_date,new.upd_user,new.upd_comment);
+
+
+
+create trigger dict_onto_vagueNum_trigger_insert
+after insert on dict_onto_vagueNum
+for each row
+insert into  z_dict_onto_vagueNum_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,vague_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.vague_type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_onto_vagueNum_trigger_delete 
+after delete on dict_onto_vagueNum
+for each row
+insert into z_dict_onto_vagueNum_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,vague_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.vague_type,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_onto_vagueNum_trigger_update 
+after update on dict_onto_vagueNum
+for each row
+insert into z_dict_onto_vagueNum_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,vague_type,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.vague_type,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_trans_trigger_insert
+after insert on dict_trans
+for each row
+insert into  z_dict_trans_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger dict_trans_trigger_delete 
+after delete on dict_trans
+for each row
+insert into z_dict_trans_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.text,old.cate,old.seg,old.value,old.last_update_date,old.create_date,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_trans_trigger_update 
+after update on dict_trans
+for each row
+insert into  z_dict_trans_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.text,new.cate,new.seg,new.value,new.last_update_date,new.create_date,new.upd_date,new.upd_user,new.upd_comment);
+
+
+
+create trigger dict_update_recode_trigger_insert
+after insert on dict_update_recode
+for each row
+insert into  z_dict_update_recode_arch(arch_upd_dt,arch_upd_user,arch_upd_type,text,tableName,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.text,new.tableName,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger dict_update_recode_trigger_delete 
+after delete on dict_update_recode
+for each row
+insert into z_dict_update_recode_arch(arch_upd_dt,arch_upd_user,arch_upd_type,text,tableName,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.text,old.tableName,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger dict_update_recode_trigger_update 
+after update on dict_update_recode
+for each row
+insert into  z_dict_update_recode_arch(arch_upd_dt,arch_upd_user,arch_upd_type,text,tableName,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.text,new.tableName,new.upd_date,new.upd_user,new.upd_comment);
+
+
+
+create trigger field_trigger_insert
+after insert on field
+for each row
+insert into  z_field_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.label,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger field_trigger_delete 
+after delete on field
+for each row
+insert into z_field_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.label,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger field_trigger_update 
+after update on field
+for each row
+insert into  z_field_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.label,new.upd_date,new.upd_user,new.upd_comment);
+
+
+
+create trigger field_to_index_trigger_insert
+after insert on field_to_index
+for each row
+insert into  z_field_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,index_id,field_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.index_id,new.field_id,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger field_to_index_trigger_delete 
+after delete on field_to_index
+for each row
+insert into z_field_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,index_id,field_id,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.index_id,old.field_id,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger field_to_index_trigger_update 
+after update on field_to_index
+for each row
+insert into  z_field_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,index_id,field_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.index_id,new.field_id,new.upd_date,new.upd_user,new.upd_comment);
+
+
+
+create trigger index_prop_trigger_insert
+after insert on index_prop
+for each row
+insert into  z_index_prop_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,type,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.label,new.type,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger index_prop_trigger_delete 
+after delete on index_prop
+for each row
+insert into z_index_prop_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,type,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.label,old.type,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger index_prop_trigger_update 
+after update on index_prop
+for each row
+insert into  z_index_prop_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,type,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.label,new.type,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger indexs_trigger_insert
+after insert on indexs
+for each row
+insert into  z_indexs_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,report_type,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.id,new.label,new.report_type,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger indexs_trigger_delete 
+after delete on indexs
+for each row
+insert into z_indexs_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,report_type,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.id,old.label,old.report_type,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger indexs_trigger_update 
+after update on indexs
+for each row
+insert into  z_indexs_arch(arch_upd_dt,arch_upd_user,arch_upd_type,id,label,report_type,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.id,new.label,new.report_type,new.upd_date,new.upd_user,new.upd_comment);
+
+
+
+create trigger normal_relation_trigger_insert
+after insert on normal_relation
+for each row
+insert into  z_normal_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type,unit,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.prop_id,new.type,new.unit,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger normal_relation_trigger_delete 
+after delete on normal_relation
+for each row
+insert into z_normal_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type,unit,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.prop_id,old.type,old.unit,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger normal_relation_trigger_update 
+after update on normal_relation
+for each row
+insert into  z_normal_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,type,unit,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.prop_id,new.type,new.unit,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger object_relation_trigger_insert
+after insert on object_relation
+for each row
+insert into  z_object_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,ref_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.prop_id,new.ref_id,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger object_relation_trigger_delete 
+after delete on object_relation
+for each row
+insert into z_object_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,ref_id,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.prop_id,old.ref_id,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger object_relation_trigger_update 
+after update on object_relation
+for each row
+insert into  z_object_relation_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,ref_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.prop_id,new.ref_id,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger prop_to_index_trigger_insert
+after insert on prop_to_index
+for each row
+insert into  z_prop_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,index_id,seq,is_value_prop,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.prop_id,new.index_id,new.seq,new.is_value_prop,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger prop_to_index_trigger_delete 
+after delete on  prop_to_index
+for each row
+insert into z_prop_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,index_id,seq,is_value_prop,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.prop_id,old.index_id,old.seq,old.is_value_prop,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger prop_to_index_trigger_update 
+after update on prop_to_index
+for each row
+insert into  z_prop_to_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,prop_id,index_id,seq,is_value_prop,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.prop_id,new.index_id,new.seq,new.is_value_prop,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger resolve_aliases_conflicts_trigger_insert
+after insert on resolve_aliases_conflicts
+for each row
+insert into  z_resolve_aliases_conflicts_arch(arch_upd_dt,arch_upd_user,arch_upd_type,aliase_id,word,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.aliase_id,new.word,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger resolve_aliases_conflicts_trigger_delete 
+after delete on resolve_aliases_conflicts
+for each row
+insert into z_resolve_aliases_conflicts_arch(arch_upd_dt,arch_upd_user,arch_upd_type,aliase_id,word,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.aliase_id,old.word,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger resolve_aliases_conflicts_trigger_update 
+after update on resolve_aliases_conflicts
+for each row
+insert into  z_resolve_aliases_conflicts_arch(arch_upd_dt,arch_upd_user,arch_upd_type,aliase_id,word,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.aliase_id,new.word,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger super_index_trigger_insert
+after insert on super_index
+for each row
+insert into  z_super_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,index_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.super_id,new.index_id,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger super_index_trigger_delete 
+after delete on super_index
+for each row
+insert into z_super_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,index_id,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.super_id,old.index_id,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger super_index_trigger_update 
+after update on super_index
+for each row
+insert into  z_super_index_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,index_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.super_id,new.index_id,new.upd_date,new.upd_user,new.upd_comment);
+
+
+create trigger super_type_trigger_insert
+after insert on super_type
+for each row
+insert into  z_super_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,type_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'I',new.super_id,new.type_id,new.upd_date,new.upd_user,new.upd_comment);
+
+create trigger super_type_trigger_delete 
+after delete on super_type
+for each row
+insert into z_super_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,type_id,upd_date,upd_user,upd_comment)
+values(now(),old.upd_user,'D',old.super_id,old.type_id,old.upd_date,old.upd_user,old.upd_comment);
+
+create trigger super_type_trigger_update 
+after update on super_type
+for each row
+insert into  z_super_type_arch(arch_upd_dt,arch_upd_user,arch_upd_type,super_id,type_id,upd_date,upd_user,upd_comment)
+values(NOW(),new.upd_user,'U',new.super_id,new.type_id,new.upd_date,new.upd_user,new.upd_comment);
+

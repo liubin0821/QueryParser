@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="gbk"?>
+<node>
+<nodes>
+	<node name="_基金全部指标" title="基金全部指标" isgroup="true">
+<nodes>
+	<node name="_基金全部指标_基本资料" title="基本资料" isgroup="true">
+<nodes>
+	<node name="00001" title="基金简称" type="dt_string"/>
+	<node name="00002" title="基金代码" type="dt_string"/>
+	<node name="00003" title="基金同花顺代码" type="dt_string"/>
+	<node name="00004" title="基金全称" type="dt_string"/>
+	<node name="00005" title="基金类型" type="dt_string"/>
+	<node name="05251" title="投资类型(一级分类)" type="dt_string"/>
+	<node name="00006" title="投资类型(二级分类)" type="dt_string"/>
+	<node name="05632" title="晨星分类" type="dt_string"/>
+	<node name="05633" title="银河分类" type="dt_string"/>
+	<node name="00007" title="投资风格" type="dt_string"/>
+	<node name="00008" title="投资目标" type="dt_string"/>
+	<node name="00009" title="投资范围" type="dt_string"/>
+	<node name="00010" title="业绩比较基准" type="dt_string"/>
+	<node name="00011" title="基金上市地点" type="dt_string"/>
+	<node name="00012" title="面值" type="dt_double" unit="元"/>
+	<node name="05634" title="基金规模" type="dt_double" unit="元" unit_list="P00141"/>
+	<node name="05635" title="同类基金平均规模" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="F14" type="dt_integer" title="基金分类" param_list="P00152" default="1"/></params></node>
+	<node name="05636" title="同类基金数量" type="dt_integer"><params>
+		<param name="F14" type="dt_integer" title="基金分类" param_list="P00152" default="1"/></params></node>
+	<node name="05637" title="规模同类排名" type="dt_string"><params>
+		<param name="F14" type="dt_integer" title="基金分类" param_list="P00152" default="1"/></params></node>
+	<node name="00013" title="管理费率" type="dt_double" unit="%"/>
+	<node name="00014" title="托管费率" type="dt_double" unit="%"/>
+	<node name="00015" title="最高申购费率" type="dt_double" unit="%"/>
+	<node name="00016" title="最高赎回费率" type="dt_double" unit="%"/>
+	<node name="00017" title="基金经理(现任)" type="dt_string"/>
+	<node name="00018" title="基金经理(历任)" type="dt_string"/>
+	<node name="00019" title="基金管理人" type="dt_string"/>
+	<node name="00020" title="基金托管人" type="dt_string"/>
+	<node name="00021" title="基金发起人" type="dt_string"/>
+	<node name="00022" title="基金存续期" type="dt_integer" unit="年"/>
+	<node name="00023" title="剩余存续期" type="dt_integer" unit="天"/>
+	<node name="00024" title="基金成立日" type="dt_date"/>
+	<node name="00025" title="基金到期日" type="dt_date"/>
+	<node name="00026" title="开始托管日期" type="dt_date"/>
+	<node name="00027" title="托管结束日期" type="dt_date"/>
+	<node name="00028" title="赎回起始日" type="dt_date"/>
+	<node name="04251" title="申购赎回状态" type="dt_string"><params>
+		<param name="FD" type="dt_tradedate" title="日期" param_list="P00003"/></params></node>
+	<node name="_基金全部指标_基本资料_LOF基本资料" title="LOF基本资料" isgroup="true">
+<nodes>
+	<node name="06016" title="上市日期" type="dt_date"/>
+	<node name="06017" title="上市交易份额" type="dt_double" unit="元" unit_list="P00141"/></nodes></node>
+	<node name="_基金全部指标_基本资料_ETF基本资料" title="ETF基本资料" isgroup="true">
+<nodes>
+	<node name="06018" title="网上现金发售代码" type="dt_string"/>
+	<node name="06019" title="一级市场基金代码" type="dt_string"/>
+	<node name="06020" title="网上现金认购起始日" type="dt_date"/>
+	<node name="06021" title="网上现金认购截止日" type="dt_date"/>
+	<node name="06022" title="网上现金认购份额下限" type="dt_double" unit="份"/>
+	<node name="06023" title="网上现金认购份额上限" type="dt_double" unit="份"/>
+	<node name="06024" title="网下现金认购起始日" type="dt_date"/>
+	<node name="06025" title="网下现金认购截止日" type="dt_date"/>
+	<node name="06026" title="网下现金认购份额下限" type="dt_double" unit="份"/>
+	<node name="06027" title="网下股票认购起始日" type="dt_date"/>
+	<node name="06028" title="网下股票认购截止日" type="dt_date"/>
+	<node name="06029" title="网下股票认购份额下限" type="dt_double" unit="份"/>
+	<node name="06030" title="上市日期" type="dt_date"/>
+	<node name="06031" title="上市交易份额" type="dt_double" unit="元" unit_list="P00141"/>
+	<node name="06032" title="基金份额折算日" type="dt_date"/>
+	<node name="06033" title="基金份额折算比例" type="dt_double" unit="%"/>
+	<node name="06034" title="申购赎回简称" type="dt_string"/></nodes></node>
+	<node name="_基金全部指标_基本资料_保本基金基本资料" title="保本基金基本资料" isgroup="true">
+<nodes>
+	<node name="06035" title="保本周期" type="dt_integer" unit="年"/>
+	<node name="06036" title="保本费率" type="dt_double" unit="%"/>
+	<node name="06037" title="保证人" type="dt_string"/>
+	<node name="06038" title="保证人简介" type="dt_string"/></nodes></node>
+	<node name="_基金全部指标_基本资料_QDII基本资料" title="QDII基本资料" isgroup="true">
+<nodes>
+	<node name="06039" title="投资区域" type="dt_string"/>
+	<node name="06040" title="主要投资区域说明" type="dt_string"/>
+	<node name="06041" title="境外投资顾问" type="dt_string"/>
+	<node name="06042" title="境外托管人" type="dt_string"/></nodes></node>
+	<node name="_基金全部指标_基本资料_基金管理人资料" title="基金管理人资料" isgroup="true">
+<nodes>
+	<node name="00029" title="基金管理人中文名称" type="dt_string"/>
+	<node name="00030" title="基金管理人英文名称" type="dt_string"/>
+	<node name="00031" title="基金管理人注册地址" type="dt_string"/>
+	<node name="00032" title="基金管理人办公地址" type="dt_string"/>
+	<node name="00033" title="基金管理人法人代表" type="dt_string"/>
+	<node name="00034" title="基金管理人总经理" type="dt_string"/>
+	<node name="00035" title="基金管理人电话" type="dt_string"/>
+	<node name="00036" title="基金管理人传真" type="dt_string"/>
+	<node name="00037" title="基金管理人电子邮箱" type="dt_string"/></nodes></node></nodes></node>
+	<node name="_基金全部指标_行情指标" title="行情指标" isgroup="true">
+<nodes>
+	<node name="_基金全部指标_行情指标_日行情" title="日行情" isgroup="true">
+<nodes>
+	<node name="00038" title="前收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00039" title="开盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00040" title="最高价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00041" title="最低价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00042" title="收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00043" title="均价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00044" title="涨跌" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00045" title="涨跌幅" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/></params></node>
+	<node name="00046" title="换手率" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/></params></node>
+	<node name="00047" title="成交量" type="dt_double" unit_list="P00142" unit_default="股"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/></params></node>
+	<node name="00048" title="成交额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/></params></node>
+	<node name="00049" title="振幅" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00003"/></params></node>
+	<node name="00050" title="贴水" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_tradedate" title="交易日期" param_list="P00003"/></params></node>
+	<node name="00051" title="贴水率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_tradedate" title="交易日期" param_list="P00003"/></params></node></nodes></node>
+	<node name="_基金全部指标_行情指标_周行情" title="周行情" isgroup="true">
+<nodes>
+	<node name="00052" title="周前收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00053" title="周开盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00054" title="周最高价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00055" title="周最低价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00056" title="周收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00057" title="周最高收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00058" title="周最低收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00059" title="周均价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00060" title="周涨跌" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00061" title="周涨跌幅" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00062" title="周换手率" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00063" title="周平均换手率" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00064" title="周振幅" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00065" title="周成交量" type="dt_double" unit_list="P00142" unit_default="股"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00066" title="周成交额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00067" title="周均贴水" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="00068" title="周均贴水率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="00069" title="周最高价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00070" title="周最低价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00071" title="周最高收盘价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00072" title="周最低收盘价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node></nodes></node>
+	<node name="_基金全部指标_行情指标_月行情" title="月行情" isgroup="true">
+<nodes>
+	<node name="00073" title="月前收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00074" title="月开盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00075" title="月最高价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00076" title="月最低价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00077" title="月收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00078" title="月最高收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00079" title="月最低收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00080" title="月均价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00081" title="月涨跌" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00082" title="月涨跌幅" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00083" title="月换手率" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00084" title="月平均换手率" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00085" title="月振幅" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00086" title="月成交量" type="dt_double" unit_list="P00142" unit_default="股"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00087" title="月成交额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00088" title="月均贴水" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="00089" title="月均贴水率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="00090" title="月最高价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00091" title="月最低价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00092" title="月最高收盘价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00093" title="月最低收盘价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00094" title="月相对大盘涨跌幅" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FJ" type="dt_integer" title="大盘指数选项" param_list="P00038" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_行情指标_年行情" title="年行情" isgroup="true">
+<nodes>
+	<node name="00095" title="年前收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00096" title="年开盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00097" title="年最高价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00098" title="年最低价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00099" title="年收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00100" title="年最高收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00101" title="年最低收盘价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00102" title="年均价" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00103" title="年涨跌" type="dt_double" unit="元"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00104" title="年涨跌幅" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00105" title="年换手率" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00106" title="年平均换手率" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00107" title="年振幅" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00108" title="年成交量" type="dt_double" unit_list="P00142" unit_default="股"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00109" title="年成交额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/></params></node>
+	<node name="00110" title="年均贴水" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="00111" title="年均贴水率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="00112" title="年最高价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00113" title="年最低价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00114" title="年最高收盘价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00115" title="年最低收盘价日" type="dt_date"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00116" title="年相对大盘涨跌幅" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="交易日期" param_list="P00004"/>
+		<param name="FJ" type="dt_integer" title="大盘指数选项" param_list="P00038" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_行情指标_区间行情" title="区间行情" isgroup="true">
+<nodes>
+	<node name="00117" title="区间前收盘价" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00118" title="区间开盘价" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00119" title="区间最高价" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00120" title="区间最低价" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00121" title="区间收盘价" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00122" title="区间最高收盘价" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00123" title="区间最低收盘价" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00124" title="区间成交均价" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00125" title="区间涨跌" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00126" title="区间涨跌幅" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00127" title="区间换手率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="00128" title="区间日均换手率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="00129" title="区间振幅" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="00130" title="区间成交量" type="dt_double" unit_list="P00142" unit_default="股"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="00131" title="区间成交额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="00132" title="区间均贴水" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="00133" title="区间均贴水率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="00134" title="区间最高价日" type="dt_date"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00071" default="0"/></params></node>
+	<node name="00135" title="区间最低价日" type="dt_date"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00071" default="0"/></params></node>
+	<node name="00136" title="区间最高收盘价日" type="dt_date"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00071" default="0"/></params></node>
+	<node name="00137" title="区间最低收盘价日" type="dt_date"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00071" default="0"/></params></node>
+	<node name="00138" title="相对大盘区间涨跌幅" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FJ" type="dt_integer" title="大盘指数选项" param_list="P00038" default="1"/>
+		<param name="FT" type="dt_integer" title="复权方式" param_list="P00072" default="0"/></params></node>
+	<node name="00139" title="区间成交天数" type="dt_double" unit="天"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node></nodes></node></nodes></node>
+	<node name="_基金全部指标_净值指标" title="净值指标" isgroup="true">
+<nodes>
+	<node name="00140" title="单位净值" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="00141" title="复权单位净值" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="00142" title="累计单位净值" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="00143" title="复权单位净值增长" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="00144" title="累计单位净值增长" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="00145" title="复权单位净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="04252" title="累计单位净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05638" title="现金分红净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="00146" title="复权单位净值相对大盘增长率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FJ" type="dt_integer" title="大盘指数选项" param_list="P00038" default="1"/></params></node>
+	<node name="00147" title="自成立日起复权单位净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="截止交易日期" param_list="P00001"/></params></node>
+	<node name="05639" title="同类基金区间平均收益率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="F14" type="dt_integer" title="基金分类" param_list="P00152" default="1"/></params></node>
+	<node name="05640" title="同类基金区间收益排名" type="dt_string"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="F14" type="dt_integer" title="基金分类" param_list="P00152" default="1"/></params></node>
+	<node name="05666" title="同类基金区间收益排名(百分比)" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="F14" type="dt_integer" title="基金分类" param_list="P00152" default="1"/></params></node>
+	<node name="05641" title="区间最高单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05642" title="区间最低单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05643" title="区间最高复权单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05644" title="区间最低复权单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05645" title="区间最高累计单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05646" title="区间最低累计单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="_基金全部指标_净值指标_报告期净值表现" title="报告期净值表现" isgroup="true">
+<nodes>
+	<node name="00148" title="报告期净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="报告期净值数据项" param_list="P00058" default="1"/></params></node>
+	<node name="00149" title="报告期净值增长率标准差" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="报告期净值数据项" param_list="P00058" default="1"/></params></node>
+	<node name="00150" title="报告期业绩比较基准增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="报告期净值数据项" param_list="P00058" default="1"/></params></node>
+	<node name="00151" title="报告期业绩比较基准增长率标准差" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="报告期净值数据项" param_list="P00058" default="1"/></params></node>
+	<node name="00152" title="报告期净值增长率减基准增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="报告期净值数据项" param_list="P00058" default="1"/></params></node>
+	<node name="00153" title="报告期净值增长率标准差减基准标准差" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="报告期净值数据项" param_list="P00058" default="1"/></params></node></nodes></node></nodes></node>
+	<node name="_基金全部指标_货币市场基金收益" title="货币市场基金收益" isgroup="true">
+<nodes>
+	<node name="00154" title="万份基金单位收益" type="dt_double" unit="元" format=",%.05f"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00002"/></params></node>
+	<node name="00155" title="7日年化收益率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00002"/></params></node>
+	<node name="00156" title="区间万份基金单位收益均值" type="dt_double" unit="元" format=",%.05f"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00010"/></params></node>
+	<node name="00157" title="区间7日年化收益率均值" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00010"/></params></node>
+	<node name="00158" title="区间万份基金单位收益方差" type="dt_double" unit="元" format=",%.05f"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00010"/></params></node>
+	<node name="00159" title="区间7日年化收益率方差" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00010"/></params></node></nodes></node>
+	<node name="_基金全部指标_绩效评估" title="绩效评估" isgroup="true">
+<nodes>
+	<node name="_基金全部指标_基金评级" title="基金评级" isgroup="true">
+<nodes>
+	<node name="04950" title="市场综合评级" type="dt_double"><params>
+		<param name="FD" type="dt_year" title="年度" default="2007"/>
+		<param name="F2" type="dt_integer" title="月份" param_list="P00124" default="1"/></params></node>
+	<node name="04336" title="晨星3年评级" type="dt_double"><params>
+		<param name="FD" type="dt_year" title="年度" default="2007"/>
+		<param name="F2" type="dt_integer" title="月份" param_list="P00124" default="1"/></params></node>
+	<node name="04951" title="晨星5年评级" type="dt_double"><params>
+		<param name="FD" type="dt_year" title="年度" default="2007"/>
+		<param name="F2" type="dt_integer" title="月份" param_list="P00124" default="1"/></params></node>
+	<node name="00407" title="银河3年评级" type="dt_double"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="06105" title="银河4年评级" type="dt_double"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="04952" title="银河5年评级" type="dt_double"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="06106" title="上海证券3年评级" type="dt_double"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="06107" title="上海证券5年评级" type="dt_double"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="06108" title="招商证券评级" type="dt_double"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="06109" title="海通证券评级" type="dt_double"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="06110" title="济安金信综合评级" type="dt_double"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="00416" title="理柏3年评级(总回报)" type="dt_double"><params>
+		<param name="FD" type="dt_year" title="年度" default="2007"/>
+		<param name="F2" type="dt_integer" title="月份" param_list="P00124" default="1"/></params></node>
+	<node name="00417" title="理柏3年评级(保本能力)" type="dt_double"><params>
+		<param name="FD" type="dt_year" title="年度" default="2007"/>
+		<param name="F2" type="dt_integer" title="月份" param_list="P00124" default="1"/></params></node>
+	<node name="00418" title="理柏3年评级(稳定回报)" type="dt_double"><params>
+		<param name="FD" type="dt_year" title="年度" default="2007"/>
+		<param name="F2" type="dt_integer" title="月份" param_list="P00124" default="1"/></params></node>
+	<node name="00419" title="理柏3年评级(费用)" type="dt_double"><params>
+		<param name="FD" type="dt_year" title="年度" default="2007"/>
+		<param name="F2" type="dt_integer" title="月份" param_list="P00124" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_风险收益指标" title="风险收益指标" isgroup="true">
+<nodes>
+	<node name="04343" title="Treynor" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FL" type="dt_integer" title="无风险收益率" param_list="P00111" default="1"/>
+		<param name="FI" type="dt_string" title="标的指数" param_list="P00060" default="000001.SH"/></params></node>
+	<node name="04344" title="Jensen" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FL" type="dt_integer" title="无风险收益率" param_list="P00111" default="1"/>
+		<param name="FI" type="dt_string" title="标的指数" param_list="P00060" default="000001.SH"/></params></node>
+	<node name="04345" title="平均收益率" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/></params></node>
+	<node name="04346" title="年化收益率" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/></params></node>
+	<node name="05121" title="几何平均收益率" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/></params></node>
+	<node name="05122" title="平均风险收益率" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FL" type="dt_integer" title="无风险收益率" param_list="P00111" default="1"/></params></node>
+	<node name="04347" title="几何平均风险收益率" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FL" type="dt_integer" title="无风险收益率" param_list="P00111" default="1"/></params></node>
+	<node name="04348" title="收益标准差" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/></params></node>
+	<node name="04349" title="年化波动率" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/></params></node>
+	<node name="04350" title="Beta" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FI" type="dt_string" title="标的指数" param_list="P00060" default="000001.SH"/></params></node>
+	<node name="04351" title="可决系数" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FI" type="dt_string" title="标的指数" param_list="P00060" default="000001.SH"/></params></node>
+	<node name="04352" title="非系统风险" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FI" type="dt_string" title="标的指数" param_list="P00060" default="000001.SH"/></params></node>
+	<node name="04341" title="Alpha" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FI" type="dt_string" title="标的指数" param_list="P00060" default="000001.SH"/></params></node>
+	<node name="04342" title="Sharpe" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FL" type="dt_integer" title="无风险收益率" param_list="P00111" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_选时选股能力" title="选时选股能力" isgroup="true">
+<nodes>
+	<node name="04353" title="选时能力" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FL" type="dt_integer" title="无风险收益率" param_list="P00111" default="1"/>
+		<param name="FI" type="dt_string" title="标的指数" param_list="P00060" default="000001.SH"/></params></node>
+	<node name="04354" title="选股能力" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FL" type="dt_integer" title="无风险收益率" param_list="P00111" default="1"/>
+		<param name="FI" type="dt_string" title="标的指数" param_list="P00060" default="000001.SH"/></params></node>
+	<node name="04355" title="跟踪误差" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FL" type="dt_integer" title="无风险收益率" param_list="P00111" default="1"/>
+		<param name="FI" type="dt_string" title="标的指数" param_list="P00060" default="000001.SH"/></params></node>
+	<node name="04356" title="信息比率" type="dt_double"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FT" type="dt_integer" title="计算周期" param_list="P00092" default="2"/>
+		<param name="FJ" type="dt_integer" title="收益率计算方法" param_list="P00107" default="1"/>
+		<param name="FL" type="dt_integer" title="无风险收益率" param_list="P00111" default="1"/>
+		<param name="FI" type="dt_string" title="标的指数" param_list="P00060" default="000001.SH"/></params></node></nodes></node></nodes></node>
+	<node name="_基金全部指标_分红指标" title="分红指标" isgroup="true">
+<nodes>
+	<node name="00160" title="单位年度分红" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_year" title="年度"/></params></node>
+	<node name="00161" title="年度分红总额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_year" title="年度"/></params></node>
+	<node name="00162" title="年度分红次数" type="dt_integer"><params>
+		<param name="FD" type="dt_year" title="年度"/></params></node>
+	<node name="00163" title="累计分红总额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_tradedate" title="交易日期" param_list="P00003"/></params></node>
+	<node name="00164" title="累计分红次数" type="dt_integer"><params>
+		<param name="FD" type="dt_tradedate" title="交易日期" param_list="P00003"/></params></node></nodes></node>
+	<node name="_基金全部指标_基金份额" title="基金份额" isgroup="true">
+<nodes>
+	<node name="00165" title="基金份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="00166" title="基金份额变化" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FD1" type="dt_date" title="起始日期" param_list="P00001"/>
+		<param name="FD2" type="dt_date" title="截至日期" param_list="P00001"/></params></node>
+	<node name="00167" title="基金份额变化率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_date" title="起始日期" param_list="P00001"/>
+		<param name="FD2" type="dt_date" title="截至日期" param_list="P00001"/></params></node>
+	<node name="00168" title="报告期总申购份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="00169" title="报告期总赎回份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="00170" title="报告期申购赎回净额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="00171" title="单季度总申购份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00172" title="单季度总赎回份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00173" title="单季度申购赎回净额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00174" title="场内流通份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FD0" type="dt_date" title="交易日期" param_list="P00001"/></params></node></nodes></node>
+	<node name="_基金全部指标_持有人结构" title="持有人结构" isgroup="true">
+<nodes>
+	<node name="00177" title="基金份额持有人户数" type="dt_integer"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="00178" title="平均每户持有基金份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="00179" title="机构投资者持有份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="00180" title="机构投资者持有比例" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04255" title="管理人员工持有份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04256" title="管理人员工持有比例" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="00181" title="个人投资者持有份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="00182" title="个人投资者持有比例" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="00183" title="第N名持有人名称(封闭式)" type="dt_string"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/>
+		<param name="FS" type="dt_integer" title="排名" param_list="P00062" default="1"/></params></node>
+	<node name="00184" title="第N名持有人持有份额(封闭式)" type="dt_integer" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/>
+		<param name="FS" type="dt_integer" title="排名" param_list="P00063" default="1"/></params></node>
+	<node name="00185" title="第N名持有人持有比例(封闭式)" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/>
+		<param name="FS" type="dt_integer" title="排名" param_list="P00063" default="1"/></params></node>
+	<node name="00186" title="前十大持有人持有比例合计(封闭式)" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="00187" title="前十大持有人持有份额合计(封闭式)" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合" title="投资组合" isgroup="true">
+<nodes>
+	<node name="_基金全部指标_投资组合_资产配置" title="资产配置" isgroup="true">
+<nodes>
+	<node name="00188" title="基金资产总值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00189" title="基金资产净值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00190" title="股票投资市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00191" title="债券投资市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06111" title="基金投资市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00192" title="权证投资市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00193" title="银行存款" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00194" title="其他资产" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00195" title="股票市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00196" title="债券市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06112" title="基金市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00197" title="权证市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00198" title="银行存款占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00199" title="其他资产占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00200" title="股票市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00201" title="债券市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06113" title="基金市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00202" title="权证市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00203" title="银行存款占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00204" title="其他资产占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00205" title="基金净值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06050" title="股票市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06051" title="债券市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06114" title="基金市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06052" title="权证市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06053" title="银行存款市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06054" title="其他资产市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06055" title="基金资产净值变动" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06056" title="基金资产净值变动率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06057" title="基金资产总值变动" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06058" title="基金资产总值变动率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06059" title="股票市值占基金资产净值比例增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06060" title="债券市值占基金资产净值比例增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06115" title="基金市值占基金资产净值比例增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06061" title="权证市值占基金资产净值比例增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06062" title="银行存款市值占基金资产净值比例增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06063" title="其他资产市值占基金资产净值比例增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06064" title="所属基金公司资产净值合计" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06065" title="所属基金公司资产净值合计排名" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06066" title="所属基金公司资产净值合计变动率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合_行业分布" title="行业分布" isgroup="true">
+<nodes>
+	<node name="00206" title="分行业投资市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="F02" type="dt_integer" title="行业类别" param_list="P00120" default="13"/></params></node>
+	<node name="00207" title="分行业市值占股票投资市值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="行业类别" param_list="P00120" default="13"/></params></node>
+	<node name="00208" title="分行业市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="行业类别" param_list="P00120" default="13"/></params></node>
+	<node name="00209" title="分行业市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="行业类别" param_list="P00120" default="13"/></params></node>
+	<node name="06067" title="分行业市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="行业类别" param_list="P00120" default="13"/></params></node>
+	<node name="06068" title="分行业市值占基金资产净值比增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="行业类别" param_list="P00120" default="13"/></params></node>
+	<node name="06069" title="重仓行业名称" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06070" title="重仓行业代码" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06071" title="重仓行业市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06072" title="重仓行业市值占股票投资市值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06073" title="重仓行业市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06074" title="重仓行业市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06075" title="所属基金公司重仓行业市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="行业类别" param_list="P00120" default="13"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合_持股明细" title="持股明细" isgroup="true">
+<nodes>
+	<node name="00210" title="报告期末持有股票个数(中报、年报)" type="dt_integer"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00211" title="重仓股股票名称" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="00212" title="重仓股股票代码" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="00213" title="重仓股持股数量" type="dt_double" unit="股"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="00214" title="重仓股持股市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="00215" title="重仓股市值占股票投资市值比" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="00216" title="重仓股市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="00217" title="重仓股市值占基金资产总值比" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="00218" title="前N名重仓股票市值合计占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="F04" type="dt_integer" title="名次" default="5"/></params></node>
+	<node name="06076" title="重仓股持仓变动" type="dt_integer" unit="股"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06077" title="重仓股持仓占流通股比例" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06078" title="重仓股涨跌幅" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="06079" title="重仓股票持有基金数" type="dt_integer" unit="只"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合_券种组合" title="券种组合" isgroup="true">
+<nodes>
+	<node name="00219" title="国债市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00220" title="金融债市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00221" title="企业债市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00222" title="可转债市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00223" title="央行票据市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00224" title="国债市值占债券投资市值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00225" title="金融债市值占债券投资市值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00226" title="企业债市值占债券投资市值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00227" title="可转债市值占债券投资市值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00228" title="央行票据市值占债券投资市值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00229" title="国债市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00230" title="金融债市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00231" title="企业债市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00232" title="可转债市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00233" title="央行票据市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00234" title="国债市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00235" title="金融债市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00236" title="企业债市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00237" title="可转债市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00238" title="央行票据市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06116" title="国债市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06117" title="金融债市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06118" title="企业债市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06119" title="可转债市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06120" title="央行票据市值增长率" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06121" title="国债市值占基金资产净值比例增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06122" title="金融债市值占基金资产净值比例增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06123" title="企业债市值占基金资产净值比例增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06124" title="可转债市值占基金资产净值比例增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="06125" title="央行票据市值占基金资产净值比例增长" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合_持债明细" title="持债明细" isgroup="true">
+<nodes>
+	<node name="00239" title="重仓债券名称" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00100" default="1"/></params></node>
+	<node name="06126" title="重仓债券代码" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00100" default="1"/></params></node>
+	<node name="06127" title="重仓债券持仓数量" type="dt_integer" unit="张"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00100" default="1"/></params></node>
+	<node name="00240" title="重仓债券持有市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00100" default="1"/></params></node>
+	<node name="06128" title="重仓债券持仓变动" type="dt_integer" unit="张"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00100" default="1"/></params></node>
+	<node name="00241" title="重仓债券市值占债券投资市值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00100" default="1"/></params></node>
+	<node name="00242" title="重仓债券市值占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00100" default="1"/></params></node>
+	<node name="00243" title="重仓债券市值占基金资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00100" default="1"/></params></node>
+	<node name="00244" title="前N名重仓债券市值合计占债券投资市值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="F04" type="dt_integer" title="名次" default="5"/></params></node>
+	<node name="06129" title="前N名重仓债券市值合计占基金资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="F04" type="dt_integer" title="名次" default="5"/></params></node>
+	<node name="06130" title="重仓债券涨跌幅" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00100" default="1"/>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FJ" type="dt_integer" title="债券价格类型" param_list="P00128" default="2"/></params></node>
+	<node name="06131" title="重仓债券持有基金数" type="dt_integer" unit="只"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00100" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合_货币市场基金" title="货币市场基金" isgroup="true">
+<nodes>
+	<node name="_基金全部指标_投资组合_货币市场基金_报告期末基金资产组合" title="报告期末基金资产组合" isgroup="true">
+<nodes>
+	<node name="00245" title="债券投资金额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00246" title="买入返售证券金额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00247" title="银行存款和清算备付金" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00248" title="其他资产" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00249" title="债券投资占基金资产总值的比例" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00250" title="买入返售证券占基金资产总值的比例" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00251" title="银行存款和清算备付金合计占基金资产总值的比例" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00252" title="其他资产占基金资产总值的比例" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合_货币市场基金_报告期债券回购融资情况" title="报告期债券回购融资情况" isgroup="true">
+<nodes>
+	<node name="00253" title="报告期内债券回购融资余额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00254" title="报告期末债券回购融资余额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00255" title="报告期内债券回购融资余额占基金资产净值比例" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00256" title="报告期末债券回购融资余额占基金资产净值比例" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合_货币市场基金_基金投资组合平均剩余期限" title="基金投资组合平均剩余期限" isgroup="true">
+<nodes>
+	<node name="00257" title="报告期末投资组合平均剩余期限" type="dt_double" unit="天"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00258" title="报告期内投资组合平均剩余期限最高值" type="dt_double" unit="天"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00259" title="报告期内投资组合平均剩余期限最低值" type="dt_double" unit="天"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合_货币市场基金_基金资产净值的偏离" title="基金资产净值的偏离" isgroup="true">
+<nodes>
+	<node name="00260" title="报告期内偏离度的绝对值在0.25%(含)-0.5%间的次数" type="dt_double"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00261" title="报告期内偏离度的最高值" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00262" title="报告期内偏离度的最低值" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="00263" title="报告期内每个工作日偏离度的绝对值的简单平均值" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node></nodes></node>
+	<node name="00264" title="各期限资产占基金资产净值比例" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_integer" title="组合剩余期限" param_list="P00140" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合_QDII基金" title="QDII基金" isgroup="true">
+<nodes>
+	<node name="_基金全部指标_投资组合_QDII基金_区域配置" title="区域配置" isgroup="true">
+<nodes>
+	<node name="05647" title="国家/地区投资市值(QDII)" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FCOUNTRY" type="dt_integer" title="国家" param_list="P00149" default="1"/></params></node>
+	<node name="05648" title="国家/地区投资市值占基金资产净值比例(QDII)" type="dt_double"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FCOUNTRY" type="dt_integer" title="国家" param_list="P00149" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合_QDII基金_行业分布" title="行业分布" isgroup="true">
+<nodes>
+	<node name="05649" title="重仓行业名称(QDII)" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="05650" title="重仓行业投资市值(QDII)" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="05651" title="重仓行业投资市值占基金资产净值比例(QDII)" type="dt_double"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="05652" title="分行业投资市值(QDII)" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="行业类别" param_list="P00178" default="1"/></params></node>
+	<node name="05653" title="分行业投资市值占基金资产净值比例(QDII)" type="dt_double"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="行业类别" param_list="P00178" default="1"/></params></node></nodes></node>
+	<node name="_基金全部指标_投资组合_QDII基金_持仓明细" title="持仓明细" isgroup="true">
+<nodes>
+	<node name="05654" title="重仓证券名称(QDII)" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="05655" title="重仓证券代码(QDII)" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="05656" title="重仓证券类型(QDII)" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="05657" title="重仓持仓数量(QDII)" type="dt_double"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="05658" title="重仓持仓市值(QDII)" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="05659" title="重仓持仓市值变化(QDII)" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="05660" title="重仓持仓市值占基金资产净值比例(QDII)" type="dt_double"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="05661" title="重仓证券上市地点(QDII)" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="05662" title="重仓证券所属国家(QDII)" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node></nodes></node></nodes></node></nodes></node>
+	<node name="_基金全部指标_财务指标(新准则)" title="财务指标(新准则)" isgroup="true">
+<nodes>
+	<node name="04261" title="报告期利润" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04262" title="报告期利润扣减当期公允价值变动损益后的净额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04263" title="报告期加权平均份额利润" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04264" title="报告期末可供分配基金利润" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04265" title="报告期末可供分配基金份额利润" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04266" title="基金加权平均净值利润率" type="dt_double" unit="%"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="_基金全部指标_财务指标(新准则)_季度财务指标" title="季度财务指标" isgroup="true">
+<nodes>
+	<node name="04267" title="季度基金利润" type="dt_double" unit="元"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="4"/></params></node>
+	<node name="04268" title="本期利润扣减公允价值变动损益后的净额" type="dt_double" unit="元"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="4"/></params></node>
+	<node name="04269" title="加权平均基金份额本期利润" type="dt_double" unit="元"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="4"/></params></node>
+	<node name="04270" title="报告期期末基金资产净值" type="dt_double" unit="元"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="4"/></params></node>
+	<node name="04271" title="报告期期末基金份额净值" type="dt_double" unit="元"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="4"/></params></node></nodes></node></nodes></node>
+	<node name="_基金全部指标_财务报表(新准则)" title="财务报表(新准则)" isgroup="true">
+<nodes>
+	<node name="_基金全部指标_财务报表(新准则)_基金净值变动表" title="基金净值变动表" isgroup="true">
+<nodes>
+	<node name="04272" title="期初所有者权益(基金净值)" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04273" title="本期经营活动产生的基金净值变动数(本期净利润)" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04274" title="本期基金份额交易产生的基金净值变动数" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04275" title="基金申购款" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04276" title="基金赎回款" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04277" title="本期向基金份额持有人分配利润产生的基金净值变动数" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04278" title="期末所有者权益(基金净值)" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node></nodes></node>
+	<node name="_基金全部指标_财务报表(新准则)_基金利润表" title="基金利润表" isgroup="true">
+<nodes>
+	<node name="04279" title="收入" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04280" title="利息收入" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04281" title="存款利息收入" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04282" title="债券利息收入" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04283" title="买入返售金融资产收入" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04284" title="资产支持证券利息收入" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04285" title="投资收益" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04286" title="股票投资收益" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04287" title="债券投资收益" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04288" title="资产支持证券投资收益" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04289" title="衍生工具收益" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04290" title="股利收益" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04291" title="公允价值变动收益" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04292" title="其他收入" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04293" title="费用" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04294" title="管理人报酬" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04295" title="托管费" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04296" title="销售服务费" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04297" title="交易费用" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04298" title="利息支出" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04299" title="卖出回购金融资产支出" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04300" title="其他费用" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04301" title="利润总额" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node></nodes></node>
+	<node name="_基金全部指标_财务报表(新准则)_基金资产负债表" title="基金资产负债表" isgroup="true">
+<nodes>
+	<node name="04302" title="银行存款" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04303" title="结算备付金" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04304" title="存出保证金" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04305" title="交易性金融资产" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04306" title="股票投资" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04307" title="债券投资" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04308" title="资产支持证券投资" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04309" title="衍生金融资产" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04310" title="买入返售金融资产" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04311" title="应收证券清算款" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04312" title="应收利息" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04313" title="应收股利" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04314" title="应收申购款" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04315" title="其他资产" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04316" title="资产合计" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04317" title="短期借款" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04318" title="交易性金融负债" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04319" title="衍生金融负债" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04320" title="卖出回购金融资产款" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04321" title="应付证券清算款" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04322" title="应付赎回款" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04323" title="应付管理人报酬" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04324" title="应付托管费" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04325" title="应付销售服务费" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04326" title="应付交易费用" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04327" title="应付税费" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04328" title="应付利息" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04329" title="应付利润" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04330" title="其他负债" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04331" title="负债合计" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04332" title="实收基金" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04333" title="未分配利润" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04334" title="所有者权益合计" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="04335" title="负债及持有人权益合计" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node></nodes></node></nodes></node>
+	<node name="_基金全部指标_券商佣金" title="券商佣金" isgroup="true">
+<nodes>
+	<node name="00363" title="交易佣金(合计值)" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="00364" title="交易佣金(分券商明细)" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FJ" type="dt_string" title="机构" param_list="P00090" default="中信证券股份有限公司"/></params></node></nodes></node>
+	<node name="_基金全部指标_发行指标" title="发行指标" isgroup="true">
+<nodes>
+	<node name="00365" title="发行日期" type="dt_date"/>
+	<node name="00366" title="发行方式" type="dt_string"/>
+	<node name="00367" title="发行对象" type="dt_string"/>
+	<node name="00368" title="发行总份额" type="dt_double" unit="份"/>
+	<node name="00369" title="上市基金发行价格" type="dt_double" unit="元"/>
+	<node name="00021" title="基金发起人" type="dt_string"/>
+	<node name="00370" title="基金主承销商" type="dt_string"/>
+	<node name="00371" title="基金发行协调人" type="dt_string"/>
+	<node name="00372" title="基金销售代理人" type="dt_string"/>
+	<node name="00373" title="基金上市推荐人" type="dt_string"/>
+	<node name="00374" title="基金注册与过户登记人" type="dt_string"/>
+	<node name="_基金全部指标_发行指标_开放式基金发行" title="开放式基金发行" isgroup="true">
+<nodes>
+	<node name="00375" title="开放式基金认购户数" type="dt_integer" unit="户"/>
+	<node name="00376" title="发行封闭期" type="dt_integer" unit="月"/>
+	<node name="00377" title="成立条件-净认购份额" type="dt_double" unit="份"/>
+	<node name="00378" title="成立条件-认购户数" type="dt_integer" unit="户"/>
+	<node name="00379" title="募集份额上限" type="dt_double" unit="份"/>
+	<node name="00380" title="个人投资者认购方式" type="dt_string"/>
+	<node name="00381" title="个人投资者认购金额下限" type="dt_double" unit="元"/>
+	<node name="00382" title="个人投资者认购金额上限" type="dt_double" unit="元"/>
+	<node name="00383" title="个人投资者认购起始日" type="dt_date"/>
+	<node name="00384" title="个人投资者认购终止日" type="dt_date"/>
+	<node name="00385" title="封闭期机构投资者认购方式" type="dt_string"/>
+	<node name="00386" title="机构投资者设立认购起始日" type="dt_date"/>
+	<node name="00387" title="机构投资者设立认购终止日" type="dt_date"/>
+	<node name="00388" title="封闭期机构投资者认购下限" type="dt_double" unit="元"/>
+	<node name="00389" title="封闭期机构投资者认购上限" type="dt_double" unit="元"/></nodes></node>
+	<node name="_基金全部指标_发行指标_开放式基金申购赎回" title="开放式基金申购赎回" isgroup="true">
+<nodes>
+	<node name="00390" title="申购起始日" type="dt_date"/>
+	<node name="00391" title="申购金额下限" type="dt_double" unit="元"/>
+	<node name="00392" title="申购费率上限" type="dt_double"/>
+	<node name="00028" title="赎回起始日" type="dt_date"/>
+	<node name="00393" title="单笔赎回份额下限" type="dt_double" unit="份"/>
+	<node name="00394" title="赎回费率上限" type="dt_double"/></nodes></node>
+	<node name="_基金全部指标_发行指标_封闭式基金发行" title="封闭式基金发行" isgroup="true">
+<nodes>
+	<node name="00395" title="封闭式基金认购数量" type="dt_double"/>
+	<node name="00396" title="封闭式基金超额认购倍数" type="dt_double"/>
+	<node name="00397" title="封闭式基金中签率" type="dt_double" unit="%"/>
+	<node name="00398" title="封闭式基金上市日期" type="dt_date"/>
+	<node name="00399" title="基金上市首日涨跌幅" type="dt_double" unit="%"/>
+	<node name="00400" title="基金上市首日换手率" type="dt_double" unit="%"/>
+	<node name="00401" title="基金上市后N日涨跌幅" type="dt_double" unit="%"><params>
+		<param name="FN" type="dt_integer" title="天数" default="5"/></params></node>
+	<node name="00402" title="基金上市后N日换手率" type="dt_double" unit="%"><params>
+		<param name="FN" type="dt_integer" title="天数" default="5"/></params></node></nodes></node></nodes></node></nodes></node>
+	<node name="_券商集合理财全部指标" title="券商集合理财全部指标" isgroup="true">
+<nodes>
+	<node name="_券商集合理财全部指标_基本资料" title="基本资料" isgroup="true">
+<nodes>
+	<node name="05169" title="产品简称" type="dt_string"/>
+	<node name="05170" title="产品同花顺代码" type="dt_string"/>
+	<node name="05171" title="产品全称" type="dt_string"/>
+	<node name="05172" title="投资类型" type="dt_string"/>
+	<node name="05173" title="投资目标" type="dt_string"/>
+	<node name="05174" title="投资范围" type="dt_string"/>
+	<node name="05175" title="业绩比较基准" type="dt_string"/>
+	<node name="05176" title="面值" type="dt_double" unit="元"/>
+	<node name="05177" title="管理费率" type="dt_double" unit="%"/>
+	<node name="05178" title="托管费率" type="dt_double" unit="%"/>
+	<node name="05179" title="最高申购费率" type="dt_double" unit="%"/>
+	<node name="05180" title="最高赎回费率" type="dt_double" unit="%"/>
+	<node name="05181" title="投资经理(现任)" type="dt_string"/>
+	<node name="05182" title="投资经理(历任)" type="dt_string"/>
+	<node name="05183" title="管理人" type="dt_string"/>
+	<node name="05184" title="托管人" type="dt_string"/>
+	<node name="05185" title="存续期" type="dt_integer" unit="年"/>
+	<node name="05186" title="剩余存续期" type="dt_integer" unit="天"/>
+	<node name="05187" title="成立日期" type="dt_date"/>
+	<node name="05188" title="到期日期" type="dt_date"/>
+	<node name="05189" title="计划类型" type="dt_string"/>
+	<node name="05190" title="是否提取业绩报酬" type="dt_string"/>
+	<node name="05191" title="业绩报酬提取方法" type="dt_string"/>
+	<node name="_券商集合理财全部指标_基本资料_发行指标" title="发行指标" isgroup="true">
+<nodes>
+	<node name="05970" title="销售起始日期" type="dt_date"/>
+	<node name="05971" title="销售截止日期" type="dt_date"/>
+	<node name="05972" title="推广期规模上限" type="dt_double" unit="亿份"/>
+	<node name="05973" title="实际发行规模" type="dt_double" unit="亿份"/>
+	<node name="05974" title="有效认购户数" type="dt_integer"/>
+	<node name="05975" title="最低参与金额" type="dt_double" unit="元"/>
+	<node name="05976" title="追加认购最低金额" type="dt_double" unit="元"/>
+	<node name="05977" title="管理人参与金额" type="dt_double" unit="万元"/>
+	<node name="05978" title="开放日说明" type="dt_string"/>
+	<node name="05979" title="封闭期说明" type="dt_string"/></nodes></node></nodes></node>
+	<node name="_券商集合理财全部指标_净值指标" title="净值指标" isgroup="true">
+<nodes>
+	<node name="05192" title="单位净值" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="05193" title="复权单位净值" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="05194" title="累计单位净值" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="05195" title="复权单位净值增长" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05196" title="累计单位净值增长" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05197" title="复权单位净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05198" title="累计单位净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05199" title="现金分红净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05200" title="复权单位净值相对大盘增长率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="FJ" type="dt_integer" title="大盘指数选项" param_list="P00038" default="1"/></params></node>
+	<node name="05201" title="自成立日起复权单位净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="截止交易日期" param_list="P00001"/></params></node>
+	<node name="05202" title="同类产品区间平均收益" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="F14" type="dt_integer" title="产品分类" param_list="P00182" default="1"/></params></node>
+	<node name="05203" title="同类产品区间收益排名" type="dt_string"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/>
+		<param name="F14" type="dt_integer" title="产品分类" param_list="P00182" default="1"/></params></node>
+	<node name="05204" title="区间最高单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05205" title="区间最低单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05206" title="区间最高复权单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05207" title="区间最低复权单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05208" title="区间最高累计单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05209" title="区间最低累计单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node></nodes></node>
+	<node name="_券商集合理财全部指标_产品份额" title="产品份额" isgroup="true">
+<nodes>
+	<node name="06007" title="产品份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="06008" title="产品份额变化" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FD1" type="dt_date" title="起始日期" param_list="P00001"/>
+		<param name="FD2" type="dt_date" title="截至日期" param_list="P00001"/></params></node>
+	<node name="06009" title="产品份额变化率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_date" title="起始日期" param_list="P00001"/>
+		<param name="FD2" type="dt_date" title="截至日期" param_list="P00001"/></params></node>
+	<node name="06010" title="报告期总申购份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="06011" title="报告期总赎回份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="06012" title="报告期申购赎回净额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00085" default="6"/></params></node>
+	<node name="06013" title="单季度总申购份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="06014" title="单季度总赎回份额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node>
+	<node name="06015" title="单季度申购赎回净额" type="dt_double" unit="份" unit_list="P00141"><params>
+		<param name="FY" type="dt_year" title="年度"/>
+		<param name="FJ" type="dt_integer" title="基金报告期" param_list="P00084" default="1"/></params></node></nodes></node>
+	<node name="_券商集合理财全部指标_投资组合" title="投资组合" isgroup="true">
+<nodes>
+	<node name="_券商集合理财全部指标_投资组合_资产配置" title="资产配置" isgroup="true">
+<nodes>
+	<node name="05980" title="资产总值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05981" title="资产净值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05982" title="股票投资市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05983" title="债券投资市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05984" title="基金投资市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05985" title="银行存款" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05986" title="其他资产" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05987" title="股票市值占资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05988" title="债券市值占资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05989" title="基金市值占资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05990" title="银行存款占资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05991" title="其他资产占资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05992" title="股票市值占资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05993" title="债券市值占资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05994" title="基金市值占资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05995" title="银行存款占资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05996" title="其他资产占资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05997" title="资产净值占资产总值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node></nodes></node>
+	<node name="_券商集合理财全部指标_投资组合_持股明细" title="持股明细" isgroup="true">
+<nodes>
+	<node name="05998" title="报告期末持有股票个数" type="dt_integer"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/></params></node>
+	<node name="05999" title="重仓股股票名称" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06000" title="重仓股股票代码" type="dt_string"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06001" title="重仓股持股数量" type="dt_double" unit="股"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06002" title="重仓股持股市值" type="dt_double" unit="元" unit_list="P00141"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06003" title="重仓股市值占股票投资市值比" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06004" title="重仓股市值占资产净值比" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06005" title="重仓股市值占资产总值比" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="FS" type="dt_integer" title="名次" param_list="P00099" default="1"/></params></node>
+	<node name="06006" title="前N名重仓股票市值合计占资产净值比" type="dt_double" unit="%"><params>
+		<param name="FD" type="dt_YQ" title="报告期" param_list="P00007"/>
+		<param name="F04" type="dt_integer" title="名次" default="5"/></params></node></nodes></node></nodes></node></nodes></node>
+	<node name="_阳光私募全部指标" title="阳光私募全部指标" isgroup="true">
+<nodes>
+	<node name="_阳光私募全部指标_基本资料" title="基本资料" isgroup="true">
+<nodes>
+	<node name="05226" title="产品简称" type="dt_string"/>
+	<node name="05227" title="产品同花顺代码" type="dt_string"/>
+	<node name="05228" title="产品全称" type="dt_string"/>
+	<node name="05181" title="投资经理(现任)" type="dt_string"/>
+	<node name="05229" title="投资顾问" type="dt_string"/>
+	<node name="05230" title="托管人" type="dt_string"/>
+	<node name="05231" title="存续期(年)" type="dt_integer" unit="年"/>
+	<node name="05232" title="剩余存续期(天)" type="dt_integer" unit="天"/>
+	<node name="05233" title="成立日期" type="dt_date"/>
+	<node name="05234" title="到期日期" type="dt_date"/>
+	<node name="05235" title="是否结构化产品" type="dt_string"/>
+	<node name="06098" title="起点金额" type="dt_double" unit="万元"/>
+	<node name="06104" title="最低追加金额" type="dt_double" unit="万元"/>
+	<node name="06099" title="认购费率说明" type="dt_string"/>
+	<node name="06100" title="赎回费率说明" type="dt_string"/>
+	<node name="06101" title="浮动管理费率" type="dt_double" unit="%"/>
+	<node name="06102" title="开放期说明" type="dt_string"/>
+	<node name="06103" title="封闭期说明" type="dt_string"/>
+	<node name="05236" title="受托人" type="dt_string"/>
+	<node name="05237" title="证券经纪人" type="dt_string"/></nodes></node>
+	<node name="_阳光私募全部指标_净值指标" title="净值指标" isgroup="true">
+<nodes>
+	<node name="05192" title="单位净值" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="05193" title="复权单位净值" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="05194" title="累计单位净值" type="dt_double" unit="元"><params>
+		<param name="FD" type="dt_date" title="交易日期" param_list="P00001"/></params></node>
+	<node name="05195" title="复权单位净值增长" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05196" title="累计单位净值增长" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05197" title="复权单位净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05198" title="累计单位净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05199" title="现金分红净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05201" title="自成立日起复权单位净值增长率" type="dt_double" unit="%"><params>
+		<param name="FD0" type="dt_tradedate" title="截止交易日期" param_list="P00001"/></params></node>
+	<node name="05969" title="同类产品区间收益排名" type="dt_string"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05204" title="区间最高单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05205" title="区间最低单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05206" title="区间最高复权单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05207" title="区间最低复权单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05208" title="区间最高累计单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node>
+	<node name="05209" title="区间最低累计单位净值" type="dt_double" unit="元"><params>
+		<param name="FD1" type="dt_tradedate" title="起始交易日期" param_list="P00011"/>
+		<param name="FD2" type="dt_tradedate" title="截止交易日期" param_list="P00009"/></params></node></nodes></node></nodes></node></nodes></node>

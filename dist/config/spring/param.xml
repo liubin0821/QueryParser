@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<bean id="Param" class="com.myhexin.qparser.Param" init-method="initParams"
+		parent="Param_FilePath" lazy-init="false">
+		<!-- flags to turn on/off printing of debug messages -->
+		<property name="DEBUG" value="true"></property>
+		<property name="DEBUG_DATE" value="false"></property>
+		<property name="DEBUG_NUM" value="false"></property>
+		<property name="DEBUG_DATEINFO" value="false"></property>
+		<property name="DEBUG_WASTE" value="false"></property>
+		<property name="DEBUG_SUGGEST" value="true"></property>
+		
+		<property name="DEBUG_MERGE" value="false"></property>
+
+		<property name="ONTO_PROD_SCORE" value="0.4"></property>
+		<property name="ONTO_UNPROD_SCORE" value="0.32"></property>
+		<property name="ONTO_SPARQL_LIMIT" value="100000"></property>
+
+		<!-- whether parse query from iFind. At least one of them is true -->
+		<property name="FOR_IFIND_CLIENT" value="false"></property>
+		<property name="FOR_IFIND_SERVER" value="true"></property>
+
+		<!-- what kind of query is supported. At least one of them is true -->
+		<property name="SUPPORT_FUND" value="true"></property>
+		<property name="SUPPORT_STOCK" value="true"></property>
+
+		<!-- whether use entity identification -->
+		<property name="USE_ENTITY_IDENT" value="true"></property>
+
+		<!-- whether use fuzzy search -->
+		<property name="USE_FUZZY_SEARCH" value="true"></property>
+
+		<!-- URL of external services -->
+		<!-- &amp;是&的转义字符 -->
+		<property name="ALL_SEGGER_URL" value="http://192.168.23.52:12548/ltp?app=2&amp;s="></property>
+        <property name="MAINSEARCH_SEGGER_URL" value="http://192.168.23.52:12548/ltp?app=2&amp;s="></property>
+        
+				<!--URL of external services -->
+		<property name="stock_segger_url" value="http://172.20.23.51:12348/ltp?app=2&amp;s="></property>
+		<property name="fund_segger_url" value="http://172.20.23.51:12347/ltp?app=2&amp;s="></property>
+		<!--<property name="fina_segger_url" value="http://172.20.23.51:12349/ltp?app=2&amp;s="></property>-->
+		<!--<property name="trust_segger_url" value="http://172.20.23.51:12345/ltp?app=2&amp;s="></property>-->
+		<property name="search_segger_url" value="http://172.20.23.51:12344/ltp?app=2&amp;s="></property>
+		<!--<property name="concept_segger_url" value="http://172.20.23.51:12343/ltp?app=2&amp;s="></property>-->
+		<!--<property name="industry_segger_url" value="http://172.20.23.51:12342/ltp?app=2&amp;s="></property>-->
+		<!--<property name="sector_segger_url" value="http://172.20.23.51:12341/ltp?app=2&amp;s="></property>-->
+		<!--<property name="report_segger_url" value="http://172.20.23.51:12353/ltp?app=2&amp;s="></property>-->
+		<!--<property name="fundmanager_segger_url" value="http://172.20.23.51:12354/ltp?app=2&amp;s="></property>-->
+		<property name="hkstock_segger_url" value="http://172.20.23.51:12355/ltp?app=2&amp;s="></property>
+
+
+
+		<!-- set dynamic url -->
+		<property name="DYNAMIC_SERV_URL"
+			value="http://192.168.23.33:19850/cm?type=dynamicdict"></property>
+			<!-- value="http://172.20.200.92:19850/cm?type=dynamicdict"></property> -->
+		<!-- GetQueryClassify url -->
+		<property name="GET_QUERY_CLASSIFY_URL_OFFLINE"
+			value="http://172.20.23.32:19851/cm?type=boolrule&amp;q="></property>
+		<property name="GET_QUERY_CLASSIFY_URL_ONLINE"
+			value="http://172.20.201.240:19850/cm?type=boolrule&amp;q="></property>
+		<!-- set url time out -->
+		<property name="PER_HOST_CONN_COUNT" value="10240"></property>
+		<property name="TOTAL_CONN_COUNT" value="10240"></property>
+		<property name="CREATE_CONN_TIME_OUT" value="50"></property>
+		<property name="READ_CONTENT_TIME_OUT" value="100"></property>
+		<property name="MAX_CONNECT_TIMES" value="5"></property>
+		<property name="READ_CONTENT_TIME_OUT_DYNAMIC_RLT" value="100"></property>
+
+		<!-- crf|dict -->
+		<property name="CHUNK_SWITCH" value="crf"></property>
+
+		<!-- crf acceptable prob -->
+		<property name="CRF_MIN_PROB_PARSER" value="0.8"></property>
+		<property name="CRF_MIN_PROB" value="0.45"></property>
+		<property name="NEW_PARSER_USED_MIN_SCORE" value="0"></property>
+		<property name="PARSED_MAX_CHARS" value="50"></property>
+
+		<property name="CRF_ENV_ADDRESS" value="172.20.201.240:19851"/>
+
+        <!-- 多种可能性相关配置 -->
+        <property name="ALL_MULTRESULT" value="true"></property>
+        
+        <!-- 多种可能性交互数量限制 -->
+        <property name="MULTRESULT_ONE_INDEX_MAX_NUM" value="5"></property>
+        <property name="MULTRESULT_ONE_SYNTACTIC_MAX_NUM" value="5"></property>
+        <property name="MULTRESULT_ONE_QUERY_MAX_NUM" value="10"></property>
+        <property name="MULTRESULT_ONE_INDEX_DISPLAY_MAX_NUM" value="4"></property>
+        <property name="MULTRESULT_MORE_INDEX_DISPLAY_MAX_NUM" value="3"></property>
+
+		<!-- ifind相关配置 -->
+		<property name="SUPPORT_IFUND" value="false"></property>
+
+		<!-- 人机交互是否触发交互的控制分数 -->
+		<property name="INDEX_INTERACT_MIN_SCORE" value="80"></property>
+		<property name="INDEX_INTERACT_MAX_SCORE" value="100"></property>
+		<property name="YUAN_2_CLOSING_STANDARD" value="500"></property>
+		<property name="GU_2_TOTAL_STOCK_ISSUE_STANDARD" value="10000"></property>
+         
+         <!-- 配置文件读取 -->
+         <property name="http_config_file" value="http://192.168.23.52:8082/ConfigFileCtrl/filereader?fname="></property>
+         
+        <!-- 主搜索场景化redis地址 -->
+        <property name="MAINSEARCH_EVENTS_REDIS_HOST" value="192.168.23.11"></property>
+        <property name="MAINSEARCH_EVENTS_REDIS_PORT" value="6380"></property>
+        <property name="MAINSEARCH_EVENTS_REDIS_DB" value="15"></property>
+         
+	</bean>
+</beans>

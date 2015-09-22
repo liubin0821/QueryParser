@@ -1,0 +1,41 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/test/com/myhexin/qparser/tool/encode/xml
+svn://172.20.23.253
+
+
+
+2015-09-19T03:25:05.585572Z
+446218
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+testGetXmlFromObject.xml
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+d5256960de4f91908addbf5a71d27d26
+2015-09-19T03:25:05.585572Z
+446218
+liuxiaofeng
+has-props
+

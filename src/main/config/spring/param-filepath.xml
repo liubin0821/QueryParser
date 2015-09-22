@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<!-- 涉及文件路径的相关配置信息，该Param_FilePath是抽象的，不能被实例化，且不能通过getBean获取 -->
+	<bean id="Param_FilePath" abstract="true">
+
+		<!-- 所有配置文件均相对以下路径 -->
+		<!-- 每当添加一个文件名，都要在{@link #addDataRoot_}中添加相应的 操作，否则无法添加data root前缀，从而导致找不到文件 -->
+		
+		<!-- all paths of data files are relative to this root path -->
+		<property name="DATA_ROOT" value="./data"></property>
+
+
+		<property name="IFIND_INDEX_FILE" value="ifind_index.txt"></property>
+		<property name="SPECIAL_WORDS_FILE" value="special_words.txt"></property>
+		<property name="CHANGEABLE_INDEX_FILE" value="changeable_index.txt"></property>
+		<property name="OPERATOR_2_INDEX" value="op_2_index.txt"></property>
+		<property name="RELATED_INDEX_FILE" value="ifind_related_index.txt"></property>
+		<property name="VAGUE_NUM_INFO_FOR_OPER_FILE" value="vague_num_info_for_oper.txt"></property>
+		<property name="FAKE_NUM_DEF_INFO_FILE" value="fake_num_def_info.txt"></property>
+		
+		<!-- used in fuzzy search -->
+		<property name="FUZZY_MODEL_PROD_L2" value="l2_fuzzy_production_model.txt"></property>
+		<property name="FUZZY_MODEL_PROD_L1" value="l1_fuzzy_production_model.txt"></property>
+		
+		<!-- used in package suggest, TrieTree -->
+		<property name="ALL_PIN_YIN" value="allpinyin.txt"></property>
+		
+		<!-- used in package suggest, WebQuerySuggest -->
+		<property name="UNICOD_TO_PINYIN" value="unicode2pinyin.txt"></property>
+		
+		<!-- 智能回答使用的匹配文件名 -->
+		<property name="SMART_ANSWER_FILE" value="smart_answer.xml"></property>
+		
+		<!-- used in package suggest, WebQuerySuggest -->
+		<property name="SUGGEST_TEMP_FILE" value="web_tempsentence.txt"></property>
+		<property name="MSG_DEF_FILE" value="msg_define.txt"></property>
+		
+		<!-- ifind相关的数据文件 -->
+		<!-- used in package suggest, WebQuerySuggest -->
+		<property name="INDEX_TECHOP_MAPPING" value="stock/index_techop_mapping.txt"></property>
+		<property name="STOCK_ONTO_FILE" value="stock/stock_onto.xml"></property>
+		<property name="ALL_ONTO_FILE_OLD_SYSTEM" value="stock/stock_onto_old_system.xml"></property>
+		<property name="STOCK_ONTO_CONDITION_FILE" value="stock/stock_onto_condition.xml"></property>
+		<property name="STOCK_INDEX_FILE" value="stock/stock_index.xml"></property>
+		<property name="STOCK_PHRASE_FILE" value="stock/stock_phrase.xml"></property>
+		<property name="ALL_PHRASE_INDEXGROUP" value="stock/stock_phrase_indexgroup.xml"></property>
+		<property name="ALL_PHRASE_KEYWORDGROUP" value="stock/stock_phrase_keywordgroup.xml"></property>
+		<property name="ALL_PHRASE_SYNTACTIC" value="stock/stock_phrase_syntactic.xml"></property>
+		<property name="ALL_PHRASE_SEMANTIC" value="stock/stock_phrase_semantic.xml"></property>
+		
+		<property name="STOCK_THEMATIC" value="stock/stock_thematic.xml"></property>
+		<property name="LIGHTPARSER_TYPE" value="stock/lightparser_type.xml"></property>
+		
+		<property name="STOCK_PATTERN_FILE" value="stock/stock_pattern_rule.txt"></property>
+		<property name="STOCK_RULE_FILE" value="stock/stock_index_rule.xml"></property>
+		<property name="STOCK_DEF_VAL_FILE" value="stock/stock_def_value.xml"></property>
+		<property name="STOCK_DEF_OP_FILE" value="stock/stock_tech_def_op.xml"></property>
+		<property name="STOCK_INDEX_GROUP_FILE" value="stock/stock_index_group.xml"></property>
+		<property name="STOCK_USER_INDEX_FILE" value="stock/stock_user_index.xml"></property>
+		<property name="FUND_ONTO_FILE" value="fund/fund_onto.xml"></property>
+		<property name="FUND_INDEX_FILE" value="fund/fund_index.xml"></property>
+		<property name="FUND_PATTERN_FILE" value="fund/fund_pattern_rule.txt"></property>
+		<property name="FUND_RULE_FILE" value="fund/fund_index_rule.xml"></property>
+		<property name="FUND_USER_INDEX_FILE" value="fund/fund_user_index.xml"></property>
+		<property name="FUND_CHANGE_INFO_FILE" value="fund/fund_change.xml"></property>
+		<property name="IFIND_INDEX_IN_COMMON_USE" value="index_in_common_use.txt"></property>
+		<property name="IFIND_PARAM_FILE" value="ifind_param.xml"></property>
+		<property name="IFIND_TRUMP_CARD_FILE" value="ifind_trump_cards.txt"></property>
+		<property name="STOCK_DEFAULT_PROP_FILE" value="ifind_default_prop.xml"></property>
+		<property name="ADD_CONDS_FILE" value="addcond_info.xml"></property>
+		
+		<!-- 以下使用XML读写通用工具 -->
+		<property name="INDEX_PRO_CATEGORY" value="data/stock/stock_index_pro_category.xml"></property>
+		<property name="CATEGORY_ARRAY_ID" value="category_array"></property>
+
+		<!-- 行情技术指标的配置文件 -->
+		<property name="TECH_INFO_FILE" value="tech_info.txt"></property>
+
+		<!-- 以下配置应当不再使用 -->
+		<property name="IFIND_SUGGEST_INDICATOR_INDEX_DIR" value=""></property>
+		<property name="IFIND_SUGGEST_INDICATOR_INDEX_DOC" value=""></property>
+		<property name="DATE_INFO_FILE" value="unit_test"></property>
+	
+		<!-- 以下单元测试使用 -->
+		<property name="UNIT_TEST_DIR" value="unit_test"></property>
+
+		<!-- 模板 -->
+		<property name="TEMPLATES_PATH" value="/templates"></property>
+		<property name="MACRO_INDUSTRY_PARSER_TEMPLATES_PATH" value="/templates/mi"></property>
+		<property name="LIGHT_PARSER_TEMPLATES_PATH" value="/templates/lightparser"></property>
+		
+	</bean>
+</beans>

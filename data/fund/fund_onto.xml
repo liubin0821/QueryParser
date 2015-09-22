@@ -1,0 +1,3397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<class data_src="IFIND" label="基金简称">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金简称" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金代码">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金代码" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金同花顺代码">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金同花顺代码" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金全称">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金全称" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金类型">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金类型" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="投资类型(一级分类)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_投资类型(一级分类)" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="投资类型(二级分类)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_投资类型(二级分类)" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="晨星分类">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_晨星分类" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="银河分类">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_银河分类" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="投资风格">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_投资风格" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="投资目标">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_投资目标" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="投资范围">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_投资范围" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="业绩比较基准">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_业绩比较基准" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金上市地点">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金上市地点" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="面值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+</class>
+<class data_src="IFIND" label="基金规模">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+</class>
+<class data_src="IFIND" label="同类基金平均规模">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="基金分类" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="同类基金数量">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="基金分类" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="规模同类排名">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_规模同类排名" type="STR" unit=""/>
+<prop label="基金分类" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="管理费率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+</class>
+<class data_src="IFIND" label="托管费率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+</class>
+<class data_src="IFIND" label="最高申购费率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+</class>
+<class data_src="IFIND" label="最高赎回费率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+</class>
+<class data_src="IFIND" label="基金经理(现任)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金经理(现任)" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金经理(历任)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金经理(历任)" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金管理人">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金管理人" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金托管人">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金托管人" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金发起人">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金发起人" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金存续期">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="年"/>
+</class>
+<class data_src="IFIND" label="剩余存续期">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="天"/>
+</class>
+<class data_src="IFIND" label="基金成立日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="基金到期日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="开始托管日期">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="托管结束日期">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="赎回起始日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="申购赎回状态">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_申购赎回状态" type="STR" unit=""/>
+<prop label="日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="上市日期">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="上市交易份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+</class>
+<class data_src="IFIND" label="网上现金发售代码">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_网上现金发售代码" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="一级市场基金代码">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_一级市场基金代码" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="网上现金认购起始日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="网上现金认购截止日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="网上现金认购份额下限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+</class>
+<class data_src="IFIND" label="网上现金认购份额上限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+</class>
+<class data_src="IFIND" label="网下现金认购起始日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="网下现金认购截止日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="网下现金认购份额下限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+</class>
+<class data_src="IFIND" label="网下股票认购起始日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="网下股票认购截止日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="网下股票认购份额下限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+</class>
+<class data_src="IFIND" label="基金份额折算日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="基金份额折算比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+</class>
+<class data_src="IFIND" label="申购赎回简称">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_申购赎回简称" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="保本周期">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="年"/>
+</class>
+<class data_src="IFIND" label="保本费率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+</class>
+<class data_src="IFIND" label="保证人">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_保证人" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="保证人简介">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_保证人简介" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="投资区域">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_投资区域" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="主要投资区域说明">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_主要投资区域说明" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="境外投资顾问">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_境外投资顾问" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="境外托管人">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_境外托管人" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金管理人中文名称">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金管理人中文名称" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金管理人英文名称">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金管理人英文名称" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金管理人注册地址">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金管理人注册地址" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金管理人办公地址">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金管理人办公地址" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金管理人法人代表">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金管理人法人代表" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金管理人总经理">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金管理人总经理" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金管理人电话">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金管理人电话" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金管理人传真">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金管理人传真" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金管理人电子邮箱">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金管理人电子邮箱" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="前收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="开盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="最高价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="最低价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="均价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="涨跌">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="换手率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="成交量">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="成交额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="振幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="贴水">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="贴水率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周前收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周开盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周最高价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周最低价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周最高收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周最低收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周均价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周涨跌">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周换手率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周平均换手率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周振幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周成交量">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周成交额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周均贴水">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周均贴水率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周最高价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周最低价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周最高收盘价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="周最低收盘价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月前收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月开盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月最高价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月最低价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月最高收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月最低收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月均价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月涨跌">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月换手率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月平均换手率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月振幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月成交量">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月成交额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月均贴水">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月均贴水率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月最高价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月最低价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月最高收盘价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月最低收盘价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="月相对大盘涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="大盘指数选项" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年前收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年开盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年最高价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年最低价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年最高收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年最低收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年均价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年涨跌">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年换手率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年平均换手率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年振幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年成交量">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年成交额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年均贴水">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年均贴水率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年最高价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年最低价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年最高收盘价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年最低收盘价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年相对大盘涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+<prop label="大盘指数选项" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间前收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间开盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最高价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最低价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最高收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最低收盘价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间成交均价">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间涨跌">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间换手率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间日均换手率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间振幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间成交量">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间成交额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间均贴水">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间均贴水率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最高价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最低价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最高收盘价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最低收盘价日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="相对大盘区间涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="大盘指数选项" type="DOUBLE" unit="unit"/>
+<prop label="复权方式" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间成交天数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="天"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="单位净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="复权单位净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="累计单位净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="复权单位净值增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="累计单位净值增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="复权单位净值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="累计单位净值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="现金分红净值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="复权单位净值相对大盘增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="大盘指数选项" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="自成立日起复权单位净值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="同类基金区间平均收益率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="基金分类" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="同类基金区间收益排名">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_同类基金区间收益排名" type="STR" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="基金分类" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="同类基金区间收益排名(百分比)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="基金分类" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最高单位净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最低单位净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最高复权单位净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最低复权单位净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最高累计单位净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间最低累计单位净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期净值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="报告期净值数据项" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期净值增长率标准差">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="报告期净值数据项" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期业绩比较基准增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="报告期净值数据项" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期业绩比较基准增长率标准差">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="报告期净值数据项" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期净值增长率减基准增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="报告期净值数据项" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期净值增长率标准差减基准标准差">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="报告期净值数据项" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="万份基金单位收益">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="7日年化收益率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间万份基金单位收益均值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间7日年化收益率均值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间万份基金单位收益方差">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="区间7日年化收益率方差">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="市场综合评级">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="月份" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="晨星3年评级">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="月份" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="晨星5年评级">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="月份" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="银河3年评级">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="银河4年评级">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="银河5年评级">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="上海证券3年评级">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="上海证券5年评级">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="招商证券评级">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="海通证券评级">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="济安金信综合评级">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="理柏3年评级(总回报)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="月份" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="理柏3年评级(保本能力)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="月份" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="理柏3年评级(稳定回报)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="月份" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="理柏3年评级(费用)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="月份" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="Treynor">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="无风险收益率" type="DOUBLE" unit="unit"/>
+<prop label="标的指数" type="STR" unit="unit"/>
+</class>
+<class data_src="IFIND" label="Jensen">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="无风险收益率" type="DOUBLE" unit="unit"/>
+<prop label="标的指数" type="STR" unit="unit"/>
+</class>
+<class data_src="IFIND" label="平均收益率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年化收益率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="几何平均收益率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="平均风险收益率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="无风险收益率" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="几何平均风险收益率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="无风险收益率" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="收益标准差">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年化波动率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="Beta">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="标的指数" type="STR" unit="unit"/>
+</class>
+<class data_src="IFIND" label="可决系数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="标的指数" type="STR" unit="unit"/>
+</class>
+<class data_src="IFIND" label="非系统风险">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="标的指数" type="STR" unit="unit"/>
+</class>
+<class data_src="IFIND" label="Alpha">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="标的指数" type="STR" unit="unit"/>
+</class>
+<class data_src="IFIND" label="Sharpe">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="无风险收益率" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="选时能力">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="无风险收益率" type="DOUBLE" unit="unit"/>
+<prop label="标的指数" type="STR" unit="unit"/>
+</class>
+<class data_src="IFIND" label="选股能力">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="无风险收益率" type="DOUBLE" unit="unit"/>
+<prop label="标的指数" type="STR" unit="unit"/>
+</class>
+<class data_src="IFIND" label="跟踪误差">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="无风险收益率" type="DOUBLE" unit="unit"/>
+<prop label="标的指数" type="STR" unit="unit"/>
+</class>
+<class data_src="IFIND" label="信息比率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="计算周期" type="DOUBLE" unit="unit"/>
+<prop label="收益率计算方法" type="DOUBLE" unit="unit"/>
+<prop label="无风险收益率" type="DOUBLE" unit="unit"/>
+<prop label="标的指数" type="STR" unit="unit"/>
+</class>
+<class data_src="IFIND" label="单位年度分红">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年度分红总额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="年度分红次数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="年度" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="累计分红总额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="累计分红次数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金份额变化">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="起始日期" type="DATE" unit="unit"/>
+<prop label="截至日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金份额变化率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="起始日期" type="DATE" unit="unit"/>
+<prop label="截至日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期总申购份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期总赎回份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期申购赎回净额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="单季度总申购份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="单季度总赎回份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="单季度申购赎回净额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="场内流通份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金份额持有人户数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="平均每户持有基金份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="机构投资者持有份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="机构投资者持有比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="管理人员工持有份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="管理人员工持有比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="个人投资者持有份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="个人投资者持有比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="第N名持有人名称(封闭式)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_第N名持有人名称(封闭式)" type="STR" unit=""/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+<prop label="排名" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="第N名持有人持有份额(封闭式)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+<prop label="排名" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="第N名持有人持有比例(封闭式)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+<prop label="排名" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="前十大持有人持有比例合计(封闭式)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="前十大持有人持有份额合计(封闭式)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金资产总值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金资产净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="股票投资市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="债券投资市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金投资市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="权证投资市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="银行存款">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="其他资产">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="股票市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="债券市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="权证市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="银行存款占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="其他资产占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="股票市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="债券市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="权证市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="银行存款占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="其他资产占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金净值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="股票市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="债券市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="权证市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="银行存款市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="其他资产市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金资产净值变动">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金资产净值变动率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金资产总值变动">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金资产总值变动率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="股票市值占基金资产净值比例增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="债券市值占基金资产净值比例增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金市值占基金资产净值比例增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="权证市值占基金资产净值比例增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="银行存款市值占基金资产净值比例增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="其他资产市值占基金资产净值比例增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="所属基金公司资产净值合计">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="所属基金公司资产净值合计排名">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_所属基金公司资产净值合计排名" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="所属基金公司资产净值合计变动率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="分行业投资市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="行业类别" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="分行业市值占股票投资市值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="行业类别" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="分行业市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="行业类别" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="分行业市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="行业类别" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="分行业市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="行业类别" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="分行业市值占基金资产净值比增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="行业类别" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓行业名称">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓行业名称" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓行业代码">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓行业代码" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓行业市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓行业市值占股票投资市值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓行业市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓行业市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="所属基金公司重仓行业市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="行业类别" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期末持有股票个数(中报、年报)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓股股票名称">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓股股票名称" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓股股票代码">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓股股票代码" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓股持股数量">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="股"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓股持股市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓股市值占股票投资市值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓股市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓股市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="前N名重仓股票市值合计占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓股持仓变动">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="股"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓股持仓占流通股比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓股涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓股票持有基金数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="只"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="国债市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="金融债市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="企业债市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="可转债市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="央行票据市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="国债市值占债券投资市值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="金融债市值占债券投资市值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="企业债市值占债券投资市值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="可转债市值占债券投资市值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="央行票据市值占债券投资市值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="国债市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="金融债市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="企业债市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="可转债市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="央行票据市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="国债市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="金融债市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="企业债市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="可转债市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="央行票据市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="国债市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="金融债市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="企业债市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="可转债市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="央行票据市值增长率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="国债市值占基金资产净值比例增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="金融债市值占基金资产净值比例增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="企业债市值占基金资产净值比例增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="可转债市值占基金资产净值比例增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="央行票据市值占基金资产净值比例增长">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓债券名称">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓债券名称" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓债券代码">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓债券代码" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓债券持仓数量">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="张"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓债券持有市值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓债券持仓变动">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="张"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓债券市值占债券投资市值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓债券市值占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓债券市值占基金资产总值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="前N名重仓债券市值合计占债券投资市值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="前N名重仓债券市值合计占基金资产净值比">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓债券涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+<prop label="起始交易日期" type="DATE" unit="unit"/>
+<prop label="截止交易日期" type="DATE" unit="unit"/>
+<prop label="债券价格类型" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓债券持有基金数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="只"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="债券投资金额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="买入返售证券金额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="银行存款和清算备付金">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="债券投资占基金资产总值的比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="买入返售证券占基金资产总值的比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="银行存款和清算备付金合计占基金资产总值的比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="其他资产占基金资产总值的比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期内债券回购融资余额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期末债券回购融资余额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期内债券回购融资余额占基金资产净值比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期末债券回购融资余额占基金资产净值比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期末投资组合平均剩余期限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="天"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期内投资组合平均剩余期限最高值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="天"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期内投资组合平均剩余期限最低值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="天"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期内偏离度的绝对值在0.25%(含)-0.5%间的次数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期内偏离度的最高值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期内偏离度的最低值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期内每个工作日偏离度的绝对值的简单平均值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="各期限资产占基金资产净值比例">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="组合剩余期限" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="国家/地区投资市值(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="国家" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="国家/地区投资市值占基金资产净值比例(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="国家" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓行业名称(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓行业名称(QDII)" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓行业投资市值(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓行业投资市值占基金资产净值比例(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="分行业投资市值(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="行业类别" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="分行业投资市值占基金资产净值比例(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="行业类别" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓证券名称(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓证券名称(QDII)" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓证券代码(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓证券代码(QDII)" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓证券类型(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓证券类型(QDII)" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓持仓数量(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓持仓市值(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓持仓市值变化(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓持仓市值占基金资产净值比例(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓证券上市地点(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓证券上市地点(QDII)" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="重仓证券所属国家(QDII)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_重仓证券所属国家(QDII)" type="STR" unit=""/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="名次" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期利润">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期利润扣减当期公允价值变动损益后的净额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期加权平均份额利润">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期末可供分配基金利润">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期末可供分配基金份额利润">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金加权平均净值利润率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="季度基金利润">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="本期利润扣减公允价值变动损益后的净额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="加权平均基金份额本期利润">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期期末基金资产净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="报告期期末基金份额净值">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="期初所有者权益(基金净值)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="本期经营活动产生的基金净值变动数(本期净利润)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="本期基金份额交易产生的基金净值变动数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金申购款">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金赎回款">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="本期向基金份额持有人分配利润产生的基金净值变动数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="期末所有者权益(基金净值)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="收入">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="利息收入">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="存款利息收入">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="债券利息收入">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="买入返售金融资产收入">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="资产支持证券利息收入">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="投资收益">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="股票投资收益">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="债券投资收益">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="资产支持证券投资收益">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="衍生工具收益">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="股利收益">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="公允价值变动收益">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="其他收入">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="费用">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="管理人报酬">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="托管费">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="销售服务费">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="交易费用">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="利息支出">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="卖出回购金融资产支出">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="其他费用">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="利润总额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="结算备付金">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="存出保证金">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="交易性金融资产">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="股票投资">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="债券投资">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="资产支持证券投资">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="衍生金融资产">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="买入返售金融资产">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应收证券清算款">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应收利息">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应收股利">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应收申购款">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="资产合计">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="短期借款">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="交易性金融负债">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="衍生金融负债">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="卖出回购金融资产款">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应付证券清算款">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应付赎回款">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应付管理人报酬">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应付托管费">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应付销售服务费">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应付交易费用">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应付税费">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应付利息">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="应付利润">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="其他负债">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="负债合计">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="实收基金">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="未分配利润">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="所有者权益合计">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="负债及持有人权益合计">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="年度" type="DATE" unit="unit"/>
+<prop label="基金报告期" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="交易佣金(合计值)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="交易佣金(分券商明细)">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+<prop label="报告期" type="DATE" unit="unit"/>
+<prop label="机构" type="STR" unit="unit"/>
+</class>
+<class data_src="IFIND" label="发行日期">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="发行方式">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_发行方式" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="发行对象">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_发行对象" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="发行总份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+</class>
+<class data_src="IFIND" label="上市基金发行价格">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+</class>
+<class data_src="IFIND" label="基金主承销商">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金主承销商" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金发行协调人">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金发行协调人" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金销售代理人">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金销售代理人" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金上市推荐人">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金上市推荐人" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="基金注册与过户登记人">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_基金注册与过户登记人" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="开放式基金认购户数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="户"/>
+</class>
+<class data_src="IFIND" label="发行封闭期">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="月"/>
+</class>
+<class data_src="IFIND" label="成立条件-净认购份额">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+</class>
+<class data_src="IFIND" label="成立条件-认购户数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="户"/>
+</class>
+<class data_src="IFIND" label="募集份额上限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+</class>
+<class data_src="IFIND" label="个人投资者认购方式">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_个人投资者认购方式" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="个人投资者认购金额下限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+</class>
+<class data_src="IFIND" label="个人投资者认购金额上限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+</class>
+<class data_src="IFIND" label="个人投资者认购起始日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="个人投资者认购终止日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="封闭期机构投资者认购方式">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_封闭期机构投资者认购方式" type="STR" unit=""/>
+</class>
+<class data_src="IFIND" label="机构投资者设立认购起始日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="机构投资者设立认购终止日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="封闭期机构投资者认购下限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+</class>
+<class data_src="IFIND" label="封闭期机构投资者认购上限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+</class>
+<class data_src="IFIND" label="申购起始日">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="申购金额下限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="元"/>
+</class>
+<class data_src="IFIND" label="申购费率上限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+</class>
+<class data_src="IFIND" label="单笔赎回份额下限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="份"/>
+</class>
+<class data_src="IFIND" label="赎回费率上限">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+</class>
+<class data_src="IFIND" label="封闭式基金认购数量">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+</class>
+<class data_src="IFIND" label="封闭式基金超额认购倍数">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit=""/>
+</class>
+<class data_src="IFIND" label="封闭式基金中签率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+</class>
+<class data_src="IFIND" label="封闭式基金上市日期">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_日期" type="DATE" unit=""/>
+</class>
+<class data_src="IFIND" label="基金上市首日涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+</class>
+<class data_src="IFIND" label="基金上市首日换手率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+</class>
+<class data_src="IFIND" label="基金上市后N日涨跌幅">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="天数" type="DOUBLE" unit="unit"/>
+</class>
+<class data_src="IFIND" label="基金上市后N日换手率">
+<superclass>null</superclass>
+<superclass>null</superclass>
+<prop label="_数值" type="DOUBLE" unit="%"/>
+<prop label="天数" type="DOUBLE" unit="unit"/>
+</class>
+</node>

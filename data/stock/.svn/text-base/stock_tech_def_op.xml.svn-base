@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<def_ops>
+	<def_op label="arbr">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="asi">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="bbi">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="bias">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="boll">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="cci">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="cr">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="dma">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="dmi">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="dpo">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="emv">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="kdj">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="lwr">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="macd">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="mtm">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="roc">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="rsi">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="skdj">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="trix">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="vr">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="wr">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="均线出牛股">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="新手炒股">
+		<op default="买入信号" />
+	</def_op>
+    <def_op label="expma">
+        <op default="买入信号" />
+    </def_op>	
+	<def_op label="ene">
+		<op default="买入信号" />
+	</def_op>
+	<def_op label="pbx">
+		<op default="金叉" />
+	</def_op>
+	<def_op label="qlcx">
+		<op default="金叉" />
+	</def_op>
+	<def_op label="zlmm">
+		<op default="金叉" />
+	</def_op>
+	<def_op label="obv">
+		<op default="指标创新高" />
+	</def_op>
+</def_ops>

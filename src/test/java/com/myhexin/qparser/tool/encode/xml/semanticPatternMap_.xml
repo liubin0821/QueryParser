@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <SemanticPattern id="9002">
+    <Description>$1$2-$3$4&gt;=$5</Description>
+    <UIRepresentation>$1$2-$3$4&gt;=$5</UIRepresentation>
+    <ChineseRepresentation>$1$2-$3$4&gt;=$5</ChineseRepresentation>
+    <Argument id="1" type="CONSTANT">
+      <valuetype>STR</valuetype>
+      <default>(</default>
+    </Argument>
+    <Argument id="2" type="INDEX" />
+    <Argument id="3" type="INDEX" />
+    <Argument id="4" type="CONSTANT">
+      <valuetype>STR</valuetype>
+      <default>)</default>
+    </Argument>
+    <Argument id="3" type="CONSTANT" ValueType="NUMBER" />
+    <ArgumentDependency />
+    <InternalRepresentation>
+      <Operation />
+    </InternalRepresentation>
+  </SemanticPattern>
+</Config>

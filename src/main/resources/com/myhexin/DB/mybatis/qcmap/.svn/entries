@@ -1,0 +1,40 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/resources/com/myhexin/DB/mybatis/qcmap
+svn://172.20.23.253
+
+
+
+2015-07-08T07:08:42.757183Z
+430646
+sunzhiyong
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+QueryClassMapper.xml
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+2325268ccac0b4a2730df18ef2955f7a
+2015-07-08T07:08:42.757183Z
+430646
+sunzhiyong
+

@@ -1,0 +1,73 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/config
+svn://172.20.23.253
+
+
+
+2015-09-19T03:04:04.449687Z
+446187
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+DB
+dir
+
+applicationContext.xml
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+39df0dab4651a0fc4f1ca77046aa0bc0
+2015-05-28T08:07:03.296754Z
+423806
+liuxiaofeng
+
+jetty
+dir
+
+log4j.properties
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+2c63edc24bec5e9891667343e4838a6d
+2015-05-21T10:38:36.531245Z
+422313
+liuxiaofeng
+
+mybatis
+dir
+
+plugin
+dir
+
+service
+dir
+
+servlet
+dir
+
+spring
+dir
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.myhexin.DB.mybatis.dao.IndexsMapper">
+    <cache size="5200" flushInterval="60000"/>
+
+	<resultMap id="BaseResultMap" type="com.myhexin.DB.mybatis.mode.Indexs">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="label" property="text" jdbcType="VARCHAR" />
+		<result column="report_type" property="reportType" jdbcType="VARCHAR" />
+	</resultMap>
+
+
+	<select id="selectAll" resultMap="BaseResultMap">
+		select * from ontologydb.indexs
+	</select>
+
+	<select id="selectByIndexId" parameterType="Integer" resultMap="BaseResultMap">
+		select * from ontologydb.indexs where id=#{0}
+	</select>
+	<select id="selectByIndex" parameterType="com.myhexin.DB.mybatis.mode.Indexs"
+		resultMap="BaseResultMap">
+		select * from ontologydb.indexs where 1=1
+		<if test="id != null">
+			and id=#{id}
+		</if>
+		<if test="text != null">
+			and label like CONCAT('%',#{text},'%')
+		</if>
+		<if test="reportType != null">
+			and report_type=#{reportType}
+		</if>
+	</select>
+
+	<update id="updateLabel" parameterType="com.myhexin.DB.mybatis.mode.Indexs">
+		update ontologydb.indexs set
+		label=#{text} where id = #{id};
+	</update>
+	
+	<update id="updateIndexNotInTree" parameterType="com.myhexin.DB.mybatis.mode.Indexs">
+        update ontologydb.indexs set
+        report_type=#{reportType} where id = #{id};
+    </update>
+
+	<delete id="delete" parameterType="Integer">
+		delete from ontologydb.indexs where
+		id=#{0}
+	</delete>
+
+
+
+	<insert id="insertAndGetId" useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.myhexin.DB.mybatis.mode.Indexs">
+		insert into ontologydb.indexs(label,report_type)
+		values(#{text},#{reportType})
+	</insert>
+</mapper>

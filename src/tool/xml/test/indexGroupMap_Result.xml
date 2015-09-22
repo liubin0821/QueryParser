@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><beans>
+<container id="list8" class="java.util.ArrayList">
+<value keyClass="java.lang.String" keyValue="行情最新价"/>
+<value keyClass="java.lang.String" keyValue="行情最高价"/>
+<value keyClass="java.lang.String" keyValue="收盘价"/>
+<value keyClass="java.lang.String" keyValue="最新价"/>
+<value keyClass="java.lang.String" keyValue="成交量"/>
+<value keyClass="java.lang.String" keyValue="行情最低价"/>
+<value keyClass="java.lang.String" keyValue="行情成交量"/>
+<value keyClass="java.lang.String" keyValue="行情开盘价"/>
+<value keyClass="java.lang.String" keyValue="行情收盘价"/>
+<value keyClass="java.lang.String" keyValue="均线"/>
+<value keyClass="java.lang.String" keyValue="vol"/>
+<value keyClass="java.lang.String" keyValue="amo"/>
+<value keyClass="java.lang.String" keyValue="amv"/>
+<value keyClass="java.lang.String" keyValue="expma"/>
+<value keyClass="java.lang.String" keyValue="数值线"/>
+</container>
+<bean id="IndexGroup8" class="com.myhexin.qparser.phrase.IndexGroup">
+<property class="java.lang.String" name="_id">8</property>
+<property class="java.lang.String" name="_description">单线+均线</property>
+<property name="_indexs" ref="list8" refType="container"/>
+</bean>
+<container id="map8" class="java.util.HashMap">
+<value keyClass="java.lang.String" keyValue="8" valueRef="IndexGroup8" valueRefType="bean"/>
+</container>
+<bean id="IndexGroupMap_8" class="com.myhexin.qparser.phrase.IndexGroupMap">
+<property name="IndexGroupMap_" ref="map8" refType="container"/>
+</bean>
+</beans>

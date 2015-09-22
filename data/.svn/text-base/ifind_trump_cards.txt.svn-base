@@ -1,0 +1,32 @@
+pattern=高送转的?中小盘股
+<plan name="高送转中小盘股" visible="true" expression="#1 and #2">
+<conditions>
+    <condition>
+        <fname>02869</fname>
+        <params/>
+        <operator>&gt;</operator>
+        <compare_value>0.5000</compare_value>
+        <visible>true</visible>
+        <sname>元</sname>
+        <indicator name="02869" IsCalcInd="0">
+        <params>
+            <param name="FD" defaultvalue="1" system="true"/>
+        </params>
+        </indicator>
+    </condition>
+    <condition>
+        <fname>00463</fname>
+        <params/>
+        <operator>&lt;</operator>
+        <compare_value>1.0000</compare_value>
+        <visible>true</visible>
+        <sname>亿股</sname>
+        <indicator name="00463" IsCalcInd="0" scalartable="P00141" resultunit="股">
+        <params>
+            <param name="FD" defaultvalue="1" system="true"/>
+            <param name="单位设置" defaultvalue="100000000" system="true"/>
+        </params>
+        </indicator>
+    </condition>
+</conditions>
+</plan>

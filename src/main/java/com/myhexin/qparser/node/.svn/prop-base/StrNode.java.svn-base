@@ -1,0 +1,12 @@
+K 13
+svn:mergeinfo
+V 832
+/product/Ontology_Ask/branches/QP-FakeClass/src/java/com/myhexin/qparser/node/StrNode.java:33477-35118
+/product/Ontology_Ask/branches/QP-Fund/src/java/com/myhexin/qparser/node/StrNode.java:21049-21821
+/product/Ontology_Ask/branches/QP-NDRefactor/src/java/com/myhexin/qparser/node/StrNode.java:16580-20207
+/product/Ontology_Ask/branches/QP-Split/src/com/myhexin/qparser/node/StrNode.java:23700-24293
+/product/Ontology_Ask/branches/QP-Tmp/src/java/com/myhexin/qparser/node/StrNode.java:28735-30097
+/product/Ontology_Ask/branches/QueryParser/src/com/myhexin/qparser/node/StrNode.java:10724-10736
+/product/Ontology_Ask/branches/QueryParser/src/java/com/myhexin/qparser/node/StrNode.java:10724-38232
+/product/Ontology_Ask/branches/QueryParser2/src/main/java/com/myhexin/qparser/node/StrNode.java:368566-428707,429253-429329,431476,432687
+END

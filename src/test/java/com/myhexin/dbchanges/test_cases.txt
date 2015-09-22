@@ -1,0 +1,20 @@
+DROP TABLE parser_test;
+
+CREATE TABLE  parser_test (
+  ID   						INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  query 					VARCHAR(300) NOT NULL,
+  qType						VARCHAR(15) NULL,
+  domain					VARCHAR(31) NULL,
+  postDataStr				VARCHAR(300) NULL,
+  exp_result				VARCHAR(1000) NULL,
+  clazzName					VARCHAR(100) NULL,
+  p1						VARCHAR(100) NULL,
+  p2						VARCHAR(100) NULL,
+  p3						VARCHAR(100) NULL,
+  p4						VARCHAR(100) NULL,
+  p5						VARCHAR(100) NULL
+) ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+
+INSERT INTO parser_test(query, qType, domain, postDataStr, exp_result, clazzName) VALUES('5天前涨跌幅','ALL',null,'{"length":"0","dunit":"0","start":"2015-06-25"}','[{"indexName":"涨跌幅:前复权","indexProperties":["交易日期 20150617"],"type":"index","sonSize":0}]','ConditionTestCase');
+

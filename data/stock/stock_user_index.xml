@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fake_def>
+	<fake_index title ="跳空大涨" report_type="DAILY">
+		<fake_onto>
+			<prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="%|元"/>
+			<prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+		</fake_onto>
+		<replace_tree unit="%" description="跳空高开，收盘价大于前一天最高价">
+			<tree_node node_type ="LOGIC" label="AND">
+				<tree_node node_type ="OPERATOR" label="SUB">
+					<value data_type ="DOUBLE"  default="大于0" ref_type="NULL" ref_prop="0"/>
+					<tree_node node_type ="INDEX" label ="开盘价">
+						<tree_node node_type ="PROP" label ="交易日期">
+							<value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+						</tree_node>
+					</tree_node>
+					<tree_node node_type ="INDEX" label ="最高价">
+						<tree_node node_type ="PROP" label="交易日期">
+							<value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>		
+						</tree_node>
+					</tree_node>
+				</tree_node>
+				<tree_node node_type ="OPERATOR" label="RATE">
+					<value data_type ="DOUBLE"  default="大于3%" ref_type="COPY" ref_prop="1"/>
+					<tree_node node_type ="INDEX" label ="收盘价">
+						<tree_node node_type ="PROP" label ="交易日期">
+							<value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+						</tree_node>
+					</tree_node>
+					<tree_node node_type ="INDEX" label ="最高价">
+						<tree_node node_type ="PROP" label="交易日期">
+							<value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>		
+						</tree_node>
+					</tree_node>
+				</tree_node>
+			</tree_node>	
+		</replace_tree>
+		<replace_tree unit="元" description="跳空高开，收盘价大于前一天最高价">
+			<tree_node node_type ="LOGIC" label="AND">
+				<tree_node node_type ="OPERATOR" label="SUB">
+					<value data_type ="DOUBLE"  default="大于0" ref_type="NULL" ref_prop="0"/>
+					<tree_node node_type ="INDEX" label ="开盘价">
+						<tree_node node_type ="PROP" label ="交易日期">
+							<value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+						</tree_node>
+					</tree_node>
+					<tree_node node_type ="INDEX" label ="最高价">
+						<tree_node node_type ="PROP" label="交易日期">
+							<value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>		
+						</tree_node>
+					</tree_node>
+				</tree_node>
+				<tree_node node_type ="OPERATOR" label="SUB">
+					<value data_type ="DOUBLE"  default="大于5" ref_type="COPY" ref_prop="1"/>
+					<tree_node node_type ="INDEX" label ="开盘价">
+						<tree_node node_type ="PROP" label ="交易日期">
+							<value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+						</tree_node>
+					</tree_node>
+					<tree_node node_type ="INDEX" label ="最高价">
+						<tree_node node_type ="PROP" label="交易日期">
+							<value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>		
+						</tree_node>
+					</tree_node>
+				</tree_node>
+			</tree_node>	
+        </replace_tree>
+	</fake_index>
+	<fake_index title ="跳空高开" report_type="DAILY">
+		<fake_onto>
+			<prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="%|元"/>
+			<prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+		</fake_onto>
+		<replace_tree unit="元" description="开盘价大于前一天最高价">
+			<tree_node node_type ="OPERATOR" label="SUB">
+				<value data_type ="DOUBLE"  default="大于0" ref_type="COPY" ref_prop="1"/>
+				<tree_node node_type ="INDEX" label ="开盘价">
+					<tree_node node_type ="PROP" label ="交易日期">
+						<value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+					</tree_node>
+				</tree_node>
+				<tree_node node_type ="INDEX" label ="最高价">
+					<tree_node node_type ="PROP" label="交易日期">
+						<value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>		
+					</tree_node>
+				</tree_node>
+			</tree_node>
+		</replace_tree>
+		<replace_tree unit="%" description="开盘价大于前一天最高价">
+            <tree_node node_type ="OPERATOR" label="RATE">
+                <value data_type ="DOUBLE"  default="大于0" ref_type="COPY" ref_prop="1"/>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="最高价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+	</fake_index>
+	<fake_index title ="跳空低开" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="%|元"/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="元" description="开盘价大于前一天收盘价">
+            <tree_node node_type ="OPERATOR" label="SUB">
+                <value data_type ="DOUBLE"  default="小于0" ref_type="REVERSAL" ref_prop="1"/>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="最低价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+        <replace_tree unit="%" description="开盘价大于前一天收盘价">
+            <tree_node node_type ="OPERATOR" label="RATE">
+                <value data_type ="DOUBLE"  default="小于0" ref_type="REVERSAL" ref_prop="1"/>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="最低价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="利润分配预案" report_type="HALF_YEAR">
+        <fake_onto>
+            <prop id ="1" label="_利润分配预案" data_type="STR" unit=""/>
+            <prop id ="2" label="报告期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="分红方案进度为董事会预案或股东大会预案，并且每股分红送转>0">
+            <tree_node node_type ="LOGIC" label ="AND">
+                <tree_node node_type ="LOGIC" label ="OR">
+                    <tree_node node_type ="INDEX" label="分红方案进度">
+                        <tree_node node_type ="PROP" label ="_分红方案进度">
+                            <value data_type ="STR"  default="董事会预案" />
+                        </tree_node>
+                        <tree_node node_type ="PROP" label ="报告期">
+                            <value data_type ="DATE"  default="" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="分红方案进度">
+                        <tree_node node_type ="PROP" label ="_分红方案进度">
+                            <value data_type ="STR"  default="股东大会预案" />
+                        </tree_node>
+                        <tree_node node_type ="PROP" label ="报告期">
+                            <value data_type ="DATE"  default="" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label="每股分红送转">
+                    <tree_node node_type ="PROP" label ="_浮点型数值">
+                        <value data_type ="DOUBLE"  default="大于0" ref_type="NULL" ref_prop="0"/>
+                    </tree_node>
+                    <tree_node node_type ="PROP" label ="报告期">
+                        <value data_type ="DATE"  default="" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+	<fake_index title ="高开" report_type="DAILY">
+		<fake_onto>
+			<prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="%|元"/>
+			<prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+		</fake_onto>
+		<replace_tree unit="元" description="开盘价大于前一天收盘价">
+			<tree_node node_type ="OPERATOR" label="SUB">
+				<value data_type ="DOUBLE"  default="大于0" ref_type="COPY" ref_prop="1"/>
+				<tree_node node_type ="INDEX" label ="开盘价">
+					<tree_node node_type ="PROP" label ="交易日期">
+						<value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+					</tree_node>
+				</tree_node>
+				<tree_node node_type ="INDEX" label ="收盘价">
+					<tree_node node_type ="PROP" label="交易日期">
+						<value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>		
+					</tree_node>
+				</tree_node>
+			</tree_node>
+		</replace_tree>
+		<replace_tree unit="%" description="开盘价大于前一天收盘价">
+            <tree_node node_type ="OPERATOR" label="RATE">
+                <value data_type ="DOUBLE"  default="大于0" ref_type="COPY" ref_prop="1"/>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="收盘价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+	</fake_index>
+	<fake_index title ="低开" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="%|元"/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="元" description="开盘价大于前一天收盘价">
+            <tree_node node_type ="OPERATOR" label="SUB">
+                <value data_type ="DOUBLE"  default="小于0" ref_type="REVERSAL" ref_prop="1"/>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="收盘价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+        <replace_tree unit="%" description="开盘价大于前一天收盘价">
+            <tree_node node_type ="OPERATOR" label="RATE">
+                <value data_type ="DOUBLE"  default="小于0" ref_type="REVERSAL" ref_prop="1"/>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="收盘价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="前1天" ref_type="RELATIVE" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+
+    <fake_index title="低估值" report_type="DAILY">
+        <fake_onto>          
+            <prop id ="1" label="_低估值" data_type="STR" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="市盈率0-16,市净率0-2">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="INDEX" label ="市盈率(pe)">
+                    <tree_node node_type ="PROP" label ="_浮点型数值">
+                        <value data_type ="DOUBLE"  default="0-16" ref_type="NULL" ref_prop="0"/>
+                    </tree_node>             	   
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="市净率(pb,最新)">                	
+                    <tree_node node_type ="PROP" label ="_浮点型数值">
+                        <value data_type ="DOUBLE"  default="0-2" ref_type="NULL" ref_prop="0"/>
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+    <fake_index title="价值低估" report_type="DAILY">
+        <fake_onto>          
+            <prop id ="1" label="_价值低估" data_type="STR" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="市盈率0-16,市净率0-2">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="INDEX" label ="市盈率(pe)">
+                    <tree_node node_type ="PROP" label ="_浮点型数值">
+                        <value data_type ="DOUBLE"  default="0-16" ref_type="NULL" ref_prop="0"/>
+                    </tree_node>             	   
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="市净率(pb,最新)">                	
+                    <tree_node node_type ="PROP" label ="_浮点型数值">
+                        <value data_type ="DOUBLE"  default="0-2" ref_type="NULL" ref_prop="0"/>
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>    
+    <fake_index title="估值最低" report_type="DAILY">
+        <fake_onto>          
+            <prop id ="1" label="_估值最低" data_type="STR" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="市盈率0-16,市净率0-2">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="INDEX" label ="市盈率(pe)">
+                    <tree_node node_type ="PROP" label ="_浮点型数值">
+                        <value data_type ="DOUBLE"  default="0-16" ref_type="NULL" ref_prop="0"/>
+                    </tree_node>             	   
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="市净率(pb,最新)">                	
+                    <tree_node node_type ="PROP" label ="_浮点型数值">
+                        <value data_type ="DOUBLE"  default="0-2" ref_type="NULL" ref_prop="0"/>
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>   
+   <fake_index title="超大盘股" report_type="DAILY">
+        <fake_onto>          
+            <prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="股"/>
+			<prop id ="2" label="截止日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="股" description="总股本大于10亿">
+        	<tree_node node_type ="INDEX" label ="总股本">
+                <tree_node node_type ="PROP" label ="_浮点型数值">
+                    <value data_type ="DOUBLE"  default="大于10亿" ref_type="COPY" ref_prop="1"/>
+                </tree_node>   
+                <tree_node node_type ="PROP" label ="截止日期">
+                    <value data_type ="DATE"  default="今天" ref_type="RELATIVE" ref_prop="2"/>
+                </tree_node>          	   
+            </tree_node>                
+        </replace_tree>
+    </fake_index> 
+    <fake_index title="大盘股" report_type="DAILY">
+        <fake_onto>          
+            <prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="股"/>
+			<prop id ="2" label="截止日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="股" description="总股本大于5亿">
+        	<tree_node node_type ="INDEX" label ="总股本">
+                <tree_node node_type ="PROP" label ="_浮点型数值">
+                    <value data_type ="DOUBLE"  default="大于5亿" ref_type="COPY" ref_prop="1"/>
+                </tree_node> 
+                 <tree_node node_type ="PROP" label ="截止日期">
+                    <value data_type ="DATE"  default="今天" ref_type="RELATIVE" ref_prop="2"/>
+                </tree_node>             	   
+            </tree_node>                
+        </replace_tree>
+    </fake_index>   
+    <fake_index title="中盘股" report_type="DAILY">
+        <fake_onto>          
+            <prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="股"/>
+			<prop id ="2" label="截止日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="股" description="1亿小于总股本小于5亿">
+        	<tree_node node_type ="INDEX" label ="总股本">
+                <tree_node node_type ="PROP" label ="_浮点型数值">
+                    <value data_type ="DOUBLE"  default="1亿-5亿" ref_type="COPY" ref_prop="1"/>
+                </tree_node>    
+                <tree_node node_type ="PROP" label ="截止日期">
+                    <value data_type ="DATE"  default="今天" ref_type="RELATIVE" ref_prop="2"/>
+                </tree_node>          	   
+            </tree_node>                
+        </replace_tree>
+    </fake_index>  
+    
+    <fake_index title="中小盘股" report_type="DAILY">
+        <fake_onto>          
+            <prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="股"/>
+			<prop id ="2" label="截止日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="股" description="总股本小于4亿">
+            
+        	<tree_node node_type ="INDEX" label ="总股本">
+                <tree_node node_type ="PROP" label ="_浮点型数值">
+                    <value data_type ="DOUBLE"  default="小于5亿" ref_type="COPY" ref_prop="1"/>
+                </tree_node>  
+                <tree_node node_type ="PROP" label ="截止日期">
+                    <value data_type ="DATE"  default="今天" ref_type="RELATIVE" ref_prop="2"/>
+                </tree_node>            	   
+            </tree_node>                
+        </replace_tree>
+    </fake_index> 
+    <fake_index title="小盘股" report_type="DAILY">
+        <fake_onto>          
+            <prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="股"/>
+			<prop id ="2" label="截止日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="股" description="总股本小于1亿">
+            
+        	<tree_node node_type ="INDEX" label ="总股本">
+                <tree_node node_type ="PROP" label ="_浮点型数值">
+                    <value data_type ="DOUBLE"  default="小于1亿" ref_type="COPY" ref_prop="1"/>
+                </tree_node>     
+                <tree_node node_type ="PROP" label ="截止日期">
+                    <value data_type ="DATE"  default="今天" ref_type="RELATIVE" ref_prop="2"/>
+                </tree_node>              	   
+            </tree_node>                
+        </replace_tree>
+    </fake_index>
+    <fake_index title="小流通盘股" report_type="DAILY">
+        <fake_onto>          
+            <prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="股"/>
+			<prop id ="2" label="截止日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="股" description="总股本小于1亿">
+            
+        	<tree_node node_type ="INDEX" label ="总股本">
+                <tree_node node_type ="PROP" label ="_浮点型数值">
+                    <value data_type ="DOUBLE"  default="小于1亿" ref_type="COPY" ref_prop="1"/>
+                </tree_node>   
+                <tree_node node_type ="PROP" label ="截止日期">
+                    <value data_type ="DATE"  default="今天" ref_type="RELATIVE" ref_prop="2"/>
+                </tree_node>                 	   
+            </tree_node>                
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="阳线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_阳线" data_type="STR" unit="%|元"/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价/开盘价大于1">
+            <tree_node node_type ="OPERATOR" label="DIV">
+                <value data_type ="DOUBLE"  default="大于1" ref_type="NULL" ref_prop="0"/>
+                <tree_node node_type ="INDEX" label ="收盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="小阳线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_小阳线" data_type="STR" unit="%|元"/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价/开盘价大于1小于等于1.03">
+            <tree_node node_type ="OPERATOR" label="DIV">
+                <value data_type ="DOUBLE"  default="1-1.03" ref_type="NULL" ref_prop="0"/>
+                <tree_node node_type ="INDEX" label ="收盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="中阳线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_中阳线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价/开盘价大于1.03小于等于1.05">
+            <tree_node node_type ="OPERATOR" label="DIV">
+                <value data_type ="DOUBLE"  default="1.03-1.05" ref_type="NULL" ref_prop="0"/>
+                <tree_node node_type ="INDEX" label ="收盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="今天" ref_type="RELATIVE" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="大阳线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_大阳线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价/开盘价大于1.05">
+            <tree_node node_type ="OPERATOR" label="DIV">
+                <value data_type ="DOUBLE"  default="大于1.05" ref_type="NULL" ref_prop="0"/>
+                <tree_node node_type ="INDEX" label ="收盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="光头阳线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_光头阳线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价大于开盘价 and 收盘价等于最高价">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="大于0" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="等于0" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="最高价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="光脚阳线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_光脚阳线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价大于开盘价 and 开盘价等于最低价">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="大于0" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="等于0" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="最低价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="光头光脚阳线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_光头光脚阳线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价大于开盘价 and 开盘价等于最低价 and 收盘价等于最高价">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="LOGIC" label="AND">
+                    <tree_node node_type ="OPERATOR" label="SUB">
+                        <value data_type ="DOUBLE"  default="大于0" ref_type="NULL" ref_prop="0"/>
+                        <tree_node node_type ="INDEX" label ="收盘价">
+                            <tree_node node_type ="PROP" label ="交易日期">
+                                <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                            </tree_node>
+                        </tree_node>
+                        <tree_node node_type ="INDEX" label ="开盘价">
+                            <tree_node node_type ="PROP" label="交易日期">
+                                <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                            </tree_node>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="OPERATOR" label="SUB">
+                        <value data_type ="DOUBLE"  default="等于0" ref_type="NULL" ref_prop="0"/>
+                        <tree_node node_type ="INDEX" label ="开盘价">
+                            <tree_node node_type ="PROP" label ="交易日期">
+                                <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                            </tree_node>
+                        </tree_node>
+                        <tree_node node_type ="INDEX" label ="最低价">
+                            <tree_node node_type ="PROP" label="交易日期">
+                                <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                            </tree_node>
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="等于0" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="最高价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="阴线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_阴线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价/开盘价小于1">
+            <tree_node node_type ="OPERATOR" label="DIV">
+                <value data_type ="DOUBLE"  default="小于1" ref_type="NULL" ref_prop="0"/>
+                <tree_node node_type ="INDEX" label ="收盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="小阴线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_小阴线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价/开盘价大于0.97小于等于1">
+            <tree_node node_type ="OPERATOR" label="DIV">
+                <value data_type ="DOUBLE"  default="0.97-1.0" ref_type="NULL" ref_prop="0"/>
+                <tree_node node_type ="INDEX" label ="收盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="中阴线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_中阴线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价/开盘价大于0.95小于等于0.97">
+            <tree_node node_type ="OPERATOR" label="DIV">
+                <value data_type ="DOUBLE"  default="0.95-0.97" ref_type="NULL" ref_prop="0"/>
+                <tree_node node_type ="INDEX" label ="收盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="大阴线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_大阴线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价/开盘价小于0.95">
+            <tree_node node_type ="OPERATOR" label="DIV">
+                <value data_type ="DOUBLE"  default="小于0.95" ref_type="NULL" ref_prop="0"/>
+                <tree_node node_type ="INDEX" label ="收盘价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="开盘价">
+                    <tree_node node_type ="PROP" label="交易日期">
+                        <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                    </tree_node>
+                </tree_node>
+            </tree_node>
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="光头阴线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_光头阴线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价小于开盘价 and 开盘价等于最高价">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="小于0" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="等于0" ref_type="NULL" ref_prop="1"/>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="最高价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="RELATIVE" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="光脚阴线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_光脚阳线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价小于开盘价 and 收盘价等于最低价">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="小于0" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="等于0" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="最低价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="RELATIVE" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="光头光脚阴线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_光头光脚阴线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价小于开盘价 and 收盘价等于最低价 and 开盘价等于最高价">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="LOGIC" label="AND">
+                    <tree_node node_type ="OPERATOR" label="SUB">
+                        <value data_type ="DOUBLE"  default="小于0" ref_type="NULL" ref_prop="0"/>
+                        <tree_node node_type ="INDEX" label ="收盘价">
+                            <tree_node node_type ="PROP" label ="交易日期">
+                                <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                            </tree_node>
+                        </tree_node>
+                        <tree_node node_type ="INDEX" label ="开盘价">
+                            <tree_node node_type ="PROP" label="交易日期">
+                                <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                            </tree_node>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="OPERATOR" label="SUB">
+                        <value data_type ="DOUBLE"  default="等于0" ref_type="NULL" ref_prop="0"/>
+                        <tree_node node_type ="INDEX" label ="收盘价">
+                            <tree_node node_type ="PROP" label ="交易日期">
+                                <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                            </tree_node>
+                        </tree_node>
+                        <tree_node node_type ="INDEX" label ="最低价">
+                            <tree_node node_type ="PROP" label="交易日期">
+                                <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                            </tree_node>
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="等于0" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="最高价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="长上影线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_长上影线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="最高价/开盘价大于1.03 and 最高价/收盘价大于1.03">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="OPERATOR" label="DIV">
+                    <value data_type ="DOUBLE"  default="大于1.03" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="最高价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="OPERATOR" label="DIV">
+                    <value data_type ="DOUBLE"  default="大于1.03" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="最高价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="上影线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_上影线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="最高价/开盘价大于1 and 最高价/收盘价大于1">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="OPERATOR" label="DIV">
+                    <value data_type ="DOUBLE"  default="大于1" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="最高价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="OPERATOR" label="DIV">
+                    <value data_type ="DOUBLE"  default="大于1" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="最高价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="长下影线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_长下影线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="开盘价/最低价大于1.03 and 收盘价/最低价大于1.03">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="OPERATOR" label="DIV">
+                    <value data_type ="DOUBLE"  default="大于1.03" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="最低价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="OPERATOR" label="DIV">
+                    <value data_type ="DOUBLE"  default="大于1.03" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="最低价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="下影线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_下影线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="开盘价/最低价大于1 and 收盘价/最低价大于1">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="OPERATOR" label="DIV">
+                    <value data_type ="DOUBLE"  default="大于1" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="最低价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="OPERATOR" label="DIV">
+                    <value data_type ="DOUBLE"  default="大于1" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="最低价">
+                        <tree_node node_type ="PROP" label="交易日期">
+                            <value data_type ="DATE" default ="今天" ref_type="COPY" ref_prop="2"/>      
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="假阴线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_假阴线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价小于开盘价 and 涨跌幅大于0">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="小于0" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label="涨跌幅">
+                        <tree_node node_type ="PROP" label ="_浮点型数值">
+                            <value data_type ="DOUBLE"  default="大于0" ref_type="NULL" ref_prop="0"/>
+                        </tree_node>
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="假阳线" report_type="DAILY">
+        <fake_onto>
+            <prop id ="1" label="_假阳线" data_type="STR" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="收盘价大于开盘价 and 涨跌幅小于0">
+            <tree_node node_type ="LOGIC" label="AND">
+                <tree_node node_type ="OPERATOR" label="SUB">
+                    <value data_type ="DOUBLE"  default="大于0" ref_type="NULL" ref_prop="0"/>
+                    <tree_node node_type ="INDEX" label ="收盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>
+                    <tree_node node_type ="INDEX" label ="开盘价">
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                    </tree_node>                    
+                </tree_node>
+                <tree_node node_type ="INDEX" label="涨跌幅">
+                        <tree_node node_type ="PROP" label ="_浮点型数值">
+                            <value data_type ="DOUBLE"  default="小于0" ref_type="NULL" ref_prop="0"/>
+                        </tree_node>
+                        <tree_node node_type ="PROP" label ="交易日期">
+                            <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                        </tree_node>
+                </tree_node>
+            </tree_node>    
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="向上跳空缺口" report_type="DAILY">
+        <fake_onto>           
+            <prop id ="1" label="_向上跳空缺口" data_type="DATE" unit=""/>
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="最低价大于前一天最高价">
+            <tree_node node_type ="OPERATOR" label="SUB">               
+                <value data_type ="DOUBLE"  default="大于0" ref_type="NULL" ref_prop="0"/>
+                <tree_node node_type ="INDEX" label ="最低价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="最高价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="前1天" ref_type="RELATIVE" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>                    
+            </tree_node>              
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="向下跳空缺口" report_type="DAILY">
+        <fake_onto>  
+            <prop id ="1" label="_向下跳空缺口" data_type="DATE" unit=""/>         
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="" description="最高价小于前一天最低价">
+            <tree_node node_type ="OPERATOR" label="SUB">               
+                <value data_type ="DOUBLE"  default="小于0" ref_type="NULL" ref_prop="0"/>
+                <tree_node node_type ="INDEX" label ="最高价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>
+                <tree_node node_type ="INDEX" label ="最低价">
+                    <tree_node node_type ="PROP" label ="交易日期">
+                        <value data_type ="DATE"  default="前1天" ref_type="RELATIVE" ref_prop="2"/>
+                    </tree_node>
+                </tree_node>                    
+            </tree_node>              
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="放量" report_type="DAILY">
+        <fake_onto>  
+            <prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="%"/>        
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="%" description="成交量大于前一日成交量">
+            <tree_node node_type ="LOGIC" label="AND">                
+            	<tree_node node_type ="OPERATOR" label="RATE">               
+                	<value data_type ="DOUBLE"  default="大于0" ref_type="COPY" ref_prop="1"/>
+                	<tree_node node_type ="INDEX" label ="成交量">
+                   		<tree_node node_type ="PROP" label ="交易日期">
+                        	<value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    	</tree_node>
+                	</tree_node>
+                	<tree_node node_type ="INDEX" label ="成交量">
+                    	<tree_node node_type ="PROP" label ="交易日期">
+                       		<value data_type ="DATE"  default="前1天" ref_type="RELATIVE" ref_prop="2"/>
+                    	</tree_node>
+               		</tree_node>                    
+            	</tree_node>            	
+            	<tree_node node_type ="INDEX" label ="换手率">
+            		<tree_node node_type ="PROP" label ="_浮点型数值">
+                      	<value data_type ="DOUBLE"  default="大于2%" ref_type="NULL" ref_prop="0"/>
+                  	</tree_node>
+                 	<tree_node node_type ="PROP" label ="交易日期">
+                       	<value data_type ="DATE"  default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>  
+            	</tree_node>            	
+            </tree_node>	              
+        </replace_tree>
+    </fake_index>
+    <fake_index title ="缩量" report_type="DAILY">
+        <fake_onto>  
+            <prop id ="1" label="_浮点型数值" data_type="DOUBLE" unit="%"/>        
+            <prop id ="2" label="交易日期" data_type="DATE" unit=""/>
+        </fake_onto>
+        <replace_tree unit="%" description="成交量小于前一日成交量">
+            <tree_node node_type ="LOGIC" label="AND">                
+            	<tree_node node_type ="OPERATOR" label="RATE">               
+                	<value data_type ="DOUBLE"  default="小于0" ref_type="COPY" ref_prop="1"/>
+                	<tree_node node_type ="INDEX" label ="成交量">
+                   		<tree_node node_type ="PROP" label ="交易日期">
+                        	<value data_type ="DATE" default="今天" ref_type="COPY" ref_prop="2"/>                        	
+                    	</tree_node>
+                	</tree_node>
+                	<tree_node node_type ="INDEX" label ="成交量">
+                    	<tree_node node_type ="PROP" label ="交易日期">
+                       		<value data_type ="DATE" default="前1天" ref_type="RELATIVE" ref_prop="2"/>
+                    	</tree_node>
+               		</tree_node>                    
+            	</tree_node>  
+            	<tree_node node_type ="INDEX" label ="换手率">
+            		<tree_node node_type ="PROP" label ="_浮点型数值">
+                       	<value data_type ="DOUBLE" default="小于2%" ref_type="NULL" ref_prop="0"/>
+                   	</tree_node>
+                   	<tree_node node_type ="PROP" label ="交易日期">
+                       	<value data_type ="DATE" default="今天" ref_type="COPY" ref_prop="2"/>
+                    </tree_node>            			
+            	</tree_node>            	
+            </tree_node>	              
+        </replace_tree>
+    </fake_index>
+</fake_def>

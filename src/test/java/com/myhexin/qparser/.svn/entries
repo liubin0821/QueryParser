@@ -1,0 +1,406 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/test/java/com/myhexin/qparser
+svn://172.20.23.253
+
+
+
+2015-09-19T03:23:07.348069Z
+446216
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+TestDetail.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+085a3d0566df04b9748f9a8fba2a9eab
+2015-02-25T07:59:25.426775Z
+404751
+wuyonghang
+
+TestDetailCheck.java
+file
+
+
+
+
+2015-09-22T01:37:56.000000Z
+4a80089692d2e91a42b19c297ed9704e
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestDetailCheckAll.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+f6ce74e9fd354f1057d16df04acac456
+2015-02-25T07:59:25.426775Z
+404751
+wuyonghang
+
+TestDetailCheckFour.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+843868478864e633fcfc00861cb98e65
+2015-02-25T07:59:25.426775Z
+404751
+wuyonghang
+
+TestDetailCheckFour2.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+144d49c50bf62cf26191d63e687c9bba
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestDetailCheckK.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+8129c81c419e36b4dce7fc77b3bb3660
+2015-02-25T07:59:25.426775Z
+404751
+wuyonghang
+
+TestDetailCheckThree.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+f20a71986422f00804a8bb0c0ee7f21a
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestDetailCheckTwo.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+d68737892c992b007564f7886a46e083
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestGenQID.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+9beb132d47cec072cd48cdc65ca4ade9
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestHghy.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+ae8fb2da6f960e665fb99ae7fd8e10c8
+2015-02-25T07:59:25.426775Z
+404751
+wuyonghang
+
+TestHkstock.java
+file
+
+
+
+
+2015-09-22T01:37:56.000000Z
+59cd4c778078617379e433195d91a4ff
+2014-08-13T04:47:39.285168Z
+353801
+wuyonghang
+
+TestK.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+7a083ba39454a98998ab09d0a3140ee0
+2015-02-25T07:59:25.426775Z
+404751
+wuyonghang
+
+TestKnowledge.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+897e5ced23652551265c97e1a93bac79
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestLua.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+fe87743001ab2c3e2acd6d405685654a
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestNormalizeNum.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+dc137ebe56db6c92d17a773351f456a4
+2015-07-03T07:32:04.544282Z
+429985
+liuxiaofeng
+
+TestOneQuery.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+97c46a1e28e7cfa9d3925128bc695a7d
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestPhrase.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+efe5fe5191d69c24e505353df36d93ca
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestPhraseCheck.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+e56be23f38e5da94f541971b560eb6d7
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestPhraseCsv.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+31297a083d11f0a054ca287e2b8147c6
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestPhraseInfo.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+33a230ace06c410886e811b136b6bd95
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestPhraseNew.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+3e53fc9b733e3035b9abfcfe0f157740
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestPhraseProperty.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+4393a9ceb08eaae53d3f2799ac3c6fa3
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestRetPhrase.java
+file
+
+
+
+
+2015-09-22T01:37:57.000000Z
+3ef0bc74d182346376b5c6ecf981a248
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+TestScore.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+f2ad9b7630dce6391b229d3d3164e396
+2014-12-10T09:13:18.765080Z
+392248
+wuyonghang
+
+build
+dir
+
+csv
+dir
+
+date
+dir
+
+except
+dir
+
+expr
+dir
+
+findout
+dir
+
+frequency
+dir
+
+fuzzy
+dir
+
+ifind
+dir
+
+index
+dir
+
+iterator
+dir
+
+matcher
+dir
+
+node
+dir
+
+number
+dir
+
+onto
+dir
+
+phrase
+dir
+
+qa
+dir
+
+resource
+dir
+
+server
+dir
+
+servlet
+dir
+
+similarity
+dir
+
+string
+dir
+
+suggest
+dir
+
+suggest2
+dir
+
+syntactic
+dir
+
+tokenize
+dir
+
+tool
+dir
+
+trietree
+dir
+
+unit
+dir
+
+util
+dir
+

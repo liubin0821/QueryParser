@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<node>
+  <class label="董事长姓名" report_type="">
+    <aliases>
+      <alias title="董事长" />
+      <alias title="董事长名称" />
+      <alias title="董事长名字" />
+    </aliases>
+    <prop label="_姓名" type="STR" unit="unit" />
+  </class>
+  <class label="董事长国籍" report_type="QUARTER">
+    <aliases />
+    <prop label="_国家" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长学历" report_type="QUARTER">
+    <aliases />
+    <prop label="_学历" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长生肖" report_type="QUARTER">
+    <aliases>
+      <alias title="董事长属相" />
+    </aliases>
+    <prop label="_生肖" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长婚姻状况" report_type="QUARTER">
+    <aliases />
+    <prop label="_婚姻状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长毕业学校" report_type="QUARTER">
+    <aliases>
+      <alias title="董事长毕业于" />
+      <alias title="董事长毕业" />
+    </aliases>
+    <prop label="_学校" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长是否为官员" report_type="QUARTER">
+    <aliases />
+    <prop label="_为官员状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长工作过的企业" report_type="QUARTER">
+    <aliases />
+    <prop label="_企业" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长所获政府奖励" report_type="QUARTER">
+    <aliases />
+    <prop label="_政府奖励" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长年龄" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长出生年份" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长任职日期" report_type="QUARTER">
+    <aliases>
+      <alias title="董事长上台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长离任日期" report_type="QUARTER">
+    <aliases>
+      <alias title="董事长下台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长持股数量" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="股" />
+    <relations />
+  </class>
+  <class label="董事长持股市值" report_type="QUARTER">
+    <aliases>
+      <alias title="董事长所持股票的市值" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="董事长持股比例" report_type="QUARTER">
+    <aliases>
+      <alias title="董事长持股" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="%" />
+  </class>
+  <class label="董事长性别" report_type="QUARTER">
+    <aliases />
+    <prop label="_性别" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理姓名" report_type="">
+    <aliases>
+      <alias title="总经理" />
+      <alias title="总经理名字" />
+      <alias title="总经理名称" />
+    </aliases>
+    <prop label="_姓名" type="STR" unit="unit" />
+  </class>
+  <class label="总经理国籍" report_type="QUARTER">
+    <aliases />
+    <prop label="_国家" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理学历" report_type="QUARTER">
+    <aliases />
+    <prop label="_学历" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理生肖" report_type="QUARTER">
+    <aliases>
+      <alias title="总经理属相" />
+    </aliases>
+    <prop label="_生肖" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理婚姻状况" report_type="QUARTER">
+    <aliases />
+    <prop label="_婚姻状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理毕业学校" report_type="QUARTER">
+    <aliases>
+      <alias title="总经理毕业于" />
+      <alias title="总经理毕业" />
+    </aliases>
+    <prop label="_学校" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理是否为官员" report_type="QUARTER">
+    <aliases />
+    <prop label="_为官员状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理工作过的企业" report_type="QUARTER">
+    <aliases />
+    <prop label="_企业" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理所获政府奖励" report_type="QUARTER">
+    <aliases />
+    <prop label="_政府奖励" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理年龄" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理出生年份" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理任职日期" report_type="QUARTER">
+    <aliases>
+      <alias title="总经理上台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理离任日期" report_type="QUARTER">
+    <aliases>
+      <alias title="总经理下台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="总经理持股数量" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="股" />
+    <relations />
+  </class>
+  <class label="总经理持股市值" report_type="QUARTER">
+    <aliases>
+      <alias title="总经理所持股票的市值" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="总经理持股比例" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="%" />
+    <relations />
+  </class>
+  <class label="总经理性别" report_type="QUARTER">
+    <aliases />
+    <prop label="_性别" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监姓名" report_type="">
+    <aliases>
+      <alias title="财务总监" />
+      <alias title="财务总监名称" />
+      <alias title="财务总监名字" />
+    </aliases>
+    <prop label="_姓名" type="STR" unit="unit" />
+  </class>
+  <class label="财务总监国籍" report_type="QUARTER">
+    <aliases />
+    <prop label="_国家" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监学历" report_type="QUARTER">
+    <aliases />
+    <prop label="_学历" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监生肖" report_type="QUARTER">
+    <aliases>
+      <alias title="财务总监属相" />
+    </aliases>
+    <prop label="_生肖" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监婚姻状况" report_type="QUARTER">
+    <aliases />
+    <prop label="_婚姻状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监毕业学校" report_type="QUARTER">
+    <aliases>
+      <alias title="财务总监毕业于" />
+      <alias title="财务总监毕业" />
+    </aliases>
+    <prop label="_学校" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监是否为官员" report_type="QUARTER">
+    <aliases />
+    <prop label="_为官员状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监工作过的企业" report_type="QUARTER">
+    <aliases />
+    <prop label="_企业" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监所获政府奖励" report_type="QUARTER">
+    <aliases />
+    <prop label="_政府奖励" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监年龄" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监出生年份" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监任职日期" report_type="QUARTER">
+    <aliases>
+      <alias title="财务总监下台时间" />
+      <alias title="财务总监上台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监离任日期" report_type="QUARTER">
+    <aliases />
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="财务总监持股数量" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="股" />
+    <relations />
+  </class>
+  <class label="财务总监持股市值" report_type="QUARTER">
+    <aliases>
+      <alias title="财务总监所持股票的市值" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="财务总监持股比例" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="%" />
+    <relations />
+  </class>
+  <class label="财务总监性别" report_type="QUARTER">
+    <aliases />
+    <prop label="_性别" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事姓名" report_type="">
+    <aliases>
+      <alias title="董事" />
+      <alias title="董事名字" />
+      <alias title="董事名称" />
+    </aliases>
+    <prop label="_姓名" type="STR" unit="unit" />
+  </class>
+  <class label="董事国籍" report_type="QUARTER">
+    <aliases />
+    <prop label="_国家" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事学历" report_type="QUARTER">
+    <aliases />
+    <prop label="_学历" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事生肖" report_type="QUARTER">
+    <aliases>
+      <alias title="董事属相" />
+    </aliases>
+    <prop label="_生肖" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事婚姻状况" report_type="QUARTER">
+    <aliases />
+    <prop label="_婚姻状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事毕业学校" report_type="QUARTER">
+    <aliases>
+      <alias title="董事毕业于" />
+      <alias title="董事毕业" />
+    </aliases>
+    <prop label="_学校" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事是否为官员" report_type="QUARTER">
+    <aliases />
+    <prop label="_为官员状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事工作过的企业" report_type="QUARTER">
+    <aliases />
+    <prop label="_企业" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事所获政府奖励" report_type="QUARTER">
+    <aliases />
+    <prop label="_政府奖励" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事年龄" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事出生年份" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事任职日期" report_type="QUARTER">
+    <aliases>
+      <alias title="董事上台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事离任日期" report_type="QUARTER">
+    <aliases>
+      <alias title="董事下台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事持股数量" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="股" />
+    <relations />
+  </class>
+  <class label="董事持股市值" report_type="QUARTER">
+    <aliases>
+      <alias title="董事所持股票的市值" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="董事持股比例" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="%" />
+    <relations />
+  </class>
+  <class label="董事性别" report_type="QUARTER">
+    <aliases />
+    <prop label="_性别" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事姓名" report_type="">
+    <aliases>
+      <alias title="独立董事" />
+      <alias title="独立董事名称" />
+      <alias title="独立董事名字" />
+      <alias title="独董" />
+      <alias title="独董姓名" />
+    </aliases>
+    <prop label="_姓名" type="STR" unit="unit" />
+  </class>
+  <class label="独立董事国籍" report_type="QUARTER">
+    <aliases>
+      <alias title="独董国籍" />
+    </aliases>
+    <prop label="_国家" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事学历" report_type="QUARTER">
+    <aliases>
+      <alias title="独董学历" />
+    </aliases>
+    <prop label="_学历" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事生肖" report_type="QUARTER">
+    <aliases>
+      <alias title="独立董事属相" />
+      <alias title="独董属相" />
+      <alias title="独董生肖" />
+    </aliases>
+    <prop label="_生肖" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事婚姻状况" report_type="QUARTER">
+    <aliases>
+      <alias title="独董婚姻状况" />
+    </aliases>
+    <prop label="_婚姻状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事毕业学校" report_type="QUARTER">
+    <aliases>
+      <alias title="独董毕业学校" />
+    </aliases>
+    <prop label="_学校" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事是否为官员" report_type="QUARTER">
+    <aliases>
+      <alias title="独董是否为官员" />
+    </aliases>
+    <prop label="_为官员状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事工作过的企业" report_type="QUARTER">
+    <aliases>
+      <alias title="独董工作过的企业" />
+    </aliases>
+    <prop label="_企业" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事所获政府奖励" report_type="QUARTER">
+    <aliases>
+      <alias title="独董所获政府奖励" />
+    </aliases>
+    <prop label="_政府奖励" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事年龄" report_type="QUARTER">
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事出生年份" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事任职日期" report_type="QUARTER">
+    <aliases>
+      <alias title="独立董事上台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事离任日期" report_type="QUARTER">
+    <aliases>
+      <alias title="独立董事下台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="独立董事持股数量" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="股" />
+    <relations />
+  </class>
+  <class label="独立董事持股市值" report_type="QUARTER">
+    <aliases>
+      <alias title="独立董事所持股票的市值" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="独立董事持股比例" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="%" />
+    <relations />
+  </class>
+  <class label="独立董事性别" report_type="QUARTER">
+    <aliases>
+      <alias title="独董性别" />
+    </aliases>
+    <prop label="_性别" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书姓名" report_type="">
+    <aliases>
+      <alias title="董事会秘书" />
+      <alias title="董事会秘书名称" />
+      <alias title="董事会秘书名字" />
+    </aliases>
+    <prop label="_姓名" type="STR" unit="unit" />
+  </class>
+  <class label="董事会秘书国籍" report_type="QUARTER">
+    <aliases />
+    <prop label="_国家" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书学历" report_type="QUARTER">
+    <aliases />
+    <prop label="_学历" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书生肖" report_type="QUARTER">
+    <aliases>
+      <alias title="董事会秘书属相" />
+    </aliases>
+    <prop label="_生肖" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书婚姻状况" report_type="QUARTER">
+    <aliases />
+    <prop label="_婚姻状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书毕业学校" report_type="QUARTER">
+    <aliases>
+      <alias title="董事会秘书毕业于" />
+      <alias title="董事会秘书毕业" />
+    </aliases>
+    <prop label="_学校" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书是否为官员" report_type="QUARTER">
+    <aliases />
+    <prop label="_为官员状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书工作过的企业" report_type="QUARTER">
+    <aliases />
+    <prop label="_企业" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书所获政府奖励" report_type="QUARTER">
+    <aliases />
+    <prop label="_政府奖励" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书年龄" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书出生年份" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书任职日期" report_type="QUARTER">
+    <aliases>
+      <alias title="董事会秘书上台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书离任日期" report_type="QUARTER">
+    <aliases>
+      <alias title="董事会秘书下台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事会秘书持股数量" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="股" />
+    <relations />
+  </class>
+  <class label="董事会秘书持股市值" report_type="QUARTER">
+    <aliases>
+      <alias title="董事会秘书所持股票的市值" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="董事会秘书持股比例" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="%" />
+    <relations />
+  </class>
+  <class label="董事会秘书性别" report_type="QUARTER">
+    <aliases />
+    <prop label="_性别" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长姓名" report_type="">
+    <aliases>
+      <alias title="监事长" />
+      <alias title="监事长名称" />
+      <alias title="监事长名字" />
+    </aliases>
+    <prop label="_姓名" type="STR" unit="unit" />
+  </class>
+  <class label="监事长国籍" report_type="QUARTER">
+    <aliases />
+    <prop label="_国家" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长学历" report_type="QUARTER">
+    <aliases />
+    <prop label="_学历" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长生肖" report_type="QUARTER">
+    <aliases>
+      <alias title="监事长属相" />
+    </aliases>
+    <prop label="_生肖" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长婚姻状况" report_type="QUARTER">
+    <aliases />
+    <prop label="_婚姻状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长毕业学校" report_type="QUARTER">
+    <aliases>
+      <alias title="监事长毕业于" />
+      <alias title="监事长毕业" />
+    </aliases>
+    <prop label="_学校" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长是否为官员" report_type="QUARTER">
+    <aliases />
+    <prop label="_为官员状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长工作过的企业" report_type="QUARTER">
+    <aliases />
+    <prop label="_企业" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长所获政府奖励" report_type="QUARTER">
+    <aliases />
+    <prop label="_政府奖励" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长年龄" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长出生年份" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长任职日期" report_type="QUARTER">
+    <aliases>
+      <alias title="监事长上台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长离任日期" report_type="QUARTER">
+    <aliases>
+      <alias title="监事长下台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事长持股数量" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="股" />
+    <relations />
+  </class>
+  <class label="监事长持股市值" report_type="QUARTER">
+    <aliases>
+      <alias title="监事长所持股票的市值" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="监事长持股比例" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="%" />
+    <relations />
+  </class>
+  <class label="监事长性别" report_type="QUARTER">
+    <aliases />
+    <prop label="_性别" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事姓名" report_type="">
+    <aliases>
+      <alias title="监事" />
+      <alias title="监事名称" />
+      <alias title="监事名字" />
+    </aliases>
+    <prop label="_姓名" type="STR" unit="unit" />
+  </class>
+  <class label="监事国籍" report_type="QUARTER">
+    <aliases />
+    <prop label="_国家" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事学历" report_type="QUARTER">
+    <aliases />
+    <prop label="_学历" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事生肖" report_type="QUARTER">
+    <aliases>
+      <alias title="监事属相" />
+    </aliases>
+    <prop label="_生肖" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事婚姻状况" report_type="QUARTER">
+    <aliases />
+    <prop label="_婚姻状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事毕业学校" report_type="QUARTER">
+    <aliases>
+      <alias title="监事毕业于" />
+      <alias title="监事毕业" />
+    </aliases>
+    <prop label="_学校" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事是否为官员" report_type="QUARTER">
+    <aliases />
+    <prop label="_为官员状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事工作过的企业" report_type="QUARTER">
+    <aliases />
+    <prop label="_企业" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事所获政府奖励" report_type="QUARTER">
+    <aliases />
+    <prop label="_政府奖励" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事年龄" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事出生年份" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事任职日期" report_type="QUARTER">
+    <aliases>
+      <alias title="监事上台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事离任日期" report_type="QUARTER">
+    <aliases>
+      <alias title="监事下台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="监事持股数量" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="股" />
+    <relations />
+  </class>
+  <class label="监事持股市值" report_type="QUARTER">
+    <aliases>
+      <alias title="监事所持股票的市值" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="监事持股比例" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="%" />
+    <relations />
+  </class>
+  <class label="监事性别" report_type="QUARTER">
+    <aliases />
+    <prop label="_性别" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理姓名" report_type="">
+    <aliases>
+      <alias title="副总经理" />
+      <alias title="副总经理名称" />
+      <alias title="副总经理名字" />
+    </aliases>
+    <prop label="_姓名" type="STR" unit="unit" />
+  </class>
+  <class label="副总经理国籍" report_type="QUARTER">
+    <aliases />
+    <prop label="_国家" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理学历" report_type="QUARTER">
+    <aliases />
+    <prop label="_学历" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理生肖" report_type="QUARTER">
+    <aliases>
+      <alias title="副总经理属相" />
+    </aliases>
+    <prop label="_生肖" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理婚姻状况" report_type="QUARTER">
+    <aliases />
+    <prop label="_婚姻状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理毕业学校" report_type="QUARTER">
+    <aliases>
+      <alias title="副总经理毕业于" />
+      <alias title="副总经理毕业" />
+    </aliases>
+    <prop label="_学校" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理是否为官员" report_type="QUARTER">
+    <aliases />
+    <prop label="_为官员状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理工作过的企业" report_type="QUARTER">
+    <aliases />
+    <prop label="_企业" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理所获政府奖励" report_type="QUARTER">
+    <aliases />
+    <prop label="_政府奖励" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理年龄" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理出生年份" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理任职日期" report_type="QUARTER">
+    <aliases>
+      <alias title="副总经理上台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理离任日期" report_type="QUARTER">
+    <aliases>
+      <alias title="副总经理下台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="副总经理持股数量" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="股" />
+    <relations />
+  </class>
+  <class label="副总经理持股市值" report_type="QUARTER">
+    <aliases>
+      <alias title="副总经理所持股票的市值" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="副总经理持股比例" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="%" />
+    <relations />
+  </class>
+  <class label="副总经理性别" report_type="QUARTER">
+    <aliases />
+    <prop label="_性别" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="董事长薪酬" report_type="QUARTER">
+    <aliases>
+      <alias title="董事长的薪酬" />
+      <alias title="董事长的薪水" />
+      <alias title="董事长薪水" />
+      <alias title="董事长工资" />
+      <alias title="董事长收入" />
+      <alias title="年薪董事长" />
+      <alias title="董事长年薪" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="总经理薪酬" report_type="QUARTER">
+    <aliases>
+      <alias title="总经理的薪酬" />
+      <alias title="总经理的薪水" />
+      <alias title="总经理薪水" />
+      <alias title="总经理工资" />
+      <alias title="总经理收入" />
+      <alias title="年薪总经理" />
+      <alias title="总经理年薪" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="财务总监薪酬" report_type="QUARTER">
+    <aliases>
+      <alias title="财务总监的薪酬" />
+      <alias title="财务总监的薪水" />
+      <alias title="财务总监薪水" />
+      <alias title="财务总监工资" />
+      <alias title="财务总监收入" />
+      <alias title="年薪财务总监" />
+      <alias title="财务总监年薪" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="董事薪酬" report_type="QUARTER">
+    <aliases>
+      <alias title="董事的薪酬" />
+      <alias title="董事的薪水" />
+      <alias title="董事薪水" />
+      <alias title="董事工资" />
+      <alias title="董事收入" />
+      <alias title="年薪董事" />
+      <alias title="董事年薪" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="独立董事薪酬" report_type="QUARTER">
+    <aliases>
+      <alias title="独立董事的薪酬" />
+      <alias title="独立董事的薪水" />
+      <alias title="独立董事薪水" />
+      <alias title="独立董事工资" />
+      <alias title="独立董事收入" />
+      <alias title="年薪独立董事" />
+      <alias title="独立董事年薪" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="监事长薪酬" report_type="QUARTER">
+    <aliases>
+      <alias title="监事长的薪酬" />
+      <alias title="监事长的薪水" />
+      <alias title="监事长薪水" />
+      <alias title="监事长工资" />
+      <alias title="监事长收入" />
+      <alias title="年薪监事长" />
+      <alias title="监事长年薪" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="监事薪酬" report_type="QUARTER">
+    <aliases>
+      <alias title="监事的薪酬" />
+      <alias title="监事的薪水" />
+      <alias title="监事薪水" />
+      <alias title="监事工资" />
+      <alias title="监事收入" />
+      <alias title="年薪监事" />
+      <alias title="监事年薪" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="副总经理薪酬" report_type="QUARTER">
+    <aliases>
+      <alias title="副总经理的薪酬" />
+      <alias title="副总经理的薪水" />
+      <alias title="副总经理薪水" />
+      <alias title="副总经理工资" />
+      <alias title="副总经理收入" />
+      <alias title="年薪副总经理" />
+      <alias title="副总经理年薪" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  
+  <class label="高管薪酬" report_type="QUARTER">
+    <aliases>
+      <alias title="高管的薪酬" />
+      <alias title="高管的薪水" />
+      <alias title="高管薪水" />
+      <alias title="高管工资" />
+      <alias title="高管收入" />
+      <alias title="高管经理" />
+      <alias title="高管年薪" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  
+  <class label="高管姓名" report_type="">
+    <aliases>
+      <alias title="高管" />
+      <alias title="高管名称" />
+      <alias title="高管名字" />
+    </aliases>
+    <prop label="_姓名" type="STR" unit="unit" />
+  </class>
+  <class label="高管国籍" report_type="QUARTER">
+    <aliases />
+    <prop label="_国家" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管学历" report_type="QUARTER">
+    <aliases />
+    <prop label="_学历" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管生肖" report_type="QUARTER">
+    <aliases>
+      <alias title="高管属相" />
+    </aliases>
+    <prop label="_生肖" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管婚姻状况" report_type="QUARTER">
+    <aliases />
+    <prop label="_婚姻状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管毕业学校" report_type="QUARTER">
+    <aliases>
+      <alias title="高管毕业于" />
+      <alias title="高管毕业" />
+    </aliases>
+    <prop label="_学校" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管是否为官员" report_type="QUARTER">
+    <aliases />
+    <prop label="_为官员状况" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管工作过的企业" report_type="QUARTER">
+    <aliases />
+    <prop label="_企业" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管所获政府奖励" report_type="QUARTER">
+    <aliases />
+    <prop label="_政府奖励" type="STR" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管年龄" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管出生年份" report_type="QUARTER">
+    <aliases />
+    <prop label="_整型数值" type="LONG" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管任职日期" report_type="QUARTER">
+    <aliases>
+      <alias title="高管上台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管离任日期" report_type="QUARTER">
+    <aliases>
+      <alias title="董事长下台时间" />
+    </aliases>
+    <prop label="_日期" type="DATE" unit="unit" />
+    <prop label="+区间" type="DATE" unit="unit" />
+    <relations />
+  </class>
+  <class label="高管持股数量" report_type="QUARTER">
+    <aliases />
+    <prop label="_浮点型数值" type="DOUBLE" unit="股" />
+    <relations />
+  </class>
+  <class label="高管持股市值" report_type="QUARTER">
+    <aliases>
+      <alias title="高管所持股票的市值" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="元" />
+    <relations />
+  </class>
+  <class label="高管持股比例" report_type="QUARTER">
+    <aliases>
+      <alias title="高管持股" />
+    </aliases>
+    <prop label="_浮点型数值" type="DOUBLE" unit="%" />
+  </class>
+  <class label="高管性别" report_type="QUARTER">
+    <aliases />
+    <prop label="_性别" type="STR" unit="unit" />
+    <relations />
+  </class>
+</node>

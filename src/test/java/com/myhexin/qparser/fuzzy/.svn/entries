@@ -1,0 +1,40 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/test/java/com/myhexin/qparser/fuzzy
+svn://172.20.23.253
+
+
+
+2014-09-18T12:17:37.238391Z
+368574
+wuyonghang
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+TestFuzzySearcher.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+a8f67ebe1a956f77efe95b76ec90f3a8
+2012-11-02T03:32:59.308185Z
+36188
+wangping
+

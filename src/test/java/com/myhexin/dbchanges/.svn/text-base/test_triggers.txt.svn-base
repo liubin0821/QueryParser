@@ -1,0 +1,166 @@
+
+insert into aliases(id,index_id,label,is_default,upd_date,upd_user,upd_comment)values(1,75589,'ss',0,null,'dzc',null);
+update aliases set upd_comment='dzsc' where upd_user='dzc';
+delete from aliases where upd_comment='dzsc';
+
+
+insert into automatic_synchronization_ctrl(id,dict_type,db_type,sql_str,host_str,port_str,userName,password_str,database_str,table_str,
+is_using,upd_date,upd_user,upd_comment)values(
+1,'sSs','ssS','ss','ss','s','s','s','s','asa',1,'s','dd','dd');
+update automatic_synchronization_ctrl  set  upd_user='dzscs' where upd_comment='dd';
+delete from automatic_synchronization_ctrl where upd_user='dzscs';
+
+insert into data_lines(type_id,text,cate,seg,value,infos,priority,from_where,last_update_date,create_date,upd_date,upd_user,upd_comment)values(
+2721,'sSs','ssS',null,null,'s',0,'',null,null,null,null,'dd');
+update data_lines set upd_user='dzscs' where upd_comment='dd';
+delete from data_lines where upd_user='dzscs';
+
+
+insert into data_relation(prop_id,type_id,upd_date,upd_user,upd_comment)values(42755,2720,null,'','test');
+update data_relation set upd_user='dzc' where upd_comment='test';
+delete from data_relation where upd_comment='test';
+
+
+
+insert into data_type(id,label,upd_date,upd_user,upd_comment)values(1,'test',null,'dzc','test');
+update data_type set upd_user='dzsc' where id=1;
+delete from data_type where id=1;
+
+
+insert into dict_no_value(text,cate,seg,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,null,null,null,null);
+update dict_no_value set upd_user='dzsc' where cate='dzc';
+delete from dict_no_value where cate='dzc';
+
+
+
+insert into dict_onto_change(text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,null,null,null,null,null);
+update dict_onto_change set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_change  where cate='dzc';
+
+
+
+insert into dict_onto_class(id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values(1,'test','dzc',null,null,null,null,null,null,null);
+update dict_onto_class set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_class  where cate='dzc';
+
+insert into dict_onto_date(id,text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values(1,'test','dzc',null,null,null,null,null,null,null);
+update dict_onto_date set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_date  where cate='dzc';
+
+insert into dict_onto_keyword(text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,null,null,null,null,null);
+update dict_onto_keyword set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_keyword  where cate='dzc';
+
+
+insert into dict_onto_logic(text,cate,seg,logic_type,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,null,null,null,null,null);
+update dict_onto_logic set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_logic  where cate='dzc';
+
+
+
+insert into dict_onto_qword(text,cate,seg,type,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,null,null,null,null,null);
+update dict_onto_qword set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_qword  where cate='dzc';
+
+
+insert into dict_onto_sort(text,cate,seg,value_type,descending,k,is_top_k,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values('test','dzc',null,null,'true',null,null,null,null,null,null,null);
+update dict_onto_sort set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_sort  where cate='dzc';
+
+
+insert into dict_onto_special(text,cate,seg,msg,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true',null,null,null,null);
+update dict_onto_special set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_special where cate='dzc';
+
+
+
+
+insert into dict_onto_techOp(text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true',null,null,null,null);
+update dict_onto_techOp set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_techOp where cate='dzc';
+
+
+insert into dict_onto_techPeriod(text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true',null,null,null,null);
+update dict_onto_techPeriod set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_techPeriod where cate='dzc';
+
+
+
+insert into dict_onto_trigger(text,cate,seg,value,direction,isindex,skiplist,last_update_date,create_date,upd_date,upd_user,upd_comment)
+values('test','dzc',null,null,'true',null,null,null,null,null,null,null);
+update dict_onto_trigger set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_trigger  where cate='dzc';
+
+
+
+insert into dict_onto_vagueNum(text,cate,seg,vague_type,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true',null,null,null,null);
+update dict_onto_vagueNum set upd_user='dzsc' where cate='dzc';
+delete from dict_onto_vagueNum where cate='dzc';
+
+
+
+insert into dict_trans(text,cate,seg,value,last_update_date,create_date,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true',null,null,null,null);
+update dict_trans set upd_user='dzsc' where cate='dzc';
+delete from dict_trans where cate='dzc';
+
+
+
+insert into dict_update_recode(text,tableName,upd_date,upd_user,upd_comment)values('test','dzc',null,null,'true');
+update dict_update_recode set upd_user='dzsc' where tableName='dzc';
+delete from dict_update_recode where tableName='dzc';
+
+
+insert into field values(11,null,null,null,null);
+update field set upd_user='dzsc' where id=11;
+delete from field where id=11;
+
+
+
+insert into field_to_index(index_id,field_id,upd_date,upd_user,upd_comment) values(75589,141,null,'dzc',null);
+update field_to_index set upd_comment='dzsc' where upd_user='dzc';
+delete from field_to_index where upd_user='dzc';
+
+
+
+
+insert into index_prop(id,label,type,upd_date,upd_user,upd_comment) values(1,'d','s',null,'dzc',null);
+update index_prop set upd_comment='dzsc' where upd_user='dzc';
+delete from index_prop where upd_user='dzc';
+
+
+insert into indexs(id,label,report_type,upd_date,upd_user,upd_comment) values(1,null,null,null,'dzc',null);
+update indexs set upd_comment='dzsc' where upd_user='dzc';
+delete from indexs  where upd_user='dzc';
+
+
+
+insert into normal_relation(prop_id,type,unit,upd_date,upd_user,upd_comment) values(42753,null,null,null,'dzc',null);
+update normal_relation set upd_comment='dzsc' where upd_user='dzc';
+delete from normal_relation where upd_user='dzc';
+
+
+insert into object_relation(prop_id,ref_id,upd_date,upd_user,upd_comment) values(45985,80657,null,'dzc',null);
+update object_relation set upd_comment='dzsc' where upd_user='dzc';
+delete from object_relation where upd_user='dzc';
+
+
+
+insert into prop_to_index(prop_id,index_id,seq,is_value_prop,upd_date,upd_user,upd_comment) values(45985,80657,null,null,null,'dzc',null);
+update prop_to_index set upd_comment='dzsc' where upd_user='dzc';
+delete from prop_to_index where upd_comment='dzsc';
+
+
+insert into resolve_aliases_conflicts(aliase_id,word,upd_date,upd_user,upd_comment) values(83271,80657,null,'dzc',null);
+update resolve_aliases_conflicts set upd_comment='dzsc' where upd_user='dzc';
+delete from resolve_aliases_conflicts where upd_comment='dzsc';
+
+
+insert into super_index(super_id,index_id,upd_date,upd_user,upd_comment) values(83271,80657,null,'dzc',null);
+update super_index set upd_comment='dzsc' where upd_user='dzc';
+delete from super_index where upd_comment='dzsc';
+
+
+insert into super_type(super_id,type_id,upd_date,upd_user,upd_comment) values(2719,2720,null,'dzc',null);
+update super_type set upd_comment='dzsc' where upd_user='dzc';
+delete from super_type where upd_comment='dzsc';

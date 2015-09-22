@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans>
+  <container id="list149" class="java.util.ArrayList">
+    <value keyClass="java.lang.String" keyValue="没有" />
+    <value keyClass="java.lang.String" keyValue="没" />
+    <value keyClass="java.lang.String" keyValue="未" />
+  </container>
+  <bean id="KeywordGroup149" class="com.myhexin.qparser.phrase.KeywordGroup">
+    <property class="java.lang.String" name="_id">149</property>
+    <property class="java.lang.String" name="_description">没有</property>
+    <property name="_keywords" ref="list149" refType="container" />
+  </bean>
+  <container id="map149" class="java.util.HashMap">
+    <value keyClass="java.lang.String" keyValue="149" valueRef="KeywordGroup149" valueRefType="bean" />
+  </container>
+  <bean id="keywordGroupMap_149" class="com.myhexin.qparser.phrase.KeywordGroupMap">
+    <property name="keywordGroupMap_" ref="map149" refType="container" />
+  </bean>
+</beans>

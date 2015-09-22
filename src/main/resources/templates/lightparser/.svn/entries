@@ -1,0 +1,54 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/resources/templates/lightparser
+svn://172.20.23.253
+
+
+
+2015-09-09T07:26:46.550212Z
+443990
+sunzhiyong
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+lightparser.ftl
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+1fd14dd9a2a92f9d4360221233f0c99b
+2015-07-21T09:23:56.332815Z
+433612
+sunzhiyong
+has-props
+
+node_list.ftl
+file
+
+
+
+
+2015-09-22T01:38:46.000000Z
+163d9a54d5e53848938db4d769a016aa
+2015-09-09T07:26:46.550212Z
+443990
+sunzhiyong
+has-props
+

@@ -1,0 +1,6 @@
+CREATE TABLE  `configFile`.`parser_datemerge_rule` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `dt_text1` varchar(100) NOT NULL default '',
+  `dt_text2` varchar(100) NOT NULL default '',
+   PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

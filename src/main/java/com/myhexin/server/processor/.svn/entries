@@ -1,0 +1,55 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/server/processor
+svn://172.20.23.253
+
+
+
+2015-07-06T07:31:23.402929Z
+430191
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+ParserProcessorAbstract.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+d0a05f895c0510a22dfae59af36ab071
+2015-07-06T07:31:23.402929Z
+430191
+liuxiaofeng
+
+Processor.java
+file
+
+
+
+
+2015-09-22T01:38:44.000000Z
+5c0634ab4cb3a5b55cf4d9f3e559b37e
+2015-07-06T07:31:23.402929Z
+430191
+liuxiaofeng
+
+impl
+dir
+

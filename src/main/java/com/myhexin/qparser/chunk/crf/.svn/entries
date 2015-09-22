@@ -1,0 +1,40 @@
+8
+
+dir
+446646
+svn://172.20.23.253/product/Ontology_Ask/trunk/QueryParser2/src/main/java/com/myhexin/qparser/chunk/crf
+svn://172.20.23.253
+
+
+
+2015-05-05T12:06:16.899978Z
+418723
+liuxiaofeng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a040f60c-cf44-427d-8f88-9b95427dc95e
+
+CRFChunker.java
+file
+
+
+
+
+2015-09-22T01:38:45.000000Z
+f958a995ddd28dd13bc8edc5d6a79939
+2015-05-05T12:06:16.899978Z
+418723
+liuxiaofeng
+

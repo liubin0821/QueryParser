@@ -1,0 +1,3 @@
+"filtConds": [
+    ${operands}
+]

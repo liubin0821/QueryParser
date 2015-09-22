@@ -1,0 +1,57 @@
+DROP TABLE configFile.parser_index_defdate;
+
+CREATE TABLE  configFile.parser_index_defdate (
+ID   					INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+index_name 				VARCHAR(300) NOT NULL,
+calc_expr1				VARCHAR(100) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+
+SELECT parser_index_defdate.id, parser_index_defdate.index_name, indexs.report_type,parser_index_defdate.calc_expr1 FROM ontologydb.indexs, configFile.parser_index_defdate
+WHERE indexs.label =  parser_index_defdate.index_name;
+
+INSERT INTO configFile.parser_index_defdate(index_name, calc_expr1) VALUES('市盈率(pe)', '-2');
+INSERT INTO configFile.parser_index_defdate(index_name, calc_expr1) VALUES('市销率(ps)', '-3');
+INSERT INTO configFile.parser_index_defdate(index_name, calc_expr1) VALUES('结算备付金', '-2');
+INSERT INTO configFile.parser_index_defdate(index_name, calc_expr1) VALUES('结算备付金', '-2');
+INSERT INTO configFile.parser_index_defdate(index_name, calc_expr1) VALUES('红股上市交易日', '-1');
+INSERT INTO configFile.parser_index_defdate(index_name, calc_expr1) VALUES('股权登记日(b股最后交易日)', '-1');
+INSERT INTO configFile.parser_index_defdate(index_name, calc_expr1) VALUES('市盈率(pe,ttm)', '-1');
+INSERT INTO configFile.parser_index_defdate(index_name, calc_expr1) VALUES('业绩快报.摊薄每股收益eps', '-1');
+INSERT INTO configFile.parser_index_defdate(index_name, calc_expr1) VALUES('应收股利', '+4');
+
+SELECT * FROM ontologydb.indexs;
+
+
+
+DROP TABLE index_mapping;
+
+CREATE TABLE index_mapping
+AS 
+SELECT id, index_name, db_name, table_name, report_type FROM `np_mapping_table`;
+
+SELECT * FROM index_mapping;
+
+ALTER TABLE index_mapping ADD COLUMN field_name VARCHAR(31) NULL;
+ALTER TABLE index_mapping ADD COLUMN type VARCHAR(31) NULL;
+ALTER TABLE index_mapping ADD COLUMN unit VARCHAR(31) NULL;
+ALTER TABLE index_mapping ADD COLUMN status INT(7) NULL;
+
+
+
+DROP TABLE configFile.index_mx_fields;
+CREATE TABLE configFile.index_mx_fields
+(
+id 				INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+index_name		VARCHAR(100) NOT NULL,
+report_type		VARCHAR(100) NOT NULL,
+field_name		VARCHAR(100) NOT NULL,
+TYPE			VARCHAR(100) NULL,
+unit			VARCHAR(100) NULL,
+STATUS			INT(7) NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8 ;
+
+
+
+
+
